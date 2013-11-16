@@ -1,0 +1,1 @@
+INDEX VERSION 1.126+C:\Users\david\Documents\Grado\Curso 1314\Laboratorio de desarrollo de herramientas\jenes_2.0-2013-10-16\jenes 2.0\.metadata\.plugins\org.eclipse.jdt.core
