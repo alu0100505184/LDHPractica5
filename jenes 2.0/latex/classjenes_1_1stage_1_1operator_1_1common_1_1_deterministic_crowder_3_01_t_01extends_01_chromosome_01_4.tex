@@ -1,0 +1,213 @@
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4}{
+\section{jenes.stage.operator.common.DeterministicCrowder$<$ T extends Chromosome $>$ Class Reference}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4}\index{jenes::stage::operator::common::DeterministicCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::DeterministicCrowder$<$ T extends Chromosome $>$}}
+}
+Inherits jenes::stage::operator::Crowder$<$ T $>$.
+
+\subsection*{Public Types}
+\begin{CompactItemize}
+\item 
+enum \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_f734ac23216aafb25e63014b0b676e67}{SelectionMethod} \{ \par
+\textbf{ROULETTE}, 
+\textbf{TOURNAMENT}, 
+\textbf{ROULETTE}, 
+\textbf{TOURNAMENT}, 
+\par
+\textbf{ROULETTE}, 
+\textbf{TOURNAMENT}, 
+\textbf{NONE}, 
+\textbf{ROULETTE}, 
+\par
+\textbf{TOURNAMENT}, 
+\textbf{ROULETTE}, 
+\textbf{TOURNAMENT}
+ \}
+\item 
+enum \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_e58e16af4a8087c42225aa099718231d}{CrossoverMethod} \{ \par
+\textbf{SINGLEPOINT}, 
+\textbf{TWOPOINTS}, 
+\textbf{SINGLEPOINT}, 
+\textbf{TWOPOINTS}, 
+\par
+\textbf{SINGLEPOINT}, 
+\textbf{TWOPOINTS}, 
+\textbf{SINGLEPOINT}, 
+\textbf{TWOPOINTS}
+ \}
+\item 
+enum \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_40d00705655302bc78c3e60aca4c43b5}{MutationMethod} \{ \par
+\textbf{NONE}, 
+\textbf{SIMPLE}, 
+\textbf{NONE}, 
+\textbf{SIMPLE}, 
+\par
+\textbf{NONE}, 
+\textbf{SIMPLE}
+ \}
+\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_d52c0d6a4bc032c8c198bf05cc3acf6f}{DeterministicCrowder} ()
+\item 
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_e974a4b359a9a467dfa434dd47a27cf7}{
+\textbf{DeterministicCrowder} (final \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_f734ac23216aafb25e63014b0b676e67}{SelectionMethod} selmethod, final \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_e58e16af4a8087c42225aa099718231d}{CrossoverMethod} crossmethod)}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_e974a4b359a9a467dfa434dd47a27cf7}
+
+\item 
+\hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_a59e2a1dcdb2cd6cc7a70e344a77dd31}{DeterministicCrowder} (final \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_f734ac23216aafb25e63014b0b676e67}{SelectionMethod} selmethod, final \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_e58e16af4a8087c42225aa099718231d}{CrossoverMethod} crossmethod, final double cp, final double mp)
+\item 
+\hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_d7eed64a7fe60239ba3289ebf6003e8c}{DeterministicCrowder} (final Selector$<$ T $>$ selector, final Crossover$<$ T $>$ crossover)
+\item 
+\hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_6359043178a5e4d8922485528acbbcec}{DeterministicCrowder} (final Selector$<$ T $>$ selector, final Crossover$<$ T $>$ crossover, final Mutator$<$ T $>$ mutator)
+\item 
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_f7b258f528b701713808c16bca29ca66}{
+void \textbf{setBiggerIsBetter} (boolean flag, boolean recursively)}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_f7b258f528b701713808c16bca29ca66}
+
+\end{CompactItemize}
+\subsection*{Static Public Attributes}
+\begin{CompactItemize}
+\item 
+static final \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_f734ac23216aafb25e63014b0b676e67}{SelectionMethod} \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_5ca3f3abce0f3163383ed9158b154289}{DEFAULT\_\-SELECTION\_\-METHOD} = SelectionMethod.TOURNAMENT
+\item 
+static final \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_e58e16af4a8087c42225aa099718231d}{CrossoverMethod} \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_a09cba6e344d7681789f11213d6cccd0}{DEFAULT\_\-CROSSOVER\_\-METHOD} = CrossoverMethod.SINGLEPOINT
+\item 
+static final double \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_824ea51baffd4e4b2fb045d38b964321}{DEFAULT\_\-CROSSOVER\_\-PROBABILITY} = 0.8
+\item 
+static final double \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_5a4e77ddc158a661371ea5934cce2977}{DEFAULT\_\-MUTATION\_\-PROBABILITY} = 0.0
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_ee04796d9d0ad969443b30cc88a1b964}{
+void \textbf{preselect} (Population$<$ T $>$ in, Population$<$ T $>$ out)}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_ee04796d9d0ad969443b30cc88a1b964}
+
+\item 
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_8d9591e3962f36f1f2f59be9395806b4}{
+void \textbf{replace} (Population$<$ T $>$ initial, Population$<$ T $>$ preselected, Population$<$ T $>$ evolved, Population$<$ T $>$ out)}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_8d9591e3962f36f1f2f59be9395806b4}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+This class implements the deterministic crowding.
+
+\begin{Desc}
+\item[Version:]2.0 \end{Desc}
+\begin{Desc}
+\item[Since:]2.0 \end{Desc}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_f734ac23216aafb25e63014b0b676e67}{
+\index{jenes::stage::operator::common::DeterministicCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::DeterministicCrowder$<$ T extends Chromosome $>$}!SelectionMethod@{SelectionMethod}}
+\index{SelectionMethod@{SelectionMethod}!jenes::stage::operator::common::DeterministicCrowder< T extends Chromosome >@{jenes::stage::operator::common::DeterministicCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[SelectionMethod]{\setlength{\rightskip}{0pt plus 5cm}enum jenes::stage::operator::common::DeterministicCrowder$<$ T extends Chromosome $>$::{\bf SelectionMethod}}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_f734ac23216aafb25e63014b0b676e67}
+
+
+Provides the available selection methods \hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_e58e16af4a8087c42225aa099718231d}{
+\index{jenes::stage::operator::common::DeterministicCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::DeterministicCrowder$<$ T extends Chromosome $>$}!CrossoverMethod@{CrossoverMethod}}
+\index{CrossoverMethod@{CrossoverMethod}!jenes::stage::operator::common::DeterministicCrowder< T extends Chromosome >@{jenes::stage::operator::common::DeterministicCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[CrossoverMethod]{\setlength{\rightskip}{0pt plus 5cm}enum jenes::stage::operator::common::DeterministicCrowder$<$ T extends Chromosome $>$::{\bf CrossoverMethod}}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_e58e16af4a8087c42225aa099718231d}
+
+
+Provides the available crossover methods \hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_40d00705655302bc78c3e60aca4c43b5}{
+\index{jenes::stage::operator::common::DeterministicCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::DeterministicCrowder$<$ T extends Chromosome $>$}!MutationMethod@{MutationMethod}}
+\index{MutationMethod@{MutationMethod}!jenes::stage::operator::common::DeterministicCrowder< T extends Chromosome >@{jenes::stage::operator::common::DeterministicCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[MutationMethod]{\setlength{\rightskip}{0pt plus 5cm}enum jenes::stage::operator::common::DeterministicCrowder$<$ T extends Chromosome $>$::{\bf MutationMethod}}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_40d00705655302bc78c3e60aca4c43b5}
+
+
+Provides standard mutation methods 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_d52c0d6a4bc032c8c198bf05cc3acf6f}{
+\index{jenes::stage::operator::common::DeterministicCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::DeterministicCrowder$<$ T extends Chromosome $>$}!DeterministicCrowder@{DeterministicCrowder}}
+\index{DeterministicCrowder@{DeterministicCrowder}!jenes::stage::operator::common::DeterministicCrowder< T extends Chromosome >@{jenes::stage::operator::common::DeterministicCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[DeterministicCrowder]{\setlength{\rightskip}{0pt plus 5cm}jenes.stage.operator.common.DeterministicCrowder$<$ T extends Chromosome $>$.DeterministicCrowder ()}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_d52c0d6a4bc032c8c198bf05cc3acf6f}
+
+
+Creates a DeterministicCrowder with default options. \hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_a59e2a1dcdb2cd6cc7a70e344a77dd31}{
+\index{jenes::stage::operator::common::DeterministicCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::DeterministicCrowder$<$ T extends Chromosome $>$}!DeterministicCrowder@{DeterministicCrowder}}
+\index{DeterministicCrowder@{DeterministicCrowder}!jenes::stage::operator::common::DeterministicCrowder< T extends Chromosome >@{jenes::stage::operator::common::DeterministicCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[DeterministicCrowder]{\setlength{\rightskip}{0pt plus 5cm}jenes.stage.operator.common.DeterministicCrowder$<$ T extends Chromosome $>$.DeterministicCrowder (final {\bf SelectionMethod} {\em selmethod}, \/  final {\bf CrossoverMethod} {\em crossmethod}, \/  final double {\em cp}, \/  final double {\em mp})}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_a59e2a1dcdb2cd6cc7a70e344a77dd31}
+
+
+Creates a DeterministicCrowder
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em selmethod}]selection method \item[{\em crossmethod}]crossover method \item[{\em cp}]croosover probability \item[{\em mp}]mutation probability \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_d7eed64a7fe60239ba3289ebf6003e8c}{
+\index{jenes::stage::operator::common::DeterministicCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::DeterministicCrowder$<$ T extends Chromosome $>$}!DeterministicCrowder@{DeterministicCrowder}}
+\index{DeterministicCrowder@{DeterministicCrowder}!jenes::stage::operator::common::DeterministicCrowder< T extends Chromosome >@{jenes::stage::operator::common::DeterministicCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[DeterministicCrowder]{\setlength{\rightskip}{0pt plus 5cm}jenes.stage.operator.common.DeterministicCrowder$<$ T extends Chromosome $>$.DeterministicCrowder (final Selector$<$ T $>$ {\em selector}, \/  final Crossover$<$ T $>$ {\em crossover})}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_d7eed64a7fe60239ba3289ebf6003e8c}
+
+
+Creates DeterministicCrowder providing selector and crossover operator
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em selector}]selection operator \item[{\em crossover}]crossover operator \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_6359043178a5e4d8922485528acbbcec}{
+\index{jenes::stage::operator::common::DeterministicCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::DeterministicCrowder$<$ T extends Chromosome $>$}!DeterministicCrowder@{DeterministicCrowder}}
+\index{DeterministicCrowder@{DeterministicCrowder}!jenes::stage::operator::common::DeterministicCrowder< T extends Chromosome >@{jenes::stage::operator::common::DeterministicCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[DeterministicCrowder]{\setlength{\rightskip}{0pt plus 5cm}jenes.stage.operator.common.DeterministicCrowder$<$ T extends Chromosome $>$.DeterministicCrowder (final Selector$<$ T $>$ {\em selector}, \/  final Crossover$<$ T $>$ {\em crossover}, \/  final Mutator$<$ T $>$ {\em mutator})}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_6359043178a5e4d8922485528acbbcec}
+
+
+Creates DeterministicCrowder providing selector, crossover and mutator operators
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em selector}]selection operator \item[{\em crossover}]crossover operator \item[{\em mutator}]mutation operator \end{description}
+\end{Desc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_5ca3f3abce0f3163383ed9158b154289}{
+\index{jenes::stage::operator::common::DeterministicCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::DeterministicCrowder$<$ T extends Chromosome $>$}!DEFAULT\_\-SELECTION\_\-METHOD@{DEFAULT\_\-SELECTION\_\-METHOD}}
+\index{DEFAULT\_\-SELECTION\_\-METHOD@{DEFAULT\_\-SELECTION\_\-METHOD}!jenes::stage::operator::common::DeterministicCrowder< T extends Chromosome >@{jenes::stage::operator::common::DeterministicCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[DEFAULT\_\-SELECTION\_\-METHOD]{\setlength{\rightskip}{0pt plus 5cm}final {\bf SelectionMethod} jenes.stage.operator.common.DeterministicCrowder$<$ T extends Chromosome $>$.{\bf DEFAULT\_\-SELECTION\_\-METHOD} = SelectionMethod.TOURNAMENT\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_5ca3f3abce0f3163383ed9158b154289}
+
+
+The default selection method \hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_a09cba6e344d7681789f11213d6cccd0}{
+\index{jenes::stage::operator::common::DeterministicCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::DeterministicCrowder$<$ T extends Chromosome $>$}!DEFAULT\_\-CROSSOVER\_\-METHOD@{DEFAULT\_\-CROSSOVER\_\-METHOD}}
+\index{DEFAULT\_\-CROSSOVER\_\-METHOD@{DEFAULT\_\-CROSSOVER\_\-METHOD}!jenes::stage::operator::common::DeterministicCrowder< T extends Chromosome >@{jenes::stage::operator::common::DeterministicCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[DEFAULT\_\-CROSSOVER\_\-METHOD]{\setlength{\rightskip}{0pt plus 5cm}final {\bf CrossoverMethod} jenes.stage.operator.common.DeterministicCrowder$<$ T extends Chromosome $>$.{\bf DEFAULT\_\-CROSSOVER\_\-METHOD} = CrossoverMethod.SINGLEPOINT\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_a09cba6e344d7681789f11213d6cccd0}
+
+
+The default crossover method \hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_824ea51baffd4e4b2fb045d38b964321}{
+\index{jenes::stage::operator::common::DeterministicCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::DeterministicCrowder$<$ T extends Chromosome $>$}!DEFAULT\_\-CROSSOVER\_\-PROBABILITY@{DEFAULT\_\-CROSSOVER\_\-PROBABILITY}}
+\index{DEFAULT\_\-CROSSOVER\_\-PROBABILITY@{DEFAULT\_\-CROSSOVER\_\-PROBABILITY}!jenes::stage::operator::common::DeterministicCrowder< T extends Chromosome >@{jenes::stage::operator::common::DeterministicCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[DEFAULT\_\-CROSSOVER\_\-PROBABILITY]{\setlength{\rightskip}{0pt plus 5cm}final double jenes.stage.operator.common.DeterministicCrowder$<$ T extends Chromosome $>$.{\bf DEFAULT\_\-CROSSOVER\_\-PROBABILITY} = 0.8\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_824ea51baffd4e4b2fb045d38b964321}
+
+
+The default crossover probability \hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_5a4e77ddc158a661371ea5934cce2977}{
+\index{jenes::stage::operator::common::DeterministicCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::DeterministicCrowder$<$ T extends Chromosome $>$}!DEFAULT\_\-MUTATION\_\-PROBABILITY@{DEFAULT\_\-MUTATION\_\-PROBABILITY}}
+\index{DEFAULT\_\-MUTATION\_\-PROBABILITY@{DEFAULT\_\-MUTATION\_\-PROBABILITY}!jenes::stage::operator::common::DeterministicCrowder< T extends Chromosome >@{jenes::stage::operator::common::DeterministicCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[DEFAULT\_\-MUTATION\_\-PROBABILITY]{\setlength{\rightskip}{0pt plus 5cm}final double jenes.stage.operator.common.DeterministicCrowder$<$ T extends Chromosome $>$.{\bf DEFAULT\_\-MUTATION\_\-PROBABILITY} = 0.0\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_deterministic_crowder_3_01_t_01extends_01_chromosome_01_4_5a4e77ddc158a661371ea5934cce2977}
+
+
+The default mutation probability 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/stage/operator/common/DeterministicCrowder.java\end{CompactItemize}

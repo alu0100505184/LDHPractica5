@@ -1,0 +1,359 @@
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4}{
+\section{jenes.stage.operator.common.DeJongCrowder$<$ T extends Chromosome $>$ Class Reference}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4}\index{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}}
+}
+Inherits jenes::stage::operator::Crowder$<$ T $>$.
+
+\subsection*{Public Types}
+\begin{CompactItemize}
+\item 
+enum \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_4c04a136973e222068a9b2bad6593645}{SelectionMethod} \{ \par
+\textbf{ROULETTE}, 
+\textbf{TOURNAMENT}, 
+\textbf{ROULETTE}, 
+\textbf{TOURNAMENT}, 
+\par
+\textbf{ROULETTE}, 
+\textbf{TOURNAMENT}, 
+\textbf{NONE}, 
+\textbf{ROULETTE}, 
+\par
+\textbf{TOURNAMENT}, 
+\textbf{ROULETTE}, 
+\textbf{TOURNAMENT}
+ \}
+\item 
+enum \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_cd306135cc2dd505a1a981b36f4696ea}{CrossoverMethod} \{ \par
+\textbf{SINGLEPOINT}, 
+\textbf{TWOPOINTS}, 
+\textbf{SINGLEPOINT}, 
+\textbf{TWOPOINTS}, 
+\par
+\textbf{SINGLEPOINT}, 
+\textbf{TWOPOINTS}, 
+\textbf{SINGLEPOINT}, 
+\textbf{TWOPOINTS}
+ \}
+\item 
+enum \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_8f83051fb5a66142aaec4b66fddfff5c}{MutationMethod} \{ \par
+\textbf{NONE}, 
+\textbf{SIMPLE}, 
+\textbf{NONE}, 
+\textbf{SIMPLE}, 
+\par
+\textbf{NONE}, 
+\textbf{SIMPLE}
+ \}
+\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_3a856be20539434c822eecf5fc099657}{DeJongCrowder} (final int sr, final int cf)
+\item 
+\hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_552f2f1d77a10c3ae9fb8c94924fb798}{DeJongCrowder} (final int sr, final int cf, final \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_4c04a136973e222068a9b2bad6593645}{SelectionMethod} selmethod)
+\item 
+\hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_50f143494ddff28214ac72497b0de52a}{DeJongCrowder} (final int sr, final int cf, final \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_4c04a136973e222068a9b2bad6593645}{SelectionMethod} selmethod, final \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_cd306135cc2dd505a1a981b36f4696ea}{CrossoverMethod} crossmethod)
+\item 
+\hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_31f097247f16221e2074ddc05d198349}{DeJongCrowder} (final int sr, final int cf, final \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_4c04a136973e222068a9b2bad6593645}{SelectionMethod} selmethod, final \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_cd306135cc2dd505a1a981b36f4696ea}{CrossoverMethod} crossmethod, final double crossover, final double mutation)
+\item 
+\hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_97d47f09a66cf05e1cfb7630410de686}{DeJongCrowder} (final int sr, final int cf, final Selector$<$ T $>$ \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_6486b0225d345afd81b86dd04772d5ba}{selector}, final AbstractStage$<$ T $>$...stages)
+\item 
+final int \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_f34ed99b72eedd09864a9c447179b04e}{getCrowdingFactor} ()
+\item 
+void \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_3420256f796449f9f486e6dc85c52f0d}{setCrowdingFactor} (int cf)
+\item 
+final int \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_eae8a98bdc6da2261e6071ca62c5a066}{getSelectionRate} ()
+\item 
+void \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_4d1a71c514bb8ffaeba9a13434dc3635}{setSelectionRate} (int sr)
+\item 
+final Selector$<$ T $>$ \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_c407367e2e9ecad45bab4253ca920a1a}{getSelector} ()
+\item 
+void \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_880fdcaa7ccc39a3f5512b4bd58e74ad}{setSelector} (Selector$<$ T $>$ \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_6486b0225d345afd81b86dd04772d5ba}{selector})
+\item 
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_75bf0d077c6bff093600f1f4c333d3d1}{
+void \textbf{setBiggerIsBetter} (boolean flag, boolean recursively)}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_75bf0d077c6bff093600f1f4c333d3d1}
+
+\item 
+void \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_856473a5ced464b1923545059c9f2e67}{setFitness} (Fitness fit, boolean recursively)
+\end{CompactItemize}
+\subsection*{Static Public Attributes}
+\begin{CompactItemize}
+\item 
+static final \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_4c04a136973e222068a9b2bad6593645}{SelectionMethod} \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_21277e6e0728d4e83cc353337bc5f66d}{DEFAULT\_\-SELECTION\_\-METHOD} = SelectionMethod.TOURNAMENT
+\item 
+static final \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_cd306135cc2dd505a1a981b36f4696ea}{CrossoverMethod} \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_2798047916292a1449952a7274f9f26d}{DEFAULT\_\-CROSSOVER\_\-METHOD} = CrossoverMethod.SINGLEPOINT
+\item 
+static final double \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_522c94dff2a39743f6dfddec03a2ce47}{DEFAULT\_\-CROSSOVER\_\-PROBABILITY} = 0.8
+\item 
+static final double \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_19680564524e8d194044526740001c84}{DEFAULT\_\-MUTATION\_\-PROBABILITY} = 0.02
+\item 
+static final int \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_7e7afe01b26af0cdd28d392ab7866576}{DEFAULT\_\-CROWDING\_\-FACTOR} = 2
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_98f463e26bf3fd0fd703320007302594}{
+void \textbf{preselect} (Population$<$ T $>$ in, Population$<$ T $>$ out)}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_98f463e26bf3fd0fd703320007302594}
+
+\item 
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_7d659276ad2103199080458c85acf59e}{
+void \textbf{replace} (Population$<$ T $>$ initial, Population$<$ T $>$ preselected, Population$<$ T $>$ evolved, Population$<$ T $>$ out)}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_7d659276ad2103199080458c85acf59e}
+
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+Selector$<$ T $>$ \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_6486b0225d345afd81b86dd04772d5ba}{selector} = null
+\item 
+int \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_d876594787797e723425c09d74d0a05d}{crowdingFactor}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+This class implements De Jong crowding.
+
+\begin{Desc}
+\item[Version:]2.0 \end{Desc}
+\begin{Desc}
+\item[Since:]2.0 \end{Desc}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_4c04a136973e222068a9b2bad6593645}{
+\index{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}!SelectionMethod@{SelectionMethod}}
+\index{SelectionMethod@{SelectionMethod}!jenes::stage::operator::common::DeJongCrowder< T extends Chromosome >@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[SelectionMethod]{\setlength{\rightskip}{0pt plus 5cm}enum jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$::{\bf SelectionMethod}}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_4c04a136973e222068a9b2bad6593645}
+
+
+Provides the available selection methods \hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_cd306135cc2dd505a1a981b36f4696ea}{
+\index{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}!CrossoverMethod@{CrossoverMethod}}
+\index{CrossoverMethod@{CrossoverMethod}!jenes::stage::operator::common::DeJongCrowder< T extends Chromosome >@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[CrossoverMethod]{\setlength{\rightskip}{0pt plus 5cm}enum jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$::{\bf CrossoverMethod}}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_cd306135cc2dd505a1a981b36f4696ea}
+
+
+Provides the available crossover methods \hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_8f83051fb5a66142aaec4b66fddfff5c}{
+\index{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}!MutationMethod@{MutationMethod}}
+\index{MutationMethod@{MutationMethod}!jenes::stage::operator::common::DeJongCrowder< T extends Chromosome >@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[MutationMethod]{\setlength{\rightskip}{0pt plus 5cm}enum jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$::{\bf MutationMethod}}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_8f83051fb5a66142aaec4b66fddfff5c}
+
+
+Provides standard mutation methods 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_3a856be20539434c822eecf5fc099657}{
+\index{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}!DeJongCrowder@{DeJongCrowder}}
+\index{DeJongCrowder@{DeJongCrowder}!jenes::stage::operator::common::DeJongCrowder< T extends Chromosome >@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[DeJongCrowder]{\setlength{\rightskip}{0pt plus 5cm}jenes.stage.operator.common.DeJongCrowder$<$ T extends Chromosome $>$.DeJongCrowder (final int {\em sr}, \/  final int {\em cf})}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_3a856be20539434c822eecf5fc099657}
+
+
+Creates DeJongCrowder
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em sr}]selection rate \item[{\em cf}]crowding rate \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_552f2f1d77a10c3ae9fb8c94924fb798}{
+\index{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}!DeJongCrowder@{DeJongCrowder}}
+\index{DeJongCrowder@{DeJongCrowder}!jenes::stage::operator::common::DeJongCrowder< T extends Chromosome >@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[DeJongCrowder]{\setlength{\rightskip}{0pt plus 5cm}jenes.stage.operator.common.DeJongCrowder$<$ T extends Chromosome $>$.DeJongCrowder (final int {\em sr}, \/  final int {\em cf}, \/  final {\bf SelectionMethod} {\em selmethod})}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_552f2f1d77a10c3ae9fb8c94924fb798}
+
+
+Creates DeJongCrowder
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em sr}]selection rate \item[{\em cf}]crowding rate \item[{\em selmethod}]selection method \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_50f143494ddff28214ac72497b0de52a}{
+\index{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}!DeJongCrowder@{DeJongCrowder}}
+\index{DeJongCrowder@{DeJongCrowder}!jenes::stage::operator::common::DeJongCrowder< T extends Chromosome >@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[DeJongCrowder]{\setlength{\rightskip}{0pt plus 5cm}jenes.stage.operator.common.DeJongCrowder$<$ T extends Chromosome $>$.DeJongCrowder (final int {\em sr}, \/  final int {\em cf}, \/  final {\bf SelectionMethod} {\em selmethod}, \/  final {\bf CrossoverMethod} {\em crossmethod})}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_50f143494ddff28214ac72497b0de52a}
+
+
+Creates DeJongCrowder
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em sr}]selection rate \item[{\em cf}]crowding rate \item[{\em selmethod}]selection method \item[{\em crossmethod}]crossover method \item[{\em crossover}]crossover probability \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_31f097247f16221e2074ddc05d198349}{
+\index{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}!DeJongCrowder@{DeJongCrowder}}
+\index{DeJongCrowder@{DeJongCrowder}!jenes::stage::operator::common::DeJongCrowder< T extends Chromosome >@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[DeJongCrowder]{\setlength{\rightskip}{0pt plus 5cm}jenes.stage.operator.common.DeJongCrowder$<$ T extends Chromosome $>$.DeJongCrowder (final int {\em sr}, \/  final int {\em cf}, \/  final {\bf SelectionMethod} {\em selmethod}, \/  final {\bf CrossoverMethod} {\em crossmethod}, \/  final double {\em crossover}, \/  final double {\em mutation})}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_31f097247f16221e2074ddc05d198349}
+
+
+Creates DeJongCrowder
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em sr}]selection rate \item[{\em cf}]crowding rate \item[{\em selmethod}]selection method \item[{\em crossmethod}]crossover method \item[{\em crossover}]crossover probability \item[{\em mutation}]mutation probability \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_97d47f09a66cf05e1cfb7630410de686}{
+\index{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}!DeJongCrowder@{DeJongCrowder}}
+\index{DeJongCrowder@{DeJongCrowder}!jenes::stage::operator::common::DeJongCrowder< T extends Chromosome >@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[DeJongCrowder]{\setlength{\rightskip}{0pt plus 5cm}jenes.stage.operator.common.DeJongCrowder$<$ T extends Chromosome $>$.DeJongCrowder (final int {\em sr}, \/  final int {\em cf}, \/  final Selector$<$ T $>$ {\em selector}, \/  final AbstractStage$<$ T $>$... {\em stages})}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_97d47f09a66cf05e1cfb7630410de686}
+
+
+Creates DeJongCrowder
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em sr}]selection rate \item[{\em cf}]crowding rate \item[{\em selector}]selector \item[{\em stages}]the body stages \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_f34ed99b72eedd09864a9c447179b04e}{
+\index{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}!getCrowdingFactor@{getCrowdingFactor}}
+\index{getCrowdingFactor@{getCrowdingFactor}!jenes::stage::operator::common::DeJongCrowder< T extends Chromosome >@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[getCrowdingFactor]{\setlength{\rightskip}{0pt plus 5cm}final int jenes.stage.operator.common.DeJongCrowder$<$ T extends Chromosome $>$.getCrowdingFactor ()}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_f34ed99b72eedd09864a9c447179b04e}
+
+
+Returns the crowding factor
+
+\begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_3420256f796449f9f486e6dc85c52f0d}{
+\index{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}!setCrowdingFactor@{setCrowdingFactor}}
+\index{setCrowdingFactor@{setCrowdingFactor}!jenes::stage::operator::common::DeJongCrowder< T extends Chromosome >@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[setCrowdingFactor]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.operator.common.DeJongCrowder$<$ T extends Chromosome $>$.setCrowdingFactor (int {\em cf})}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_3420256f796449f9f486e6dc85c52f0d}
+
+
+Sets the crouding factor
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em cf}]crowding factor \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_eae8a98bdc6da2261e6071ca62c5a066}{
+\index{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}!getSelectionRate@{getSelectionRate}}
+\index{getSelectionRate@{getSelectionRate}!jenes::stage::operator::common::DeJongCrowder< T extends Chromosome >@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[getSelectionRate]{\setlength{\rightskip}{0pt plus 5cm}final int jenes.stage.operator.common.DeJongCrowder$<$ T extends Chromosome $>$.getSelectionRate ()}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_eae8a98bdc6da2261e6071ca62c5a066}
+
+
+Returns the selection rate
+
+\begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_4d1a71c514bb8ffaeba9a13434dc3635}{
+\index{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}!setSelectionRate@{setSelectionRate}}
+\index{setSelectionRate@{setSelectionRate}!jenes::stage::operator::common::DeJongCrowder< T extends Chromosome >@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[setSelectionRate]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.operator.common.DeJongCrowder$<$ T extends Chromosome $>$.setSelectionRate (int {\em sr})}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_4d1a71c514bb8ffaeba9a13434dc3635}
+
+
+Sets the selection rate \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em sr}]\end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_c407367e2e9ecad45bab4253ca920a1a}{
+\index{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}!getSelector@{getSelector}}
+\index{getSelector@{getSelector}!jenes::stage::operator::common::DeJongCrowder< T extends Chromosome >@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[getSelector]{\setlength{\rightskip}{0pt plus 5cm}final Selector$<$T$>$ jenes.stage.operator.common.DeJongCrowder$<$ T extends Chromosome $>$.getSelector ()}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_c407367e2e9ecad45bab4253ca920a1a}
+
+
+Returns the selector \begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_880fdcaa7ccc39a3f5512b4bd58e74ad}{
+\index{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}!setSelector@{setSelector}}
+\index{setSelector@{setSelector}!jenes::stage::operator::common::DeJongCrowder< T extends Chromosome >@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[setSelector]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.operator.common.DeJongCrowder$<$ T extends Chromosome $>$.setSelector (Selector$<$ T $>$ {\em selector})}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_880fdcaa7ccc39a3f5512b4bd58e74ad}
+
+
+Sets the selector \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em selector}]\end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_856473a5ced464b1923545059c9f2e67}{
+\index{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}!setFitness@{setFitness}}
+\index{setFitness@{setFitness}!jenes::stage::operator::common::DeJongCrowder< T extends Chromosome >@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[setFitness]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.operator.common.DeJongCrowder$<$ T extends Chromosome $>$.setFitness (Fitness {\em fit}, \/  boolean {\em recursively})}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_856473a5ced464b1923545059c9f2e67}
+
+
+XXX \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fit}]\item[{\em recursively}]\end{description}
+\end{Desc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_21277e6e0728d4e83cc353337bc5f66d}{
+\index{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}!DEFAULT\_\-SELECTION\_\-METHOD@{DEFAULT\_\-SELECTION\_\-METHOD}}
+\index{DEFAULT\_\-SELECTION\_\-METHOD@{DEFAULT\_\-SELECTION\_\-METHOD}!jenes::stage::operator::common::DeJongCrowder< T extends Chromosome >@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[DEFAULT\_\-SELECTION\_\-METHOD]{\setlength{\rightskip}{0pt plus 5cm}final {\bf SelectionMethod} jenes.stage.operator.common.DeJongCrowder$<$ T extends Chromosome $>$.{\bf DEFAULT\_\-SELECTION\_\-METHOD} = SelectionMethod.TOURNAMENT\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_21277e6e0728d4e83cc353337bc5f66d}
+
+
+The default selection method \hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_2798047916292a1449952a7274f9f26d}{
+\index{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}!DEFAULT\_\-CROSSOVER\_\-METHOD@{DEFAULT\_\-CROSSOVER\_\-METHOD}}
+\index{DEFAULT\_\-CROSSOVER\_\-METHOD@{DEFAULT\_\-CROSSOVER\_\-METHOD}!jenes::stage::operator::common::DeJongCrowder< T extends Chromosome >@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[DEFAULT\_\-CROSSOVER\_\-METHOD]{\setlength{\rightskip}{0pt plus 5cm}final {\bf CrossoverMethod} jenes.stage.operator.common.DeJongCrowder$<$ T extends Chromosome $>$.{\bf DEFAULT\_\-CROSSOVER\_\-METHOD} = CrossoverMethod.SINGLEPOINT\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_2798047916292a1449952a7274f9f26d}
+
+
+The default crossover method \hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_522c94dff2a39743f6dfddec03a2ce47}{
+\index{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}!DEFAULT\_\-CROSSOVER\_\-PROBABILITY@{DEFAULT\_\-CROSSOVER\_\-PROBABILITY}}
+\index{DEFAULT\_\-CROSSOVER\_\-PROBABILITY@{DEFAULT\_\-CROSSOVER\_\-PROBABILITY}!jenes::stage::operator::common::DeJongCrowder< T extends Chromosome >@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[DEFAULT\_\-CROSSOVER\_\-PROBABILITY]{\setlength{\rightskip}{0pt plus 5cm}final double jenes.stage.operator.common.DeJongCrowder$<$ T extends Chromosome $>$.{\bf DEFAULT\_\-CROSSOVER\_\-PROBABILITY} = 0.8\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_522c94dff2a39743f6dfddec03a2ce47}
+
+
+The default crossover probability \hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_19680564524e8d194044526740001c84}{
+\index{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}!DEFAULT\_\-MUTATION\_\-PROBABILITY@{DEFAULT\_\-MUTATION\_\-PROBABILITY}}
+\index{DEFAULT\_\-MUTATION\_\-PROBABILITY@{DEFAULT\_\-MUTATION\_\-PROBABILITY}!jenes::stage::operator::common::DeJongCrowder< T extends Chromosome >@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[DEFAULT\_\-MUTATION\_\-PROBABILITY]{\setlength{\rightskip}{0pt plus 5cm}final double jenes.stage.operator.common.DeJongCrowder$<$ T extends Chromosome $>$.{\bf DEFAULT\_\-MUTATION\_\-PROBABILITY} = 0.02\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_19680564524e8d194044526740001c84}
+
+
+The default mutation probability \hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_7e7afe01b26af0cdd28d392ab7866576}{
+\index{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}!DEFAULT\_\-CROWDING\_\-FACTOR@{DEFAULT\_\-CROWDING\_\-FACTOR}}
+\index{DEFAULT\_\-CROWDING\_\-FACTOR@{DEFAULT\_\-CROWDING\_\-FACTOR}!jenes::stage::operator::common::DeJongCrowder< T extends Chromosome >@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[DEFAULT\_\-CROWDING\_\-FACTOR]{\setlength{\rightskip}{0pt plus 5cm}final int jenes.stage.operator.common.DeJongCrowder$<$ T extends Chromosome $>$.{\bf DEFAULT\_\-CROWDING\_\-FACTOR} = 2\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_7e7afe01b26af0cdd28d392ab7866576}
+
+
+The default crowding selectionRate \hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_6486b0225d345afd81b86dd04772d5ba}{
+\index{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}!selector@{selector}}
+\index{selector@{selector}!jenes::stage::operator::common::DeJongCrowder< T extends Chromosome >@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[selector]{\setlength{\rightskip}{0pt plus 5cm}Selector$<$T$>$ jenes.stage.operator.common.DeJongCrowder$<$ T extends Chromosome $>$.{\bf selector} = null\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_6486b0225d345afd81b86dd04772d5ba}
+
+
+The selctor used \hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_d876594787797e723425c09d74d0a05d}{
+\index{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}!crowdingFactor@{crowdingFactor}}
+\index{crowdingFactor@{crowdingFactor}!jenes::stage::operator::common::DeJongCrowder< T extends Chromosome >@{jenes::stage::operator::common::DeJongCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[crowdingFactor]{\setlength{\rightskip}{0pt plus 5cm}int jenes.stage.operator.common.DeJongCrowder$<$ T extends Chromosome $>$.{\bf crowdingFactor}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_de_jong_crowder_3_01_t_01extends_01_chromosome_01_4_d876594787797e723425c09d74d0a05d}
+
+
+The crowding factor 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/stage/operator/common/DeJongCrowder.java\end{CompactItemize}

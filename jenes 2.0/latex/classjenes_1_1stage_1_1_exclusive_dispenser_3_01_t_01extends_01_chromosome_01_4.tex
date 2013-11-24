@@ -1,0 +1,171 @@
+\hypertarget{classjenes_1_1stage_1_1_exclusive_dispenser_3_01_t_01extends_01_chromosome_01_4}{
+\section{jenes.stage.ExclusiveDispenser$<$ T extends Chromosome $>$ Class Reference}
+\label{classjenes_1_1stage_1_1_exclusive_dispenser_3_01_t_01extends_01_chromosome_01_4}\index{jenes::stage::ExclusiveDispenser$<$ T extends Chromosome $>$@{jenes::stage::ExclusiveDispenser$<$ T extends Chromosome $>$}}
+}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classjenes_1_1stage_1_1_exclusive_dispenser_3_01_t_01extends_01_chromosome_01_4_f8fba035b8567ce8d509fbc7601b4c75}{ExclusiveDispenser} (int span)
+\item 
+final void \hyperlink{classjenes_1_1stage_1_1_exclusive_dispenser_3_01_t_01extends_01_chromosome_01_4_7ecda0fa0e34e3a31ab2d06cd2b6d593}{distribute} (Population$<$ T $>$ in, Population$<$ T $>$\mbox{[}$\,$\mbox{]} branches)
+\item 
+abstract int \hyperlink{classjenes_1_1stage_1_1_exclusive_dispenser_3_01_t_01extends_01_chromosome_01_4_706558b075a61b04099decf44729c870}{distribute} (Individual$<$ T $>$ ind)
+\item 
+final void \hyperlink{classjenes_1_1stage_1_1_exclusive_dispenser_3_01_t_01extends_01_chromosome_01_4_1179e92bbe9a4942b9097d9846c01801}{mergePopulation} (Population$<$ T $>$\mbox{[}$\,$\mbox{]} branches, Population$<$ T $>$ out)
+\item 
+void \hyperlink{classjenes_1_1stage_1_1_exclusive_dispenser_3_01_t_01extends_01_chromosome_01_4_d5db6c2748cabd6055a33421f601dba4}{preDistribute} (Population$<$ T $>$ population)
+\item 
+void \hyperlink{classjenes_1_1stage_1_1_exclusive_dispenser_3_01_t_01extends_01_chromosome_01_4_70031ab873b045876e716d0e702d7846}{postDistribute} (Population$<$ T $>$\mbox{[}$\,$\mbox{]} branches)
+\item 
+void \hyperlink{classjenes_1_1stage_1_1_exclusive_dispenser_3_01_t_01extends_01_chromosome_01_4_e93239ca47669daaeea41d2f8ab6fe51}{preMerge} (Population$<$ T $>$\mbox{[}$\,$\mbox{]} branches)
+\item 
+void \hyperlink{classjenes_1_1stage_1_1_exclusive_dispenser_3_01_t_01extends_01_chromosome_01_4_67b4ecbb23bc9860e1985a2a573b8823}{postMerge} (Population$<$ T $>$ population)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+An abstract dispencer useful when each individual can be in only one parallel branch, so the distribute method is exclusive.\par
+ The only method to implement is \hyperlink{}{distribute(Individual)} to specify the branch number in which store the specified Individual.\par
+ \par
+ Note: the predistribute method of this class has empty implementation. Override it if you need to evaluate preDistrubute statistics.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em $<$T$>$}]The class chromosomes flowing across the stage.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Version:]1.2 \end{Desc}
+\begin{Desc}
+\item[Since:]1.0\end{Desc}
+\begin{Desc}
+\item[See also:]jenes.stage.Parallel \end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classjenes_1_1stage_1_1_exclusive_dispenser_3_01_t_01extends_01_chromosome_01_4_f8fba035b8567ce8d509fbc7601b4c75}{
+\index{jenes::stage::ExclusiveDispenser$<$ T extends Chromosome $>$@{jenes::stage::ExclusiveDispenser$<$ T extends Chromosome $>$}!ExclusiveDispenser@{ExclusiveDispenser}}
+\index{ExclusiveDispenser@{ExclusiveDispenser}!jenes::stage::ExclusiveDispenser< T extends Chromosome >@{jenes::stage::ExclusiveDispenser$<$ T extends Chromosome $>$}}
+\subsubsection[ExclusiveDispenser]{\setlength{\rightskip}{0pt plus 5cm}jenes.stage.ExclusiveDispenser$<$ T extends Chromosome $>$.ExclusiveDispenser (int {\em span})}}
+\label{classjenes_1_1stage_1_1_exclusive_dispenser_3_01_t_01extends_01_chromosome_01_4_f8fba035b8567ce8d509fbc7601b4c75}
+
+
+Constructs a new exclusive dispencer with the specified amplitude
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em span}]the dispencer amplitude \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classjenes_1_1stage_1_1_exclusive_dispenser_3_01_t_01extends_01_chromosome_01_4_7ecda0fa0e34e3a31ab2d06cd2b6d593}{
+\index{jenes::stage::ExclusiveDispenser$<$ T extends Chromosome $>$@{jenes::stage::ExclusiveDispenser$<$ T extends Chromosome $>$}!distribute@{distribute}}
+\index{distribute@{distribute}!jenes::stage::ExclusiveDispenser< T extends Chromosome >@{jenes::stage::ExclusiveDispenser$<$ T extends Chromosome $>$}}
+\subsubsection[distribute]{\setlength{\rightskip}{0pt plus 5cm}final void jenes.stage.ExclusiveDispenser$<$ T extends Chromosome $>$.distribute (Population$<$ T $>$ {\em in}, \/  Population$<$ T $>$\mbox{[}$\,$\mbox{]} {\em branches})}}
+\label{classjenes_1_1stage_1_1_exclusive_dispenser_3_01_t_01extends_01_chromosome_01_4_7ecda0fa0e34e3a31ab2d06cd2b6d593}
+
+
+Distributes the specified population between those ones in the specified array. If some populations within inStagePop are not empty they will contain the initial individuals too at the end of distribute operation.
+
+The branch in which each individual is dispatched is given by the \hyperlink{}{jenes.stage.ExclusiveDispenser\#distribute(Individual)} method
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em in}]the population to be distributed \item[{\em branches}]the array of sub populations of the initial one \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1_exclusive_dispenser_3_01_t_01extends_01_chromosome_01_4_706558b075a61b04099decf44729c870}{
+\index{jenes::stage::ExclusiveDispenser$<$ T extends Chromosome $>$@{jenes::stage::ExclusiveDispenser$<$ T extends Chromosome $>$}!distribute@{distribute}}
+\index{distribute@{distribute}!jenes::stage::ExclusiveDispenser< T extends Chromosome >@{jenes::stage::ExclusiveDispenser$<$ T extends Chromosome $>$}}
+\subsubsection[distribute]{\setlength{\rightskip}{0pt plus 5cm}abstract int jenes.stage.ExclusiveDispenser$<$ T extends Chromosome $>$.distribute (Individual$<$ T $>$ {\em ind})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classjenes_1_1stage_1_1_exclusive_dispenser_3_01_t_01extends_01_chromosome_01_4_706558b075a61b04099decf44729c870}
+
+
+Returns the branch number where to add the specified individual. Branches are numbered from 0 to span-1
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em ind}]the individual to distribute \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]the branch number where to add the individual \end{Desc}
+\hypertarget{classjenes_1_1stage_1_1_exclusive_dispenser_3_01_t_01extends_01_chromosome_01_4_1179e92bbe9a4942b9097d9846c01801}{
+\index{jenes::stage::ExclusiveDispenser$<$ T extends Chromosome $>$@{jenes::stage::ExclusiveDispenser$<$ T extends Chromosome $>$}!mergePopulation@{mergePopulation}}
+\index{mergePopulation@{mergePopulation}!jenes::stage::ExclusiveDispenser< T extends Chromosome >@{jenes::stage::ExclusiveDispenser$<$ T extends Chromosome $>$}}
+\subsubsection[mergePopulation]{\setlength{\rightskip}{0pt plus 5cm}final void jenes.stage.ExclusiveDispenser$<$ T extends Chromosome $>$.mergePopulation (Population$<$ T $>$\mbox{[}$\,$\mbox{]} {\em branches}, \/  Population$<$ T $>$ {\em out})}}
+\label{classjenes_1_1stage_1_1_exclusive_dispenser_3_01_t_01extends_01_chromosome_01_4_1179e92bbe9a4942b9097d9846c01801}
+
+
+Merges the populations within the specified array in the specified one. If population is not empty it will contain the initial individuals too at the end of merge operation.
+
+{\em Note:\/} if out have a different size than the input population used in the \hyperlink{}{jenes.stage.ExclusiveDispenser\#distribute(Population, Population\mbox{[}$\,$\mbox{]})} method out will be resized to fit the input population size. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em out}]the final population \item[{\em branches}]the populations to be merged \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1_exclusive_dispenser_3_01_t_01extends_01_chromosome_01_4_d5db6c2748cabd6055a33421f601dba4}{
+\index{jenes::stage::ExclusiveDispenser$<$ T extends Chromosome $>$@{jenes::stage::ExclusiveDispenser$<$ T extends Chromosome $>$}!preDistribute@{preDistribute}}
+\index{preDistribute@{preDistribute}!jenes::stage::ExclusiveDispenser< T extends Chromosome >@{jenes::stage::ExclusiveDispenser$<$ T extends Chromosome $>$}}
+\subsubsection[preDistribute]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.ExclusiveDispenser$<$ T extends Chromosome $>$.preDistribute (Population$<$ T $>$ {\em population})}}
+\label{classjenes_1_1stage_1_1_exclusive_dispenser_3_01_t_01extends_01_chromosome_01_4_d5db6c2748cabd6055a33421f601dba4}
+
+
+Callback method invoked just before distribution of individuals begins. By default this method does nothing. It an be overriden in order to perform custom operations.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em population}]the population to distribute \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1_exclusive_dispenser_3_01_t_01extends_01_chromosome_01_4_70031ab873b045876e716d0e702d7846}{
+\index{jenes::stage::ExclusiveDispenser$<$ T extends Chromosome $>$@{jenes::stage::ExclusiveDispenser$<$ T extends Chromosome $>$}!postDistribute@{postDistribute}}
+\index{postDistribute@{postDistribute}!jenes::stage::ExclusiveDispenser< T extends Chromosome >@{jenes::stage::ExclusiveDispenser$<$ T extends Chromosome $>$}}
+\subsubsection[postDistribute]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.ExclusiveDispenser$<$ T extends Chromosome $>$.postDistribute (Population$<$ T $>$\mbox{[}$\,$\mbox{]} {\em branches})}}
+\label{classjenes_1_1stage_1_1_exclusive_dispenser_3_01_t_01extends_01_chromosome_01_4_70031ab873b045876e716d0e702d7846}
+
+
+Callback method invoked just after distribution of individuals is done. By default this method does nothing. It an be overriden in order to perform custom operations.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em branches}]populations as distributed \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1_exclusive_dispenser_3_01_t_01extends_01_chromosome_01_4_e93239ca47669daaeea41d2f8ab6fe51}{
+\index{jenes::stage::ExclusiveDispenser$<$ T extends Chromosome $>$@{jenes::stage::ExclusiveDispenser$<$ T extends Chromosome $>$}!preMerge@{preMerge}}
+\index{preMerge@{preMerge}!jenes::stage::ExclusiveDispenser< T extends Chromosome >@{jenes::stage::ExclusiveDispenser$<$ T extends Chromosome $>$}}
+\subsubsection[preMerge]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.ExclusiveDispenser$<$ T extends Chromosome $>$.preMerge (Population$<$ T $>$\mbox{[}$\,$\mbox{]} {\em branches})}}
+\label{classjenes_1_1stage_1_1_exclusive_dispenser_3_01_t_01extends_01_chromosome_01_4_e93239ca47669daaeea41d2f8ab6fe51}
+
+
+Callback method invoked just before merge of branches begins. By default this method does nothing. It an be overriden in order to perform custom operations.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em branches}]populations as resulting from the different branches \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1_exclusive_dispenser_3_01_t_01extends_01_chromosome_01_4_67b4ecbb23bc9860e1985a2a573b8823}{
+\index{jenes::stage::ExclusiveDispenser$<$ T extends Chromosome $>$@{jenes::stage::ExclusiveDispenser$<$ T extends Chromosome $>$}!postMerge@{postMerge}}
+\index{postMerge@{postMerge}!jenes::stage::ExclusiveDispenser< T extends Chromosome >@{jenes::stage::ExclusiveDispenser$<$ T extends Chromosome $>$}}
+\subsubsection[postMerge]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.ExclusiveDispenser$<$ T extends Chromosome $>$.postMerge (Population$<$ T $>$ {\em population})}}
+\label{classjenes_1_1stage_1_1_exclusive_dispenser_3_01_t_01extends_01_chromosome_01_4_67b4ecbb23bc9860e1985a2a573b8823}
+
+
+Callback method invoked just after merge of individuals is done. By default this method does nothing. It an be overriden in order to perform custom operations.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em population}]the merged population \end{description}
+\end{Desc}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/stage/ExclusiveDispenser.java\end{CompactItemize}

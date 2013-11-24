@@ -1,0 +1,79 @@
+\hypertarget{classjenes_1_1tutorials_1_1problem11_1_1_image_matching_fitness}{
+\section{jenes.tutorials.problem11.ImageMatchingFitness Class Reference}
+\label{classjenes_1_1tutorials_1_1problem11_1_1_image_matching_fitness}\index{jenes::tutorials::problem11::ImageMatchingFitness@{jenes::tutorials::problem11::ImageMatchingFitness}}
+}
+Inherits jenes::population::Fitness$<$ jenes::chromosome::BitwiseChromosome $>$.
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classjenes_1_1tutorials_1_1problem11_1_1_image_matching_fitness_b2d23d7e2f9d4cbb57d5818dbcf91e05}{ImageMatchingFitness} (int targetDegree)
+\item 
+void \hyperlink{classjenes_1_1tutorials_1_1problem11_1_1_image_matching_fitness_57d1723f3fea82e96455935aefb360b9}{printGraphics} (double rotation, boolean showSignature)
+\item 
+\hypertarget{classjenes_1_1tutorials_1_1problem11_1_1_image_matching_fitness_d1678b0716a862654451a29b12964ec1}{
+void \textbf{evaluate} (Individual$<$ \hyperlink{classjenes_1_1chromosome_1_1_bitwise_chromosome}{BitwiseChromosome} $>$ individual)}
+\label{classjenes_1_1tutorials_1_1problem11_1_1_image_matching_fitness_d1678b0716a862654451a29b12964ec1}
+
+\end{CompactItemize}
+\subsection*{Static Public Attributes}
+\begin{CompactItemize}
+\item 
+static final String \hyperlink{classjenes_1_1tutorials_1_1problem11_1_1_image_matching_fitness_bcca6e100ede27ef9a90ddbc35497efd}{SOURCE\_\-IMAGE} = \char`\"{}files.Tutorial11/dog.jpg\char`\"{}
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+\hypertarget{classjenes_1_1tutorials_1_1problem11_1_1_image_matching_fitness_c56d86ab7d7c270c284ea8745b53d0b6}{
+Fitness$<$ \hyperlink{classjenes_1_1chromosome_1_1_bitwise_chromosome}{BitwiseChromosome} $>$ \textbf{duplicate} ()  throws CloneNotSupportedException }
+\label{classjenes_1_1tutorials_1_1problem11_1_1_image_matching_fitness_c56d86ab7d7c270c284ea8745b53d0b6}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+This class represent the fitness function used to match orientation of a sample image. The algorithm used is inspired to Java Image Processing Cookbook by Rafael Santos (see \href{http://www.lac.inpe.br/JIPCookbook/}{\tt Web site}) 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classjenes_1_1tutorials_1_1problem11_1_1_image_matching_fitness_b2d23d7e2f9d4cbb57d5818dbcf91e05}{
+\index{jenes::tutorials::problem11::ImageMatchingFitness@{jenes::tutorials::problem11::ImageMatchingFitness}!ImageMatchingFitness@{ImageMatchingFitness}}
+\index{ImageMatchingFitness@{ImageMatchingFitness}!jenes::tutorials::problem11::ImageMatchingFitness@{jenes::tutorials::problem11::ImageMatchingFitness}}
+\subsubsection[ImageMatchingFitness]{\setlength{\rightskip}{0pt plus 5cm}jenes.tutorials.problem11.ImageMatchingFitness.ImageMatchingFitness (int {\em targetDegree})}}
+\label{classjenes_1_1tutorials_1_1problem11_1_1_image_matching_fitness_b2d23d7e2f9d4cbb57d5818dbcf91e05}
+
+
+Default constructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classjenes_1_1tutorials_1_1problem11_1_1_image_matching_fitness_57d1723f3fea82e96455935aefb360b9}{
+\index{jenes::tutorials::problem11::ImageMatchingFitness@{jenes::tutorials::problem11::ImageMatchingFitness}!printGraphics@{printGraphics}}
+\index{printGraphics@{printGraphics}!jenes::tutorials::problem11::ImageMatchingFitness@{jenes::tutorials::problem11::ImageMatchingFitness}}
+\subsubsection[printGraphics]{\setlength{\rightskip}{0pt plus 5cm}void jenes.tutorials.problem11.ImageMatchingFitness.printGraphics (double {\em rotation}, \/  boolean {\em showSignature})}}
+\label{classjenes_1_1tutorials_1_1problem11_1_1_image_matching_fitness_57d1723f3fea82e96455935aefb360b9}
+
+
+Print a graphical representation of the results \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em rotation}]\item[{\em showSignature}]\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Exceptions:]
+\begin{description}
+\item[{\em Exception}]\end{description}
+\end{Desc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classjenes_1_1tutorials_1_1problem11_1_1_image_matching_fitness_bcca6e100ede27ef9a90ddbc35497efd}{
+\index{jenes::tutorials::problem11::ImageMatchingFitness@{jenes::tutorials::problem11::ImageMatchingFitness}!SOURCE\_\-IMAGE@{SOURCE\_\-IMAGE}}
+\index{SOURCE\_\-IMAGE@{SOURCE\_\-IMAGE}!jenes::tutorials::problem11::ImageMatchingFitness@{jenes::tutorials::problem11::ImageMatchingFitness}}
+\subsubsection[SOURCE\_\-IMAGE]{\setlength{\rightskip}{0pt plus 5cm}final String {\bf jenes.tutorials.problem11.ImageMatchingFitness.SOURCE\_\-IMAGE} = \char`\"{}files.Tutorial11/dog.jpg\char`\"{}\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classjenes_1_1tutorials_1_1problem11_1_1_image_matching_fitness_bcca6e100ede27ef9a90ddbc35497efd}
+
+
+image to load 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/tutorials/problem11/ImageMatchingFitness.java\end{CompactItemize}

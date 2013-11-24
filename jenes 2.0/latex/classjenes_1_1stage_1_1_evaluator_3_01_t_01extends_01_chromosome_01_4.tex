@@ -1,0 +1,118 @@
+\hypertarget{classjenes_1_1stage_1_1_evaluator_3_01_t_01extends_01_chromosome_01_4}{
+\section{jenes.stage.Evaluator$<$ T extends Chromosome $>$ Class Reference}
+\label{classjenes_1_1stage_1_1_evaluator_3_01_t_01extends_01_chromosome_01_4}\index{jenes::stage::Evaluator$<$ T extends Chromosome $>$@{jenes::stage::Evaluator$<$ T extends Chromosome $>$}}
+}
+Inherits jenes::stage::AbstractStage$<$ T $>$.
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classjenes_1_1stage_1_1_evaluator_3_01_t_01extends_01_chromosome_01_4_fe7302209d1e39a0267bf4320d6d298d}{Evaluator} ()
+\item 
+\hyperlink{classjenes_1_1stage_1_1_evaluator_3_01_t_01extends_01_chromosome_01_4_d156e40a9579040474e6720f14c49919}{Evaluator} (boolean \hyperlink{classjenes_1_1stage_1_1_evaluator_3_01_t_01extends_01_chromosome_01_4_8ad6c1bcd555e06450a444d2d18b6b89}{force})
+\item 
+boolean \hyperlink{classjenes_1_1stage_1_1_evaluator_3_01_t_01extends_01_chromosome_01_4_617f44ce8de8d0e4bab8506e81038e76}{isForce} ()
+\item 
+void \hyperlink{classjenes_1_1stage_1_1_evaluator_3_01_t_01extends_01_chromosome_01_4_cd9d554678a83708eeb2d373def60e71}{setForce} (boolean \hyperlink{classjenes_1_1stage_1_1_evaluator_3_01_t_01extends_01_chromosome_01_4_8ad6c1bcd555e06450a444d2d18b6b89}{force})
+\item 
+void \hyperlink{classjenes_1_1stage_1_1_evaluator_3_01_t_01extends_01_chromosome_01_4_25aee75f7acf2406ca17526f588a8f15}{process} (Population$<$ T $>$ in, Population$<$ T $>$ out)  throws StageException 
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+boolean \hyperlink{classjenes_1_1stage_1_1_evaluator_3_01_t_01extends_01_chromosome_01_4_8ad6c1bcd555e06450a444d2d18b6b89}{force}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+This stage performs a population evaluation. In general, individuals that have been alread avaluated, do not require be evaluated again. However, in order to provide full control to the user, the class has the property {\tt force} that if set, forces the evaluation of all individuals, despite the fact that the some individuals cold have been already evaluated. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em $<$T$>$}]The class chromosomes flowing across the stage.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Version:]1.3 \end{Desc}
+\begin{Desc}
+\item[Since:]1.0 \end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classjenes_1_1stage_1_1_evaluator_3_01_t_01extends_01_chromosome_01_4_fe7302209d1e39a0267bf4320d6d298d}{
+\index{jenes::stage::Evaluator$<$ T extends Chromosome $>$@{jenes::stage::Evaluator$<$ T extends Chromosome $>$}!Evaluator@{Evaluator}}
+\index{Evaluator@{Evaluator}!jenes::stage::Evaluator< T extends Chromosome >@{jenes::stage::Evaluator$<$ T extends Chromosome $>$}}
+\subsubsection[Evaluator]{\setlength{\rightskip}{0pt plus 5cm}jenes.stage.Evaluator$<$ T extends Chromosome $>$.Evaluator ()}}
+\label{classjenes_1_1stage_1_1_evaluator_3_01_t_01extends_01_chromosome_01_4_fe7302209d1e39a0267bf4320d6d298d}
+
+
+Creates a new Evaluator instance. By default $<$colde$>$force is false. \hypertarget{classjenes_1_1stage_1_1_evaluator_3_01_t_01extends_01_chromosome_01_4_d156e40a9579040474e6720f14c49919}{
+\index{jenes::stage::Evaluator$<$ T extends Chromosome $>$@{jenes::stage::Evaluator$<$ T extends Chromosome $>$}!Evaluator@{Evaluator}}
+\index{Evaluator@{Evaluator}!jenes::stage::Evaluator< T extends Chromosome >@{jenes::stage::Evaluator$<$ T extends Chromosome $>$}}
+\subsubsection[Evaluator]{\setlength{\rightskip}{0pt plus 5cm}jenes.stage.Evaluator$<$ T extends Chromosome $>$.Evaluator (boolean {\em force})}}
+\label{classjenes_1_1stage_1_1_evaluator_3_01_t_01extends_01_chromosome_01_4_d156e40a9579040474e6720f14c49919}
+
+
+Creates a new Evaluator instance, specifying the value of $<$colde$>$force.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em force}]- if true, all individuals are forced to be evaluated in any case. \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classjenes_1_1stage_1_1_evaluator_3_01_t_01extends_01_chromosome_01_4_617f44ce8de8d0e4bab8506e81038e76}{
+\index{jenes::stage::Evaluator$<$ T extends Chromosome $>$@{jenes::stage::Evaluator$<$ T extends Chromosome $>$}!isForce@{isForce}}
+\index{isForce@{isForce}!jenes::stage::Evaluator< T extends Chromosome >@{jenes::stage::Evaluator$<$ T extends Chromosome $>$}}
+\subsubsection[isForce]{\setlength{\rightskip}{0pt plus 5cm}boolean jenes.stage.Evaluator$<$ T extends Chromosome $>$.isForce ()}}
+\label{classjenes_1_1stage_1_1_evaluator_3_01_t_01extends_01_chromosome_01_4_617f44ce8de8d0e4bab8506e81038e76}
+
+
+Returns the current value of {\tt force}. By default this value is false. \begin{Desc}
+\item[Returns:]the value of {\tt force}. \end{Desc}
+\hypertarget{classjenes_1_1stage_1_1_evaluator_3_01_t_01extends_01_chromosome_01_4_cd9d554678a83708eeb2d373def60e71}{
+\index{jenes::stage::Evaluator$<$ T extends Chromosome $>$@{jenes::stage::Evaluator$<$ T extends Chromosome $>$}!setForce@{setForce}}
+\index{setForce@{setForce}!jenes::stage::Evaluator< T extends Chromosome >@{jenes::stage::Evaluator$<$ T extends Chromosome $>$}}
+\subsubsection[setForce]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.Evaluator$<$ T extends Chromosome $>$.setForce (boolean {\em force})}}
+\label{classjenes_1_1stage_1_1_evaluator_3_01_t_01extends_01_chromosome_01_4_cd9d554678a83708eeb2d373def60e71}
+
+
+Sets the value of {\tt force}. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em force}]- if true, all individuals are forced to be evaluated in any case. \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1_evaluator_3_01_t_01extends_01_chromosome_01_4_25aee75f7acf2406ca17526f588a8f15}{
+\index{jenes::stage::Evaluator$<$ T extends Chromosome $>$@{jenes::stage::Evaluator$<$ T extends Chromosome $>$}!process@{process}}
+\index{process@{process}!jenes::stage::Evaluator< T extends Chromosome >@{jenes::stage::Evaluator$<$ T extends Chromosome $>$}}
+\subsubsection[process]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.Evaluator$<$ T extends Chromosome $>$.process (Population$<$ T $>$ {\em in}, \/  Population$<$ T $>$ {\em out})  throws {\bf StageException} }}
+\label{classjenes_1_1stage_1_1_evaluator_3_01_t_01extends_01_chromosome_01_4_25aee75f7acf2406ca17526f588a8f15}
+
+
+Performs an evaluation of input population. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em in}]- the input population. \item[{\em out}]- equals the input population \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Exceptions:]
+\begin{description}
+\item[{\em \hyperlink{classjenes_1_1stage_1_1_stage_exception}{StageException}}]\end{description}
+\end{Desc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classjenes_1_1stage_1_1_evaluator_3_01_t_01extends_01_chromosome_01_4_8ad6c1bcd555e06450a444d2d18b6b89}{
+\index{jenes::stage::Evaluator$<$ T extends Chromosome $>$@{jenes::stage::Evaluator$<$ T extends Chromosome $>$}!force@{force}}
+\index{force@{force}!jenes::stage::Evaluator< T extends Chromosome >@{jenes::stage::Evaluator$<$ T extends Chromosome $>$}}
+\subsubsection[force]{\setlength{\rightskip}{0pt plus 5cm}boolean jenes.stage.Evaluator$<$ T extends Chromosome $>$.{\bf force}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classjenes_1_1stage_1_1_evaluator_3_01_t_01extends_01_chromosome_01_4_8ad6c1bcd555e06450a444d2d18b6b89}
+
+
+The property controlling if evaluation should be extened also to individuals already evaluated. 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/stage/Evaluator.java\end{CompactItemize}

@@ -1,0 +1,73 @@
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_1_1_statistics}{
+\section{jenes.stage.operator.Selector$<$ T extends Chromosome $>$.Statistics Class Reference}
+\label{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_1_1_statistics}\index{jenes::stage::operator::Selector$<$ T extends Chromosome $>$::Statistics@{jenes::stage::operator::Selector$<$ T extends Chromosome $>$::Statistics}}
+}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+long \hyperlink{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_0145f6cec84ff007289d206f579a117a}{getSelections} ()
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_b1db0e72568009d65141927f039ffe84}{
+void \textbf{fill} (Operator$<$ T $>$.Statistics stats)}
+\label{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_b1db0e72568009d65141927f039ffe84}
+
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+long \hyperlink{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_8308f3f0177bfe79fcbf46bd4ac93cc4}{selections}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+A statistics object holding the number of selection performed and the time spent to execute them. The statistics is available by two methods: \hyperlink{}{Selector\#getStatistics()} to have a new statistics setted according to the crossover state or \hyperlink{}{Selector\#updateStatistics(jenes.stage.operator.Operator.Statistics)} to modify an existing statistics according to the selector state. 
+
+Esamples of use are showed below. 
+
+$<$blockquote$>$\small\begin{alltt}
+ Selector.Statistics stat = a\_selector.getStatistics();
+ \end{alltt}
+\normalsize 
+$<$/blockquote$>$ 
+
+returns a new statistics object setted according to the specified selector state. 
+
+$<$blockquote$>$\small\begin{alltt}
+ Selector.Statistics stat = new Selector.Statistics();
+ a\_selector.updateStatistics(stat);
+ \end{alltt}
+\normalsize 
+$<$/blockquote$>$ 
+
+modifies the existing statistics according to the specified selector state. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_0145f6cec84ff007289d206f579a117a}{
+\index{jenes::stage::operator::Selector$<$ T extends Chromosome $>$::Statistics@{jenes::stage::operator::Selector$<$ T extends Chromosome $>$::Statistics}!getSelections@{getSelections}}
+\index{getSelections@{getSelections}!jenes::stage::operator::Selector< T extends Chromosome >::Statistics@{jenes::stage::operator::Selector$<$ T extends Chromosome $>$::Statistics}}
+\subsubsection[getSelections]{\setlength{\rightskip}{0pt plus 5cm}long jenes.stage.operator.Selector$<$ T extends Chromosome $>$.Statistics.getSelections ()}}
+\label{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_0145f6cec84ff007289d206f579a117a}
+
+
+Returns the number of selectionRate performed.
+
+\begin{Desc}
+\item[Returns:]the number of selectionRate performed. \end{Desc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_8308f3f0177bfe79fcbf46bd4ac93cc4}{
+\index{jenes::stage::operator::Selector$<$ T extends Chromosome $>$::Statistics@{jenes::stage::operator::Selector$<$ T extends Chromosome $>$::Statistics}!selections@{selections}}
+\index{selections@{selections}!jenes::stage::operator::Selector< T extends Chromosome >::Statistics@{jenes::stage::operator::Selector$<$ T extends Chromosome $>$::Statistics}}
+\subsubsection[selections]{\setlength{\rightskip}{0pt plus 5cm}long jenes.stage.operator.Selector$<$ T extends Chromosome $>$.Statistics.selections\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_8308f3f0177bfe79fcbf46bd4ac93cc4}
+
+
+Number of selectionRate performed. 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/stage/operator/Selector.java\end{CompactItemize}

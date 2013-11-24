@@ -1,0 +1,40 @@
+\hypertarget{classjenes_1_1tutorials_1_1old_1_1problem2_1_1_simple_dispenser_3_01_t_01extends_01_chromosome_01_4}{
+\section{jenes.tutorials.old.problem2.SimpleDispenser$<$ T extends Chromosome $>$ Class Reference}
+\label{classjenes_1_1tutorials_1_1old_1_1problem2_1_1_simple_dispenser_3_01_t_01extends_01_chromosome_01_4}\index{jenes::tutorials::old::problem2::SimpleDispenser$<$ T extends Chromosome $>$@{jenes::tutorials::old::problem2::SimpleDispenser$<$ T extends Chromosome $>$}}
+}
+Inherits jenes::stage::ExclusiveDispenser$<$ T $>$.
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hypertarget{classjenes_1_1tutorials_1_1old_1_1problem2_1_1_simple_dispenser_3_01_t_01extends_01_chromosome_01_4_d9405ac409bd21e83c50f78472835da7}{
+\textbf{SimpleDispenser} (int span)}
+\label{classjenes_1_1tutorials_1_1old_1_1problem2_1_1_simple_dispenser_3_01_t_01extends_01_chromosome_01_4_d9405ac409bd21e83c50f78472835da7}
+
+\item 
+\hypertarget{classjenes_1_1tutorials_1_1old_1_1problem2_1_1_simple_dispenser_3_01_t_01extends_01_chromosome_01_4_428636fd68143e1c24ea22bf626c290b}{
+void \textbf{preDistribute} (Population$<$ T $>$ population)}
+\label{classjenes_1_1tutorials_1_1old_1_1problem2_1_1_simple_dispenser_3_01_t_01extends_01_chromosome_01_4_428636fd68143e1c24ea22bf626c290b}
+
+\item 
+\hypertarget{classjenes_1_1tutorials_1_1old_1_1problem2_1_1_simple_dispenser_3_01_t_01extends_01_chromosome_01_4_593230e918223c099f243524d3496783}{
+int \textbf{distribute} (Individual$<$ T $>$ ind)}
+\label{classjenes_1_1tutorials_1_1old_1_1problem2_1_1_simple_dispenser_3_01_t_01extends_01_chromosome_01_4_593230e918223c099f243524d3496783}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Tutorial showing how to extend {\tt GeneticAlgorithm} and how to use the flexible and configurable breeding structure in Jenes. The problem consists in searching a pattern of integers with a given precision. Solutions flow through two different crossovers in parallel. Some are processed by a single point crossover, the other by a double point crossover. After solutions are mutated.
+
+This class implements the strategy for dispensing solutions in the two branches. Odd solutions goes to the first, even to the second.
+
+\begin{Desc}
+\item[Version:]1.0\end{Desc}
+\begin{Desc}
+\item[Since:]1.0 \end{Desc}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/tutorials/old/problem2/SimpleDispenser.java\end{CompactItemize}

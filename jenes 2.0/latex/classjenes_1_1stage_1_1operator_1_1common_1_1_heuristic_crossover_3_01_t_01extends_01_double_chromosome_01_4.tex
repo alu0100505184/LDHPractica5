@@ -1,0 +1,134 @@
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_heuristic_crossover_3_01_t_01extends_01_double_chromosome_01_4}{
+\section{jenes.stage.operator.common.HeuristicCrossover$<$ T extends DoubleChromosome $>$ Class Reference}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_heuristic_crossover_3_01_t_01extends_01_double_chromosome_01_4}\index{jenes::stage::operator::common::HeuristicCrossover$<$ T extends DoubleChromosome $>$@{jenes::stage::operator::common::HeuristicCrossover$<$ T extends DoubleChromosome $>$}}
+}
+Inherits jenes::stage::operator::Crossover$<$ T $>$.
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_heuristic_crossover_3_01_t_01extends_01_double_chromosome_01_4_b1d3d3ec4281a97824e9859fddfba792}{HeuristicCrossover} (double p)
+\item 
+\hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_heuristic_crossover_3_01_t_01extends_01_double_chromosome_01_4_45df3b701ffb650f013d3b65753f4ffa}{HeuristicCrossover} (double p, double r)
+\item 
+final double \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_heuristic_crossover_3_01_t_01extends_01_double_chromosome_01_4_cab7758424b5132b15579fff5da094d5}{getRatio} ()
+\item 
+void \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_heuristic_crossover_3_01_t_01extends_01_double_chromosome_01_4_dec77409f57afee4170cacb806e7254c}{setRatio} (double r)
+\item 
+final boolean \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_heuristic_crossover_3_01_t_01extends_01_double_chromosome_01_4_b965521456ce0233197659c9eb7f0e16}{isRandom} ()
+\item 
+final void \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_heuristic_crossover_3_01_t_01extends_01_double_chromosome_01_4_d3c86ba10d567679be7750185c955ef2}{setRandom} ()
+\item 
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_heuristic_crossover_3_01_t_01extends_01_double_chromosome_01_4_a2443a20ee35492f91c021f0b369354d}{
+int \textbf{spread} ()}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_heuristic_crossover_3_01_t_01extends_01_double_chromosome_01_4_a2443a20ee35492f91c021f0b369354d}
+
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_heuristic_crossover_3_01_t_01extends_01_double_chromosome_01_4_eb3cbe441f2588644e5129d7501c90ed}{
+void \textbf{cross} (Individual$<$ T $>$\mbox{[}$\,$\mbox{]} offsprings)}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_heuristic_crossover_3_01_t_01extends_01_double_chromosome_01_4_eb3cbe441f2588644e5129d7501c90ed}
+
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+double \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_heuristic_crossover_3_01_t_01extends_01_double_chromosome_01_4_9cae7cf20e3154743a4dbe53054f513b}{ratio}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+A HeuristicCrossover performs a ordered convex combination of DoubleChromosome by a coefficient {\tt code}.
+
+\begin{Desc}
+\item[Version:]2.0 \end{Desc}
+\begin{Desc}
+\item[Since:]2.0 \end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_heuristic_crossover_3_01_t_01extends_01_double_chromosome_01_4_b1d3d3ec4281a97824e9859fddfba792}{
+\index{jenes::stage::operator::common::HeuristicCrossover$<$ T extends DoubleChromosome $>$@{jenes::stage::operator::common::HeuristicCrossover$<$ T extends DoubleChromosome $>$}!HeuristicCrossover@{HeuristicCrossover}}
+\index{HeuristicCrossover@{HeuristicCrossover}!jenes::stage::operator::common::HeuristicCrossover< T extends DoubleChromosome >@{jenes::stage::operator::common::HeuristicCrossover$<$ T extends DoubleChromosome $>$}}
+\subsubsection[HeuristicCrossover]{\setlength{\rightskip}{0pt plus 5cm}jenes.stage.operator.common.HeuristicCrossover$<$ T extends {\bf DoubleChromosome} $>$.HeuristicCrossover (double {\em p})}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_heuristic_crossover_3_01_t_01extends_01_double_chromosome_01_4_b1d3d3ec4281a97824e9859fddfba792}
+
+
+Creates HeuristicCrossover
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em p}]crossover probability \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_heuristic_crossover_3_01_t_01extends_01_double_chromosome_01_4_45df3b701ffb650f013d3b65753f4ffa}{
+\index{jenes::stage::operator::common::HeuristicCrossover$<$ T extends DoubleChromosome $>$@{jenes::stage::operator::common::HeuristicCrossover$<$ T extends DoubleChromosome $>$}!HeuristicCrossover@{HeuristicCrossover}}
+\index{HeuristicCrossover@{HeuristicCrossover}!jenes::stage::operator::common::HeuristicCrossover< T extends DoubleChromosome >@{jenes::stage::operator::common::HeuristicCrossover$<$ T extends DoubleChromosome $>$}}
+\subsubsection[HeuristicCrossover]{\setlength{\rightskip}{0pt plus 5cm}jenes.stage.operator.common.HeuristicCrossover$<$ T extends {\bf DoubleChromosome} $>$.HeuristicCrossover (double {\em p}, \/  double {\em r})}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_heuristic_crossover_3_01_t_01extends_01_double_chromosome_01_4_45df3b701ffb650f013d3b65753f4ffa}
+
+
+Creates HeuristicCrossover
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em p}]crossover probability \item[{\em r}]ratio \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_heuristic_crossover_3_01_t_01extends_01_double_chromosome_01_4_cab7758424b5132b15579fff5da094d5}{
+\index{jenes::stage::operator::common::HeuristicCrossover$<$ T extends DoubleChromosome $>$@{jenes::stage::operator::common::HeuristicCrossover$<$ T extends DoubleChromosome $>$}!getRatio@{getRatio}}
+\index{getRatio@{getRatio}!jenes::stage::operator::common::HeuristicCrossover< T extends DoubleChromosome >@{jenes::stage::operator::common::HeuristicCrossover$<$ T extends DoubleChromosome $>$}}
+\subsubsection[getRatio]{\setlength{\rightskip}{0pt plus 5cm}final double jenes.stage.operator.common.HeuristicCrossover$<$ T extends {\bf DoubleChromosome} $>$.getRatio ()}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_heuristic_crossover_3_01_t_01extends_01_double_chromosome_01_4_cab7758424b5132b15579fff5da094d5}
+
+
+Returns ratio \begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_heuristic_crossover_3_01_t_01extends_01_double_chromosome_01_4_dec77409f57afee4170cacb806e7254c}{
+\index{jenes::stage::operator::common::HeuristicCrossover$<$ T extends DoubleChromosome $>$@{jenes::stage::operator::common::HeuristicCrossover$<$ T extends DoubleChromosome $>$}!setRatio@{setRatio}}
+\index{setRatio@{setRatio}!jenes::stage::operator::common::HeuristicCrossover< T extends DoubleChromosome >@{jenes::stage::operator::common::HeuristicCrossover$<$ T extends DoubleChromosome $>$}}
+\subsubsection[setRatio]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.operator.common.HeuristicCrossover$<$ T extends {\bf DoubleChromosome} $>$.setRatio (double {\em r})}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_heuristic_crossover_3_01_t_01extends_01_double_chromosome_01_4_dec77409f57afee4170cacb806e7254c}
+
+
+Sets the ratio \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em r}]a value between 0 and 1; if r = NaN, the ratio is set randomly at each iteration \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_heuristic_crossover_3_01_t_01extends_01_double_chromosome_01_4_b965521456ce0233197659c9eb7f0e16}{
+\index{jenes::stage::operator::common::HeuristicCrossover$<$ T extends DoubleChromosome $>$@{jenes::stage::operator::common::HeuristicCrossover$<$ T extends DoubleChromosome $>$}!isRandom@{isRandom}}
+\index{isRandom@{isRandom}!jenes::stage::operator::common::HeuristicCrossover< T extends DoubleChromosome >@{jenes::stage::operator::common::HeuristicCrossover$<$ T extends DoubleChromosome $>$}}
+\subsubsection[isRandom]{\setlength{\rightskip}{0pt plus 5cm}final boolean jenes.stage.operator.common.HeuristicCrossover$<$ T extends {\bf DoubleChromosome} $>$.isRandom ()}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_heuristic_crossover_3_01_t_01extends_01_double_chromosome_01_4_b965521456ce0233197659c9eb7f0e16}
+
+
+Says if the ratio is random \begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_heuristic_crossover_3_01_t_01extends_01_double_chromosome_01_4_d3c86ba10d567679be7750185c955ef2}{
+\index{jenes::stage::operator::common::HeuristicCrossover$<$ T extends DoubleChromosome $>$@{jenes::stage::operator::common::HeuristicCrossover$<$ T extends DoubleChromosome $>$}!setRandom@{setRandom}}
+\index{setRandom@{setRandom}!jenes::stage::operator::common::HeuristicCrossover< T extends DoubleChromosome >@{jenes::stage::operator::common::HeuristicCrossover$<$ T extends DoubleChromosome $>$}}
+\subsubsection[setRandom]{\setlength{\rightskip}{0pt plus 5cm}final void jenes.stage.operator.common.HeuristicCrossover$<$ T extends {\bf DoubleChromosome} $>$.setRandom ()}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_heuristic_crossover_3_01_t_01extends_01_double_chromosome_01_4_d3c86ba10d567679be7750185c955ef2}
+
+
+Sets the ratio random 
+
+\subsection{Member Data Documentation}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_heuristic_crossover_3_01_t_01extends_01_double_chromosome_01_4_9cae7cf20e3154743a4dbe53054f513b}{
+\index{jenes::stage::operator::common::HeuristicCrossover$<$ T extends DoubleChromosome $>$@{jenes::stage::operator::common::HeuristicCrossover$<$ T extends DoubleChromosome $>$}!ratio@{ratio}}
+\index{ratio@{ratio}!jenes::stage::operator::common::HeuristicCrossover< T extends DoubleChromosome >@{jenes::stage::operator::common::HeuristicCrossover$<$ T extends DoubleChromosome $>$}}
+\subsubsection[ratio]{\setlength{\rightskip}{0pt plus 5cm}double jenes.stage.operator.common.HeuristicCrossover$<$ T extends {\bf DoubleChromosome} $>$.{\bf ratio}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_heuristic_crossover_3_01_t_01extends_01_double_chromosome_01_4_9cae7cf20e3154743a4dbe53054f513b}
+
+
+Ratio of convex combination 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/stage/operator/common/HeuristicCrossover.java\end{CompactItemize}

@@ -1,0 +1,246 @@
+\hypertarget{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4}{
+\section{jenes.chromosome.Chromosome$<$ T extends Chromosome $>$ Interface Reference}
+\label{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4}\index{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$@{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$}}
+}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+void \hyperlink{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_d3a9fc2dbf63e0fb2b486a08ace2a6e8}{swap} (int pos1, int pos2)
+\item 
+void \hyperlink{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_1afc86af7df16d75b9fceaac91b57216}{randomize} (int pos)
+\item 
+void \hyperlink{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_b04d66867a48c5ac9eafe26e0473d326}{leftShift} (int from, int to)
+\item 
+void \hyperlink{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_26ee95b79d8c4012acffd9d26ab1b620}{rightShift} (int from, int to)
+\item 
+void \hyperlink{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_7da893369a724b9bdde694ffd07e05ef}{setDefaultValueAt} (int pos)
+\item 
+T \hyperlink{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_853c4aaab715bdcc4f89ed84dfbe1f00}{clone} ()
+\item 
+int \hyperlink{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_29f012dd3205c9bdb3fe3b749aa7c927}{length} ()
+\item 
+void \hyperlink{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_b54ea692387c9a052c6e47191f02f600}{randomize} ()
+\item 
+void \hyperlink{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_07cb1cba99dd05811c5f5530ffc0642e}{setAs} (T chromosome)
+\item 
+void \hyperlink{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_3865a9034e0582dc11b6dc6cbd9b21da}{cross} (T chromosome, int from, int to)
+\item 
+void \hyperlink{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_56f3d45ef9dced649f9050d736e6e753}{cross} (T chromosome, int from)
+\item 
+boolean \hyperlink{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_fa9dc889ff75457240750c802a5024db}{equals} (T chromosome)
+\item 
+void \hyperlink{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_7f4ba26864bc54607635b608be6a1e1d}{difference} (T chromosome, double\mbox{[}$\,$\mbox{]} diff)
+\item 
+Object\mbox{[}$\,$\mbox{]} \hyperlink{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_af3edb9b3b7265edf5e754ca2b41603e}{toArray} ()
+\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class \textbf{Util}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+The interface Chromosome is provided by all chromosomes, specifying genoma operations used by genetic operators during the algorithm evolution. Concretizations of the Chromosome class are required to actually implement an algorithm. There are some concrete chromosome types based on boolean, double, integer and object values. All of these are fixed length chromosomes, as the number of genes dosen't change during the algorithm iterations. 
+
+If necessary, a variable length chromosome can be implemented by subclassing this abstract class and specifying the abstract methods.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em $<$T$>$}]The type of Chromosomes accepted as input and returned by operations.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Version:]2.0 \end{Desc}
+\begin{Desc}
+\item[Since:]1.0 \end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_d3a9fc2dbf63e0fb2b486a08ace2a6e8}{
+\index{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$@{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$}!swap@{swap}}
+\index{swap@{swap}!jenes::chromosome::Chromosome< T extends Chromosome >@{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$}}
+\subsubsection[swap]{\setlength{\rightskip}{0pt plus 5cm}void jenes.chromosome.Chromosome$<$ T extends Chromosome $>$.swap (int {\em pos1}, \/  int {\em pos2})}}
+\label{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_d3a9fc2dbf63e0fb2b486a08ace2a6e8}
+
+
+Exchanges two genes at the specified positions 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em pos1}]the position of first gene \item[{\em pos2}]the position of second gene \end{description}
+\end{Desc}
+\hypertarget{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_1afc86af7df16d75b9fceaac91b57216}{
+\index{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$@{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$}!randomize@{randomize}}
+\index{randomize@{randomize}!jenes::chromosome::Chromosome< T extends Chromosome >@{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$}}
+\subsubsection[randomize]{\setlength{\rightskip}{0pt plus 5cm}void jenes.chromosome.Chromosome$<$ T extends Chromosome $>$.randomize (int {\em pos})}}
+\label{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_1afc86af7df16d75b9fceaac91b57216}
+
+
+Sets a random value in the specified position 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em pos}]a position where to set the random value \end{description}
+\end{Desc}
+\hypertarget{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_b04d66867a48c5ac9eafe26e0473d326}{
+\index{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$@{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$}!leftShift@{leftShift}}
+\index{leftShift@{leftShift}!jenes::chromosome::Chromosome< T extends Chromosome >@{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$}}
+\subsubsection[leftShift]{\setlength{\rightskip}{0pt plus 5cm}void jenes.chromosome.Chromosome$<$ T extends Chromosome $>$.leftShift (int {\em from}, \/  int {\em to})}}
+\label{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_b04d66867a48c5ac9eafe26e0473d326}
+
+
+Makes a left-shift of the genes between two positions. The shift is circular, so the most left-side gene becomes the last gene on right. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em from}]the start position to be shifted \item[{\em to}]the final position to be shifted \end{description}
+\end{Desc}
+\hypertarget{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_26ee95b79d8c4012acffd9d26ab1b620}{
+\index{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$@{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$}!rightShift@{rightShift}}
+\index{rightShift@{rightShift}!jenes::chromosome::Chromosome< T extends Chromosome >@{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$}}
+\subsubsection[rightShift]{\setlength{\rightskip}{0pt plus 5cm}void jenes.chromosome.Chromosome$<$ T extends Chromosome $>$.rightShift (int {\em from}, \/  int {\em to})}}
+\label{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_26ee95b79d8c4012acffd9d26ab1b620}
+
+
+Makes a right-shift of the genes between two positions. The shift is circular, so the most right-side gene becomes the first gene on left. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em from}]the start position to be shifted \item[{\em to}]the final position to be shifted \end{description}
+\end{Desc}
+\hypertarget{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_7da893369a724b9bdde694ffd07e05ef}{
+\index{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$@{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$}!setDefaultValueAt@{setDefaultValueAt}}
+\index{setDefaultValueAt@{setDefaultValueAt}!jenes::chromosome::Chromosome< T extends Chromosome >@{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$}}
+\subsubsection[setDefaultValueAt]{\setlength{\rightskip}{0pt plus 5cm}void jenes.chromosome.Chromosome$<$ T extends Chromosome $>$.setDefaultValueAt (int {\em pos})}}
+\label{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_7da893369a724b9bdde694ffd07e05ef}
+
+
+Sets the default value at a given position 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em pos}]the position where to set the default value \end{description}
+\end{Desc}
+\hypertarget{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_853c4aaab715bdcc4f89ed84dfbe1f00}{
+\index{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$@{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$}!clone@{clone}}
+\index{clone@{clone}!jenes::chromosome::Chromosome< T extends Chromosome >@{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$}}
+\subsubsection[clone]{\setlength{\rightskip}{0pt plus 5cm}T jenes.chromosome.Chromosome$<$ T extends Chromosome $>$.clone ()}}
+\label{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_853c4aaab715bdcc4f89ed84dfbe1f00}
+
+
+Performs a chromosome deep-cloning. 
+
+\begin{Desc}
+\item[Returns:]a chromosome clone. \end{Desc}
+\hypertarget{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_29f012dd3205c9bdb3fe3b749aa7c927}{
+\index{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$@{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$}!length@{length}}
+\index{length@{length}!jenes::chromosome::Chromosome< T extends Chromosome >@{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$}}
+\subsubsection[length]{\setlength{\rightskip}{0pt plus 5cm}int jenes.chromosome.Chromosome$<$ T extends Chromosome $>$.length ()}}
+\label{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_29f012dd3205c9bdb3fe3b749aa7c927}
+
+
+Returns the number of genes contained in the chromosome. 
+
+\begin{Desc}
+\item[Returns:]the length of chromosome. \end{Desc}
+\hypertarget{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_b54ea692387c9a052c6e47191f02f600}{
+\index{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$@{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$}!randomize@{randomize}}
+\index{randomize@{randomize}!jenes::chromosome::Chromosome< T extends Chromosome >@{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$}}
+\subsubsection[randomize]{\setlength{\rightskip}{0pt plus 5cm}void jenes.chromosome.Chromosome$<$ T extends Chromosome $>$.randomize ()}}
+\label{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_b54ea692387c9a052c6e47191f02f600}
+
+
+Fills the chromosome with random value. \hypertarget{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_07cb1cba99dd05811c5f5530ffc0642e}{
+\index{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$@{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$}!setAs@{setAs}}
+\index{setAs@{setAs}!jenes::chromosome::Chromosome< T extends Chromosome >@{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$}}
+\subsubsection[setAs]{\setlength{\rightskip}{0pt plus 5cm}void jenes.chromosome.Chromosome$<$ T extends Chromosome $>$.setAs (T {\em chromosome})}}
+\label{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_07cb1cba99dd05811c5f5530ffc0642e}
+
+
+Makes the chromosome a copy of another chromosome. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em chromosome}]the chromosome to be copied \end{description}
+\end{Desc}
+\hypertarget{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_3865a9034e0582dc11b6dc6cbd9b21da}{
+\index{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$@{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$}!cross@{cross}}
+\index{cross@{cross}!jenes::chromosome::Chromosome< T extends Chromosome >@{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$}}
+\subsubsection[cross]{\setlength{\rightskip}{0pt plus 5cm}void jenes.chromosome.Chromosome$<$ T extends Chromosome $>$.cross (T {\em chromosome}, \/  int {\em from}, \/  int {\em to})}}
+\label{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_3865a9034e0582dc11b6dc6cbd9b21da}
+
+
+Exchanges the genes chromosome within the range \mbox{[}from,to\mbox{]} 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em chromosome}]the chromosome to cross with \item[{\em from}]the start position of the genes to exchange \item[{\em to}]the final position of the genes to exchange \end{description}
+\end{Desc}
+\hypertarget{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_56f3d45ef9dced649f9050d736e6e753}{
+\index{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$@{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$}!cross@{cross}}
+\index{cross@{cross}!jenes::chromosome::Chromosome< T extends Chromosome >@{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$}}
+\subsubsection[cross]{\setlength{\rightskip}{0pt plus 5cm}void jenes.chromosome.Chromosome$<$ T extends Chromosome $>$.cross (T {\em chromosome}, \/  int {\em from})}}
+\label{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_56f3d45ef9dced649f9050d736e6e753}
+
+
+Exchanges the genes chromosome starting from a given position 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em chromosome}]the chromosome to cross with \item[{\em from}]the start position of the genes to exchange \end{description}
+\end{Desc}
+\hypertarget{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_fa9dc889ff75457240750c802a5024db}{
+\index{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$@{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$}!equals@{equals}}
+\index{equals@{equals}!jenes::chromosome::Chromosome< T extends Chromosome >@{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$}}
+\subsubsection[equals]{\setlength{\rightskip}{0pt plus 5cm}boolean jenes.chromosome.Chromosome$<$ T extends Chromosome $>$.equals (T {\em chromosome})}}
+\label{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_fa9dc889ff75457240750c802a5024db}
+
+
+Compares the chromosome with another.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em chromosome}]the cromosome to compare to. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true if the two chromosome are equal, false otherwise. \end{Desc}
+\hypertarget{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_7f4ba26864bc54607635b608be6a1e1d}{
+\index{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$@{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$}!difference@{difference}}
+\index{difference@{difference}!jenes::chromosome::Chromosome< T extends Chromosome >@{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$}}
+\subsubsection[difference]{\setlength{\rightskip}{0pt plus 5cm}void jenes.chromosome.Chromosome$<$ T extends Chromosome $>$.difference (T {\em chromosome}, \/  double\mbox{[}$\,$\mbox{]} {\em diff})}}
+\label{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_7f4ba26864bc54607635b608be6a1e1d}
+
+
+Computes the genetic difference between two chromosomes. NOTICE: This should not be invoked directly. Please, use getDifference instead.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em diff}]- the variable to be filled by the minus values \item[{\em chromosome}]- the chromosome to quantify the minus from \end{description}
+\end{Desc}
+\hypertarget{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_af3edb9b3b7265edf5e754ca2b41603e}{
+\index{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$@{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$}!toArray@{toArray}}
+\index{toArray@{toArray}!jenes::chromosome::Chromosome< T extends Chromosome >@{jenes::chromosome::Chromosome$<$ T extends Chromosome $>$}}
+\subsubsection[toArray]{\setlength{\rightskip}{0pt plus 5cm}Object \mbox{[}$\,$\mbox{]} jenes.chromosome.Chromosome$<$ T extends Chromosome $>$.toArray ()}}
+\label{interfacejenes_1_1chromosome_1_1_chromosome_3_01_t_01extends_01_chromosome_01_4_af3edb9b3b7265edf5e754ca2b41603e}
+
+
+Returns an array containing all of the genes in chromosome.
+
+\begin{Desc}
+\item[Returns:]an array containing all of the genes in chromosome. \end{Desc}
+
+
+The documentation for this interface was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/chromosome/Chromosome.java\end{CompactItemize}

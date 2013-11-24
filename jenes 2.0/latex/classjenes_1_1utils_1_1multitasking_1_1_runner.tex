@@ -1,0 +1,196 @@
+\hypertarget{classjenes_1_1utils_1_1multitasking_1_1_runner}{
+\section{jenes.utils.multitasking.Runner Class Reference}
+\label{classjenes_1_1utils_1_1multitasking_1_1_runner}\index{jenes::utils::multitasking::Runner@{jenes::utils::multitasking::Runner}}
+}
+Inheritance diagram for jenes.utils.multitasking.Runner::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classjenes_1_1utils_1_1multitasking_1_1_runner}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+final void \hyperlink{classjenes_1_1utils_1_1multitasking_1_1_runner_24d074cbd5140cd8bc65623fa1961f39}{execute} (GeneticAlgorithm \hyperlink{classjenes_1_1utils_1_1multitasking_1_1_runner_699ccf526b6116f97abc09e4ce390c89}{algorithm}, boolean restart)
+\item 
+final void \hyperlink{classjenes_1_1utils_1_1multitasking_1_1_runner_e222d69f44508fc432c05074272e0ae3}{execute} (GeneticAlgorithm algoritm)
+\item 
+final void \hyperlink{classjenes_1_1utils_1_1multitasking_1_1_runner_7205f2d93d68f40e3e87dccf92cc3720}{execute} (GeneticAlgorithm \hyperlink{classjenes_1_1utils_1_1multitasking_1_1_runner_699ccf526b6116f97abc09e4ce390c89}{algorithm}, Population$<$?$>$ initialPopulation)
+\item 
+GeneticAlgorithm \hyperlink{classjenes_1_1utils_1_1multitasking_1_1_runner_462a121a840bbf06593bbd7da219d8b9}{getGeneticAlgorithm} ()
+\item 
+void \hyperlink{classjenes_1_1utils_1_1multitasking_1_1_runner_dad9fb400d736e55bcd3dfdf07742437}{setAlgorithm} (GeneticAlgorithm \hyperlink{classjenes_1_1utils_1_1multitasking_1_1_runner_699ccf526b6116f97abc09e4ce390c89}{algorithm})
+\item 
+void \hyperlink{classjenes_1_1utils_1_1multitasking_1_1_runner_5dc1ed49495150ff26ec5194010b00e4}{start} (boolean reset)
+\item 
+void \hyperlink{classjenes_1_1utils_1_1multitasking_1_1_runner_4c4d4a0cd7aec110d60da5c660903398}{onInit} ()
+\item 
+void \hyperlink{classjenes_1_1utils_1_1multitasking_1_1_runner_c89e8ac54daba2e326e687662ff9f7b0}{stop} ()
+\item 
+void \hyperlink{classjenes_1_1utils_1_1multitasking_1_1_runner_6ec13cf0fb2ff03461a3a397421505cf}{onEvaluationBegin} (Population pop, boolean forced)
+\item 
+void \hyperlink{classjenes_1_1utils_1_1multitasking_1_1_runner_82c84ad942296d62849248b107ec3a2c}{onEvaluationEnd} ()
+\item 
+abstract void \hyperlink{classjenes_1_1utils_1_1multitasking_1_1_runner_250c5e0ffdb86ef0bb0e78e625a449e7}{evaluateIndividual} (Individual individual)
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+GeneticAlgorithm \hyperlink{classjenes_1_1utils_1_1multitasking_1_1_runner_699ccf526b6116f97abc09e4ce390c89}{algorithm}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classjenes_1_1utils_1_1multitasking_1_1_runner}{Runner} is the abstraction of an execution enviroinment per Jenes. By now this approach has been used to parallelize the fitness evaluation step. The programmer have to override the default call-backs than use \hyperlink{}{execute(jenes.GeneticAlgorithm)} or \hyperlink{}{execute(jenes.GeneticAlgorithm, boolean)} to activate Genetic Algorithm to start evolving in the enviroinment.
+
+\begin{Desc}
+\item[Since:]2.0 \end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classjenes_1_1utils_1_1multitasking_1_1_runner_24d074cbd5140cd8bc65623fa1961f39}{
+\index{jenes::utils::multitasking::Runner@{jenes::utils::multitasking::Runner}!execute@{execute}}
+\index{execute@{execute}!jenes::utils::multitasking::Runner@{jenes::utils::multitasking::Runner}}
+\subsubsection[execute]{\setlength{\rightskip}{0pt plus 5cm}final void jenes.utils.multitasking.Runner.execute (GeneticAlgorithm {\em algorithm}, \/  boolean {\em restart})}}
+\label{classjenes_1_1utils_1_1multitasking_1_1_runner_24d074cbd5140cd8bc65623fa1961f39}
+
+
+Start evolving the algorithm given as parameter in this enviroinment by applying to specificated restart flag.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em algorithm}]the algorithm to evolve \item[{\em restart}]{\tt restart} flag to pass to \hyperlink{}{GeneticAlgorithm\#evolve(boolean)} \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1utils_1_1multitasking_1_1_runner_e222d69f44508fc432c05074272e0ae3}{
+\index{jenes::utils::multitasking::Runner@{jenes::utils::multitasking::Runner}!execute@{execute}}
+\index{execute@{execute}!jenes::utils::multitasking::Runner@{jenes::utils::multitasking::Runner}}
+\subsubsection[execute]{\setlength{\rightskip}{0pt plus 5cm}final void jenes.utils.multitasking.Runner.execute (GeneticAlgorithm {\em algoritm})}}
+\label{classjenes_1_1utils_1_1multitasking_1_1_runner_e222d69f44508fc432c05074272e0ae3}
+
+
+Start evolving the algorithm given as argument restarting its state \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em algoritm}]the algorithm to evolve \end{description}
+\end{Desc}
+\begin{Desc}
+\item[See also:]\hyperlink{classjenes_1_1utils_1_1multitasking_1_1_runner_24d074cbd5140cd8bc65623fa1961f39}{execute}(jenes.GeneticAlgorithm, boolean) \end{Desc}
+\hypertarget{classjenes_1_1utils_1_1multitasking_1_1_runner_7205f2d93d68f40e3e87dccf92cc3720}{
+\index{jenes::utils::multitasking::Runner@{jenes::utils::multitasking::Runner}!execute@{execute}}
+\index{execute@{execute}!jenes::utils::multitasking::Runner@{jenes::utils::multitasking::Runner}}
+\subsubsection[execute]{\setlength{\rightskip}{0pt plus 5cm}final void jenes.utils.multitasking.Runner.execute (GeneticAlgorithm {\em algorithm}, \/  Population$<$?$>$ {\em initialPopulation})}}
+\label{classjenes_1_1utils_1_1multitasking_1_1_runner_7205f2d93d68f40e3e87dccf92cc3720}
+
+
+Start evolving the algorithm given and adopting as initial population the one passed as argument \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em algorithm}]\item[{\em initialPopulation}]\end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1utils_1_1multitasking_1_1_runner_462a121a840bbf06593bbd7da219d8b9}{
+\index{jenes::utils::multitasking::Runner@{jenes::utils::multitasking::Runner}!getGeneticAlgorithm@{getGeneticAlgorithm}}
+\index{getGeneticAlgorithm@{getGeneticAlgorithm}!jenes::utils::multitasking::Runner@{jenes::utils::multitasking::Runner}}
+\subsubsection[getGeneticAlgorithm]{\setlength{\rightskip}{0pt plus 5cm}GeneticAlgorithm jenes.utils.multitasking.Runner.getGeneticAlgorithm ()}}
+\label{classjenes_1_1utils_1_1multitasking_1_1_runner_462a121a840bbf06593bbd7da219d8b9}
+
+
+Return the Genetic Algorithm currently in execution in this enviroinment \begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{classjenes_1_1utils_1_1multitasking_1_1_runner_dad9fb400d736e55bcd3dfdf07742437}{
+\index{jenes::utils::multitasking::Runner@{jenes::utils::multitasking::Runner}!setAlgorithm@{setAlgorithm}}
+\index{setAlgorithm@{setAlgorithm}!jenes::utils::multitasking::Runner@{jenes::utils::multitasking::Runner}}
+\subsubsection[setAlgorithm]{\setlength{\rightskip}{0pt plus 5cm}void jenes.utils.multitasking.Runner.setAlgorithm (GeneticAlgorithm {\em algorithm})}}
+\label{classjenes_1_1utils_1_1multitasking_1_1_runner_dad9fb400d736e55bcd3dfdf07742437}
+
+
+Set the Genetic Algorithm to the runner. This value will be overridden when execute is called. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em algorithm}]\end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1utils_1_1multitasking_1_1_runner_5dc1ed49495150ff26ec5194010b00e4}{
+\index{jenes::utils::multitasking::Runner@{jenes::utils::multitasking::Runner}!start@{start}}
+\index{start@{start}!jenes::utils::multitasking::Runner@{jenes::utils::multitasking::Runner}}
+\subsubsection[start]{\setlength{\rightskip}{0pt plus 5cm}void jenes.utils.multitasking.Runner.start (boolean {\em reset})}}
+\label{classjenes_1_1utils_1_1multitasking_1_1_runner_5dc1ed49495150ff26ec5194010b00e4}
+
+
+Call-back invoked by \hyperlink{}{GeneticAlgorithm\#start(boolean)} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em reset}]\end{description}
+\end{Desc}
+
+
+Reimplemented in \hyperlink{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_runner_52fc59a28c3187e84b871b9b823b7f43}{jenes.utils.multitasking.MultiThreadRunner}.\hypertarget{classjenes_1_1utils_1_1multitasking_1_1_runner_4c4d4a0cd7aec110d60da5c660903398}{
+\index{jenes::utils::multitasking::Runner@{jenes::utils::multitasking::Runner}!onInit@{onInit}}
+\index{onInit@{onInit}!jenes::utils::multitasking::Runner@{jenes::utils::multitasking::Runner}}
+\subsubsection[onInit]{\setlength{\rightskip}{0pt plus 5cm}void jenes.utils.multitasking.Runner.onInit ()}}
+\label{classjenes_1_1utils_1_1multitasking_1_1_runner_4c4d4a0cd7aec110d60da5c660903398}
+
+
+Call-back invoked soon before \hyperlink{}{GeneticAlgorithm\#onInit(long)} \hypertarget{classjenes_1_1utils_1_1multitasking_1_1_runner_c89e8ac54daba2e326e687662ff9f7b0}{
+\index{jenes::utils::multitasking::Runner@{jenes::utils::multitasking::Runner}!stop@{stop}}
+\index{stop@{stop}!jenes::utils::multitasking::Runner@{jenes::utils::multitasking::Runner}}
+\subsubsection[stop]{\setlength{\rightskip}{0pt plus 5cm}void jenes.utils.multitasking.Runner.stop ()}}
+\label{classjenes_1_1utils_1_1multitasking_1_1_runner_c89e8ac54daba2e326e687662ff9f7b0}
+
+
+Call-back called soon after \hyperlink{}{GeneticAlgorithm\#onStop(long)} 
+
+Reimplemented in \hyperlink{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_runner_5f00a9b63ff1322d586ad62ec060d597}{jenes.utils.multitasking.MultiThreadRunner}.\hypertarget{classjenes_1_1utils_1_1multitasking_1_1_runner_6ec13cf0fb2ff03461a3a397421505cf}{
+\index{jenes::utils::multitasking::Runner@{jenes::utils::multitasking::Runner}!onEvaluationBegin@{onEvaluationBegin}}
+\index{onEvaluationBegin@{onEvaluationBegin}!jenes::utils::multitasking::Runner@{jenes::utils::multitasking::Runner}}
+\subsubsection[onEvaluationBegin]{\setlength{\rightskip}{0pt plus 5cm}void jenes.utils.multitasking.Runner.onEvaluationBegin (Population {\em pop}, \/  boolean {\em forced})}}
+\label{classjenes_1_1utils_1_1multitasking_1_1_runner_6ec13cf0fb2ff03461a3a397421505cf}
+
+
+Call-back invoked soon before the \hyperlink{}{Population} evaluation starts using the default \hyperlink{}{Fitness} defined per \hyperlink{}{GeneticAlgorithm}
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em pop}]the population that will be evaluated \item[{\em forced}]if each individual of the population will be forced to be evaluated \end{description}
+\end{Desc}
+
+
+Reimplemented in \hyperlink{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_evaluator_2a9d9427ca8c2b8a9dfc541c85bada42}{jenes.utils.multitasking.MultiThreadEvaluator}.\hypertarget{classjenes_1_1utils_1_1multitasking_1_1_runner_82c84ad942296d62849248b107ec3a2c}{
+\index{jenes::utils::multitasking::Runner@{jenes::utils::multitasking::Runner}!onEvaluationEnd@{onEvaluationEnd}}
+\index{onEvaluationEnd@{onEvaluationEnd}!jenes::utils::multitasking::Runner@{jenes::utils::multitasking::Runner}}
+\subsubsection[onEvaluationEnd]{\setlength{\rightskip}{0pt plus 5cm}void jenes.utils.multitasking.Runner.onEvaluationEnd ()}}
+\label{classjenes_1_1utils_1_1multitasking_1_1_runner_82c84ad942296d62849248b107ec3a2c}
+
+
+Call-back invoked soon after the evaluation phase has been performed. \par
+ WARNING: the method is called before the elapsed time per evaluation is computed so a huge work could affect measurements. 
+
+Reimplemented in \hyperlink{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_evaluator_3cd56b43989da43e4b3c2b79260d5f5f}{jenes.utils.multitasking.MultiThreadEvaluator}.\hypertarget{classjenes_1_1utils_1_1multitasking_1_1_runner_250c5e0ffdb86ef0bb0e78e625a449e7}{
+\index{jenes::utils::multitasking::Runner@{jenes::utils::multitasking::Runner}!evaluateIndividual@{evaluateIndividual}}
+\index{evaluateIndividual@{evaluateIndividual}!jenes::utils::multitasking::Runner@{jenes::utils::multitasking::Runner}}
+\subsubsection[evaluateIndividual]{\setlength{\rightskip}{0pt plus 5cm}abstract void jenes.utils.multitasking.Runner.evaluateIndividual (Individual {\em individual})\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classjenes_1_1utils_1_1multitasking_1_1_runner_250c5e0ffdb86ef0bb0e78e625a449e7}
+
+
+Call-back invoked in substitution to \hyperlink{}{GeneticAlgorithm\#evaluateIndividual(jenes.population.Individual)} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em individual}]\end{description}
+\end{Desc}
+
+
+Implemented in \hyperlink{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_evaluator_d99c13b137f1089a9f30377548b42e25}{jenes.utils.multitasking.MultiThreadEvaluator}.
+
+\subsection{Member Data Documentation}
+\hypertarget{classjenes_1_1utils_1_1multitasking_1_1_runner_699ccf526b6116f97abc09e4ce390c89}{
+\index{jenes::utils::multitasking::Runner@{jenes::utils::multitasking::Runner}!algorithm@{algorithm}}
+\index{algorithm@{algorithm}!jenes::utils::multitasking::Runner@{jenes::utils::multitasking::Runner}}
+\subsubsection[algorithm]{\setlength{\rightskip}{0pt plus 5cm}GeneticAlgorithm {\bf jenes.utils.multitasking.Runner.algorithm}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classjenes_1_1utils_1_1multitasking_1_1_runner_699ccf526b6116f97abc09e4ce390c89}
+
+
+The algorithm to evolve in the enviroinment 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/utils/multitasking/Runner.java\end{CompactItemize}

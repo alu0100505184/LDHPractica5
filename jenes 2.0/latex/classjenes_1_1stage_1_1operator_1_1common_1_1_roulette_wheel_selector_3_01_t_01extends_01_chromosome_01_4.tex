@@ -1,0 +1,60 @@
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_roulette_wheel_selector_3_01_t_01extends_01_chromosome_01_4}{
+\section{jenes.stage.operator.common.RouletteWheelSelector$<$ T extends Chromosome $>$ Class Reference}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_roulette_wheel_selector_3_01_t_01extends_01_chromosome_01_4}\index{jenes::stage::operator::common::RouletteWheelSelector$<$ T extends Chromosome $>$@{jenes::stage::operator::common::RouletteWheelSelector$<$ T extends Chromosome $>$}}
+}
+Inherits jenes::stage::operator::Selector$<$ T $>$.
+
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_roulette_wheel_selector_3_01_t_01extends_01_chromosome_01_4_13a6b76fa77779367d05a063ff6191bf}{
+void \textbf{preSelect} (Population$<$ T $>$ pop, Filter filter)}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_roulette_wheel_selector_3_01_t_01extends_01_chromosome_01_4_13a6b76fa77779367d05a063ff6191bf}
+
+\item 
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_roulette_wheel_selector_3_01_t_01extends_01_chromosome_01_4_d74c66e053cb97c75ce8a9f78a8208e5}{
+Individual$<$ T $>$ \textbf{select} (List$<$ Individual$<$ T $>$$>$ list)}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_roulette_wheel_selector_3_01_t_01extends_01_chromosome_01_4_d74c66e053cb97c75ce8a9f78a8208e5}
+
+\end{CompactItemize}
+\subsection*{Package Attributes}
+\begin{CompactItemize}
+\item 
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_roulette_wheel_selector_3_01_t_01extends_01_chromosome_01_4_c030f795440f2d69c4e08f80219cda30}{
+double\mbox{[}$\,$\mbox{]} \textbf{cumulativeFit} = null}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_roulette_wheel_selector_3_01_t_01extends_01_chromosome_01_4_c030f795440f2d69c4e08f80219cda30}
+
+\item 
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_roulette_wheel_selector_3_01_t_01extends_01_chromosome_01_4_f64e3d25c886903470c3e188b287af4c}{
+double\mbox{[}$\,$\mbox{]} \textbf{fit} = null}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_roulette_wheel_selector_3_01_t_01extends_01_chromosome_01_4_f64e3d25c886903470c3e188b287af4c}
+
+\item 
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_roulette_wheel_selector_3_01_t_01extends_01_chromosome_01_4_c073a280077bd972cab00cd2608ae415}{
+double\mbox{[}$\,$\mbox{]} \textbf{partialFit} = null}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_roulette_wheel_selector_3_01_t_01extends_01_chromosome_01_4_c073a280077bd972cab00cd2608ae415}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+A classic roulette wheel selection operator. If s if the input population size, s individuals will be selected. The best ones have a higher selection probability. A \hyperlink{}{preSelect(Population)} method is useful to set up the selection state according to the population state to undergo at the selection process. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em $<$T$>$}]The class of chromosomes to work with.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Version:]2.0 \end{Desc}
+\begin{Desc}
+\item[Since:]1.0\end{Desc}
+\begin{Desc}
+\item[See also:]Individual 
+
+Population \end{Desc}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/stage/operator/common/RouletteWheelSelector.java\end{CompactItemize}

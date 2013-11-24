@@ -1,0 +1,201 @@
+\hypertarget{classjenes_1_1utils_1_1_x_l_s_logger}{
+\section{jenes.utils.XLSLogger Class Reference}
+\label{classjenes_1_1utils_1_1_x_l_s_logger}\index{jenes::utils::XLSLogger@{jenes::utils::XLSLogger}}
+}
+Inheritance diagram for jenes.utils.XLSLogger::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classjenes_1_1utils_1_1_x_l_s_logger}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classjenes_1_1utils_1_1_x_l_s_logger_1fa625f6c332aca9178b1c7a4eb963d8}{XLSLogger} (String\mbox{[}$\,$\mbox{]} \hyperlink{classjenes_1_1utils_1_1_abstract_logger_3a2030876857a0512fae7e0ad400c570}{schema})  throws IOException 
+\item 
+\hyperlink{classjenes_1_1utils_1_1_x_l_s_logger_256b5ddf3beaa1eedb2290b52bb1a845}{XLSLogger} (String\mbox{[}$\,$\mbox{]} \hyperlink{classjenes_1_1utils_1_1_abstract_logger_3a2030876857a0512fae7e0ad400c570}{schema}, String filename)  throws IOException 
+\item 
+\hyperlink{classjenes_1_1utils_1_1_x_l_s_logger_c43b3385840e86a2ad4acd5040e8326b}{XLSLogger} (String\mbox{[}$\,$\mbox{]} \hyperlink{classjenes_1_1utils_1_1_abstract_logger_3a2030876857a0512fae7e0ad400c570}{schema}, String filename, int from)  throws IOException 
+\item 
+\hyperlink{classjenes_1_1utils_1_1_x_l_s_logger_2e438a48213dd4e1773c380d7f9d7e4b}{XLSLogger} (String\mbox{[}$\,$\mbox{]} \hyperlink{classjenes_1_1utils_1_1_abstract_logger_3a2030876857a0512fae7e0ad400c570}{schema}, String filename, String template)  throws IOException 
+\item 
+int \hyperlink{classjenes_1_1utils_1_1_x_l_s_logger_60e8ee28d3d3305e085726026e09cfdc}{getLine} ()
+\item 
+void \hyperlink{classjenes_1_1utils_1_1_x_l_s_logger_2f9ce5372263fadce99a863149f3cb55}{setLine} (int line)
+\item 
+WritableWorkbook \hyperlink{classjenes_1_1utils_1_1_x_l_s_logger_b84e4c5e6518902f710cd3c3cc337f3d}{getWorkbook} ()
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+void \hyperlink{classjenes_1_1utils_1_1_x_l_s_logger_e6b3840ad6be8bdc558efaf6077d4ae4}{store} ()
+\item 
+void \hyperlink{classjenes_1_1utils_1_1_x_l_s_logger_54c54393bf5a31442ebfc10517dfceea}{doSave} ()
+\item 
+void \hyperlink{classjenes_1_1utils_1_1_x_l_s_logger_cf58ddaa6873bcf626c9d24064a89b73}{doClose} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+This class implements a logger based on Excel's XLS files.
+
+Data are stored in the first column having the data label as header. It does not matter in which sheet. Recording can start from any row. From which row to start recording can be decided at istantiation or execution time.
+
+The class can work with an empty file or with a template provided at instantiation time. Using a template is a helpful with macros and plots, in order to make ready-to-use reports.
+
+Requires the libray JExcelApi.
+
+\begin{Desc}
+\item[Version:]2.0 \end{Desc}
+\begin{Desc}
+\item[Since:]1.3 \end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classjenes_1_1utils_1_1_x_l_s_logger_1fa625f6c332aca9178b1c7a4eb963d8}{
+\index{jenes::utils::XLSLogger@{jenes::utils::XLSLogger}!XLSLogger@{XLSLogger}}
+\index{XLSLogger@{XLSLogger}!jenes::utils::XLSLogger@{jenes::utils::XLSLogger}}
+\subsubsection[XLSLogger]{\setlength{\rightskip}{0pt plus 5cm}jenes.utils.XLSLogger.XLSLogger (String\mbox{[}$\,$\mbox{]} {\em schema})  throws IOException }}
+\label{classjenes_1_1utils_1_1_x_l_s_logger_1fa625f6c332aca9178b1c7a4eb963d8}
+
+
+Istantiates a new logger with a given schema. Data are saved by defualt in the workbook jenes.log.xls. Recording starts from row 1.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em schema}]- the field labels \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Exceptions:]
+\begin{description}
+\item[{\em IOException}]\end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1utils_1_1_x_l_s_logger_256b5ddf3beaa1eedb2290b52bb1a845}{
+\index{jenes::utils::XLSLogger@{jenes::utils::XLSLogger}!XLSLogger@{XLSLogger}}
+\index{XLSLogger@{XLSLogger}!jenes::utils::XLSLogger@{jenes::utils::XLSLogger}}
+\subsubsection[XLSLogger]{\setlength{\rightskip}{0pt plus 5cm}jenes.utils.XLSLogger.XLSLogger (String\mbox{[}$\,$\mbox{]} {\em schema}, \/  String {\em filename})  throws IOException }}
+\label{classjenes_1_1utils_1_1_x_l_s_logger_256b5ddf3beaa1eedb2290b52bb1a845}
+
+
+Istantiates a new logger with a given schema. Recording starts from row 1.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em schema}]- the field labels \item[{\em filename}]- the workbook filename \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Exceptions:]
+\begin{description}
+\item[{\em IOException}]\end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1utils_1_1_x_l_s_logger_c43b3385840e86a2ad4acd5040e8326b}{
+\index{jenes::utils::XLSLogger@{jenes::utils::XLSLogger}!XLSLogger@{XLSLogger}}
+\index{XLSLogger@{XLSLogger}!jenes::utils::XLSLogger@{jenes::utils::XLSLogger}}
+\subsubsection[XLSLogger]{\setlength{\rightskip}{0pt plus 5cm}jenes.utils.XLSLogger.XLSLogger (String\mbox{[}$\,$\mbox{]} {\em schema}, \/  String {\em filename}, \/  int {\em from})  throws IOException }}
+\label{classjenes_1_1utils_1_1_x_l_s_logger_c43b3385840e86a2ad4acd5040e8326b}
+
+
+Istantiates a new logger with a given schema.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em schema}]- the field labels \item[{\em filename}]- the workbook filename \item[{\em from}]- the recording initial row \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Exceptions:]
+\begin{description}
+\item[{\em IOException}]\end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1utils_1_1_x_l_s_logger_2e438a48213dd4e1773c380d7f9d7e4b}{
+\index{jenes::utils::XLSLogger@{jenes::utils::XLSLogger}!XLSLogger@{XLSLogger}}
+\index{XLSLogger@{XLSLogger}!jenes::utils::XLSLogger@{jenes::utils::XLSLogger}}
+\subsubsection[XLSLogger]{\setlength{\rightskip}{0pt plus 5cm}jenes.utils.XLSLogger.XLSLogger (String\mbox{[}$\,$\mbox{]} {\em schema}, \/  String {\em filename}, \/  String {\em template})  throws IOException }}
+\label{classjenes_1_1utils_1_1_x_l_s_logger_2e438a48213dd4e1773c380d7f9d7e4b}
+
+
+Istantiates a new logger with a given schema. Recording starts from row 1.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em schema}]- the field labels \item[{\em filename}]- the workbook name \item[{\em template}]- the workbook template \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Exceptions:]
+\begin{description}
+\item[{\em IOException}]\end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classjenes_1_1utils_1_1_x_l_s_logger_60e8ee28d3d3305e085726026e09cfdc}{
+\index{jenes::utils::XLSLogger@{jenes::utils::XLSLogger}!getLine@{getLine}}
+\index{getLine@{getLine}!jenes::utils::XLSLogger@{jenes::utils::XLSLogger}}
+\subsubsection[getLine]{\setlength{\rightskip}{0pt plus 5cm}int jenes.utils.XLSLogger.getLine ()}}
+\label{classjenes_1_1utils_1_1_x_l_s_logger_60e8ee28d3d3305e085726026e09cfdc}
+
+
+Provides the current recording row
+
+\begin{Desc}
+\item[Returns:]- recording row \end{Desc}
+\hypertarget{classjenes_1_1utils_1_1_x_l_s_logger_2f9ce5372263fadce99a863149f3cb55}{
+\index{jenes::utils::XLSLogger@{jenes::utils::XLSLogger}!setLine@{setLine}}
+\index{setLine@{setLine}!jenes::utils::XLSLogger@{jenes::utils::XLSLogger}}
+\subsubsection[setLine]{\setlength{\rightskip}{0pt plus 5cm}void jenes.utils.XLSLogger.setLine (int {\em line})}}
+\label{classjenes_1_1utils_1_1_x_l_s_logger_2f9ce5372263fadce99a863149f3cb55}
+
+
+Sets the current recording row at a specified value.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em line}]- the new recording row \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1utils_1_1_x_l_s_logger_b84e4c5e6518902f710cd3c3cc337f3d}{
+\index{jenes::utils::XLSLogger@{jenes::utils::XLSLogger}!getWorkbook@{getWorkbook}}
+\index{getWorkbook@{getWorkbook}!jenes::utils::XLSLogger@{jenes::utils::XLSLogger}}
+\subsubsection[getWorkbook]{\setlength{\rightskip}{0pt plus 5cm}WritableWorkbook jenes.utils.XLSLogger.getWorkbook ()}}
+\label{classjenes_1_1utils_1_1_x_l_s_logger_b84e4c5e6518902f710cd3c3cc337f3d}
+
+
+Rovides the workbook used for writing the statistics. See JExcelApi documentation for futher information.
+
+\begin{Desc}
+\item[Returns:]the workbook \end{Desc}
+\hypertarget{classjenes_1_1utils_1_1_x_l_s_logger_e6b3840ad6be8bdc558efaf6077d4ae4}{
+\index{jenes::utils::XLSLogger@{jenes::utils::XLSLogger}!store@{store}}
+\index{store@{store}!jenes::utils::XLSLogger@{jenes::utils::XLSLogger}}
+\subsubsection[store]{\setlength{\rightskip}{0pt plus 5cm}void jenes.utils.XLSLogger.store ()\hspace{0.3cm}{\tt  \mbox{[}protected, virtual\mbox{]}}}}
+\label{classjenes_1_1utils_1_1_x_l_s_logger_e6b3840ad6be8bdc558efaf6077d4ae4}
+
+
+Stores the current record. 
+
+Implements \hyperlink{classjenes_1_1utils_1_1_abstract_logger_6acf83a83999e26ae4ed45cbf355111b}{jenes.utils.AbstractLogger}.\hypertarget{classjenes_1_1utils_1_1_x_l_s_logger_54c54393bf5a31442ebfc10517dfceea}{
+\index{jenes::utils::XLSLogger@{jenes::utils::XLSLogger}!doSave@{doSave}}
+\index{doSave@{doSave}!jenes::utils::XLSLogger@{jenes::utils::XLSLogger}}
+\subsubsection[doSave]{\setlength{\rightskip}{0pt plus 5cm}void jenes.utils.XLSLogger.doSave ()\hspace{0.3cm}{\tt  \mbox{[}protected, virtual\mbox{]}}}}
+\label{classjenes_1_1utils_1_1_x_l_s_logger_54c54393bf5a31442ebfc10517dfceea}
+
+
+Saves cached records on media 
+
+Implements \hyperlink{classjenes_1_1utils_1_1_abstract_logger_41fcd50b050c467fe1b413fc5b49c167}{jenes.utils.AbstractLogger}.\hypertarget{classjenes_1_1utils_1_1_x_l_s_logger_cf58ddaa6873bcf626c9d24064a89b73}{
+\index{jenes::utils::XLSLogger@{jenes::utils::XLSLogger}!doClose@{doClose}}
+\index{doClose@{doClose}!jenes::utils::XLSLogger@{jenes::utils::XLSLogger}}
+\subsubsection[doClose]{\setlength{\rightskip}{0pt plus 5cm}void jenes.utils.XLSLogger.doClose ()\hspace{0.3cm}{\tt  \mbox{[}protected, virtual\mbox{]}}}}
+\label{classjenes_1_1utils_1_1_x_l_s_logger_cf58ddaa6873bcf626c9d24064a89b73}
+
+
+Closes the logger. Any further log is not allowed. 
+
+Implements \hyperlink{classjenes_1_1utils_1_1_abstract_logger_5253672b3f3f81287db2fc604ca921a9}{jenes.utils.AbstractLogger}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/utils/XLSLogger.java\end{CompactItemize}

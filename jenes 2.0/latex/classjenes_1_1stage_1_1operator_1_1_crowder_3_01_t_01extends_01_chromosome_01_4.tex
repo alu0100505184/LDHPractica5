@@ -1,0 +1,191 @@
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_crowder_3_01_t_01extends_01_chromosome_01_4}{
+\section{jenes.stage.operator.Crowder$<$ T extends Chromosome $>$ Class Reference}
+\label{classjenes_1_1stage_1_1operator_1_1_crowder_3_01_t_01extends_01_chromosome_01_4}\index{jenes::stage::operator::Crowder$<$ T extends Chromosome $>$@{jenes::stage::operator::Crowder$<$ T extends Chromosome $>$}}
+}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classjenes_1_1stage_1_1operator_1_1_crowder_3_01_t_01extends_01_chromosome_01_4_6e23e3544b98e1a415c53fcedd541df5}{Crowder} ()
+\item 
+final boolean \hyperlink{classjenes_1_1stage_1_1operator_1_1_crowder_3_01_t_01extends_01_chromosome_01_4_b9bb2a8d6bf09a51158ef49917095913}{isElitist} ()
+\item 
+void \hyperlink{classjenes_1_1stage_1_1operator_1_1_crowder_3_01_t_01extends_01_chromosome_01_4_d995907f114cdd40eb03d53f05734b8c}{setElitist} (boolean flag)
+\item 
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_crowder_3_01_t_01extends_01_chromosome_01_4_345ecb8e82d64130d171fb785f2702e6}{
+void \textbf{init} (GeneticAlgorithm$<$ T $>$ ga)}
+\label{classjenes_1_1stage_1_1operator_1_1_crowder_3_01_t_01extends_01_chromosome_01_4_345ecb8e82d64130d171fb785f2702e6}
+
+\item 
+void \hyperlink{classjenes_1_1stage_1_1operator_1_1_crowder_3_01_t_01extends_01_chromosome_01_4_21f0859b05e06d7ee4b979d5a2d559d7}{process} (Population$<$ T $>$ in, Population$<$ T $>$ out)  throws StageException 
+\item 
+double \hyperlink{classjenes_1_1stage_1_1operator_1_1_crowder_3_01_t_01extends_01_chromosome_01_4_99b3aaad504589efa9c408fc1b4e2fa1}{similarity} (double\mbox{[}$\,$\mbox{]} diff)
+\item 
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_crowder_3_01_t_01extends_01_chromosome_01_4_65ef754570b25a6f14fbd78e6c08c4f9}{
+void \textbf{setBiggerIsBetter} (boolean flag, boolean recursively)}
+\label{classjenes_1_1stage_1_1operator_1_1_crowder_3_01_t_01extends_01_chromosome_01_4_65ef754570b25a6f14fbd78e6c08c4f9}
+
+\item 
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_crowder_3_01_t_01extends_01_chromosome_01_4_c6c89c383d27754be63fabc951e11dc8}{
+void \textbf{setFitness} (Fitness fit, boolean recursively)}
+\label{classjenes_1_1stage_1_1operator_1_1_crowder_3_01_t_01extends_01_chromosome_01_4_c6c89c383d27754be63fabc951e11dc8}
+
+\item 
+Sequence$<$ T $>$ \hyperlink{classjenes_1_1stage_1_1operator_1_1_crowder_3_01_t_01extends_01_chromosome_01_4_4b24910de47aff7c5a709846af74b199}{getBody} ()
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+abstract void \hyperlink{classjenes_1_1stage_1_1operator_1_1_crowder_3_01_t_01extends_01_chromosome_01_4_e72da3620314eba33b17297eb6a52aa0}{preselect} (Population$<$ T $>$ in, Population$<$ T $>$ out)
+\item 
+abstract void \hyperlink{classjenes_1_1stage_1_1operator_1_1_crowder_3_01_t_01extends_01_chromosome_01_4_2eec13cd60faaeefc6bb00302831740f}{replace} (Population$<$ T $>$ initial, Population$<$ T $>$ preselected, Population$<$ T $>$ evolved, Population$<$ T $>$ out)
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+Sequence$<$ T $>$ \hyperlink{classjenes_1_1stage_1_1operator_1_1_crowder_3_01_t_01extends_01_chromosome_01_4_81522e76967039395a3567c866fa59ed}{body} = new Sequence$<$T$>$()
+\item 
+boolean \hyperlink{classjenes_1_1stage_1_1operator_1_1_crowder_3_01_t_01extends_01_chromosome_01_4_5337bdf3f7d5ad8d6e09daaa3bb0636b}{elitist} = false
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+This class provides abstraction to crowders. A crowder perform preselection before its body processes the population, and controls the replacement after.
+
+\begin{Desc}
+\item[Version:]2.0 \end{Desc}
+\begin{Desc}
+\item[Since:]2.0 \end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_crowder_3_01_t_01extends_01_chromosome_01_4_6e23e3544b98e1a415c53fcedd541df5}{
+\index{jenes::stage::operator::Crowder$<$ T extends Chromosome $>$@{jenes::stage::operator::Crowder$<$ T extends Chromosome $>$}!Crowder@{Crowder}}
+\index{Crowder@{Crowder}!jenes::stage::operator::Crowder< T extends Chromosome >@{jenes::stage::operator::Crowder$<$ T extends Chromosome $>$}}
+\subsubsection[Crowder]{\setlength{\rightskip}{0pt plus 5cm}jenes.stage.operator.Crowder$<$ T extends Chromosome $>$.Crowder ()}}
+\label{classjenes_1_1stage_1_1operator_1_1_crowder_3_01_t_01extends_01_chromosome_01_4_6e23e3544b98e1a415c53fcedd541df5}
+
+
+Creates a new crowder 
+
+\subsection{Member Function Documentation}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_crowder_3_01_t_01extends_01_chromosome_01_4_b9bb2a8d6bf09a51158ef49917095913}{
+\index{jenes::stage::operator::Crowder$<$ T extends Chromosome $>$@{jenes::stage::operator::Crowder$<$ T extends Chromosome $>$}!isElitist@{isElitist}}
+\index{isElitist@{isElitist}!jenes::stage::operator::Crowder< T extends Chromosome >@{jenes::stage::operator::Crowder$<$ T extends Chromosome $>$}}
+\subsubsection[isElitist]{\setlength{\rightskip}{0pt plus 5cm}final boolean jenes.stage.operator.Crowder$<$ T extends Chromosome $>$.isElitist ()}}
+\label{classjenes_1_1stage_1_1operator_1_1_crowder_3_01_t_01extends_01_chromosome_01_4_b9bb2a8d6bf09a51158ef49917095913}
+
+
+Says if the crowder is elitist or not.
+
+\begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_crowder_3_01_t_01extends_01_chromosome_01_4_d995907f114cdd40eb03d53f05734b8c}{
+\index{jenes::stage::operator::Crowder$<$ T extends Chromosome $>$@{jenes::stage::operator::Crowder$<$ T extends Chromosome $>$}!setElitist@{setElitist}}
+\index{setElitist@{setElitist}!jenes::stage::operator::Crowder< T extends Chromosome >@{jenes::stage::operator::Crowder$<$ T extends Chromosome $>$}}
+\subsubsection[setElitist]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.operator.Crowder$<$ T extends Chromosome $>$.setElitist (boolean {\em flag})}}
+\label{classjenes_1_1stage_1_1operator_1_1_crowder_3_01_t_01extends_01_chromosome_01_4_d995907f114cdd40eb03d53f05734b8c}
+
+
+Sets the crowder elistism. If true, offspings replace parents only if they are better.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em flag}]\end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_crowder_3_01_t_01extends_01_chromosome_01_4_21f0859b05e06d7ee4b979d5a2d559d7}{
+\index{jenes::stage::operator::Crowder$<$ T extends Chromosome $>$@{jenes::stage::operator::Crowder$<$ T extends Chromosome $>$}!process@{process}}
+\index{process@{process}!jenes::stage::operator::Crowder< T extends Chromosome >@{jenes::stage::operator::Crowder$<$ T extends Chromosome $>$}}
+\subsubsection[process]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.operator.Crowder$<$ T extends Chromosome $>$.process (Population$<$ T $>$ {\em in}, \/  Population$<$ T $>$ {\em out})  throws {\bf StageException} }}
+\label{classjenes_1_1stage_1_1operator_1_1_crowder_3_01_t_01extends_01_chromosome_01_4_21f0859b05e06d7ee4b979d5a2d559d7}
+
+
+Performs crowding processing, according the the following scheme: \begin{enumerate}
+\item pre = preselect(in) \item evo = body.process(pre) \item out = replace(evo) \end{enumerate}
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em in}]\item[{\em out}]\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Exceptions:]
+\begin{description}
+\item[{\em \hyperlink{classjenes_1_1stage_1_1_stage_exception}{StageException}}]\end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_crowder_3_01_t_01extends_01_chromosome_01_4_e72da3620314eba33b17297eb6a52aa0}{
+\index{jenes::stage::operator::Crowder$<$ T extends Chromosome $>$@{jenes::stage::operator::Crowder$<$ T extends Chromosome $>$}!preselect@{preselect}}
+\index{preselect@{preselect}!jenes::stage::operator::Crowder< T extends Chromosome >@{jenes::stage::operator::Crowder$<$ T extends Chromosome $>$}}
+\subsubsection[preselect]{\setlength{\rightskip}{0pt plus 5cm}abstract void jenes.stage.operator.Crowder$<$ T extends Chromosome $>$.preselect (Population$<$ T $>$ {\em in}, \/  Population$<$ T $>$ {\em out})\hspace{0.3cm}{\tt  \mbox{[}protected, pure virtual\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1_crowder_3_01_t_01extends_01_chromosome_01_4_e72da3620314eba33b17297eb6a52aa0}
+
+
+Preselection of individuals before processing.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em in}]input population \item[{\em out}]output population \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_crowder_3_01_t_01extends_01_chromosome_01_4_2eec13cd60faaeefc6bb00302831740f}{
+\index{jenes::stage::operator::Crowder$<$ T extends Chromosome $>$@{jenes::stage::operator::Crowder$<$ T extends Chromosome $>$}!replace@{replace}}
+\index{replace@{replace}!jenes::stage::operator::Crowder< T extends Chromosome >@{jenes::stage::operator::Crowder$<$ T extends Chromosome $>$}}
+\subsubsection[replace]{\setlength{\rightskip}{0pt plus 5cm}abstract void jenes.stage.operator.Crowder$<$ T extends Chromosome $>$.replace (Population$<$ T $>$ {\em initial}, \/  Population$<$ T $>$ {\em preselected}, \/  Population$<$ T $>$ {\em evolved}, \/  Population$<$ T $>$ {\em out})\hspace{0.3cm}{\tt  \mbox{[}protected, pure virtual\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1_crowder_3_01_t_01extends_01_chromosome_01_4_2eec13cd60faaeefc6bb00302831740f}
+
+
+Implements the replacement policy.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em initial}]- the initial population \item[{\em preselected}]- the population resulting from preselection \item[{\em evolved}]- the part of population that has evolved \item[{\em out}]- the output population \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_crowder_3_01_t_01extends_01_chromosome_01_4_99b3aaad504589efa9c408fc1b4e2fa1}{
+\index{jenes::stage::operator::Crowder$<$ T extends Chromosome $>$@{jenes::stage::operator::Crowder$<$ T extends Chromosome $>$}!similarity@{similarity}}
+\index{similarity@{similarity}!jenes::stage::operator::Crowder< T extends Chromosome >@{jenes::stage::operator::Crowder$<$ T extends Chromosome $>$}}
+\subsubsection[similarity]{\setlength{\rightskip}{0pt plus 5cm}double jenes.stage.operator.Crowder$<$ T extends Chromosome $>$.similarity (double\mbox{[}$\,$\mbox{]} {\em diff})}}
+\label{classjenes_1_1stage_1_1operator_1_1_crowder_3_01_t_01extends_01_chromosome_01_4_99b3aaad504589efa9c408fc1b4e2fa1}
+
+
+Computes a degree of similarity given the genetic difference vector between two chromosomes. By default, similarity is computed as reprocical of eucledian distance between genes. Other definitions are possible by overriding this method in subclasses.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em diff}]- the difference vector \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]similarity degree \end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_crowder_3_01_t_01extends_01_chromosome_01_4_4b24910de47aff7c5a709846af74b199}{
+\index{jenes::stage::operator::Crowder$<$ T extends Chromosome $>$@{jenes::stage::operator::Crowder$<$ T extends Chromosome $>$}!getBody@{getBody}}
+\index{getBody@{getBody}!jenes::stage::operator::Crowder< T extends Chromosome >@{jenes::stage::operator::Crowder$<$ T extends Chromosome $>$}}
+\subsubsection[getBody]{\setlength{\rightskip}{0pt plus 5cm}Sequence$<$T$>$ jenes.stage.operator.Crowder$<$ T extends Chromosome $>$.getBody ()}}
+\label{classjenes_1_1stage_1_1operator_1_1_crowder_3_01_t_01extends_01_chromosome_01_4_4b24910de47aff7c5a709846af74b199}
+
+
+Return the crowder body
+
+\begin{Desc}
+\item[Returns:]the body \end{Desc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_crowder_3_01_t_01extends_01_chromosome_01_4_81522e76967039395a3567c866fa59ed}{
+\index{jenes::stage::operator::Crowder$<$ T extends Chromosome $>$@{jenes::stage::operator::Crowder$<$ T extends Chromosome $>$}!body@{body}}
+\index{body@{body}!jenes::stage::operator::Crowder< T extends Chromosome >@{jenes::stage::operator::Crowder$<$ T extends Chromosome $>$}}
+\subsubsection[body]{\setlength{\rightskip}{0pt plus 5cm}Sequence$<$T$>$ jenes.stage.operator.Crowder$<$ T extends Chromosome $>$.{\bf body} = new Sequence$<$T$>$()\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1_crowder_3_01_t_01extends_01_chromosome_01_4_81522e76967039395a3567c866fa59ed}
+
+
+Body \hypertarget{classjenes_1_1stage_1_1operator_1_1_crowder_3_01_t_01extends_01_chromosome_01_4_5337bdf3f7d5ad8d6e09daaa3bb0636b}{
+\index{jenes::stage::operator::Crowder$<$ T extends Chromosome $>$@{jenes::stage::operator::Crowder$<$ T extends Chromosome $>$}!elitist@{elitist}}
+\index{elitist@{elitist}!jenes::stage::operator::Crowder< T extends Chromosome >@{jenes::stage::operator::Crowder$<$ T extends Chromosome $>$}}
+\subsubsection[elitist]{\setlength{\rightskip}{0pt plus 5cm}boolean jenes.stage.operator.Crowder$<$ T extends Chromosome $>$.{\bf elitist} = false\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1_crowder_3_01_t_01extends_01_chromosome_01_4_5337bdf3f7d5ad8d6e09daaa3bb0636b}
+
+
+Elitism 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/stage/operator/Crowder.java\end{CompactItemize}

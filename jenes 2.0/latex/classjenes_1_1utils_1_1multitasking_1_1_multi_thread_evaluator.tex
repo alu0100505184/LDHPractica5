@@ -1,0 +1,111 @@
+\hypertarget{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_evaluator}{
+\section{jenes.utils.multitasking.MultiThreadEvaluator Class Reference}
+\label{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_evaluator}\index{jenes::utils::multitasking::MultiThreadEvaluator@{jenes::utils::multitasking::MultiThreadEvaluator}}
+}
+Inheritance diagram for jenes.utils.multitasking.MultiThreadEvaluator::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_evaluator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_evaluator_842d648ae03a8d7f835a24c522d229ae}{MultiThreadEvaluator} (int nthreads)
+\item 
+\hyperlink{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_evaluator_c9949bf8de0efb0cb47feb2df56140ff}{MultiThreadEvaluator} ()
+\item 
+void \hyperlink{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_evaluator_2a9d9427ca8c2b8a9dfc541c85bada42}{onEvaluationBegin} (Population pop, boolean forced)
+\item 
+synchronized void \hyperlink{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_evaluator_d99c13b137f1089a9f30377548b42e25}{evaluateIndividual} (Individual individual)
+\item 
+synchronized void \hyperlink{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_evaluator_3cd56b43989da43e4b3c2b79260d5f5f}{onEvaluationEnd} ()
+\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class \textbf{EvaluationTask}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+This class represent a simple implementation of a multi thread runner
+
+\begin{Desc}
+\item[Since:]2.0\end{Desc}
+\begin{Desc}
+\item[See also:]\hyperlink{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_runner}{MultiThreadRunner} \end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_evaluator_842d648ae03a8d7f835a24c522d229ae}{
+\index{jenes::utils::multitasking::MultiThreadEvaluator@{jenes::utils::multitasking::MultiThreadEvaluator}!MultiThreadEvaluator@{MultiThreadEvaluator}}
+\index{MultiThreadEvaluator@{MultiThreadEvaluator}!jenes::utils::multitasking::MultiThreadEvaluator@{jenes::utils::multitasking::MultiThreadEvaluator}}
+\subsubsection[MultiThreadEvaluator]{\setlength{\rightskip}{0pt plus 5cm}jenes.utils.multitasking.MultiThreadEvaluator.MultiThreadEvaluator (int {\em nthreads})}}
+\label{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_evaluator_842d648ae03a8d7f835a24c522d229ae}
+
+
+Default constructor that define the thread number to use \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em nthreads}]\end{description}
+\end{Desc}
+\begin{Desc}
+\item[See also:]\hyperlink{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_runner_6319362b08c06d8bf26989407d223c31}{MultiThreadRunner.MultiThreadRunner(int)} \end{Desc}
+\hypertarget{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_evaluator_c9949bf8de0efb0cb47feb2df56140ff}{
+\index{jenes::utils::multitasking::MultiThreadEvaluator@{jenes::utils::multitasking::MultiThreadEvaluator}!MultiThreadEvaluator@{MultiThreadEvaluator}}
+\index{MultiThreadEvaluator@{MultiThreadEvaluator}!jenes::utils::multitasking::MultiThreadEvaluator@{jenes::utils::multitasking::MultiThreadEvaluator}}
+\subsubsection[MultiThreadEvaluator]{\setlength{\rightskip}{0pt plus 5cm}jenes.utils.multitasking.MultiThreadEvaluator.MultiThreadEvaluator ()}}
+\label{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_evaluator_c9949bf8de0efb0cb47feb2df56140ff}
+
+
+Default constructor that generates an execution enviroinment with a number of threads equals to the number of phisical cores. \begin{Desc}
+\item[See also:]\hyperlink{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_runner_b0815486f3159f086cd06ccab94df319}{MultiThreadRunner.MultiThreadRunner()} \end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_evaluator_2a9d9427ca8c2b8a9dfc541c85bada42}{
+\index{jenes::utils::multitasking::MultiThreadEvaluator@{jenes::utils::multitasking::MultiThreadEvaluator}!onEvaluationBegin@{onEvaluationBegin}}
+\index{onEvaluationBegin@{onEvaluationBegin}!jenes::utils::multitasking::MultiThreadEvaluator@{jenes::utils::multitasking::MultiThreadEvaluator}}
+\subsubsection[onEvaluationBegin]{\setlength{\rightskip}{0pt plus 5cm}void jenes.utils.multitasking.MultiThreadEvaluator.onEvaluationBegin (Population {\em pop}, \/  boolean {\em forced})}}
+\label{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_evaluator_2a9d9427ca8c2b8a9dfc541c85bada42}
+
+
+Call-back invoked soon before the \hyperlink{}{Population} evaluation starts using the default \hyperlink{}{Fitness} defined per \hyperlink{}{GeneticAlgorithm}
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em pop}]the population that will be evaluated \item[{\em forced}]if each individual of the population will be forced to be evaluated \end{description}
+\end{Desc}
+
+
+Reimplemented from \hyperlink{classjenes_1_1utils_1_1multitasking_1_1_runner_6ec13cf0fb2ff03461a3a397421505cf}{jenes.utils.multitasking.Runner}.\hypertarget{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_evaluator_d99c13b137f1089a9f30377548b42e25}{
+\index{jenes::utils::multitasking::MultiThreadEvaluator@{jenes::utils::multitasking::MultiThreadEvaluator}!evaluateIndividual@{evaluateIndividual}}
+\index{evaluateIndividual@{evaluateIndividual}!jenes::utils::multitasking::MultiThreadEvaluator@{jenes::utils::multitasking::MultiThreadEvaluator}}
+\subsubsection[evaluateIndividual]{\setlength{\rightskip}{0pt plus 5cm}synchronized void jenes.utils.multitasking.MultiThreadEvaluator.evaluateIndividual (Individual {\em individual})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_evaluator_d99c13b137f1089a9f30377548b42e25}
+
+
+Call-back invoked in substitution to \hyperlink{}{GeneticAlgorithm\#evaluateIndividual(jenes.population.Individual)} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em individual}]\end{description}
+\end{Desc}
+
+
+Implements \hyperlink{classjenes_1_1utils_1_1multitasking_1_1_runner_250c5e0ffdb86ef0bb0e78e625a449e7}{jenes.utils.multitasking.Runner}.\hypertarget{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_evaluator_3cd56b43989da43e4b3c2b79260d5f5f}{
+\index{jenes::utils::multitasking::MultiThreadEvaluator@{jenes::utils::multitasking::MultiThreadEvaluator}!onEvaluationEnd@{onEvaluationEnd}}
+\index{onEvaluationEnd@{onEvaluationEnd}!jenes::utils::multitasking::MultiThreadEvaluator@{jenes::utils::multitasking::MultiThreadEvaluator}}
+\subsubsection[onEvaluationEnd]{\setlength{\rightskip}{0pt plus 5cm}synchronized void jenes.utils.multitasking.MultiThreadEvaluator.onEvaluationEnd ()}}
+\label{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_evaluator_3cd56b43989da43e4b3c2b79260d5f5f}
+
+
+Call-back invoked soon after the evaluation phase has been performed. \par
+ WARNING: the method is called before the elapsed time per evaluation is computed so a huge work could affect measurements. 
+
+Reimplemented from \hyperlink{classjenes_1_1utils_1_1multitasking_1_1_runner_82c84ad942296d62849248b107ec3a2c}{jenes.utils.multitasking.Runner}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/utils/multitasking/MultiThreadEvaluator.java\end{CompactItemize}

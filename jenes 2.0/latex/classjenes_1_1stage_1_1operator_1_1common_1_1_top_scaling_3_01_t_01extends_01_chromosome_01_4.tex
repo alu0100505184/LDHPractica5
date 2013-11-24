@@ -1,0 +1,150 @@
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_top_scaling_3_01_t_01extends_01_chromosome_01_4}{
+\section{jenes.stage.operator.common.TopScaling$<$ T extends Chromosome $>$ Class Reference}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_top_scaling_3_01_t_01extends_01_chromosome_01_4}\index{jenes::stage::operator::common::TopScaling$<$ T extends Chromosome $>$@{jenes::stage::operator::common::TopScaling$<$ T extends Chromosome $>$}}
+}
+Inherits jenes::stage::operator::Scaling$<$ T $>$.
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_top_scaling_3_01_t_01extends_01_chromosome_01_4_a1be76204f86d57efff77e708cbcf2f9}{TopScaling} ()
+\item 
+\hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_top_scaling_3_01_t_01extends_01_chromosome_01_4_cb9c77ba5c63f60dcb5d27cf256c6d61}{TopScaling} (double f)
+\item 
+\hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_top_scaling_3_01_t_01extends_01_chromosome_01_4_db3a002d09932e82a52f848cd4b8247e}{TopScaling} (int q)
+\item 
+final double \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_top_scaling_3_01_t_01extends_01_chromosome_01_4_4cb1be9e4948570a5f5d94ed97eb6cba}{getFraction} ()
+\item 
+final void \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_top_scaling_3_01_t_01extends_01_chromosome_01_4_b39c283ff0bb662ac76df11474ef133f}{setFraction} (double f)
+\item 
+final int \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_top_scaling_3_01_t_01extends_01_chromosome_01_4_165fa24c31055aecd832e837419bad6f}{getQuantity} ()
+\item 
+final void \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_top_scaling_3_01_t_01extends_01_chromosome_01_4_53e27151e7c9b0b98e5c80e5018d2800}{setQuantity} (int q)
+\item 
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_top_scaling_3_01_t_01extends_01_chromosome_01_4_fb5fd14e2cdb722a139193172c56ceaa}{
+void \textbf{scale} (Population$<$ T $>$ pop)}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_top_scaling_3_01_t_01extends_01_chromosome_01_4_fb5fd14e2cdb722a139193172c56ceaa}
+
+\end{CompactItemize}
+\subsection*{Static Public Attributes}
+\begin{CompactItemize}
+\item 
+static double \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_top_scaling_3_01_t_01extends_01_chromosome_01_4_f21f9346a23ebaab4d7a5bd4367edafe}{DEFAULT\_\-FRACTION} = 0.4
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+This operator performs fitness top-scaling. Given f, a fraction of individuals. Best individuals are given a score 1/m$\ast$n, where n is the number of individuals. Alternatively, a number q of individuals can be provided, instead of fraction f. The others are given 0. 
+
+TopScaling is compatible with multi-objective optimization.
+
+\begin{Desc}
+\item[Version:]2.0 \end{Desc}
+\begin{Desc}
+\item[Since:]2.0 \end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_top_scaling_3_01_t_01extends_01_chromosome_01_4_a1be76204f86d57efff77e708cbcf2f9}{
+\index{jenes::stage::operator::common::TopScaling$<$ T extends Chromosome $>$@{jenes::stage::operator::common::TopScaling$<$ T extends Chromosome $>$}!TopScaling@{TopScaling}}
+\index{TopScaling@{TopScaling}!jenes::stage::operator::common::TopScaling< T extends Chromosome >@{jenes::stage::operator::common::TopScaling$<$ T extends Chromosome $>$}}
+\subsubsection[TopScaling]{\setlength{\rightskip}{0pt plus 5cm}jenes.stage.operator.common.TopScaling$<$ T extends Chromosome $>$.TopScaling ()}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_top_scaling_3_01_t_01extends_01_chromosome_01_4_a1be76204f86d57efff77e708cbcf2f9}
+
+
+Creates an instance with default fraction \hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_top_scaling_3_01_t_01extends_01_chromosome_01_4_cb9c77ba5c63f60dcb5d27cf256c6d61}{
+\index{jenes::stage::operator::common::TopScaling$<$ T extends Chromosome $>$@{jenes::stage::operator::common::TopScaling$<$ T extends Chromosome $>$}!TopScaling@{TopScaling}}
+\index{TopScaling@{TopScaling}!jenes::stage::operator::common::TopScaling< T extends Chromosome >@{jenes::stage::operator::common::TopScaling$<$ T extends Chromosome $>$}}
+\subsubsection[TopScaling]{\setlength{\rightskip}{0pt plus 5cm}jenes.stage.operator.common.TopScaling$<$ T extends Chromosome $>$.TopScaling (double {\em f})}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_top_scaling_3_01_t_01extends_01_chromosome_01_4_cb9c77ba5c63f60dcb5d27cf256c6d61}
+
+
+Creates an instance with the given fraction
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em f}]fraction between 0 (0\%) and 1 (i.e. 100\%). \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_top_scaling_3_01_t_01extends_01_chromosome_01_4_db3a002d09932e82a52f848cd4b8247e}{
+\index{jenes::stage::operator::common::TopScaling$<$ T extends Chromosome $>$@{jenes::stage::operator::common::TopScaling$<$ T extends Chromosome $>$}!TopScaling@{TopScaling}}
+\index{TopScaling@{TopScaling}!jenes::stage::operator::common::TopScaling< T extends Chromosome >@{jenes::stage::operator::common::TopScaling$<$ T extends Chromosome $>$}}
+\subsubsection[TopScaling]{\setlength{\rightskip}{0pt plus 5cm}jenes.stage.operator.common.TopScaling$<$ T extends Chromosome $>$.TopScaling (int {\em q})}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_top_scaling_3_01_t_01extends_01_chromosome_01_4_db3a002d09932e82a52f848cd4b8247e}
+
+
+Creates an instance with the given quantity of individuals 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em q}]quantity of top individuals \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_top_scaling_3_01_t_01extends_01_chromosome_01_4_4cb1be9e4948570a5f5d94ed97eb6cba}{
+\index{jenes::stage::operator::common::TopScaling$<$ T extends Chromosome $>$@{jenes::stage::operator::common::TopScaling$<$ T extends Chromosome $>$}!getFraction@{getFraction}}
+\index{getFraction@{getFraction}!jenes::stage::operator::common::TopScaling< T extends Chromosome >@{jenes::stage::operator::common::TopScaling$<$ T extends Chromosome $>$}}
+\subsubsection[getFraction]{\setlength{\rightskip}{0pt plus 5cm}final double jenes.stage.operator.common.TopScaling$<$ T extends Chromosome $>$.getFraction ()}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_top_scaling_3_01_t_01extends_01_chromosome_01_4_4cb1be9e4948570a5f5d94ed97eb6cba}
+
+
+Returns the fraction 
+
+\begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_top_scaling_3_01_t_01extends_01_chromosome_01_4_b39c283ff0bb662ac76df11474ef133f}{
+\index{jenes::stage::operator::common::TopScaling$<$ T extends Chromosome $>$@{jenes::stage::operator::common::TopScaling$<$ T extends Chromosome $>$}!setFraction@{setFraction}}
+\index{setFraction@{setFraction}!jenes::stage::operator::common::TopScaling< T extends Chromosome >@{jenes::stage::operator::common::TopScaling$<$ T extends Chromosome $>$}}
+\subsubsection[setFraction]{\setlength{\rightskip}{0pt plus 5cm}final void jenes.stage.operator.common.TopScaling$<$ T extends Chromosome $>$.setFraction (double {\em f})}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_top_scaling_3_01_t_01extends_01_chromosome_01_4_b39c283ff0bb662ac76df11474ef133f}
+
+
+Sets the fraction of individuals to consider. The value provided as input is trimmed between 0 and 1. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em f}]the fraction \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_top_scaling_3_01_t_01extends_01_chromosome_01_4_165fa24c31055aecd832e837419bad6f}{
+\index{jenes::stage::operator::common::TopScaling$<$ T extends Chromosome $>$@{jenes::stage::operator::common::TopScaling$<$ T extends Chromosome $>$}!getQuantity@{getQuantity}}
+\index{getQuantity@{getQuantity}!jenes::stage::operator::common::TopScaling< T extends Chromosome >@{jenes::stage::operator::common::TopScaling$<$ T extends Chromosome $>$}}
+\subsubsection[getQuantity]{\setlength{\rightskip}{0pt plus 5cm}final int jenes.stage.operator.common.TopScaling$<$ T extends Chromosome $>$.getQuantity ()}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_top_scaling_3_01_t_01extends_01_chromosome_01_4_165fa24c31055aecd832e837419bad6f}
+
+
+Return the number of top individuals to consider
+
+\begin{Desc}
+\item[Returns:]quantity \end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_top_scaling_3_01_t_01extends_01_chromosome_01_4_53e27151e7c9b0b98e5c80e5018d2800}{
+\index{jenes::stage::operator::common::TopScaling$<$ T extends Chromosome $>$@{jenes::stage::operator::common::TopScaling$<$ T extends Chromosome $>$}!setQuantity@{setQuantity}}
+\index{setQuantity@{setQuantity}!jenes::stage::operator::common::TopScaling< T extends Chromosome >@{jenes::stage::operator::common::TopScaling$<$ T extends Chromosome $>$}}
+\subsubsection[setQuantity]{\setlength{\rightskip}{0pt plus 5cm}final void jenes.stage.operator.common.TopScaling$<$ T extends Chromosome $>$.setQuantity (int {\em q})}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_top_scaling_3_01_t_01extends_01_chromosome_01_4_53e27151e7c9b0b98e5c80e5018d2800}
+
+
+Sets the number of top individuals to consider. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em q}]quantity \end{description}
+\end{Desc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_top_scaling_3_01_t_01extends_01_chromosome_01_4_f21f9346a23ebaab4d7a5bd4367edafe}{
+\index{jenes::stage::operator::common::TopScaling$<$ T extends Chromosome $>$@{jenes::stage::operator::common::TopScaling$<$ T extends Chromosome $>$}!DEFAULT\_\-FRACTION@{DEFAULT\_\-FRACTION}}
+\index{DEFAULT\_\-FRACTION@{DEFAULT\_\-FRACTION}!jenes::stage::operator::common::TopScaling< T extends Chromosome >@{jenes::stage::operator::common::TopScaling$<$ T extends Chromosome $>$}}
+\subsubsection[DEFAULT\_\-FRACTION]{\setlength{\rightskip}{0pt plus 5cm}double jenes.stage.operator.common.TopScaling$<$ T extends Chromosome $>$.{\bf DEFAULT\_\-FRACTION} = 0.4\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_top_scaling_3_01_t_01extends_01_chromosome_01_4_f21f9346a23ebaab4d7a5bd4367edafe}
+
+
+The defaulf fraction 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/stage/operator/common/TopScaling.java\end{CompactItemize}

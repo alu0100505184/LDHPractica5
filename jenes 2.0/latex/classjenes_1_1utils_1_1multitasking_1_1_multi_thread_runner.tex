@@ -1,0 +1,117 @@
+\hypertarget{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_runner}{
+\section{jenes.utils.multitasking.MultiThreadRunner Class Reference}
+\label{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_runner}\index{jenes::utils::multitasking::MultiThreadRunner@{jenes::utils::multitasking::MultiThreadRunner}}
+}
+Inheritance diagram for jenes.utils.multitasking.MultiThreadRunner::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_runner}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_runner_b0815486f3159f086cd06ccab94df319}{MultiThreadRunner} ()
+\item 
+\hyperlink{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_runner_6319362b08c06d8bf26989407d223c31}{MultiThreadRunner} (int nthreads)
+\item 
+int \hyperlink{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_runner_69370630a898026070fe8e806cec8fe0}{getNthreads} ()
+\item 
+void \hyperlink{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_runner_52fc59a28c3187e84b871b9b823b7f43}{start} (boolean reset)
+\item 
+void \hyperlink{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_runner_5f00a9b63ff1322d586ad62ec060d597}{stop} ()
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+\hypertarget{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_runner_a20fe700a6b2abd3694b4a1d5629db8f}{
+int \textbf{nthreads}}
+\label{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_runner_a20fe700a6b2abd3694b4a1d5629db8f}
+
+\item 
+ExecutorService \hyperlink{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_runner_fd9939cc7a261bd4bb6c8f3de6f58337}{threadGroup}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+This class provide the basic implementation of a multi-thread enviroinment for \hyperlink{}{GeneticAlgorithm}
+
+\begin{Desc}
+\item[Since:]2.0 \end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_runner_b0815486f3159f086cd06ccab94df319}{
+\index{jenes::utils::multitasking::MultiThreadRunner@{jenes::utils::multitasking::MultiThreadRunner}!MultiThreadRunner@{MultiThreadRunner}}
+\index{MultiThreadRunner@{MultiThreadRunner}!jenes::utils::multitasking::MultiThreadRunner@{jenes::utils::multitasking::MultiThreadRunner}}
+\subsubsection[MultiThreadRunner]{\setlength{\rightskip}{0pt plus 5cm}jenes.utils.multitasking.MultiThreadRunner.MultiThreadRunner ()}}
+\label{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_runner_b0815486f3159f086cd06ccab94df319}
+
+
+Default constructor. This will instantiate a \hyperlink{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_runner}{MultiThreadRunner} envoiroinment wich thread number is equals to the maximum number of processor phisical avaible to the host Java Virtual Machine. \par
+ This approach minimize the overhead in managing the thread because the latest JVMs could try to dispach each thread on a different phisical processor obtaining the best speed-up in performances. \begin{Desc}
+\item[See also:]\hyperlink{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_runner_6319362b08c06d8bf26989407d223c31}{MultiThreadRunner(int)} 
+
+Runtime.availableProcessors() \end{Desc}
+\hypertarget{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_runner_6319362b08c06d8bf26989407d223c31}{
+\index{jenes::utils::multitasking::MultiThreadRunner@{jenes::utils::multitasking::MultiThreadRunner}!MultiThreadRunner@{MultiThreadRunner}}
+\index{MultiThreadRunner@{MultiThreadRunner}!jenes::utils::multitasking::MultiThreadRunner@{jenes::utils::multitasking::MultiThreadRunner}}
+\subsubsection[MultiThreadRunner]{\setlength{\rightskip}{0pt plus 5cm}jenes.utils.multitasking.MultiThreadRunner.MultiThreadRunner (int {\em nthreads})}}
+\label{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_runner_6319362b08c06d8bf26989407d223c31}
+
+
+This will instantiate a \hyperlink{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_runner}{MultiThreadRunner} enviroinment with a fixed thread pool sized as defined by argument \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em nthreads}]the number of threads to use to parallelize algorithm execution \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_runner_69370630a898026070fe8e806cec8fe0}{
+\index{jenes::utils::multitasking::MultiThreadRunner@{jenes::utils::multitasking::MultiThreadRunner}!getNthreads@{getNthreads}}
+\index{getNthreads@{getNthreads}!jenes::utils::multitasking::MultiThreadRunner@{jenes::utils::multitasking::MultiThreadRunner}}
+\subsubsection[getNthreads]{\setlength{\rightskip}{0pt plus 5cm}int jenes.utils.multitasking.MultiThreadRunner.getNthreads ()}}
+\label{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_runner_69370630a898026070fe8e806cec8fe0}
+
+
+Get the number of threads currently setted for this enviroinment \begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_runner_52fc59a28c3187e84b871b9b823b7f43}{
+\index{jenes::utils::multitasking::MultiThreadRunner@{jenes::utils::multitasking::MultiThreadRunner}!start@{start}}
+\index{start@{start}!jenes::utils::multitasking::MultiThreadRunner@{jenes::utils::multitasking::MultiThreadRunner}}
+\subsubsection[start]{\setlength{\rightskip}{0pt plus 5cm}void jenes.utils.multitasking.MultiThreadRunner.start (boolean {\em reset})}}
+\label{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_runner_52fc59a28c3187e84b871b9b823b7f43}
+
+
+Call-back invoked by \hyperlink{}{GeneticAlgorithm\#start(boolean)} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em reset}]\end{description}
+\end{Desc}
+
+
+Reimplemented from \hyperlink{classjenes_1_1utils_1_1multitasking_1_1_runner_5dc1ed49495150ff26ec5194010b00e4}{jenes.utils.multitasking.Runner}.\hypertarget{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_runner_5f00a9b63ff1322d586ad62ec060d597}{
+\index{jenes::utils::multitasking::MultiThreadRunner@{jenes::utils::multitasking::MultiThreadRunner}!stop@{stop}}
+\index{stop@{stop}!jenes::utils::multitasking::MultiThreadRunner@{jenes::utils::multitasking::MultiThreadRunner}}
+\subsubsection[stop]{\setlength{\rightskip}{0pt plus 5cm}void jenes.utils.multitasking.MultiThreadRunner.stop ()}}
+\label{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_runner_5f00a9b63ff1322d586ad62ec060d597}
+
+
+Call-back called soon after \hyperlink{}{GeneticAlgorithm\#onStop(long)} 
+
+Reimplemented from \hyperlink{classjenes_1_1utils_1_1multitasking_1_1_runner_c89e8ac54daba2e326e687662ff9f7b0}{jenes.utils.multitasking.Runner}.
+
+\subsection{Member Data Documentation}
+\hypertarget{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_runner_fd9939cc7a261bd4bb6c8f3de6f58337}{
+\index{jenes::utils::multitasking::MultiThreadRunner@{jenes::utils::multitasking::MultiThreadRunner}!threadGroup@{threadGroup}}
+\index{threadGroup@{threadGroup}!jenes::utils::multitasking::MultiThreadRunner@{jenes::utils::multitasking::MultiThreadRunner}}
+\subsubsection[threadGroup]{\setlength{\rightskip}{0pt plus 5cm}ExecutorService {\bf jenes.utils.multitasking.MultiThreadRunner.threadGroup}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classjenes_1_1utils_1_1multitasking_1_1_multi_thread_runner_fd9939cc7a261bd4bb6c8f3de6f58337}
+
+
+Instance of the thread pool 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/utils/multitasking/MultiThreadRunner.java\end{CompactItemize}

@@ -1,0 +1,223 @@
+\hypertarget{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4}{
+\section{jenes.stage.AbstractStage$<$ T extends Chromosome $>$ Class Reference}
+\label{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4}\index{jenes::stage::AbstractStage$<$ T extends Chromosome $>$@{jenes::stage::AbstractStage$<$ T extends Chromosome $>$}}
+}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+abstract void \hyperlink{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_1e8398b28d820dc0e7343b15ce19c703}{process} (Population$<$ T $>$ in, Population$<$ T $>$ out)  throws StageException
+\item 
+void \hyperlink{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_f16b278b3f7a6d9fd78e742621b956e5}{init} (GeneticAlgorithm$<$ T $>$ \hyperlink{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_751aba4f46b29d22592d48422ffa75f9}{ga})  throws StageException 
+\item 
+void \hyperlink{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_68d4104c004b50abf7b12ffc94122ddc}{dispose} ()  throws StageException 
+\item 
+boolean \hyperlink{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_c20363682ebc9214d9253ff157a06a2d}{isBiggerBetter} ()
+\item 
+void \hyperlink{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_dfddd6664c7f9f2eeba94d59de6fcebf}{setBiggerIsBetter} (boolean flags)
+\item 
+void \hyperlink{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_003250025de6f005e247a05b107e5e8f}{setBiggerIsBetter} (boolean flag, boolean recursively)
+\item 
+final Fitness$<$ T $>$ \hyperlink{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_9de5f0a09b7791fe1e93123ada1c434a}{getFitness} ()
+\item 
+void \hyperlink{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_d60267d0a803c2991ac3ef02ababef2b}{setFitness} (Fitness$<$ T $>$ fit)
+\item 
+void \hyperlink{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_ff1c8307dc89c4fcf7f253b50a87464d}{setFitness} (Fitness$<$ T $>$ fit, boolean recursively)
+\item 
+boolean \hyperlink{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_811a041cd505ad8400b3c8b2aa36f4a9}{isFitnessChanged} ()
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+GeneticAlgorithm$<$ T $>$ \hyperlink{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_751aba4f46b29d22592d48422ffa75f9}{ga}
+\item 
+boolean \hyperlink{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_11da35af3fe950eef9882b03e13690d4}{biggerIsBetter} = true
+\item 
+Fitness$<$ T $>$ \hyperlink{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_697ab8239c1ae2a99445cd7f5fbca45d}{fitness} = null
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+A generic genetic algorithm stage.\par
+ \par
+ In Jenes the genetic algorithm body is a \char`\"{}pipe\char`\"{} of stages: each stage processes the input population and produces the output population.\par
+ A genetic algoritm invokes the \hyperlink{}{process(Population, Population)} method of each stage. \par
+ It is important to consider that the output population is pre-initialized with recicled individuals (for performance reasons), so \hyperlink{}{process(Population, Population)} generally doesn't allocate new Individuals but only changes the genome of that in the output population. The default output population size is equal to the input one, but the stage can (if needed) add or remove individuals from the output population. \par
+\par
+ Note: a stage can modify the input population. So input passed to process method can be mutated when the process method ends.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em $<$T$>$}]The class chromosomes flowing across the stage.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Version:]2.0 \end{Desc}
+\begin{Desc}
+\item[Since:]1.0 \end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_1e8398b28d820dc0e7343b15ce19c703}{
+\index{jenes::stage::AbstractStage$<$ T extends Chromosome $>$@{jenes::stage::AbstractStage$<$ T extends Chromosome $>$}!process@{process}}
+\index{process@{process}!jenes::stage::AbstractStage< T extends Chromosome >@{jenes::stage::AbstractStage$<$ T extends Chromosome $>$}}
+\subsubsection[process]{\setlength{\rightskip}{0pt plus 5cm}abstract void jenes.stage.AbstractStage$<$ T extends Chromosome $>$.process (Population$<$ T $>$ {\em in}, \/  Population$<$ T $>$ {\em out})  throws {\bf StageException}\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_1e8398b28d820dc0e7343b15ce19c703}
+
+
+Processes the input population and tranforms it into the output population. Note:\begin{itemize}
+\item Out population is made of recicled individuals. There is a need of new individuals to add only when there is a need to increase the population size. For pre-initalized individual just use setAs method. This is done for an efficient memory management.\item A stage can modify the input population. So input passed to process method can be mutated when the process method ends. \end{itemize}
+
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em in}]the input population \item[{\em out}]the output population \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Exceptions:]
+\begin{description}
+\item[{\em \hyperlink{classjenes_1_1stage_1_1_stage_exception}{StageException}}]\end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_f16b278b3f7a6d9fd78e742621b956e5}{
+\index{jenes::stage::AbstractStage$<$ T extends Chromosome $>$@{jenes::stage::AbstractStage$<$ T extends Chromosome $>$}!init@{init}}
+\index{init@{init}!jenes::stage::AbstractStage< T extends Chromosome >@{jenes::stage::AbstractStage$<$ T extends Chromosome $>$}}
+\subsubsection[init]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.AbstractStage$<$ T extends Chromosome $>$.init (GeneticAlgorithm$<$ T $>$ {\em ga})  throws {\bf StageException} }}
+\label{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_f16b278b3f7a6d9fd78e742621b956e5}
+
+
+Initializes this stage according to the genetic algorithm that uses it
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em ga}]the Genetic Algorithm in wchic this stage run \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Exceptions:]
+\begin{description}
+\item[{\em \hyperlink{classjenes_1_1stage_1_1_stage_exception}{StageException}}]\end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_68d4104c004b50abf7b12ffc94122ddc}{
+\index{jenes::stage::AbstractStage$<$ T extends Chromosome $>$@{jenes::stage::AbstractStage$<$ T extends Chromosome $>$}!dispose@{dispose}}
+\index{dispose@{dispose}!jenes::stage::AbstractStage< T extends Chromosome >@{jenes::stage::AbstractStage$<$ T extends Chromosome $>$}}
+\subsubsection[dispose]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.AbstractStage$<$ T extends Chromosome $>$.dispose ()  throws {\bf StageException} }}
+\label{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_68d4104c004b50abf7b12ffc94122ddc}
+
+
+Disposes this stage
+
+\begin{Desc}
+\item[Exceptions:]
+\begin{description}
+\item[{\em \hyperlink{classjenes_1_1stage_1_1_stage_exception}{StageException}}]\end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_c20363682ebc9214d9253ff157a06a2d}{
+\index{jenes::stage::AbstractStage$<$ T extends Chromosome $>$@{jenes::stage::AbstractStage$<$ T extends Chromosome $>$}!isBiggerBetter@{isBiggerBetter}}
+\index{isBiggerBetter@{isBiggerBetter}!jenes::stage::AbstractStage< T extends Chromosome >@{jenes::stage::AbstractStage$<$ T extends Chromosome $>$}}
+\subsubsection[isBiggerBetter]{\setlength{\rightskip}{0pt plus 5cm}boolean jenes.stage.AbstractStage$<$ T extends Chromosome $>$.isBiggerBetter ()}}
+\label{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_c20363682ebc9214d9253ff157a06a2d}
+
+
+\begin{Desc}
+\item[\hyperlink{deprecated__deprecated000001}{Deprecated}]deprecated due to the use of \hyperlink{}{Fitness}. In next releasese this method will be removed Says if the best individuals have the higher fitness or not.\end{Desc}
+\begin{Desc}
+\item[Returns:]{\tt true} if the best individuals have the higher fitness$>$ {\tt false} otherwise \end{Desc}
+\hypertarget{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_dfddd6664c7f9f2eeba94d59de6fcebf}{
+\index{jenes::stage::AbstractStage$<$ T extends Chromosome $>$@{jenes::stage::AbstractStage$<$ T extends Chromosome $>$}!setBiggerIsBetter@{setBiggerIsBetter}}
+\index{setBiggerIsBetter@{setBiggerIsBetter}!jenes::stage::AbstractStage< T extends Chromosome >@{jenes::stage::AbstractStage$<$ T extends Chromosome $>$}}
+\subsubsection[setBiggerIsBetter]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.AbstractStage$<$ T extends Chromosome $>$.setBiggerIsBetter (boolean {\em flags})}}
+\label{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_dfddd6664c7f9f2eeba94d59de6fcebf}
+
+
+\begin{Desc}
+\item[\hyperlink{deprecated__deprecated000002}{Deprecated}]deprecated due to the use of \hyperlink{}{Fitness}. In next releasese this method will be removed Sets if the best individuals have the higher fitness or not. For maximization, this property is set to true; for minimization, this property is set to false. This setting is propagated down to every sub-stage the stage is made of.\end{Desc}
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em flag}]true, if the best individual has the higher fitness \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_003250025de6f005e247a05b107e5e8f}{
+\index{jenes::stage::AbstractStage$<$ T extends Chromosome $>$@{jenes::stage::AbstractStage$<$ T extends Chromosome $>$}!setBiggerIsBetter@{setBiggerIsBetter}}
+\index{setBiggerIsBetter@{setBiggerIsBetter}!jenes::stage::AbstractStage< T extends Chromosome >@{jenes::stage::AbstractStage$<$ T extends Chromosome $>$}}
+\subsubsection[setBiggerIsBetter]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.AbstractStage$<$ T extends Chromosome $>$.setBiggerIsBetter (boolean {\em flag}, \/  boolean {\em recursively})}}
+\label{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_003250025de6f005e247a05b107e5e8f}
+
+
+\begin{Desc}
+\item[\hyperlink{deprecated__deprecated000003}{Deprecated}]deprecated due to the use of \hyperlink{}{Fitness}. In next releasese this method will be removed Sets if the best individuals have the higher fitness or not. This setting can be or not propagated down to sub-stages.\end{Desc}
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em flag}]true, if the best individual has the higher fitness \item[{\em recursively}]true, to propagate this setting down, otherwise false. \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_9de5f0a09b7791fe1e93123ada1c434a}{
+\index{jenes::stage::AbstractStage$<$ T extends Chromosome $>$@{jenes::stage::AbstractStage$<$ T extends Chromosome $>$}!getFitness@{getFitness}}
+\index{getFitness@{getFitness}!jenes::stage::AbstractStage< T extends Chromosome >@{jenes::stage::AbstractStage$<$ T extends Chromosome $>$}}
+\subsubsection[getFitness]{\setlength{\rightskip}{0pt plus 5cm}final Fitness$<$T$>$ jenes.stage.AbstractStage$<$ T extends Chromosome $>$.getFitness ()}}
+\label{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_9de5f0a09b7791fe1e93123ada1c434a}
+
+
+Get the \hyperlink{}{Fitness} currently setted for this stage \begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_d60267d0a803c2991ac3ef02ababef2b}{
+\index{jenes::stage::AbstractStage$<$ T extends Chromosome $>$@{jenes::stage::AbstractStage$<$ T extends Chromosome $>$}!setFitness@{setFitness}}
+\index{setFitness@{setFitness}!jenes::stage::AbstractStage< T extends Chromosome >@{jenes::stage::AbstractStage$<$ T extends Chromosome $>$}}
+\subsubsection[setFitness]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.AbstractStage$<$ T extends Chromosome $>$.setFitness (Fitness$<$ T $>$ {\em fit})}}
+\label{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_d60267d0a803c2991ac3ef02ababef2b}
+
+
+Change the \hyperlink{}{Fitness} to this stage propagating the change recursively \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fit}]\end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_ff1c8307dc89c4fcf7f253b50a87464d}{
+\index{jenes::stage::AbstractStage$<$ T extends Chromosome $>$@{jenes::stage::AbstractStage$<$ T extends Chromosome $>$}!setFitness@{setFitness}}
+\index{setFitness@{setFitness}!jenes::stage::AbstractStage< T extends Chromosome >@{jenes::stage::AbstractStage$<$ T extends Chromosome $>$}}
+\subsubsection[setFitness]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.AbstractStage$<$ T extends Chromosome $>$.setFitness (Fitness$<$ T $>$ {\em fit}, \/  boolean {\em recursively})}}
+\label{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_ff1c8307dc89c4fcf7f253b50a87464d}
+
+
+Change the \hyperlink{}{Fitness} to this stage propagating the change recursively according to the flag given as parameter \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fit}]\item[{\em recursively}]\end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_811a041cd505ad8400b3c8b2aa36f4a9}{
+\index{jenes::stage::AbstractStage$<$ T extends Chromosome $>$@{jenes::stage::AbstractStage$<$ T extends Chromosome $>$}!isFitnessChanged@{isFitnessChanged}}
+\index{isFitnessChanged@{isFitnessChanged}!jenes::stage::AbstractStage< T extends Chromosome >@{jenes::stage::AbstractStage$<$ T extends Chromosome $>$}}
+\subsubsection[isFitnessChanged]{\setlength{\rightskip}{0pt plus 5cm}boolean jenes.stage.AbstractStage$<$ T extends Chromosome $>$.isFitnessChanged ()}}
+\label{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_811a041cd505ad8400b3c8b2aa36f4a9}
+
+
+Test if the fitness is recently changed \begin{Desc}
+\item[Returns:]\end{Desc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_751aba4f46b29d22592d48422ffa75f9}{
+\index{jenes::stage::AbstractStage$<$ T extends Chromosome $>$@{jenes::stage::AbstractStage$<$ T extends Chromosome $>$}!ga@{ga}}
+\index{ga@{ga}!jenes::stage::AbstractStage< T extends Chromosome >@{jenes::stage::AbstractStage$<$ T extends Chromosome $>$}}
+\subsubsection[ga]{\setlength{\rightskip}{0pt plus 5cm}GeneticAlgorithm$<$T$>$ jenes.stage.AbstractStage$<$ T extends Chromosome $>$.{\bf ga}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_751aba4f46b29d22592d48422ffa75f9}
+
+
+The genetic algorithm, this stage belongs to \hypertarget{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_11da35af3fe950eef9882b03e13690d4}{
+\index{jenes::stage::AbstractStage$<$ T extends Chromosome $>$@{jenes::stage::AbstractStage$<$ T extends Chromosome $>$}!biggerIsBetter@{biggerIsBetter}}
+\index{biggerIsBetter@{biggerIsBetter}!jenes::stage::AbstractStage< T extends Chromosome >@{jenes::stage::AbstractStage$<$ T extends Chromosome $>$}}
+\subsubsection[biggerIsBetter]{\setlength{\rightskip}{0pt plus 5cm}boolean jenes.stage.AbstractStage$<$ T extends Chromosome $>$.{\bf biggerIsBetter} = true\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_11da35af3fe950eef9882b03e13690d4}
+
+
+True if higher scores entail better individuals \hypertarget{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_697ab8239c1ae2a99445cd7f5fbca45d}{
+\index{jenes::stage::AbstractStage$<$ T extends Chromosome $>$@{jenes::stage::AbstractStage$<$ T extends Chromosome $>$}!fitness@{fitness}}
+\index{fitness@{fitness}!jenes::stage::AbstractStage< T extends Chromosome >@{jenes::stage::AbstractStage$<$ T extends Chromosome $>$}}
+\subsubsection[fitness]{\setlength{\rightskip}{0pt plus 5cm}Fitness$<$T$>$ jenes.stage.AbstractStage$<$ T extends Chromosome $>$.{\bf fitness} = null\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classjenes_1_1stage_1_1_abstract_stage_3_01_t_01extends_01_chromosome_01_4_697ab8239c1ae2a99445cd7f5fbca45d}
+
+
+The current Fitness 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/stage/AbstractStage.java\end{CompactItemize}

@@ -1,0 +1,181 @@
+\hypertarget{classjenes_1_1statistics_1_1_statistics_logger}{
+\section{jenes.statistics.StatisticsLogger Class Reference}
+\label{classjenes_1_1statistics_1_1_statistics_logger}\index{jenes::statistics::StatisticsLogger@{jenes::statistics::StatisticsLogger}}
+}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classjenes_1_1statistics_1_1_statistics_logger_d4bf879bdfb673a6f82f3536fd5557b8}{StatisticsLogger} (\hyperlink{classjenes_1_1utils_1_1_abstract_logger}{AbstractLogger} logger, String...figures)
+\item 
+void \hyperlink{classjenes_1_1statistics_1_1_statistics_logger_8f7fc89cbbd6c6aad447057cd3eb6dbe}{record} (LoggableStatistics statistics)
+\item 
+void \hyperlink{classjenes_1_1statistics_1_1_statistics_logger_31acd1617a14ed32519fc5487b30fd25}{record} (String prefix, LoggableStatistics statistics)
+\item 
+void \hyperlink{classjenes_1_1statistics_1_1_statistics_logger_1e68400e5e02df74005d654dd52a9b34}{record} (String prefix, LoggableStatistics statistics, boolean log)
+\item 
+void \hyperlink{classjenes_1_1statistics_1_1_statistics_logger_c9ee13346b299296f315ad6cf247fdcf}{add} (String prefix, String key, Object value)
+\item 
+\hyperlink{classjenes_1_1utils_1_1_abstract_logger}{AbstractLogger} \hyperlink{classjenes_1_1statistics_1_1_statistics_logger_bd8fdfad668108933aa315c415050d63}{getLogger} ()
+\item 
+void \hyperlink{classjenes_1_1statistics_1_1_statistics_logger_35539d6c4f5664617185d68c6efdf66a}{log} ()
+\item 
+void \hyperlink{classjenes_1_1statistics_1_1_statistics_logger_80cde2facc21c7398050e89131a7321e}{save} ()
+\item 
+void \hyperlink{classjenes_1_1statistics_1_1_statistics_logger_ae3d375349f86fcd9a7ce450bae3d046}{close} ()
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+\hypertarget{classjenes_1_1statistics_1_1_statistics_logger_c1b95fdfa1e20c87b66d6f36b78d9ed1}{
+void \textbf{finalize} ()}
+\label{classjenes_1_1statistics_1_1_statistics_logger_c1b95fdfa1e20c87b66d6f36b78d9ed1}
+
+\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+interface \hyperlink{interfacejenes_1_1statistics_1_1_statistics_logger_1_1_loggable}{Loggable}
+\item 
+class \textbf{LoggableStatistics}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+This class provides an utility wrapper for logging the statistics.
+
+In order to log statistics, the class has to extend {\tt LoggableStatistics{\tt  in order to automatically retrieve figures. Figures are provided by methods returning {\tt double} value figures and annotated as {\tt {\tt .}}}}
+
+{\tt {\tt {\tt {\tt  For example: $<$blockquote$>$\small\begin{alltt}
+ class MyStatistics extends LoggableStatistics \{
+    ...
+    \&\#064;\hyperlink{interfacejenes_1_1statistics_1_1_statistics_logger_1_1_loggable}{Loggable}("SomeFigure")
+    double getSomeValue() \{ ... \}
+    ...
+    \&\#064;\hyperlink{interfacejenes_1_1statistics_1_1_statistics_logger_1_1_loggable}{Loggable}("SomeCount")
+    double getSomeCount() \{ ... \}
+    ...
+ \}
+ 
+ \end{alltt}
+\normalsize 
+$<$/blockquote$>$ Statistics are passed to the logger as specified at instantiation time.}}}}
+
+{\tt {\tt {\tt {\tt  \begin{Desc}
+\item[Version:]2.0 \end{Desc}
+\begin{Desc}
+\item[Since:]1.3\end{Desc}
+\begin{Desc}
+\item[See also:]StatisticsLogger.LoggableStatistics \end{Desc}
+}}}}
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classjenes_1_1statistics_1_1_statistics_logger_d4bf879bdfb673a6f82f3536fd5557b8}{
+\index{jenes::statistics::StatisticsLogger@{jenes::statistics::StatisticsLogger}!StatisticsLogger@{StatisticsLogger}}
+\index{StatisticsLogger@{StatisticsLogger}!jenes::statistics::StatisticsLogger@{jenes::statistics::StatisticsLogger}}
+\subsubsection[StatisticsLogger]{\setlength{\rightskip}{0pt plus 5cm}jenes.statistics.StatisticsLogger.StatisticsLogger ({\bf AbstractLogger} {\em logger}, \/  String... {\em figures})}}
+\label{classjenes_1_1statistics_1_1_statistics_logger_d4bf879bdfb673a6f82f3536fd5557b8}
+
+
+Creastes a \hyperlink{classjenes_1_1statistics_1_1_statistics_logger}{StatisticsLogger}. If figures is empty, no filter is applied and all statistics are able to be saved.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em logger}]- the logger used to save the statistics \item[{\em figures}]- the figures that we are interested to save \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classjenes_1_1statistics_1_1_statistics_logger_8f7fc89cbbd6c6aad447057cd3eb6dbe}{
+\index{jenes::statistics::StatisticsLogger@{jenes::statistics::StatisticsLogger}!record@{record}}
+\index{record@{record}!jenes::statistics::StatisticsLogger@{jenes::statistics::StatisticsLogger}}
+\subsubsection[record]{\setlength{\rightskip}{0pt plus 5cm}void jenes.statistics.StatisticsLogger.record (LoggableStatistics {\em statistics})}}
+\label{classjenes_1_1statistics_1_1_statistics_logger_8f7fc89cbbd6c6aad447057cd3eb6dbe}
+
+
+Store a new statistic record in the logger.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em statistics}]- the statistics being logged. \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1statistics_1_1_statistics_logger_31acd1617a14ed32519fc5487b30fd25}{
+\index{jenes::statistics::StatisticsLogger@{jenes::statistics::StatisticsLogger}!record@{record}}
+\index{record@{record}!jenes::statistics::StatisticsLogger@{jenes::statistics::StatisticsLogger}}
+\subsubsection[record]{\setlength{\rightskip}{0pt plus 5cm}void jenes.statistics.StatisticsLogger.record (String {\em prefix}, \/  LoggableStatistics {\em statistics})}}
+\label{classjenes_1_1statistics_1_1_statistics_logger_31acd1617a14ed32519fc5487b30fd25}
+
+
+Store a new statistic record in the logger.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em prefix}]- the prefix of statistics name \item[{\em statistics}]- the statistics being logged. \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1statistics_1_1_statistics_logger_1e68400e5e02df74005d654dd52a9b34}{
+\index{jenes::statistics::StatisticsLogger@{jenes::statistics::StatisticsLogger}!record@{record}}
+\index{record@{record}!jenes::statistics::StatisticsLogger@{jenes::statistics::StatisticsLogger}}
+\subsubsection[record]{\setlength{\rightskip}{0pt plus 5cm}void jenes.statistics.StatisticsLogger.record (String {\em prefix}, \/  LoggableStatistics {\em statistics}, \/  boolean {\em log})}}
+\label{classjenes_1_1statistics_1_1_statistics_logger_1e68400e5e02df74005d654dd52a9b34}
+
+
+Store a new statistic record in the logger.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em prefix}]- the prefix of statistics name \item[{\em statistics}]- the statistics being logged. \item[{\em log}]- if {\tt true$<$/ code$>$ logs a current record by storing it and making the record empty. }\end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1statistics_1_1_statistics_logger_c9ee13346b299296f315ad6cf247fdcf}{
+\index{jenes::statistics::StatisticsLogger@{jenes::statistics::StatisticsLogger}!add@{add}}
+\index{add@{add}!jenes::statistics::StatisticsLogger@{jenes::statistics::StatisticsLogger}}
+\subsubsection[add]{\setlength{\rightskip}{0pt plus 5cm}void jenes.statistics.StatisticsLogger.add (String {\em prefix}, \/  String {\em key}, \/  Object {\em value})}}
+\label{classjenes_1_1statistics_1_1_statistics_logger_c9ee13346b299296f315ad6cf247fdcf}
+
+
+Add a value into the current record.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em prefix}]- the prefix of statistics name \item[{\em key}]- the statistics name \item[{\em value}]- the statistics value \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1statistics_1_1_statistics_logger_bd8fdfad668108933aa315c415050d63}{
+\index{jenes::statistics::StatisticsLogger@{jenes::statistics::StatisticsLogger}!getLogger@{getLogger}}
+\index{getLogger@{getLogger}!jenes::statistics::StatisticsLogger@{jenes::statistics::StatisticsLogger}}
+\subsubsection[getLogger]{\setlength{\rightskip}{0pt plus 5cm}{\bf AbstractLogger} jenes.statistics.StatisticsLogger.getLogger ()}}
+\label{classjenes_1_1statistics_1_1_statistics_logger_bd8fdfad668108933aa315c415050d63}
+
+
+Returns the logger used for storing the statistics.
+
+\begin{Desc}
+\item[Returns:]the logger \end{Desc}
+\hypertarget{classjenes_1_1statistics_1_1_statistics_logger_35539d6c4f5664617185d68c6efdf66a}{
+\index{jenes::statistics::StatisticsLogger@{jenes::statistics::StatisticsLogger}!log@{log}}
+\index{log@{log}!jenes::statistics::StatisticsLogger@{jenes::statistics::StatisticsLogger}}
+\subsubsection[log]{\setlength{\rightskip}{0pt plus 5cm}void jenes.statistics.StatisticsLogger.log ()}}
+\label{classjenes_1_1statistics_1_1_statistics_logger_35539d6c4f5664617185d68c6efdf66a}
+
+
+Logs a current record by storing it and making the record empty \hypertarget{classjenes_1_1statistics_1_1_statistics_logger_80cde2facc21c7398050e89131a7321e}{
+\index{jenes::statistics::StatisticsLogger@{jenes::statistics::StatisticsLogger}!save@{save}}
+\index{save@{save}!jenes::statistics::StatisticsLogger@{jenes::statistics::StatisticsLogger}}
+\subsubsection[save]{\setlength{\rightskip}{0pt plus 5cm}void jenes.statistics.StatisticsLogger.save ()}}
+\label{classjenes_1_1statistics_1_1_statistics_logger_80cde2facc21c7398050e89131a7321e}
+
+
+Saves the undelying logger. \hypertarget{classjenes_1_1statistics_1_1_statistics_logger_ae3d375349f86fcd9a7ce450bae3d046}{
+\index{jenes::statistics::StatisticsLogger@{jenes::statistics::StatisticsLogger}!close@{close}}
+\index{close@{close}!jenes::statistics::StatisticsLogger@{jenes::statistics::StatisticsLogger}}
+\subsubsection[close]{\setlength{\rightskip}{0pt plus 5cm}void jenes.statistics.StatisticsLogger.close ()}}
+\label{classjenes_1_1statistics_1_1_statistics_logger_ae3d375349f86fcd9a7ce450bae3d046}
+
+
+Closes the undelying logger. 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/statistics/StatisticsLogger.java\end{CompactItemize}

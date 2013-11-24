@@ -1,0 +1,203 @@
+\hypertarget{classjenes_1_1algorithms_1_1_steady_state_g_a_3_01_t_01extends_01_chromosome_01_4}{
+\section{jenes.algorithms.SteadyStateGA$<$ T extends Chromosome $>$ Class Reference}
+\label{classjenes_1_1algorithms_1_1_steady_state_g_a_3_01_t_01extends_01_chromosome_01_4}\index{jenes::algorithms::SteadyStateGA$<$ T extends Chromosome $>$@{jenes::algorithms::SteadyStateGA$<$ T extends Chromosome $>$}}
+}
+Inherits jenes::GeneticAlgorithm$<$ T $>$.
+
+\subsection*{Public Types}
+\begin{CompactItemize}
+\item 
+enum \hyperlink{classjenes_1_1algorithms_1_1_steady_state_g_a_3_01_t_01extends_01_chromosome_01_4_e3534264ad652fd69b6d2a619b16e13b}{SelectionMethod} \{ \par
+\textbf{ROULETTE}, 
+\textbf{TOURNAMENT}, 
+\textbf{ROULETTE}, 
+\textbf{TOURNAMENT}, 
+\par
+\textbf{ROULETTE}, 
+\textbf{TOURNAMENT}, 
+\textbf{NONE}, 
+\textbf{ROULETTE}, 
+\par
+\textbf{TOURNAMENT}, 
+\textbf{ROULETTE}, 
+\textbf{TOURNAMENT}
+ \}
+\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classjenes_1_1algorithms_1_1_steady_state_g_a_3_01_t_01extends_01_chromosome_01_4_0bd9f9195ccd7bb9f0a93bf467ee81d5}{SteadyStateGA} (final Fitness fitness)
+\item 
+\hyperlink{classjenes_1_1algorithms_1_1_steady_state_g_a_3_01_t_01extends_01_chromosome_01_4_1fab107de8499953af703b619d2fc741}{SteadyStateGA} (final Fitness fitness, final Population$<$ T $>$ pop)
+\item 
+\hyperlink{classjenes_1_1algorithms_1_1_steady_state_g_a_3_01_t_01extends_01_chromosome_01_4_6dba077ffc454a1863b7d15cecac32b4}{SteadyStateGA} (final Fitness fitness, final Population$<$ T $>$ pop, final int genlimit)
+\item 
+\hyperlink{classjenes_1_1algorithms_1_1_steady_state_g_a_3_01_t_01extends_01_chromosome_01_4_5964a47d26b5831b9e821285e3e4cb8d}{SteadyStateGA} (final Fitness fitness, final Population$<$ T $>$ pop, final int genlimit, final \hyperlink{classjenes_1_1algorithms_1_1_steady_state_g_a_3_01_t_01extends_01_chromosome_01_4_e3534264ad652fd69b6d2a619b16e13b}{SelectionMethod} selmethod, final AbstractStage$<$ T $>$...stages)
+\item 
+\hyperlink{classjenes_1_1algorithms_1_1_steady_state_g_a_3_01_t_01extends_01_chromosome_01_4_7f95aed43d04c3290cc5fd98a569b6e0}{SteadyStateGA} (final Fitness fitness, final Population$<$ T $>$ pop, final int genlimit, final int rr, final int sr, final \hyperlink{classjenes_1_1algorithms_1_1_steady_state_g_a_3_01_t_01extends_01_chromosome_01_4_e3534264ad652fd69b6d2a619b16e13b}{SelectionMethod} selmethod, final AbstractStage$<$ T $>$...stages)
+\item 
+\hyperlink{classjenes_1_1algorithms_1_1_steady_state_g_a_3_01_t_01extends_01_chromosome_01_4_8dbf144ebf5f83e8d67e1e74c0e8c630}{SteadyStateGA} (final Fitness fitness, final Population$<$ T $>$ pop, final int genlimit, final Selector$<$ T $>$ selector, final AbstractStage$<$ T $>$...stages)
+\item 
+\hyperlink{classjenes_1_1algorithms_1_1_steady_state_g_a_3_01_t_01extends_01_chromosome_01_4_24e8cfdd1131b63cb1c3d086a6a09cf4}{SteadyStateGA} (final Fitness fitness, final Population$<$ T $>$ pop, final int genlimit, final int rr, final int sr, final Selector$<$ T $>$ selector, final AbstractStage$<$ T $>$...stages)
+\item 
+\hyperlink{classjenes_1_1algorithms_1_1_steady_state_g_a_3_01_t_01extends_01_chromosome_01_4_8e1b8939ca23670640b050dae1e239cc}{SteadyStateGA} (final Fitness fitness, final Population$<$ T $>$ pop, final int genlimit, final SteadyState$<$ T $>$ ss)
+\end{CompactItemize}
+\subsection*{Static Public Attributes}
+\begin{CompactItemize}
+\item 
+\hypertarget{classjenes_1_1algorithms_1_1_steady_state_g_a_3_01_t_01extends_01_chromosome_01_4_6b63d4f31855f6b9f73d8e35cb76eaee}{
+static final \hyperlink{classjenes_1_1algorithms_1_1_steady_state_g_a_3_01_t_01extends_01_chromosome_01_4_e3534264ad652fd69b6d2a619b16e13b}{SelectionMethod} \textbf{DEFAULT\_\-SELECTION\_\-METHOD} = SelectionMethod.TOURNAMENT}
+\label{classjenes_1_1algorithms_1_1_steady_state_g_a_3_01_t_01extends_01_chromosome_01_4_6b63d4f31855f6b9f73d8e35cb76eaee}
+
+\item 
+static final int \hyperlink{classjenes_1_1algorithms_1_1_steady_state_g_a_3_01_t_01extends_01_chromosome_01_4_d510a7e4a856de7b2c9d021b2f66a5ac}{DEFAULT\_\-GENERATION\_\-LIMIT} = 5000
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Steady-state genetic algorithm
+
+\begin{Desc}
+\item[Version:]2.0 \end{Desc}
+\begin{Desc}
+\item[Since:]2.0 \end{Desc}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classjenes_1_1algorithms_1_1_steady_state_g_a_3_01_t_01extends_01_chromosome_01_4_e3534264ad652fd69b6d2a619b16e13b}{
+\index{jenes::algorithms::SteadyStateGA$<$ T extends Chromosome $>$@{jenes::algorithms::SteadyStateGA$<$ T extends Chromosome $>$}!SelectionMethod@{SelectionMethod}}
+\index{SelectionMethod@{SelectionMethod}!jenes::algorithms::SteadyStateGA< T extends Chromosome >@{jenes::algorithms::SteadyStateGA$<$ T extends Chromosome $>$}}
+\subsubsection[SelectionMethod]{\setlength{\rightskip}{0pt plus 5cm}enum jenes::algorithms::SteadyStateGA$<$ T extends Chromosome $>$::{\bf SelectionMethod}}}
+\label{classjenes_1_1algorithms_1_1_steady_state_g_a_3_01_t_01extends_01_chromosome_01_4_e3534264ad652fd69b6d2a619b16e13b}
+
+
+Provides the available selection methods 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classjenes_1_1algorithms_1_1_steady_state_g_a_3_01_t_01extends_01_chromosome_01_4_0bd9f9195ccd7bb9f0a93bf467ee81d5}{
+\index{jenes::algorithms::SteadyStateGA$<$ T extends Chromosome $>$@{jenes::algorithms::SteadyStateGA$<$ T extends Chromosome $>$}!SteadyStateGA@{SteadyStateGA}}
+\index{SteadyStateGA@{SteadyStateGA}!jenes::algorithms::SteadyStateGA< T extends Chromosome >@{jenes::algorithms::SteadyStateGA$<$ T extends Chromosome $>$}}
+\subsubsection[SteadyStateGA]{\setlength{\rightskip}{0pt plus 5cm}jenes.algorithms.SteadyStateGA$<$ T extends Chromosome $>$.SteadyStateGA (final Fitness {\em fitness})}}
+\label{classjenes_1_1algorithms_1_1_steady_state_g_a_3_01_t_01extends_01_chromosome_01_4_0bd9f9195ccd7bb9f0a93bf467ee81d5}
+
+
+Builds a new SteadyStateGA with {\tt null} population, default generation limit, default replacement rate, defaul selection rate, default selection method.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fitness}]the fitness to use \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_steady_state_g_a_3_01_t_01extends_01_chromosome_01_4_1fab107de8499953af703b619d2fc741}{
+\index{jenes::algorithms::SteadyStateGA$<$ T extends Chromosome $>$@{jenes::algorithms::SteadyStateGA$<$ T extends Chromosome $>$}!SteadyStateGA@{SteadyStateGA}}
+\index{SteadyStateGA@{SteadyStateGA}!jenes::algorithms::SteadyStateGA< T extends Chromosome >@{jenes::algorithms::SteadyStateGA$<$ T extends Chromosome $>$}}
+\subsubsection[SteadyStateGA]{\setlength{\rightskip}{0pt plus 5cm}jenes.algorithms.SteadyStateGA$<$ T extends Chromosome $>$.SteadyStateGA (final Fitness {\em fitness}, \/  final Population$<$ T $>$ {\em pop})}}
+\label{classjenes_1_1algorithms_1_1_steady_state_g_a_3_01_t_01extends_01_chromosome_01_4_1fab107de8499953af703b619d2fc741}
+
+
+Builds a new SteadyStateGA with default generation limit, default replacement rate, defaul selection rate, default selection method.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fitness}]the fitness to use \item[{\em pop}]the initial population \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_steady_state_g_a_3_01_t_01extends_01_chromosome_01_4_6dba077ffc454a1863b7d15cecac32b4}{
+\index{jenes::algorithms::SteadyStateGA$<$ T extends Chromosome $>$@{jenes::algorithms::SteadyStateGA$<$ T extends Chromosome $>$}!SteadyStateGA@{SteadyStateGA}}
+\index{SteadyStateGA@{SteadyStateGA}!jenes::algorithms::SteadyStateGA< T extends Chromosome >@{jenes::algorithms::SteadyStateGA$<$ T extends Chromosome $>$}}
+\subsubsection[SteadyStateGA]{\setlength{\rightskip}{0pt plus 5cm}jenes.algorithms.SteadyStateGA$<$ T extends Chromosome $>$.SteadyStateGA (final Fitness {\em fitness}, \/  final Population$<$ T $>$ {\em pop}, \/  final int {\em genlimit})}}
+\label{classjenes_1_1algorithms_1_1_steady_state_g_a_3_01_t_01extends_01_chromosome_01_4_6dba077ffc454a1863b7d15cecac32b4}
+
+
+Builds a new SteadyStateGA with default replacement rate, defaul selection rate, default selection method.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fitness}]- the fitness to use \item[{\em pop}]- the initial population \item[{\em genlimit}]- generation limit \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_steady_state_g_a_3_01_t_01extends_01_chromosome_01_4_5964a47d26b5831b9e821285e3e4cb8d}{
+\index{jenes::algorithms::SteadyStateGA$<$ T extends Chromosome $>$@{jenes::algorithms::SteadyStateGA$<$ T extends Chromosome $>$}!SteadyStateGA@{SteadyStateGA}}
+\index{SteadyStateGA@{SteadyStateGA}!jenes::algorithms::SteadyStateGA< T extends Chromosome >@{jenes::algorithms::SteadyStateGA$<$ T extends Chromosome $>$}}
+\subsubsection[SteadyStateGA]{\setlength{\rightskip}{0pt plus 5cm}jenes.algorithms.SteadyStateGA$<$ T extends Chromosome $>$.SteadyStateGA (final Fitness {\em fitness}, \/  final Population$<$ T $>$ {\em pop}, \/  final int {\em genlimit}, \/  final {\bf SelectionMethod} {\em selmethod}, \/  final AbstractStage$<$ T $>$... {\em stages})}}
+\label{classjenes_1_1algorithms_1_1_steady_state_g_a_3_01_t_01extends_01_chromosome_01_4_5964a47d26b5831b9e821285e3e4cb8d}
+
+
+Builds a new SteadyStateGA with default replacement rate, defaul selection rate
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fitness}]- the fitness to use \item[{\em pop}]- the initial population \item[{\em genlimit}]- generation limit \item[{\em selmethod}]- selection method \item[{\em stages}]- stages of algorithm \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_steady_state_g_a_3_01_t_01extends_01_chromosome_01_4_7f95aed43d04c3290cc5fd98a569b6e0}{
+\index{jenes::algorithms::SteadyStateGA$<$ T extends Chromosome $>$@{jenes::algorithms::SteadyStateGA$<$ T extends Chromosome $>$}!SteadyStateGA@{SteadyStateGA}}
+\index{SteadyStateGA@{SteadyStateGA}!jenes::algorithms::SteadyStateGA< T extends Chromosome >@{jenes::algorithms::SteadyStateGA$<$ T extends Chromosome $>$}}
+\subsubsection[SteadyStateGA]{\setlength{\rightskip}{0pt plus 5cm}jenes.algorithms.SteadyStateGA$<$ T extends Chromosome $>$.SteadyStateGA (final Fitness {\em fitness}, \/  final Population$<$ T $>$ {\em pop}, \/  final int {\em genlimit}, \/  final int {\em rr}, \/  final int {\em sr}, \/  final {\bf SelectionMethod} {\em selmethod}, \/  final AbstractStage$<$ T $>$... {\em stages})}}
+\label{classjenes_1_1algorithms_1_1_steady_state_g_a_3_01_t_01extends_01_chromosome_01_4_7f95aed43d04c3290cc5fd98a569b6e0}
+
+
+Builds a new SteadyStateGA
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fitness}]- the fitness to use \item[{\em pop}]- the initial population \item[{\em genlimit}]- generation limit \item[{\em rr}]- replace rate \item[{\em sr}]- selection method \item[{\em selmethod}]- selection method \item[{\em stages}]- stages of algorithm \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_steady_state_g_a_3_01_t_01extends_01_chromosome_01_4_8dbf144ebf5f83e8d67e1e74c0e8c630}{
+\index{jenes::algorithms::SteadyStateGA$<$ T extends Chromosome $>$@{jenes::algorithms::SteadyStateGA$<$ T extends Chromosome $>$}!SteadyStateGA@{SteadyStateGA}}
+\index{SteadyStateGA@{SteadyStateGA}!jenes::algorithms::SteadyStateGA< T extends Chromosome >@{jenes::algorithms::SteadyStateGA$<$ T extends Chromosome $>$}}
+\subsubsection[SteadyStateGA]{\setlength{\rightskip}{0pt plus 5cm}jenes.algorithms.SteadyStateGA$<$ T extends Chromosome $>$.SteadyStateGA (final Fitness {\em fitness}, \/  final Population$<$ T $>$ {\em pop}, \/  final int {\em genlimit}, \/  final Selector$<$ T $>$ {\em selector}, \/  final AbstractStage$<$ T $>$... {\em stages})}}
+\label{classjenes_1_1algorithms_1_1_steady_state_g_a_3_01_t_01extends_01_chromosome_01_4_8dbf144ebf5f83e8d67e1e74c0e8c630}
+
+
+Builds a new SteadyStateGA
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fitness}]- the fitness to use \item[{\em pop}]- the initial population \item[{\em genlimit}]- generation limit \item[{\em selector}]- selector \item[{\em stages}]- stages of algorithm \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_steady_state_g_a_3_01_t_01extends_01_chromosome_01_4_24e8cfdd1131b63cb1c3d086a6a09cf4}{
+\index{jenes::algorithms::SteadyStateGA$<$ T extends Chromosome $>$@{jenes::algorithms::SteadyStateGA$<$ T extends Chromosome $>$}!SteadyStateGA@{SteadyStateGA}}
+\index{SteadyStateGA@{SteadyStateGA}!jenes::algorithms::SteadyStateGA< T extends Chromosome >@{jenes::algorithms::SteadyStateGA$<$ T extends Chromosome $>$}}
+\subsubsection[SteadyStateGA]{\setlength{\rightskip}{0pt plus 5cm}jenes.algorithms.SteadyStateGA$<$ T extends Chromosome $>$.SteadyStateGA (final Fitness {\em fitness}, \/  final Population$<$ T $>$ {\em pop}, \/  final int {\em genlimit}, \/  final int {\em rr}, \/  final int {\em sr}, \/  final Selector$<$ T $>$ {\em selector}, \/  final AbstractStage$<$ T $>$... {\em stages})}}
+\label{classjenes_1_1algorithms_1_1_steady_state_g_a_3_01_t_01extends_01_chromosome_01_4_24e8cfdd1131b63cb1c3d086a6a09cf4}
+
+
+Builds a new SteadyStateGA
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fitness}]- the fitness to use \item[{\em pop}]- the initial population \item[{\em genlimit}]- generation limit \item[{\em rr}]- replace rate \item[{\em sr}]- selection method \item[{\em selector}]- selector \item[{\em stages}]- stages of algorithm \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_steady_state_g_a_3_01_t_01extends_01_chromosome_01_4_8e1b8939ca23670640b050dae1e239cc}{
+\index{jenes::algorithms::SteadyStateGA$<$ T extends Chromosome $>$@{jenes::algorithms::SteadyStateGA$<$ T extends Chromosome $>$}!SteadyStateGA@{SteadyStateGA}}
+\index{SteadyStateGA@{SteadyStateGA}!jenes::algorithms::SteadyStateGA< T extends Chromosome >@{jenes::algorithms::SteadyStateGA$<$ T extends Chromosome $>$}}
+\subsubsection[SteadyStateGA]{\setlength{\rightskip}{0pt plus 5cm}jenes.algorithms.SteadyStateGA$<$ T extends Chromosome $>$.SteadyStateGA (final Fitness {\em fitness}, \/  final Population$<$ T $>$ {\em pop}, \/  final int {\em genlimit}, \/  final SteadyState$<$ T $>$ {\em ss})}}
+\label{classjenes_1_1algorithms_1_1_steady_state_g_a_3_01_t_01extends_01_chromosome_01_4_8e1b8939ca23670640b050dae1e239cc}
+
+
+Builds a new SteadyStateGA
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fitness}]- the fitness to use \item[{\em pop}]- the initial population \item[{\em genlimit}]- generation limit \item[{\em ss}]- a SteadyState stage \end{description}
+\end{Desc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classjenes_1_1algorithms_1_1_steady_state_g_a_3_01_t_01extends_01_chromosome_01_4_d510a7e4a856de7b2c9d021b2f66a5ac}{
+\index{jenes::algorithms::SteadyStateGA$<$ T extends Chromosome $>$@{jenes::algorithms::SteadyStateGA$<$ T extends Chromosome $>$}!DEFAULT\_\-GENERATION\_\-LIMIT@{DEFAULT\_\-GENERATION\_\-LIMIT}}
+\index{DEFAULT\_\-GENERATION\_\-LIMIT@{DEFAULT\_\-GENERATION\_\-LIMIT}!jenes::algorithms::SteadyStateGA< T extends Chromosome >@{jenes::algorithms::SteadyStateGA$<$ T extends Chromosome $>$}}
+\subsubsection[DEFAULT\_\-GENERATION\_\-LIMIT]{\setlength{\rightskip}{0pt plus 5cm}final int jenes.algorithms.SteadyStateGA$<$ T extends Chromosome $>$.{\bf DEFAULT\_\-GENERATION\_\-LIMIT} = 5000\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classjenes_1_1algorithms_1_1_steady_state_g_a_3_01_t_01extends_01_chromosome_01_4_d510a7e4a856de7b2c9d021b2f66a5ac}
+
+
+The default generation limit 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/algorithms/SteadyStateGA.java\end{CompactItemize}

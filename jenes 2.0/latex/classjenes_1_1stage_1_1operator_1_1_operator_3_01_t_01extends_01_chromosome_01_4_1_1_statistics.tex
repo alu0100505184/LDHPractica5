@@ -1,0 +1,77 @@
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_operator_3_01_t_01extends_01_chromosome_01_4_1_1_statistics}{
+\section{jenes.stage.operator.Operator$<$ T extends Chromosome $>$.Statistics Class Reference}
+\label{classjenes_1_1stage_1_1operator_1_1_operator_3_01_t_01extends_01_chromosome_01_4_1_1_statistics}\index{jenes::stage::operator::Operator$<$ T extends Chromosome $>$::Statistics@{jenes::stage::operator::Operator$<$ T extends Chromosome $>$::Statistics}}
+}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classjenes_1_1stage_1_1operator_1_1_operator_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_daa59a7b449045b5fd3c9abd3fbecf23}{Statistics} ()
+\item 
+long \hyperlink{classjenes_1_1stage_1_1operator_1_1_operator_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_7ad4b3ece9b2cdbf4a9142eda087a12d}{getExecutionTime} ()
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+void \hyperlink{classjenes_1_1stage_1_1operator_1_1_operator_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_26f2fb7bb11b9d05d95705ec95f470cf}{fill} (Statistics stats)
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+long \hyperlink{classjenes_1_1stage_1_1operator_1_1_operator_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_3e7fc955df9ca708795c24336b12f937}{executionTime}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+A statistics object holding the time spent to execute the operator. The statistics is available by invoking the \hyperlink{}{Statistics\#fill(jenes.stage.operator.Operator.Statistics)} method: it modifies the specified statistics stage according to that of the statistics associated at the operator. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_operator_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_daa59a7b449045b5fd3c9abd3fbecf23}{
+\index{jenes::stage::operator::Operator$<$ T extends Chromosome $>$::Statistics@{jenes::stage::operator::Operator$<$ T extends Chromosome $>$::Statistics}!Statistics@{Statistics}}
+\index{Statistics@{Statistics}!jenes::stage::operator::Operator< T extends Chromosome >::Statistics@{jenes::stage::operator::Operator$<$ T extends Chromosome $>$::Statistics}}
+\subsubsection[Statistics]{\setlength{\rightskip}{0pt plus 5cm}jenes.stage.operator.Operator$<$ T extends Chromosome $>$.Statistics.Statistics ()}}
+\label{classjenes_1_1stage_1_1operator_1_1_operator_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_daa59a7b449045b5fd3c9abd3fbecf23}
+
+
+Constructs a new statistics operator 
+
+\subsection{Member Function Documentation}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_operator_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_7ad4b3ece9b2cdbf4a9142eda087a12d}{
+\index{jenes::stage::operator::Operator$<$ T extends Chromosome $>$::Statistics@{jenes::stage::operator::Operator$<$ T extends Chromosome $>$::Statistics}!getExecutionTime@{getExecutionTime}}
+\index{getExecutionTime@{getExecutionTime}!jenes::stage::operator::Operator< T extends Chromosome >::Statistics@{jenes::stage::operator::Operator$<$ T extends Chromosome $>$::Statistics}}
+\subsubsection[getExecutionTime]{\setlength{\rightskip}{0pt plus 5cm}long jenes.stage.operator.Operator$<$ T extends Chromosome $>$.Statistics.getExecutionTime ()}}
+\label{classjenes_1_1stage_1_1operator_1_1_operator_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_7ad4b3ece9b2cdbf4a9142eda087a12d}
+
+
+Returns the execution of the last processing of the operator
+
+\begin{Desc}
+\item[Returns:]the time of the last processing of the operator \end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_operator_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_26f2fb7bb11b9d05d95705ec95f470cf}{
+\index{jenes::stage::operator::Operator$<$ T extends Chromosome $>$::Statistics@{jenes::stage::operator::Operator$<$ T extends Chromosome $>$::Statistics}!fill@{fill}}
+\index{fill@{fill}!jenes::stage::operator::Operator< T extends Chromosome >::Statistics@{jenes::stage::operator::Operator$<$ T extends Chromosome $>$::Statistics}}
+\subsubsection[fill]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.operator.Operator$<$ T extends Chromosome $>$.Statistics.fill (Statistics {\em stats})\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1_operator_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_26f2fb7bb11b9d05d95705ec95f470cf}
+
+
+Fills the specified statistics with the data of the operator statistics. At the end, these statistics will have the same state
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em stats}]the statistics to fill \end{description}
+\end{Desc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_operator_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_3e7fc955df9ca708795c24336b12f937}{
+\index{jenes::stage::operator::Operator$<$ T extends Chromosome $>$::Statistics@{jenes::stage::operator::Operator$<$ T extends Chromosome $>$::Statistics}!executionTime@{executionTime}}
+\index{executionTime@{executionTime}!jenes::stage::operator::Operator< T extends Chromosome >::Statistics@{jenes::stage::operator::Operator$<$ T extends Chromosome $>$::Statistics}}
+\subsubsection[executionTime]{\setlength{\rightskip}{0pt plus 5cm}long jenes.stage.operator.Operator$<$ T extends Chromosome $>$.Statistics.executionTime\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1_operator_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_3e7fc955df9ca708795c24336b12f937}
+
+
+the excecution time of the last procssing of the operator 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/stage/operator/Operator.java\end{CompactItemize}

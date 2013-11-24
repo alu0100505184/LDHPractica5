@@ -1,0 +1,85 @@
+\hypertarget{classjenes_1_1stage_1_1_break_point_3_01_t_01extends_01_chromosome_01_4}{
+\section{jenes.stage.BreakPoint$<$ T extends Chromosome $>$ Class Reference}
+\label{classjenes_1_1stage_1_1_break_point_3_01_t_01extends_01_chromosome_01_4}\index{jenes::stage::BreakPoint$<$ T extends Chromosome $>$@{jenes::stage::BreakPoint$<$ T extends Chromosome $>$}}
+}
+Inherits jenes::stage::AbstractStage$<$ T $>$.
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classjenes_1_1stage_1_1_break_point_3_01_t_01extends_01_chromosome_01_4_242b4e33e148a17a0f2d19e1963aa990}{BreakPoint} ()
+\item 
+void \hyperlink{classjenes_1_1stage_1_1_break_point_3_01_t_01extends_01_chromosome_01_4_ac70bbcb2e82710fe969bf1545c3a9f4}{add} (Listener listener)
+\item 
+void \hyperlink{classjenes_1_1stage_1_1_break_point_3_01_t_01extends_01_chromosome_01_4_367d07e34b42c06b692ec35d0a8f8a40}{remove} (Listener listener)
+\item 
+\hypertarget{classjenes_1_1stage_1_1_break_point_3_01_t_01extends_01_chromosome_01_4_2fa0c075727e667e633bb9d3eb2b9e71}{
+void \textbf{process} (Population$<$ T $>$ in, Population$<$ T $>$ out)  throws StageException }
+\label{classjenes_1_1stage_1_1_break_point_3_01_t_01extends_01_chromosome_01_4_2fa0c075727e667e633bb9d3eb2b9e71}
+
+\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class \textbf{Listener}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Stage representing a break point. It notifies its listeners when its \hyperlink{}{process(Population, Population)} method is invocated. The population isn't alterated so the output population is equals to the input one.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em $<$T$>$}]The class chromosomes flowing across the stage.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Version:]1.2 \end{Desc}
+\begin{Desc}
+\item[Since:]1.0 \end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classjenes_1_1stage_1_1_break_point_3_01_t_01extends_01_chromosome_01_4_242b4e33e148a17a0f2d19e1963aa990}{
+\index{jenes::stage::BreakPoint$<$ T extends Chromosome $>$@{jenes::stage::BreakPoint$<$ T extends Chromosome $>$}!BreakPoint@{BreakPoint}}
+\index{BreakPoint@{BreakPoint}!jenes::stage::BreakPoint< T extends Chromosome >@{jenes::stage::BreakPoint$<$ T extends Chromosome $>$}}
+\subsubsection[BreakPoint]{\setlength{\rightskip}{0pt plus 5cm}jenes.stage.BreakPoint$<$ T extends Chromosome $>$.BreakPoint ()}}
+\label{classjenes_1_1stage_1_1_break_point_3_01_t_01extends_01_chromosome_01_4_242b4e33e148a17a0f2d19e1963aa990}
+
+
+Constructs a new BreakPoint stage 
+
+\subsection{Member Function Documentation}
+\hypertarget{classjenes_1_1stage_1_1_break_point_3_01_t_01extends_01_chromosome_01_4_ac70bbcb2e82710fe969bf1545c3a9f4}{
+\index{jenes::stage::BreakPoint$<$ T extends Chromosome $>$@{jenes::stage::BreakPoint$<$ T extends Chromosome $>$}!add@{add}}
+\index{add@{add}!jenes::stage::BreakPoint< T extends Chromosome >@{jenes::stage::BreakPoint$<$ T extends Chromosome $>$}}
+\subsubsection[add]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.BreakPoint$<$ T extends Chromosome $>$.add (Listener {\em listener})}}
+\label{classjenes_1_1stage_1_1_break_point_3_01_t_01extends_01_chromosome_01_4_ac70bbcb2e82710fe969bf1545c3a9f4}
+
+
+Adds the specified listener at this break point stage
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em listener}]the listener to notify when the break point process time occurs. \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1_break_point_3_01_t_01extends_01_chromosome_01_4_367d07e34b42c06b692ec35d0a8f8a40}{
+\index{jenes::stage::BreakPoint$<$ T extends Chromosome $>$@{jenes::stage::BreakPoint$<$ T extends Chromosome $>$}!remove@{remove}}
+\index{remove@{remove}!jenes::stage::BreakPoint< T extends Chromosome >@{jenes::stage::BreakPoint$<$ T extends Chromosome $>$}}
+\subsubsection[remove]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.BreakPoint$<$ T extends Chromosome $>$.remove (Listener {\em listener})}}
+\label{classjenes_1_1stage_1_1_break_point_3_01_t_01extends_01_chromosome_01_4_367d07e34b42c06b692ec35d0a8f8a40}
+
+
+Removes the specified listener between the ones
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em listener}]the listener to remove \end{description}
+\end{Desc}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/stage/BreakPoint.java\end{CompactItemize}

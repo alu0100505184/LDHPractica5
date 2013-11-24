@@ -1,0 +1,186 @@
+\hypertarget{classjenes_1_1utils_1_1_random}{
+\section{jenes.utils.Random Class Reference}
+\label{classjenes_1_1utils_1_1_random}\index{jenes::utils::Random@{jenes::utils::Random}}
+}
+Inheritance diagram for jenes.utils.Random::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classjenes_1_1utils_1_1_random}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+final void \hyperlink{classjenes_1_1utils_1_1_random_6eec3abcf133f7ce43d6a13441523a01}{setTimeSeed} ()
+\item 
+final void \hyperlink{classjenes_1_1utils_1_1_random_484017ff9c5473f7fc3fc7b52cb92433}{setStandardSeed} ()
+\item 
+long \hyperlink{classjenes_1_1utils_1_1_random_55f9b0a836c137e520658f55ad806859}{getSeed} ()
+\item 
+final double \hyperlink{classjenes_1_1utils_1_1_random_be2919ddf9245e0576591fa0ea26593f}{nextDouble} (final double bound)
+\item 
+final double \hyperlink{classjenes_1_1utils_1_1_random_19babaa9c19de0243430cef2c445df9c}{nextDouble} (final double lowerBound, final double upperBound)
+\item 
+final int \hyperlink{classjenes_1_1utils_1_1_random_b066d2d2f6d32c89598c552a9dadedc0}{nextInt} (final int lowerBound, final int upperBound)
+\item 
+final boolean \hyperlink{classjenes_1_1utils_1_1_random_16e9050a46f8218ec8e0f73c6456a5db}{nextBoolean} (final double coin)
+\end{CompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+static \hyperlink{classjenes_1_1utils_1_1_random}{Random} \hyperlink{classjenes_1_1utils_1_1_random_a8b8341f82ccf69de0b44c9f6f174820}{getInstance} ()
+\item 
+static \hyperlink{classjenes_1_1utils_1_1_random}{Random} \hyperlink{classjenes_1_1utils_1_1_random_83dd69fffe081a48e58702c0f118b12e}{getInstance} (long seed)
+\end{CompactItemize}
+\subsection*{Static Public Attributes}
+\begin{CompactItemize}
+\item 
+static final long \hyperlink{classjenes_1_1utils_1_1_random_ee05c4e6476472dc9dc02d2fd94061b5}{STANDARD\_\-SEED} = 4357
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+This class provides the random generator used by JENES. 
+
+\hyperlink{classjenes_1_1utils_1_1_random}{Random} extends the \hyperlink{classjenes_1_1utils_1_1_mersenne_twister_fast}{MersenneTwisterFast} class with some methods useful to JENES for obtaining values within a range.  
+
+\hyperlink{classjenes_1_1utils_1_1_random}{Random} implements the singleton design pattern, thus only one instance of \hyperlink{classjenes_1_1utils_1_1_random}{Random} is available and retrieved by invoking the method \hyperlink{classjenes_1_1utils_1_1_random_a8b8341f82ccf69de0b44c9f6f174820}{getInstance()}.  
+
+The random sequence is controlled by the seed. The standard seed assures that the same sequence of random values is produced by different runs. The time based seed, assures that the sequences varies run by run. 
+
+\begin{Desc}
+\item[Version:]1.2 \end{Desc}
+\begin{Desc}
+\item[Since:]1.0 \end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classjenes_1_1utils_1_1_random_a8b8341f82ccf69de0b44c9f6f174820}{
+\index{jenes::utils::Random@{jenes::utils::Random}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!jenes::utils::Random@{jenes::utils::Random}}
+\subsubsection[getInstance]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Random} jenes.utils.Random.getInstance ()\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classjenes_1_1utils_1_1_random_a8b8341f82ccf69de0b44c9f6f174820}
+
+
+Returns the \hyperlink{classjenes_1_1utils_1_1_random}{Random} singleton. At the first invocation the \hyperlink{classjenes_1_1utils_1_1_random}{Random} object is instantiated.
+
+\begin{Desc}
+\item[Returns:]the \hyperlink{classjenes_1_1utils_1_1_random}{Random} instance \end{Desc}
+\hypertarget{classjenes_1_1utils_1_1_random_83dd69fffe081a48e58702c0f118b12e}{
+\index{jenes::utils::Random@{jenes::utils::Random}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!jenes::utils::Random@{jenes::utils::Random}}
+\subsubsection[getInstance]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Random} jenes.utils.Random.getInstance (long {\em seed})\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classjenes_1_1utils_1_1_random_83dd69fffe081a48e58702c0f118b12e}
+
+
+Returns the \hyperlink{classjenes_1_1utils_1_1_random}{Random} sigleton imposing the seed given as argument \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em seed}]\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{classjenes_1_1utils_1_1_random_6eec3abcf133f7ce43d6a13441523a01}{
+\index{jenes::utils::Random@{jenes::utils::Random}!setTimeSeed@{setTimeSeed}}
+\index{setTimeSeed@{setTimeSeed}!jenes::utils::Random@{jenes::utils::Random}}
+\subsubsection[setTimeSeed]{\setlength{\rightskip}{0pt plus 5cm}final void jenes.utils.Random.setTimeSeed ()}}
+\label{classjenes_1_1utils_1_1_random_6eec3abcf133f7ce43d6a13441523a01}
+
+
+Sets the current time as \hyperlink{classjenes_1_1utils_1_1_random}{Random} seed. This method will make the \hyperlink{classjenes_1_1utils_1_1_random}{Random} sequence of values different run by run. \hypertarget{classjenes_1_1utils_1_1_random_484017ff9c5473f7fc3fc7b52cb92433}{
+\index{jenes::utils::Random@{jenes::utils::Random}!setStandardSeed@{setStandardSeed}}
+\index{setStandardSeed@{setStandardSeed}!jenes::utils::Random@{jenes::utils::Random}}
+\subsubsection[setStandardSeed]{\setlength{\rightskip}{0pt plus 5cm}final void jenes.utils.Random.setStandardSeed ()}}
+\label{classjenes_1_1utils_1_1_random_484017ff9c5473f7fc3fc7b52cb92433}
+
+
+Sets the stardard value as \hyperlink{classjenes_1_1utils_1_1_random}{Random} seed. This method will assure the \hyperlink{classjenes_1_1utils_1_1_random}{Random} sequence of values will not change by run. It should be used for debugging purpose only. \hypertarget{classjenes_1_1utils_1_1_random_55f9b0a836c137e520658f55ad806859}{
+\index{jenes::utils::Random@{jenes::utils::Random}!getSeed@{getSeed}}
+\index{getSeed@{getSeed}!jenes::utils::Random@{jenes::utils::Random}}
+\subsubsection[getSeed]{\setlength{\rightskip}{0pt plus 5cm}long jenes.utils.Random.getSeed ()}}
+\label{classjenes_1_1utils_1_1_random_55f9b0a836c137e520658f55ad806859}
+
+
+Return the current seed used for random \begin{Desc}
+\item[Returns:]\end{Desc}
+
+
+Reimplemented from \hyperlink{classjenes_1_1utils_1_1_mersenne_twister_fast_88963c0469e0bad7a1834469cf0f7a10}{jenes.utils.MersenneTwisterFast}.\hypertarget{classjenes_1_1utils_1_1_random_be2919ddf9245e0576591fa0ea26593f}{
+\index{jenes::utils::Random@{jenes::utils::Random}!nextDouble@{nextDouble}}
+\index{nextDouble@{nextDouble}!jenes::utils::Random@{jenes::utils::Random}}
+\subsubsection[nextDouble]{\setlength{\rightskip}{0pt plus 5cm}final double jenes.utils.Random.nextDouble (final double {\em bound})}}
+\label{classjenes_1_1utils_1_1_random_be2919ddf9245e0576591fa0ea26593f}
+
+
+Returns a random double uniformly distributed within the interval \mbox{[}0,bound\mbox{[}. Please note that bound is excluded. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em bound}]the upper bound \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]a random double uniformly distributed within \mbox{[}0,bound\mbox{[} \end{Desc}
+\hypertarget{classjenes_1_1utils_1_1_random_19babaa9c19de0243430cef2c445df9c}{
+\index{jenes::utils::Random@{jenes::utils::Random}!nextDouble@{nextDouble}}
+\index{nextDouble@{nextDouble}!jenes::utils::Random@{jenes::utils::Random}}
+\subsubsection[nextDouble]{\setlength{\rightskip}{0pt plus 5cm}final double jenes.utils.Random.nextDouble (final double {\em lowerBound}, \/  final double {\em upperBound})}}
+\label{classjenes_1_1utils_1_1_random_19babaa9c19de0243430cef2c445df9c}
+
+
+Returns a double uniformly distributed within the interval \mbox{[}lowerBound,upperBound\mbox{[}. Please note that the upperBound is excluded. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em lowerBound}]the interval lower bound \item[{\em upperBound}]the interval upper bound \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]a double uniformly distributed within \mbox{[}lowerBound,upperBound\mbox{[} \end{Desc}
+\hypertarget{classjenes_1_1utils_1_1_random_b066d2d2f6d32c89598c552a9dadedc0}{
+\index{jenes::utils::Random@{jenes::utils::Random}!nextInt@{nextInt}}
+\index{nextInt@{nextInt}!jenes::utils::Random@{jenes::utils::Random}}
+\subsubsection[nextInt]{\setlength{\rightskip}{0pt plus 5cm}final int jenes.utils.Random.nextInt (final int {\em lowerBound}, \/  final int {\em upperBound})}}
+\label{classjenes_1_1utils_1_1_random_b066d2d2f6d32c89598c552a9dadedc0}
+
+
+Returns a random integer drawn uniformly in the interval \mbox{[}lowerBound, upperBound\mbox{[}. Please note that upperBound is excluded. Thus the integer is between lowerBound and upperBound-1. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em lowerBound}]the interval lower bound \item[{\em upperBound}]the interval upper bound \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]an integer drawn uniformly from lowerBound to upperBound-1. \end{Desc}
+\hypertarget{classjenes_1_1utils_1_1_random_16e9050a46f8218ec8e0f73c6456a5db}{
+\index{jenes::utils::Random@{jenes::utils::Random}!nextBoolean@{nextBoolean}}
+\index{nextBoolean@{nextBoolean}!jenes::utils::Random@{jenes::utils::Random}}
+\subsubsection[nextBoolean]{\setlength{\rightskip}{0pt plus 5cm}final boolean jenes.utils.Random.nextBoolean (final double {\em coin})}}
+\label{classjenes_1_1utils_1_1_random_16e9050a46f8218ec8e0f73c6456a5db}
+
+
+Returns a random boolean value. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em coin}]the probability to have a true value \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]a boolean value \end{Desc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classjenes_1_1utils_1_1_random_ee05c4e6476472dc9dc02d2fd94061b5}{
+\index{jenes::utils::Random@{jenes::utils::Random}!STANDARD\_\-SEED@{STANDARD\_\-SEED}}
+\index{STANDARD\_\-SEED@{STANDARD\_\-SEED}!jenes::utils::Random@{jenes::utils::Random}}
+\subsubsection[STANDARD\_\-SEED]{\setlength{\rightskip}{0pt plus 5cm}final long {\bf jenes.utils.Random.STANDARD\_\-SEED} = 4357\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classjenes_1_1utils_1_1_random_ee05c4e6476472dc9dc02d2fd94061b5}
+
+
+The seed used as default 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/utils/Random.java\end{CompactItemize}

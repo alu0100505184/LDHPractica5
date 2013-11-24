@@ -1,0 +1,169 @@
+\hypertarget{classjenes_1_1stage_1_1_sequence_3_01_t_01extends_01_chromosome_01_4}{
+\section{jenes.stage.Sequence$<$ T extends Chromosome $>$ Class Reference}
+\label{classjenes_1_1stage_1_1_sequence_3_01_t_01extends_01_chromosome_01_4}\index{jenes::stage::Sequence$<$ T extends Chromosome $>$@{jenes::stage::Sequence$<$ T extends Chromosome $>$}}
+}
+Inherits jenes::stage::AbstractStage$<$ T $>$.
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classjenes_1_1stage_1_1_sequence_3_01_t_01extends_01_chromosome_01_4_f6554137f4a770513d9cc8bf481e7d00}{Sequence} ()
+\item 
+void \hyperlink{classjenes_1_1stage_1_1_sequence_3_01_t_01extends_01_chromosome_01_4_7d0e59aeed366cb6f71f754f61bfceb3}{appendStage} (AbstractStage$<$ T $>$ stage)
+\item 
+void \hyperlink{classjenes_1_1stage_1_1_sequence_3_01_t_01extends_01_chromosome_01_4_922e6363fc19620738e95ddfc649ea6e}{insertStageAt} (AbstractStage$<$ T $>$ stage, int pos)
+\item 
+void \hyperlink{classjenes_1_1stage_1_1_sequence_3_01_t_01extends_01_chromosome_01_4_b020311ac8fad8d6d884df9634c211b8}{removeAll} ()
+\item 
+int \hyperlink{classjenes_1_1stage_1_1_sequence_3_01_t_01extends_01_chromosome_01_4_f16f419e9be758779fa14cf53f31bfe1}{getSize} ()
+\item 
+AbstractStage$<$ T $>$ \hyperlink{classjenes_1_1stage_1_1_sequence_3_01_t_01extends_01_chromosome_01_4_a9e1d97737fed4c5141cda315c216b32}{getStageAt} (int pos)
+\item 
+AbstractStage$<$ T $>$ \hyperlink{classjenes_1_1stage_1_1_sequence_3_01_t_01extends_01_chromosome_01_4_1336b162d37aaa9b402c49480d12f8ef}{removeAt} (int pos)
+\item 
+void \hyperlink{classjenes_1_1stage_1_1_sequence_3_01_t_01extends_01_chromosome_01_4_98d9ad6e0fdc1547971fe7fce029e25f}{init} (GeneticAlgorithm$<$ T $>$ ga)
+\item 
+void \hyperlink{classjenes_1_1stage_1_1_sequence_3_01_t_01extends_01_chromosome_01_4_4faf3479fa76eef530633ce8339971e5}{dispose} ()
+\item 
+final void \hyperlink{classjenes_1_1stage_1_1_sequence_3_01_t_01extends_01_chromosome_01_4_dc0e7397edd44839ef221122db3696e8}{process} (Population$<$ T $>$ in, Population$<$ T $>$ out)  throws StageException 
+\item 
+\hypertarget{classjenes_1_1stage_1_1_sequence_3_01_t_01extends_01_chromosome_01_4_759a03c3336352cc390b2024afcc2ab1}{
+void \textbf{setBiggerIsBetter} (boolean flag, boolean recursively)}
+\label{classjenes_1_1stage_1_1_sequence_3_01_t_01extends_01_chromosome_01_4_759a03c3336352cc390b2024afcc2ab1}
+
+\item 
+\hypertarget{classjenes_1_1stage_1_1_sequence_3_01_t_01extends_01_chromosome_01_4_1ec43e74c2534861caf2475405869853}{
+void \textbf{setFitness} (Fitness fit, boolean recursively)}
+\label{classjenes_1_1stage_1_1_sequence_3_01_t_01extends_01_chromosome_01_4_1ec43e74c2534861caf2475405869853}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+A sequence is like a \char`\"{}pipe\char`\"{} of other stages.\par
+ Stages are executed sequentially in the order they are added to the sequence. Each stage receives an input population (produced as output by the previous stage) and produces an output population.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em $<$T$>$}]The class chromosomes flowing across the stage.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Version:]2.0 \end{Desc}
+\begin{Desc}
+\item[Since:]1.0 \end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classjenes_1_1stage_1_1_sequence_3_01_t_01extends_01_chromosome_01_4_f6554137f4a770513d9cc8bf481e7d00}{
+\index{jenes::stage::Sequence$<$ T extends Chromosome $>$@{jenes::stage::Sequence$<$ T extends Chromosome $>$}!Sequence@{Sequence}}
+\index{Sequence@{Sequence}!jenes::stage::Sequence< T extends Chromosome >@{jenes::stage::Sequence$<$ T extends Chromosome $>$}}
+\subsubsection[Sequence]{\setlength{\rightskip}{0pt plus 5cm}jenes.stage.Sequence$<$ T extends Chromosome $>$.Sequence ()}}
+\label{classjenes_1_1stage_1_1_sequence_3_01_t_01extends_01_chromosome_01_4_f6554137f4a770513d9cc8bf481e7d00}
+
+
+Constructs a new sequence stage. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classjenes_1_1stage_1_1_sequence_3_01_t_01extends_01_chromosome_01_4_7d0e59aeed366cb6f71f754f61bfceb3}{
+\index{jenes::stage::Sequence$<$ T extends Chromosome $>$@{jenes::stage::Sequence$<$ T extends Chromosome $>$}!appendStage@{appendStage}}
+\index{appendStage@{appendStage}!jenes::stage::Sequence< T extends Chromosome >@{jenes::stage::Sequence$<$ T extends Chromosome $>$}}
+\subsubsection[appendStage]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.Sequence$<$ T extends Chromosome $>$.appendStage (AbstractStage$<$ T $>$ {\em stage})}}
+\label{classjenes_1_1stage_1_1_sequence_3_01_t_01extends_01_chromosome_01_4_7d0e59aeed366cb6f71f754f61bfceb3}
+
+
+Adds the specified stage at the end of this sequence 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em stage}]the stage to add \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1_sequence_3_01_t_01extends_01_chromosome_01_4_922e6363fc19620738e95ddfc649ea6e}{
+\index{jenes::stage::Sequence$<$ T extends Chromosome $>$@{jenes::stage::Sequence$<$ T extends Chromosome $>$}!insertStageAt@{insertStageAt}}
+\index{insertStageAt@{insertStageAt}!jenes::stage::Sequence< T extends Chromosome >@{jenes::stage::Sequence$<$ T extends Chromosome $>$}}
+\subsubsection[insertStageAt]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.Sequence$<$ T extends Chromosome $>$.insertStageAt (AbstractStage$<$ T $>$ {\em stage}, \/  int {\em pos})}}
+\label{classjenes_1_1stage_1_1_sequence_3_01_t_01extends_01_chromosome_01_4_922e6363fc19620738e95ddfc649ea6e}
+
+
+Adds the specified stage to the specified position 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em stage}]the stage to add \item[{\em pos}]the position where to insert the new stage \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1_sequence_3_01_t_01extends_01_chromosome_01_4_b020311ac8fad8d6d884df9634c211b8}{
+\index{jenes::stage::Sequence$<$ T extends Chromosome $>$@{jenes::stage::Sequence$<$ T extends Chromosome $>$}!removeAll@{removeAll}}
+\index{removeAll@{removeAll}!jenes::stage::Sequence< T extends Chromosome >@{jenes::stage::Sequence$<$ T extends Chromosome $>$}}
+\subsubsection[removeAll]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.Sequence$<$ T extends Chromosome $>$.removeAll ()}}
+\label{classjenes_1_1stage_1_1_sequence_3_01_t_01extends_01_chromosome_01_4_b020311ac8fad8d6d884df9634c211b8}
+
+
+Removes all the stages from this sequence \hypertarget{classjenes_1_1stage_1_1_sequence_3_01_t_01extends_01_chromosome_01_4_f16f419e9be758779fa14cf53f31bfe1}{
+\index{jenes::stage::Sequence$<$ T extends Chromosome $>$@{jenes::stage::Sequence$<$ T extends Chromosome $>$}!getSize@{getSize}}
+\index{getSize@{getSize}!jenes::stage::Sequence< T extends Chromosome >@{jenes::stage::Sequence$<$ T extends Chromosome $>$}}
+\subsubsection[getSize]{\setlength{\rightskip}{0pt plus 5cm}int jenes.stage.Sequence$<$ T extends Chromosome $>$.getSize ()}}
+\label{classjenes_1_1stage_1_1_sequence_3_01_t_01extends_01_chromosome_01_4_f16f419e9be758779fa14cf53f31bfe1}
+
+
+Returns the number of stages \begin{Desc}
+\item[Returns:]the number of stages \end{Desc}
+\hypertarget{classjenes_1_1stage_1_1_sequence_3_01_t_01extends_01_chromosome_01_4_a9e1d97737fed4c5141cda315c216b32}{
+\index{jenes::stage::Sequence$<$ T extends Chromosome $>$@{jenes::stage::Sequence$<$ T extends Chromosome $>$}!getStageAt@{getStageAt}}
+\index{getStageAt@{getStageAt}!jenes::stage::Sequence< T extends Chromosome >@{jenes::stage::Sequence$<$ T extends Chromosome $>$}}
+\subsubsection[getStageAt]{\setlength{\rightskip}{0pt plus 5cm}AbstractStage$<$T$>$ jenes.stage.Sequence$<$ T extends Chromosome $>$.getStageAt (int {\em pos})}}
+\label{classjenes_1_1stage_1_1_sequence_3_01_t_01extends_01_chromosome_01_4_a9e1d97737fed4c5141cda315c216b32}
+
+
+Returns the stage at the specified position
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em pos}]index of the stage to return \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The stage at the specified position \end{Desc}
+\hypertarget{classjenes_1_1stage_1_1_sequence_3_01_t_01extends_01_chromosome_01_4_1336b162d37aaa9b402c49480d12f8ef}{
+\index{jenes::stage::Sequence$<$ T extends Chromosome $>$@{jenes::stage::Sequence$<$ T extends Chromosome $>$}!removeAt@{removeAt}}
+\index{removeAt@{removeAt}!jenes::stage::Sequence< T extends Chromosome >@{jenes::stage::Sequence$<$ T extends Chromosome $>$}}
+\subsubsection[removeAt]{\setlength{\rightskip}{0pt plus 5cm}AbstractStage$<$T$>$ jenes.stage.Sequence$<$ T extends Chromosome $>$.removeAt (int {\em pos})}}
+\label{classjenes_1_1stage_1_1_sequence_3_01_t_01extends_01_chromosome_01_4_1336b162d37aaa9b402c49480d12f8ef}
+
+
+Removes the stage at the specified position 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em pos}]the position of the stage to remove \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]the AbstractStage instance that has been removed \end{Desc}
+\hypertarget{classjenes_1_1stage_1_1_sequence_3_01_t_01extends_01_chromosome_01_4_98d9ad6e0fdc1547971fe7fce029e25f}{
+\index{jenes::stage::Sequence$<$ T extends Chromosome $>$@{jenes::stage::Sequence$<$ T extends Chromosome $>$}!init@{init}}
+\index{init@{init}!jenes::stage::Sequence< T extends Chromosome >@{jenes::stage::Sequence$<$ T extends Chromosome $>$}}
+\subsubsection[init]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.Sequence$<$ T extends Chromosome $>$.init (GeneticAlgorithm$<$ T $>$ {\em ga})}}
+\label{classjenes_1_1stage_1_1_sequence_3_01_t_01extends_01_chromosome_01_4_98d9ad6e0fdc1547971fe7fce029e25f}
+
+
+Initializes all of its internal stages \hypertarget{classjenes_1_1stage_1_1_sequence_3_01_t_01extends_01_chromosome_01_4_4faf3479fa76eef530633ce8339971e5}{
+\index{jenes::stage::Sequence$<$ T extends Chromosome $>$@{jenes::stage::Sequence$<$ T extends Chromosome $>$}!dispose@{dispose}}
+\index{dispose@{dispose}!jenes::stage::Sequence< T extends Chromosome >@{jenes::stage::Sequence$<$ T extends Chromosome $>$}}
+\subsubsection[dispose]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.Sequence$<$ T extends Chromosome $>$.dispose ()}}
+\label{classjenes_1_1stage_1_1_sequence_3_01_t_01extends_01_chromosome_01_4_4faf3479fa76eef530633ce8339971e5}
+
+
+Disposes all of its internal stages \hypertarget{classjenes_1_1stage_1_1_sequence_3_01_t_01extends_01_chromosome_01_4_dc0e7397edd44839ef221122db3696e8}{
+\index{jenes::stage::Sequence$<$ T extends Chromosome $>$@{jenes::stage::Sequence$<$ T extends Chromosome $>$}!process@{process}}
+\index{process@{process}!jenes::stage::Sequence< T extends Chromosome >@{jenes::stage::Sequence$<$ T extends Chromosome $>$}}
+\subsubsection[process]{\setlength{\rightskip}{0pt plus 5cm}final void jenes.stage.Sequence$<$ T extends Chromosome $>$.process (Population$<$ T $>$ {\em in}, \/  Population$<$ T $>$ {\em out})  throws {\bf StageException} }}
+\label{classjenes_1_1stage_1_1_sequence_3_01_t_01extends_01_chromosome_01_4_dc0e7397edd44839ef221122db3696e8}
+
+
+Invokes the process method on all of its internal stages 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/stage/Sequence.java\end{CompactItemize}

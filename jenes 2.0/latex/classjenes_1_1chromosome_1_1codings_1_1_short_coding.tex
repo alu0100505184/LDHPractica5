@@ -1,0 +1,119 @@
+\hypertarget{classjenes_1_1chromosome_1_1codings_1_1_short_coding}{
+\section{jenes.chromosome.codings.ShortCoding Class Reference}
+\label{classjenes_1_1chromosome_1_1codings_1_1_short_coding}\index{jenes::chromosome::codings::ShortCoding@{jenes::chromosome::codings::ShortCoding}}
+}
+Inherits jenes::chromosome::BitwiseChromosome::BitCoding$<$ Integer $>$.
+
+\subsection*{Public Types}
+\begin{CompactItemize}
+\item 
+enum \hyperlink{classjenes_1_1chromosome_1_1codings_1_1_short_coding_a38532b0120f3d7d1a77538e16ca7e5f}{Mode} \{ \hyperlink{_short_coding_8java_a38532b0120f3d7d1a77538e16ca7e5f9aa2a35d92976c7de970506c4d19a96c}{TWOS\_\-COMPLEMENT}, 
+\hyperlink{_short_coding_8java_a38532b0120f3d7d1a77538e16ca7e5f845e770ff5a6ad45139e1c004222d8f4}{MODULE\_\-AND\_\-SIGN}
+ \}
+\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classjenes_1_1chromosome_1_1codings_1_1_short_coding_0571cd23357dd77c1525ed09a5c28e61}{ShortCoding} ()
+\item 
+\hyperlink{classjenes_1_1chromosome_1_1codings_1_1_short_coding_6b6608f22e850e062f424033fae5e0bd}{ShortCoding} (final \hyperlink{classjenes_1_1chromosome_1_1codings_1_1_short_coding_a38532b0120f3d7d1a77538e16ca7e5f}{Mode} mode)
+\item 
+final Integer \hyperlink{classjenes_1_1chromosome_1_1codings_1_1_short_coding_a6c8649fe7e82bf923979d4afdfc9130}{decode} (final int bits)
+\item 
+final int \hyperlink{classjenes_1_1chromosome_1_1codings_1_1_short_coding_140298d12b6d6a291b5849b9cc5b7400}{encode} (final Integer value)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a short coding with 16 bits. There are two possible representations: the two complement ond and the module and sign one. The range representable with the former is \mbox{[}-32768,32767\mbox{]}; the one representable with the latter is \mbox{[}-32767,32767\mbox{]} (the difference is the latter provides two different codes to represent the 0).
+
+\begin{Desc}
+\item[Version:]1.2 \end{Desc}
+\begin{Desc}
+\item[Since:]1.0\end{Desc}
+\begin{Desc}
+\item[See also:]\hyperlink{classjenes_1_1chromosome_1_1codings_1_1_byte_coding}{ByteCoding} 
+
+\hyperlink{classjenes_1_1chromosome_1_1codings_1_1_int_coding}{IntCoding} 
+
+\hyperlink{classjenes_1_1chromosome_1_1codings_1_1_gray_coding}{GrayCoding} 
+
+\hyperlink{classjenes_1_1chromosome_1_1codings_1_1_word_coding}{WordCoding} 
+
+BitSize 
+
+\hyperlink{classjenes_1_1chromosome_1_1codings_1_1_boolean_coding}{BooleanCoding} \end{Desc}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classjenes_1_1chromosome_1_1codings_1_1_short_coding_a38532b0120f3d7d1a77538e16ca7e5f}{
+\index{jenes::chromosome::codings::ShortCoding@{jenes::chromosome::codings::ShortCoding}!Mode@{Mode}}
+\index{Mode@{Mode}!jenes::chromosome::codings::ShortCoding@{jenes::chromosome::codings::ShortCoding}}
+\subsubsection[Mode]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf jenes::chromosome::codings::ShortCoding::Mode}}}
+\label{classjenes_1_1chromosome_1_1codings_1_1_short_coding_a38532b0120f3d7d1a77538e16ca7e5f}
+
+
+The integer coding representations 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classjenes_1_1chromosome_1_1codings_1_1_short_coding_0571cd23357dd77c1525ed09a5c28e61}{
+\index{jenes::chromosome::codings::ShortCoding@{jenes::chromosome::codings::ShortCoding}!ShortCoding@{ShortCoding}}
+\index{ShortCoding@{ShortCoding}!jenes::chromosome::codings::ShortCoding@{jenes::chromosome::codings::ShortCoding}}
+\subsubsection[ShortCoding]{\setlength{\rightskip}{0pt plus 5cm}jenes.chromosome.codings.ShortCoding.ShortCoding ()}}
+\label{classjenes_1_1chromosome_1_1codings_1_1_short_coding_0571cd23357dd77c1525ed09a5c28e61}
+
+
+Default constructor. The default mode is two's complement. \hypertarget{classjenes_1_1chromosome_1_1codings_1_1_short_coding_6b6608f22e850e062f424033fae5e0bd}{
+\index{jenes::chromosome::codings::ShortCoding@{jenes::chromosome::codings::ShortCoding}!ShortCoding@{ShortCoding}}
+\index{ShortCoding@{ShortCoding}!jenes::chromosome::codings::ShortCoding@{jenes::chromosome::codings::ShortCoding}}
+\subsubsection[ShortCoding]{\setlength{\rightskip}{0pt plus 5cm}jenes.chromosome.codings.ShortCoding.ShortCoding (final {\bf Mode} {\em mode})}}
+\label{classjenes_1_1chromosome_1_1codings_1_1_short_coding_6b6608f22e850e062f424033fae5e0bd}
+
+
+Creates a \hyperlink{classjenes_1_1chromosome_1_1codings_1_1_short_coding}{ShortCoding} with the specified mode, that is the number representation scheme.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em mode}]can be two's complement or module and sign. \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classjenes_1_1chromosome_1_1codings_1_1_short_coding_a6c8649fe7e82bf923979d4afdfc9130}{
+\index{jenes::chromosome::codings::ShortCoding@{jenes::chromosome::codings::ShortCoding}!decode@{decode}}
+\index{decode@{decode}!jenes::chromosome::codings::ShortCoding@{jenes::chromosome::codings::ShortCoding}}
+\subsubsection[decode]{\setlength{\rightskip}{0pt plus 5cm}final Integer jenes.chromosome.codings.ShortCoding.decode (final int {\em bits})}}
+\label{classjenes_1_1chromosome_1_1codings_1_1_short_coding_a6c8649fe7e82bf923979d4afdfc9130}
+
+
+Returns the value of coded bits
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em bits}]coding the value \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]the value \end{Desc}
+\hypertarget{classjenes_1_1chromosome_1_1codings_1_1_short_coding_140298d12b6d6a291b5849b9cc5b7400}{
+\index{jenes::chromosome::codings::ShortCoding@{jenes::chromosome::codings::ShortCoding}!encode@{encode}}
+\index{encode@{encode}!jenes::chromosome::codings::ShortCoding@{jenes::chromosome::codings::ShortCoding}}
+\subsubsection[encode]{\setlength{\rightskip}{0pt plus 5cm}final int jenes.chromosome.codings.ShortCoding.encode (final Integer {\em value})}}
+\label{classjenes_1_1chromosome_1_1codings_1_1_short_coding_140298d12b6d6a291b5849b9cc5b7400}
+
+
+Returns the bits coding the value
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em value}]the value to be coded \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]the coding bits \end{Desc}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/chromosome/codings/ShortCoding.java\end{CompactItemize}

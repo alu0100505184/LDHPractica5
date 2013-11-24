@@ -1,0 +1,149 @@
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4}{
+\section{jenes.stage.operator.Crossover$<$ T extends Chromosome $>$ Class Reference}
+\label{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4}\index{jenes::stage::operator::Crossover$<$ T extends Chromosome $>$@{jenes::stage::operator::Crossover$<$ T extends Chromosome $>$}}
+}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_2287f5646b08b9c3167934ee620f2d6e}{Crossover} (final double \hyperlink{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_2b4aec7312a223ba84862f7848b14542}{probability})
+\item 
+final double \hyperlink{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_86b60220061c4bf1f0eaae66d22f5eb8}{getProbability} ()
+\item 
+final void \hyperlink{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_c491f1c3b3b8c074f3b59bc33f65f389}{setProbability} (final double \hyperlink{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_2b4aec7312a223ba84862f7848b14542}{probability})
+\item 
+abstract int \hyperlink{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_8bb995f2cf77073b79c9276ee3e8535d}{spread} ()
+\item 
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_c0b5d0219d2938f7756e616d04039ae0}{
+final void \textbf{init} (final GeneticAlgorithm$<$ T $>$ ga)  throws StageException }
+\label{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_c0b5d0219d2938f7756e616d04039ae0}
+
+\item 
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_c14c88e86762023813c69bee4c31d7ea}{
+final void \textbf{process} (final Population$<$ T $>$ in, final Population$<$ T $>$ out)  throws StageException }
+\label{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_c14c88e86762023813c69bee4c31d7ea}
+
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+abstract void \hyperlink{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_c47e22fb5a73617bde7a1131da5be161}{cross} (Individual$<$ T $>$ offsprings\mbox{[}$\,$\mbox{]})
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+double \hyperlink{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_2b4aec7312a223ba84862f7848b14542}{probability}
+\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class \hyperlink{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_1_1_statistics}{Statistics}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+A genetic class representing a crossover operator. This implementation represents a generic crossover operation with \hyperlink{}{Crossover\#spread} parent and the same number of children; the operation is executed according to a crossover probability specified at the creation time. 
+
+The actual crossover is implemented by subclassing this abstract class and providing the \hyperlink{}{Crossover\#spread} and \hyperlink{}{Crossover\#cross(Individual\mbox{[}$\,$\mbox{]})} implementations: the former is required to specify the number of parents and children involved in each crossover operation; the second is required to specify what crossover algorithm to use. 
+
+Offsprings have not to be created in the \hyperlink{}{Crossover\#cross(Individual\mbox{[}$\,$\mbox{]})} method implementation: they are provided by the specified array; these ones have to be modify according to the crossover strategy. At the \hyperlink{}{Crossover\#cross(Individual\mbox{[}$\,$\mbox{]})} invocation time, the abstract crossover makes each of the array individuals equals to each one of the parents. 
+
+A \hyperlink{}{Crossover.Statistics} is associated to each crossover operator.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em $<$T$>$}]The class of chromosomes to work with.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Version:]2.0 \end{Desc}
+\begin{Desc}
+\item[Since:]1.0\end{Desc}
+\begin{Desc}
+\item[See also:]Individual 
+
+Population \end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_2287f5646b08b9c3167934ee620f2d6e}{
+\index{jenes::stage::operator::Crossover$<$ T extends Chromosome $>$@{jenes::stage::operator::Crossover$<$ T extends Chromosome $>$}!Crossover@{Crossover}}
+\index{Crossover@{Crossover}!jenes::stage::operator::Crossover< T extends Chromosome >@{jenes::stage::operator::Crossover$<$ T extends Chromosome $>$}}
+\subsubsection[Crossover]{\setlength{\rightskip}{0pt plus 5cm}jenes.stage.operator.Crossover$<$ T extends Chromosome $>$.Crossover (final double {\em probability})}}
+\label{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_2287f5646b08b9c3167934ee620f2d6e}
+
+
+Constructs a new crossover instance with the specified crossover probability
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em probability}]\end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_86b60220061c4bf1f0eaae66d22f5eb8}{
+\index{jenes::stage::operator::Crossover$<$ T extends Chromosome $>$@{jenes::stage::operator::Crossover$<$ T extends Chromosome $>$}!getProbability@{getProbability}}
+\index{getProbability@{getProbability}!jenes::stage::operator::Crossover< T extends Chromosome >@{jenes::stage::operator::Crossover$<$ T extends Chromosome $>$}}
+\subsubsection[getProbability]{\setlength{\rightskip}{0pt plus 5cm}final double jenes.stage.operator.Crossover$<$ T extends Chromosome $>$.getProbability ()}}
+\label{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_86b60220061c4bf1f0eaae66d22f5eb8}
+
+
+Returns the crossover probability
+
+\begin{Desc}
+\item[Returns:]the probability \end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_c491f1c3b3b8c074f3b59bc33f65f389}{
+\index{jenes::stage::operator::Crossover$<$ T extends Chromosome $>$@{jenes::stage::operator::Crossover$<$ T extends Chromosome $>$}!setProbability@{setProbability}}
+\index{setProbability@{setProbability}!jenes::stage::operator::Crossover< T extends Chromosome >@{jenes::stage::operator::Crossover$<$ T extends Chromosome $>$}}
+\subsubsection[setProbability]{\setlength{\rightskip}{0pt plus 5cm}final void jenes.stage.operator.Crossover$<$ T extends Chromosome $>$.setProbability (final double {\em probability})}}
+\label{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_c491f1c3b3b8c074f3b59bc33f65f389}
+
+
+Sets the crossover probability
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em probability}]the new crossover probability \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_8bb995f2cf77073b79c9276ee3e8535d}{
+\index{jenes::stage::operator::Crossover$<$ T extends Chromosome $>$@{jenes::stage::operator::Crossover$<$ T extends Chromosome $>$}!spread@{spread}}
+\index{spread@{spread}!jenes::stage::operator::Crossover< T extends Chromosome >@{jenes::stage::operator::Crossover$<$ T extends Chromosome $>$}}
+\subsubsection[spread]{\setlength{\rightskip}{0pt plus 5cm}abstract int jenes.stage.operator.Crossover$<$ T extends Chromosome $>$.spread ()\hspace{0.3cm}{\tt  \mbox{[}pure virtual\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_8bb995f2cf77073b79c9276ee3e8535d}
+
+
+Returns the number of individuals involved by this crossover operator 
+
+\begin{Desc}
+\item[Returns:]the number of individuals required by crossover \end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_c47e22fb5a73617bde7a1131da5be161}{
+\index{jenes::stage::operator::Crossover$<$ T extends Chromosome $>$@{jenes::stage::operator::Crossover$<$ T extends Chromosome $>$}!cross@{cross}}
+\index{cross@{cross}!jenes::stage::operator::Crossover< T extends Chromosome >@{jenes::stage::operator::Crossover$<$ T extends Chromosome $>$}}
+\subsubsection[cross]{\setlength{\rightskip}{0pt plus 5cm}abstract void jenes.stage.operator.Crossover$<$ T extends Chromosome $>$.cross (Individual$<$ T $>$ {\em offsprings}\mbox{[}$\,$\mbox{]})\hspace{0.3cm}{\tt  \mbox{[}protected, pure virtual\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_c47e22fb5a73617bde7a1131da5be161}
+
+
+Executes the crossover. At the invocation time the specified array contains the individuals to be modify by cross; at the return time it contains the output crossover individuals.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em offsprings}]the individuals to be modified. \end{description}
+\end{Desc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_2b4aec7312a223ba84862f7848b14542}{
+\index{jenes::stage::operator::Crossover$<$ T extends Chromosome $>$@{jenes::stage::operator::Crossover$<$ T extends Chromosome $>$}!probability@{probability}}
+\index{probability@{probability}!jenes::stage::operator::Crossover< T extends Chromosome >@{jenes::stage::operator::Crossover$<$ T extends Chromosome $>$}}
+\subsubsection[probability]{\setlength{\rightskip}{0pt plus 5cm}double jenes.stage.operator.Crossover$<$ T extends Chromosome $>$.{\bf probability}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_2b4aec7312a223ba84862f7848b14542}
+
+
+Crossover probability 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/stage/operator/Crossover.java\end{CompactItemize}

@@ -1,0 +1,166 @@
+\hypertarget{classjenes_1_1utils_1_1_c_s_v_logger}{
+\section{jenes.utils.CSVLogger Class Reference}
+\label{classjenes_1_1utils_1_1_c_s_v_logger}\index{jenes::utils::CSVLogger@{jenes::utils::CSVLogger}}
+}
+Inheritance diagram for jenes.utils.CSVLogger::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classjenes_1_1utils_1_1_c_s_v_logger}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classjenes_1_1utils_1_1_c_s_v_logger_8cac9e217f74d86b4e26b025d8e1381c}{CSVLogger} (String\mbox{[}$\,$\mbox{]} \hyperlink{classjenes_1_1utils_1_1_abstract_logger_3a2030876857a0512fae7e0ad400c570}{schema})  throws FileNotFoundException 
+\item 
+\hyperlink{classjenes_1_1utils_1_1_c_s_v_logger_52ccc76492a8a16e018198bcfa702360}{CSVLogger} (String\mbox{[}$\,$\mbox{]} \hyperlink{classjenes_1_1utils_1_1_abstract_logger_3a2030876857a0512fae7e0ad400c570}{schema}, String filename)  throws FileNotFoundException 
+\item 
+\hyperlink{classjenes_1_1utils_1_1_c_s_v_logger_d6242d77cf75372bfbf55e9b0973bfb4}{CSVLogger} (String\mbox{[}$\,$\mbox{]} \hyperlink{classjenes_1_1utils_1_1_abstract_logger_3a2030876857a0512fae7e0ad400c570}{schema}, String filename, String separator)  throws FileNotFoundException 
+\item 
+\hyperlink{classjenes_1_1utils_1_1_c_s_v_logger_d39241223c9d49bfa34a21db4aa1f8b1}{CSVLogger} (String\mbox{[}$\,$\mbox{]} \hyperlink{classjenes_1_1utils_1_1_abstract_logger_3a2030876857a0512fae7e0ad400c570}{schema}, String filename, String separator, boolean header)  throws FileNotFoundException 
+\item 
+PrintWriter \hyperlink{classjenes_1_1utils_1_1_c_s_v_logger_00671f9154ae65398d676e6526fa08f2}{getOut} ()
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+void \hyperlink{classjenes_1_1utils_1_1_c_s_v_logger_863bcfda3e93b023949a81e7f6d149e7}{store} ()
+\item 
+void \hyperlink{classjenes_1_1utils_1_1_c_s_v_logger_09a4f4fc362db6d4090d75642521ee65}{doSave} ()
+\item 
+void \hyperlink{classjenes_1_1utils_1_1_c_s_v_logger_c89f6fe5bd609fcc02ca7adf1407f279}{doClose} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+This class defines a StatisticsLogger based on CSV (comma separated values) file. The logger has a schema, made of the fields the user means to record. If the schema is not specified, the logger use the set of keys making a record as schema. The default separator is tab, but a different separator can be specified at instantiation time. The default logfile is named log.csv and placed into the working directory. The logger can record or not the first line with the header made of the field names.
+
+\begin{Desc}
+\item[Version:]1.3 \end{Desc}
+\begin{Desc}
+\item[Since:]1.3 \end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classjenes_1_1utils_1_1_c_s_v_logger_8cac9e217f74d86b4e26b025d8e1381c}{
+\index{jenes::utils::CSVLogger@{jenes::utils::CSVLogger}!CSVLogger@{CSVLogger}}
+\index{CSVLogger@{CSVLogger}!jenes::utils::CSVLogger@{jenes::utils::CSVLogger}}
+\subsubsection[CSVLogger]{\setlength{\rightskip}{0pt plus 5cm}jenes.utils.CSVLogger.CSVLogger (String\mbox{[}$\,$\mbox{]} {\em schema})  throws FileNotFoundException }}
+\label{classjenes_1_1utils_1_1_c_s_v_logger_8cac9e217f74d86b4e26b025d8e1381c}
+
+
+Creates a logger with the specified schema, and log.csv as default filename, tab as default separator. The header is placed on the first line.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em schema}]- the array making the schema of records \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Exceptions:]
+\begin{description}
+\item[{\em java.io.FileNotFoundException}]\end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1utils_1_1_c_s_v_logger_52ccc76492a8a16e018198bcfa702360}{
+\index{jenes::utils::CSVLogger@{jenes::utils::CSVLogger}!CSVLogger@{CSVLogger}}
+\index{CSVLogger@{CSVLogger}!jenes::utils::CSVLogger@{jenes::utils::CSVLogger}}
+\subsubsection[CSVLogger]{\setlength{\rightskip}{0pt plus 5cm}jenes.utils.CSVLogger.CSVLogger (String\mbox{[}$\,$\mbox{]} {\em schema}, \/  String {\em filename})  throws FileNotFoundException }}
+\label{classjenes_1_1utils_1_1_c_s_v_logger_52ccc76492a8a16e018198bcfa702360}
+
+
+Creates a logger with the specified schema and filename, tab as default separator. The header is placed on the first line.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em schema}]- the array making the schema of records \item[{\em filename}]- the output filename \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Exceptions:]
+\begin{description}
+\item[{\em java.io.FileNotFoundException}]\end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1utils_1_1_c_s_v_logger_d6242d77cf75372bfbf55e9b0973bfb4}{
+\index{jenes::utils::CSVLogger@{jenes::utils::CSVLogger}!CSVLogger@{CSVLogger}}
+\index{CSVLogger@{CSVLogger}!jenes::utils::CSVLogger@{jenes::utils::CSVLogger}}
+\subsubsection[CSVLogger]{\setlength{\rightskip}{0pt plus 5cm}jenes.utils.CSVLogger.CSVLogger (String\mbox{[}$\,$\mbox{]} {\em schema}, \/  String {\em filename}, \/  String {\em separator})  throws FileNotFoundException }}
+\label{classjenes_1_1utils_1_1_c_s_v_logger_d6242d77cf75372bfbf55e9b0973bfb4}
+
+
+Creates a logger with the specified schema, filename and separator. The header is placed on the first line.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em schema}]- the array making the schema of records \item[{\em filename}]- the output filename \item[{\em separator}]- the values separator \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Exceptions:]
+\begin{description}
+\item[{\em java.io.FileNotFoundException}]\end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1utils_1_1_c_s_v_logger_d39241223c9d49bfa34a21db4aa1f8b1}{
+\index{jenes::utils::CSVLogger@{jenes::utils::CSVLogger}!CSVLogger@{CSVLogger}}
+\index{CSVLogger@{CSVLogger}!jenes::utils::CSVLogger@{jenes::utils::CSVLogger}}
+\subsubsection[CSVLogger]{\setlength{\rightskip}{0pt plus 5cm}jenes.utils.CSVLogger.CSVLogger (String\mbox{[}$\,$\mbox{]} {\em schema}, \/  String {\em filename}, \/  String {\em separator}, \/  boolean {\em header})  throws FileNotFoundException }}
+\label{classjenes_1_1utils_1_1_c_s_v_logger_d39241223c9d49bfa34a21db4aa1f8b1}
+
+
+Creates a logger with the specified schema, filename and separator. The header is placed on the first line if required.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em schema}]- the array making the schema of records \item[{\em filename}]- the output filename \item[{\em separator}]- the values separator \item[{\em header}]- the header is included if true, otherwise not. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Exceptions:]
+\begin{description}
+\item[{\em java.io.FileNotFoundException}]\end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classjenes_1_1utils_1_1_c_s_v_logger_00671f9154ae65398d676e6526fa08f2}{
+\index{jenes::utils::CSVLogger@{jenes::utils::CSVLogger}!getOut@{getOut}}
+\index{getOut@{getOut}!jenes::utils::CSVLogger@{jenes::utils::CSVLogger}}
+\subsubsection[getOut]{\setlength{\rightskip}{0pt plus 5cm}PrintWriter jenes.utils.CSVLogger.getOut ()}}
+\label{classjenes_1_1utils_1_1_c_s_v_logger_00671f9154ae65398d676e6526fa08f2}
+
+
+Return the output stream used for logging.
+
+\begin{Desc}
+\item[Returns:]the log writer \end{Desc}
+\hypertarget{classjenes_1_1utils_1_1_c_s_v_logger_863bcfda3e93b023949a81e7f6d149e7}{
+\index{jenes::utils::CSVLogger@{jenes::utils::CSVLogger}!store@{store}}
+\index{store@{store}!jenes::utils::CSVLogger@{jenes::utils::CSVLogger}}
+\subsubsection[store]{\setlength{\rightskip}{0pt plus 5cm}void jenes.utils.CSVLogger.store ()\hspace{0.3cm}{\tt  \mbox{[}protected, virtual\mbox{]}}}}
+\label{classjenes_1_1utils_1_1_c_s_v_logger_863bcfda3e93b023949a81e7f6d149e7}
+
+
+Stores the current record. 
+
+Implements \hyperlink{classjenes_1_1utils_1_1_abstract_logger_6acf83a83999e26ae4ed45cbf355111b}{jenes.utils.AbstractLogger}.\hypertarget{classjenes_1_1utils_1_1_c_s_v_logger_09a4f4fc362db6d4090d75642521ee65}{
+\index{jenes::utils::CSVLogger@{jenes::utils::CSVLogger}!doSave@{doSave}}
+\index{doSave@{doSave}!jenes::utils::CSVLogger@{jenes::utils::CSVLogger}}
+\subsubsection[doSave]{\setlength{\rightskip}{0pt plus 5cm}void jenes.utils.CSVLogger.doSave ()\hspace{0.3cm}{\tt  \mbox{[}protected, virtual\mbox{]}}}}
+\label{classjenes_1_1utils_1_1_c_s_v_logger_09a4f4fc362db6d4090d75642521ee65}
+
+
+Saves cached records on media 
+
+Implements \hyperlink{classjenes_1_1utils_1_1_abstract_logger_41fcd50b050c467fe1b413fc5b49c167}{jenes.utils.AbstractLogger}.\hypertarget{classjenes_1_1utils_1_1_c_s_v_logger_c89f6fe5bd609fcc02ca7adf1407f279}{
+\index{jenes::utils::CSVLogger@{jenes::utils::CSVLogger}!doClose@{doClose}}
+\index{doClose@{doClose}!jenes::utils::CSVLogger@{jenes::utils::CSVLogger}}
+\subsubsection[doClose]{\setlength{\rightskip}{0pt plus 5cm}void jenes.utils.CSVLogger.doClose ()\hspace{0.3cm}{\tt  \mbox{[}protected, virtual\mbox{]}}}}
+\label{classjenes_1_1utils_1_1_c_s_v_logger_c89f6fe5bd609fcc02ca7adf1407f279}
+
+
+Closes the logger. Any further log is not allowed. 
+
+Implements \hyperlink{classjenes_1_1utils_1_1_abstract_logger_5253672b3f3f81287db2fc604ca921a9}{jenes.utils.AbstractLogger}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/utils/CSVLogger.java\end{CompactItemize}

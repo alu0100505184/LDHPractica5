@@ -1,0 +1,73 @@
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_1_1_statistics}{
+\section{jenes.stage.operator.Crossover$<$ T extends Chromosome $>$.Statistics Class Reference}
+\label{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_1_1_statistics}\index{jenes::stage::operator::Crossover$<$ T extends Chromosome $>$::Statistics@{jenes::stage::operator::Crossover$<$ T extends Chromosome $>$::Statistics}}
+}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+final long \hyperlink{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_6181ee46b3e760f5d440e758d95db04b}{getCrossovers} ()
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_e352590e85b1d1d821b0912a770f257a}{
+final void \textbf{fill} (final Operator$<$ T $>$.Statistics stats)}
+\label{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_e352590e85b1d1d821b0912a770f257a}
+
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+long \hyperlink{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_bf1983cc628b3283b942dc68cc871bbc}{crossovers}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+A statistics object holding the number of crossover performed and the time spent to execute them. The statistics is available by two methods: \hyperlink{}{Crossover\#getStatistics()} to have a new statistics setted according to the crossover state or \hyperlink{}{Crossover\#updateStatistics(jenes.stage.operator.Operator.Statistics)} to modify an existing statistics according to the crossover state. 
+
+Esamples of use are showed below. 
+
+$<$blockquote$>$\small\begin{alltt}
+ Crossover.Statistics stat = a\_crossover.getStatistics();
+ \end{alltt}
+\normalsize 
+$<$/blockquote$>$ 
+
+returns a new statistics object setted according to the specified crossover state. 
+
+$<$blockquote$>$\small\begin{alltt}
+ Crossover.Statistics stat = new Crossover.Statistics();
+ a\_crossover.updateStatistics(stat);
+ \end{alltt}
+\normalsize 
+$<$/blockquote$>$ 
+
+modifies the existing statistics according to the specified crossover state. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_6181ee46b3e760f5d440e758d95db04b}{
+\index{jenes::stage::operator::Crossover$<$ T extends Chromosome $>$::Statistics@{jenes::stage::operator::Crossover$<$ T extends Chromosome $>$::Statistics}!getCrossovers@{getCrossovers}}
+\index{getCrossovers@{getCrossovers}!jenes::stage::operator::Crossover< T extends Chromosome >::Statistics@{jenes::stage::operator::Crossover$<$ T extends Chromosome $>$::Statistics}}
+\subsubsection[getCrossovers]{\setlength{\rightskip}{0pt plus 5cm}final long jenes.stage.operator.Crossover$<$ T extends Chromosome $>$.Statistics.getCrossovers ()}}
+\label{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_6181ee46b3e760f5d440e758d95db04b}
+
+
+Returns the number of crossovers performed.
+
+\begin{Desc}
+\item[Returns:]the number of crossovers performed. \end{Desc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_bf1983cc628b3283b942dc68cc871bbc}{
+\index{jenes::stage::operator::Crossover$<$ T extends Chromosome $>$::Statistics@{jenes::stage::operator::Crossover$<$ T extends Chromosome $>$::Statistics}!crossovers@{crossovers}}
+\index{crossovers@{crossovers}!jenes::stage::operator::Crossover< T extends Chromosome >::Statistics@{jenes::stage::operator::Crossover$<$ T extends Chromosome $>$::Statistics}}
+\subsubsection[crossovers]{\setlength{\rightskip}{0pt plus 5cm}long jenes.stage.operator.Crossover$<$ T extends Chromosome $>$.Statistics.crossovers\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1_crossover_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_bf1983cc628b3283b942dc68cc871bbc}
+
+
+Number of crossovers performed. 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/stage/operator/Crossover.java\end{CompactItemize}

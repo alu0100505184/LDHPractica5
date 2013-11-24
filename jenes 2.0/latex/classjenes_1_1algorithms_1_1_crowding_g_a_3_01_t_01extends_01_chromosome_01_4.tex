@@ -1,0 +1,110 @@
+\hypertarget{classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4}{
+\section{jenes.algorithms.CrowdingGA$<$ T extends Chromosome $>$ Class Reference}
+\label{classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4}\index{jenes::algorithms::CrowdingGA$<$ T extends Chromosome $>$@{jenes::algorithms::CrowdingGA$<$ T extends Chromosome $>$}}
+}
+Inherits jenes::GeneticAlgorithm$<$ T $>$.
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4_5f9de70a8e431de7e0f9bbb6bb42ec1e}{CrowdingGA} (final Fitness fitness, final Crowder crowder)
+\item 
+\hyperlink{classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4_d3e5e26f962e7839e076b61efcd5704f}{CrowdingGA} (final Fitness fitness, final Crowder crowder, final Population$<$ T $>$ population, final int generations)
+\item 
+void \hyperlink{classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4_d241412becfe0073cbeb06418a1e49f3}{addStage} (AbstractStage$<$ T $>$ stage)
+\item 
+Crowder \hyperlink{classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4_6cc270cedf906a0743cb743b30c2ba02}{getCrowder} ()
+\end{CompactItemize}
+\subsection*{Static Public Attributes}
+\begin{CompactItemize}
+\item 
+static final int \hyperlink{classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4_fb96c2e73129293b45044998e3614c06}{DEFAULT\_\-GENERATION\_\-LIMIT} = 100
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+\hypertarget{classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4_a747112afbb20cb4faec643ccc73e396}{
+Crowder \textbf{crowder}}
+\label{classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4_a747112afbb20cb4faec643ccc73e396}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+A genetic algorithm based on crowding
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em $<$T$>$}]extends Chromosome\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Version:]2.0 \end{Desc}
+\begin{Desc}
+\item[Since:]2.0 \end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4_5f9de70a8e431de7e0f9bbb6bb42ec1e}{
+\index{jenes::algorithms::CrowdingGA$<$ T extends Chromosome $>$@{jenes::algorithms::CrowdingGA$<$ T extends Chromosome $>$}!CrowdingGA@{CrowdingGA}}
+\index{CrowdingGA@{CrowdingGA}!jenes::algorithms::CrowdingGA< T extends Chromosome >@{jenes::algorithms::CrowdingGA$<$ T extends Chromosome $>$}}
+\subsubsection[CrowdingGA]{\setlength{\rightskip}{0pt plus 5cm}jenes.algorithms.CrowdingGA$<$ T extends Chromosome $>$.CrowdingGA (final Fitness {\em fitness}, \/  final Crowder {\em crowder})}}
+\label{classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4_5f9de70a8e431de7e0f9bbb6bb42ec1e}
+
+
+Default constructor \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fitness}]the Fitness considered for this algorithm \item[{\em crowder}]the crowder to use \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4_d3e5e26f962e7839e076b61efcd5704f}{
+\index{jenes::algorithms::CrowdingGA$<$ T extends Chromosome $>$@{jenes::algorithms::CrowdingGA$<$ T extends Chromosome $>$}!CrowdingGA@{CrowdingGA}}
+\index{CrowdingGA@{CrowdingGA}!jenes::algorithms::CrowdingGA< T extends Chromosome >@{jenes::algorithms::CrowdingGA$<$ T extends Chromosome $>$}}
+\subsubsection[CrowdingGA]{\setlength{\rightskip}{0pt plus 5cm}jenes.algorithms.CrowdingGA$<$ T extends Chromosome $>$.CrowdingGA (final Fitness {\em fitness}, \/  final Crowder {\em crowder}, \/  final Population$<$ T $>$ {\em population}, \/  final int {\em generations})}}
+\label{classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4_d3e5e26f962e7839e076b61efcd5704f}
+
+
+Create a new CrowdingGA by setting the initial population and the generation limit \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fitness}]the Fitness considered for this algorithm \item[{\em crowder}]the crowder to use \item[{\em population}]the initial population to consider \item[{\em generations}]number of generations to evolve \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4_d241412becfe0073cbeb06418a1e49f3}{
+\index{jenes::algorithms::CrowdingGA$<$ T extends Chromosome $>$@{jenes::algorithms::CrowdingGA$<$ T extends Chromosome $>$}!addStage@{addStage}}
+\index{addStage@{addStage}!jenes::algorithms::CrowdingGA< T extends Chromosome >@{jenes::algorithms::CrowdingGA$<$ T extends Chromosome $>$}}
+\subsubsection[addStage]{\setlength{\rightskip}{0pt plus 5cm}void jenes.algorithms.CrowdingGA$<$ T extends Chromosome $>$.addStage (AbstractStage$<$ T $>$ {\em stage})}}
+\label{classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4_d241412becfe0073cbeb06418a1e49f3}
+
+
+A stage is added to the crowder evolution pipeline \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em stage}]\end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4_6cc270cedf906a0743cb743b30c2ba02}{
+\index{jenes::algorithms::CrowdingGA$<$ T extends Chromosome $>$@{jenes::algorithms::CrowdingGA$<$ T extends Chromosome $>$}!getCrowder@{getCrowder}}
+\index{getCrowder@{getCrowder}!jenes::algorithms::CrowdingGA< T extends Chromosome >@{jenes::algorithms::CrowdingGA$<$ T extends Chromosome $>$}}
+\subsubsection[getCrowder]{\setlength{\rightskip}{0pt plus 5cm}Crowder jenes.algorithms.CrowdingGA$<$ T extends Chromosome $>$.getCrowder ()}}
+\label{classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4_6cc270cedf906a0743cb743b30c2ba02}
+
+
+Access the current crowder setted for this algorithm \begin{Desc}
+\item[Returns:]\end{Desc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4_fb96c2e73129293b45044998e3614c06}{
+\index{jenes::algorithms::CrowdingGA$<$ T extends Chromosome $>$@{jenes::algorithms::CrowdingGA$<$ T extends Chromosome $>$}!DEFAULT\_\-GENERATION\_\-LIMIT@{DEFAULT\_\-GENERATION\_\-LIMIT}}
+\index{DEFAULT\_\-GENERATION\_\-LIMIT@{DEFAULT\_\-GENERATION\_\-LIMIT}!jenes::algorithms::CrowdingGA< T extends Chromosome >@{jenes::algorithms::CrowdingGA$<$ T extends Chromosome $>$}}
+\subsubsection[DEFAULT\_\-GENERATION\_\-LIMIT]{\setlength{\rightskip}{0pt plus 5cm}final int jenes.algorithms.CrowdingGA$<$ T extends Chromosome $>$.{\bf DEFAULT\_\-GENERATION\_\-LIMIT} = 100\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classjenes_1_1algorithms_1_1_crowding_g_a_3_01_t_01extends_01_chromosome_01_4_fb96c2e73129293b45044998e3614c06}
+
+
+The default generation limit 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/algorithms/CrowdingGA.java\end{CompactItemize}

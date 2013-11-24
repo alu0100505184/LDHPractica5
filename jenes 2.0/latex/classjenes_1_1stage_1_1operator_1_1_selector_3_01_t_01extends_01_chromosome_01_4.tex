@@ -1,0 +1,216 @@
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4}{
+\section{jenes.stage.operator.Selector$<$ T extends Chromosome $>$ Class Reference}
+\label{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4}\index{jenes::stage::operator::Selector$<$ T extends Chromosome $>$@{jenes::stage::operator::Selector$<$ T extends Chromosome $>$}}
+}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_83052368d6df966944bc5178f1eebed0}{Selector} ()
+\item 
+\hyperlink{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_07f05455c1fabfb8ad3f6468a653aed8}{Selector} (int n)
+\item 
+final double \hyperlink{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_6e6f7842d22da347196a8cd772bea0e1}{getMaxIllegalRate} ()
+\item 
+void \hyperlink{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_68ffd7e37d617f2f71628ce3659a8457}{setMaxIllegalRate} (double rate)
+\item 
+final int \hyperlink{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_17809883b498ec5764c5aa38d04bda8b}{getSelectionRate} ()
+\item 
+void \hyperlink{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_a67094343d09f80b0ce35d0f20a517d5}{setSelectionRate} (int n)
+\item 
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_780969225a2e48774e71af8bd4e0063e}{
+void \textbf{init} (GeneticAlgorithm$<$ T $>$ ga)}
+\label{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_780969225a2e48774e71af8bd4e0063e}
+
+\item 
+final void \hyperlink{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_11275bed8b009ece669a5c88c6e10b55}{process} (Population$<$ T $>$ in, Population$<$ T $>$ out)  throws StageException 
+\item 
+final Individual$<$ T $>$ \hyperlink{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_9ef7b0bef2ffcb84eeb231ae37ab0239}{select} (Population$<$ T $>$ pop)
+\end{CompactItemize}
+\subsection*{Static Public Attributes}
+\begin{CompactItemize}
+\item 
+static final double \hyperlink{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_81263464a18d2ee1ecddf41f2e97fd89}{DEFAULT\_\-MAX\_\-ILLEGAL\_\-RATE} = 0.3
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+void \hyperlink{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_752bf2650cbb6760d2fbb68718d62328}{preSelect} (Population$<$ T $>$ pop, Filter filter)
+\item 
+abstract Individual$<$ T $>$ \hyperlink{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_f6cf22a6d6e70ffd74ee1f042a16dcd9}{select} (List$<$ Individual$<$ T $>$$>$ pop)
+\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class \hyperlink{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_1_1_statistics}{Statistics}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+A class representing a generic selection operator. 
+
+The actual selector is implemented by subclassing this abstract class and providing the \hyperlink{}{Selector\#select(Population)} and \hyperlink{}{Selector\#preSelect(Population)} method implementations: the former is required to select individuals from the specified \hyperlink{}{Population}; the latter is required to set up the selector state when a new selection begins. 
+
+A \hyperlink{}{Selector\#maxIllegalRate} is specified to obtain a population with a max number of illegal individuals selected. When this threshould is reached, the new illegal selected individuals are not added at the output population, and the selection process is repeated. 
+
+At the start selection time the output population has already the individuals; the individuals selected from the input population have not to be added at the output population: each output population individual is set as the one selected by the input population. 
+
+The output population size will be equal to the input population one; automatically new individuals are added or old ones are deleted to make the sizes equal. 
+
+A \hyperlink{}{Selector.Statistics} is associated to each selector operator.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em $<$T$>$}]The class of chromosomes to work with.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Version:]2.0 \end{Desc}
+\begin{Desc}
+\item[Since:]1.0\end{Desc}
+\begin{Desc}
+\item[See also:]Individual 
+
+Population \end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_83052368d6df966944bc5178f1eebed0}{
+\index{jenes::stage::operator::Selector$<$ T extends Chromosome $>$@{jenes::stage::operator::Selector$<$ T extends Chromosome $>$}!Selector@{Selector}}
+\index{Selector@{Selector}!jenes::stage::operator::Selector< T extends Chromosome >@{jenes::stage::operator::Selector$<$ T extends Chromosome $>$}}
+\subsubsection[Selector]{\setlength{\rightskip}{0pt plus 5cm}jenes.stage.operator.Selector$<$ T extends Chromosome $>$.Selector ()}}
+\label{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_83052368d6df966944bc5178f1eebed0}
+
+
+Constructs a new Selector operator. \hypertarget{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_07f05455c1fabfb8ad3f6468a653aed8}{
+\index{jenes::stage::operator::Selector$<$ T extends Chromosome $>$@{jenes::stage::operator::Selector$<$ T extends Chromosome $>$}!Selector@{Selector}}
+\index{Selector@{Selector}!jenes::stage::operator::Selector< T extends Chromosome >@{jenes::stage::operator::Selector$<$ T extends Chromosome $>$}}
+\subsubsection[Selector]{\setlength{\rightskip}{0pt plus 5cm}jenes.stage.operator.Selector$<$ T extends Chromosome $>$.Selector (int {\em n})}}
+\label{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_07f05455c1fabfb8ad3f6468a653aed8}
+
+
+Constructs a new Selector operator, specifying the number of individuals to select.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em n}]the number of individuals to select \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_6e6f7842d22da347196a8cd772bea0e1}{
+\index{jenes::stage::operator::Selector$<$ T extends Chromosome $>$@{jenes::stage::operator::Selector$<$ T extends Chromosome $>$}!getMaxIllegalRate@{getMaxIllegalRate}}
+\index{getMaxIllegalRate@{getMaxIllegalRate}!jenes::stage::operator::Selector< T extends Chromosome >@{jenes::stage::operator::Selector$<$ T extends Chromosome $>$}}
+\subsubsection[getMaxIllegalRate]{\setlength{\rightskip}{0pt plus 5cm}final double jenes.stage.operator.Selector$<$ T extends Chromosome $>$.getMaxIllegalRate ()}}
+\label{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_6e6f7842d22da347196a8cd772bea0e1}
+
+
+Returns the max number of illegal individuals this selector operator can select.
+
+\begin{Desc}
+\item[Returns:]the max illegal rate \end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_68ffd7e37d617f2f71628ce3659a8457}{
+\index{jenes::stage::operator::Selector$<$ T extends Chromosome $>$@{jenes::stage::operator::Selector$<$ T extends Chromosome $>$}!setMaxIllegalRate@{setMaxIllegalRate}}
+\index{setMaxIllegalRate@{setMaxIllegalRate}!jenes::stage::operator::Selector< T extends Chromosome >@{jenes::stage::operator::Selector$<$ T extends Chromosome $>$}}
+\subsubsection[setMaxIllegalRate]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.operator.Selector$<$ T extends Chromosome $>$.setMaxIllegalRate (double {\em rate})}}
+\label{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_68ffd7e37d617f2f71628ce3659a8457}
+
+
+Sets the max number of illegal individuals this selector operator can select.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em rate}]the max illegal rate \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_17809883b498ec5764c5aa38d04bda8b}{
+\index{jenes::stage::operator::Selector$<$ T extends Chromosome $>$@{jenes::stage::operator::Selector$<$ T extends Chromosome $>$}!getSelectionRate@{getSelectionRate}}
+\index{getSelectionRate@{getSelectionRate}!jenes::stage::operator::Selector< T extends Chromosome >@{jenes::stage::operator::Selector$<$ T extends Chromosome $>$}}
+\subsubsection[getSelectionRate]{\setlength{\rightskip}{0pt plus 5cm}final int jenes.stage.operator.Selector$<$ T extends Chromosome $>$.getSelectionRate ()}}
+\label{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_17809883b498ec5764c5aa38d04bda8b}
+
+
+Returns the number of individuals selected by this operator.
+
+\begin{Desc}
+\item[Returns:]the number of individuals selected. \end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_a67094343d09f80b0ce35d0f20a517d5}{
+\index{jenes::stage::operator::Selector$<$ T extends Chromosome $>$@{jenes::stage::operator::Selector$<$ T extends Chromosome $>$}!setSelectionRate@{setSelectionRate}}
+\index{setSelectionRate@{setSelectionRate}!jenes::stage::operator::Selector< T extends Chromosome >@{jenes::stage::operator::Selector$<$ T extends Chromosome $>$}}
+\subsubsection[setSelectionRate]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.operator.Selector$<$ T extends Chromosome $>$.setSelectionRate (int {\em n})}}
+\label{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_a67094343d09f80b0ce35d0f20a517d5}
+
+
+Sets the number of individuals being selected by this operator. If the given number is zero or negative, then it is set to -1, meaning that a number equal to to the input population will be selected.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em n}]the number of individuals being selected. \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_11275bed8b009ece669a5c88c6e10b55}{
+\index{jenes::stage::operator::Selector$<$ T extends Chromosome $>$@{jenes::stage::operator::Selector$<$ T extends Chromosome $>$}!process@{process}}
+\index{process@{process}!jenes::stage::operator::Selector< T extends Chromosome >@{jenes::stage::operator::Selector$<$ T extends Chromosome $>$}}
+\subsubsection[process]{\setlength{\rightskip}{0pt plus 5cm}final void jenes.stage.operator.Selector$<$ T extends Chromosome $>$.process (Population$<$ T $>$ {\em in}, \/  Population$<$ T $>$ {\em out})  throws {\bf StageException} }}
+\label{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_11275bed8b009ece669a5c88c6e10b55}
+
+
+Sets the individuals in the output population like the selected ones \hypertarget{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_752bf2650cbb6760d2fbb68718d62328}{
+\index{jenes::stage::operator::Selector$<$ T extends Chromosome $>$@{jenes::stage::operator::Selector$<$ T extends Chromosome $>$}!preSelect@{preSelect}}
+\index{preSelect@{preSelect}!jenes::stage::operator::Selector< T extends Chromosome >@{jenes::stage::operator::Selector$<$ T extends Chromosome $>$}}
+\subsubsection[preSelect]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.operator.Selector$<$ T extends Chromosome $>$.preSelect (Population$<$ T $>$ {\em pop}, \/  Filter {\em filter})\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_752bf2650cbb6760d2fbb68718d62328}
+
+
+Sets up the selection state according a population's state. It is invoked at the beginning of selection for the specified (filtered) population.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em pop}]the population to process by the stage \item[{\em filter}]\end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_f6cf22a6d6e70ffd74ee1f042a16dcd9}{
+\index{jenes::stage::operator::Selector$<$ T extends Chromosome $>$@{jenes::stage::operator::Selector$<$ T extends Chromosome $>$}!select@{select}}
+\index{select@{select}!jenes::stage::operator::Selector< T extends Chromosome >@{jenes::stage::operator::Selector$<$ T extends Chromosome $>$}}
+\subsubsection[select]{\setlength{\rightskip}{0pt plus 5cm}abstract Individual$<$T$>$ jenes.stage.operator.Selector$<$ T extends Chromosome $>$.select (List$<$ Individual$<$ T $>$$>$ {\em pop})\hspace{0.3cm}{\tt  \mbox{[}protected, pure virtual\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_f6cf22a6d6e70ffd74ee1f042a16dcd9}
+
+
+Selects an individual in the filtered population 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em pop}]from which to choose an individual. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]the individual selected \end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_9ef7b0bef2ffcb84eeb231ae37ab0239}{
+\index{jenes::stage::operator::Selector$<$ T extends Chromosome $>$@{jenes::stage::operator::Selector$<$ T extends Chromosome $>$}!select@{select}}
+\index{select@{select}!jenes::stage::operator::Selector< T extends Chromosome >@{jenes::stage::operator::Selector$<$ T extends Chromosome $>$}}
+\subsubsection[select]{\setlength{\rightskip}{0pt plus 5cm}final Individual$<$T$>$ jenes.stage.operator.Selector$<$ T extends Chromosome $>$.select (Population$<$ T $>$ {\em pop})}}
+\label{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_9ef7b0bef2ffcb84eeb231ae37ab0239}
+
+
+Selects an individual in the population \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em pop}]\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]\end{Desc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_81263464a18d2ee1ecddf41f2e97fd89}{
+\index{jenes::stage::operator::Selector$<$ T extends Chromosome $>$@{jenes::stage::operator::Selector$<$ T extends Chromosome $>$}!DEFAULT\_\-MAX\_\-ILLEGAL\_\-RATE@{DEFAULT\_\-MAX\_\-ILLEGAL\_\-RATE}}
+\index{DEFAULT\_\-MAX\_\-ILLEGAL\_\-RATE@{DEFAULT\_\-MAX\_\-ILLEGAL\_\-RATE}!jenes::stage::operator::Selector< T extends Chromosome >@{jenes::stage::operator::Selector$<$ T extends Chromosome $>$}}
+\subsubsection[DEFAULT\_\-MAX\_\-ILLEGAL\_\-RATE]{\setlength{\rightskip}{0pt plus 5cm}final double jenes.stage.operator.Selector$<$ T extends Chromosome $>$.{\bf DEFAULT\_\-MAX\_\-ILLEGAL\_\-RATE} = 0.3\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1_selector_3_01_t_01extends_01_chromosome_01_4_81263464a18d2ee1ecddf41f2e97fd89}
+
+
+The default percentage of allowed illegal individuals 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/stage/operator/Selector.java\end{CompactItemize}

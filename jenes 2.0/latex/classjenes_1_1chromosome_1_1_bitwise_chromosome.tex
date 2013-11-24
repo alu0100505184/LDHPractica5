@@ -1,0 +1,472 @@
+\hypertarget{classjenes_1_1chromosome_1_1_bitwise_chromosome}{
+\section{jenes.chromosome.BitwiseChromosome Class Reference}
+\label{classjenes_1_1chromosome_1_1_bitwise_chromosome}\index{jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}}
+}
+Inherits jenes::chromosome::Chromosome$<$ jenes::chromosome::BitwiseChromosome $>$.
+
+\subsection*{Public Types}
+\begin{CompactItemize}
+\item 
+enum \hyperlink{classjenes_1_1chromosome_1_1_bitwise_chromosome_dcebd2053ddb9906f17a29837e6ff04c}{BitSize} \{ \hyperlink{_bitwise_chromosome_8java_dcebd2053ddb9906f17a29837e6ff04c4982bc4d3de52713a035a54a501149f8}{BIT1} = (1, 0x1), 
+\hyperlink{_bitwise_chromosome_8java_dcebd2053ddb9906f17a29837e6ff04cf64ab504b0994d78a4d72bba097ffaec}{BIT8} = (8, 0xFF), 
+\hyperlink{_bitwise_chromosome_8java_dcebd2053ddb9906f17a29837e6ff04c12b7defe5ace4d6bd26b7c9d0881689d}{BIT16} = (16, 0xFFFF), 
+\hyperlink{_bitwise_chromosome_8java_dcebd2053ddb9906f17a29837e6ff04cf738d5c01006c83629e2cd1f04a6889a}{BIT32} = (32, 0xFFFFFFFF)
+ \}
+\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classjenes_1_1chromosome_1_1_bitwise_chromosome_87547c87419943bded51820cbc1ae830}{BitwiseChromosome} (final int size)
+\item 
+\hyperlink{classjenes_1_1chromosome_1_1_bitwise_chromosome_9109a8205e447db9032f29494f0d9b3d}{BitwiseChromosome} (final int size, final BitCoding coding)
+\item 
+\hyperlink{classjenes_1_1chromosome_1_1_bitwise_chromosome_90798d86b6c1871c441b562e0b1d50ca}{BitwiseChromosome} (final \hyperlink{classjenes_1_1chromosome_1_1_bitwise_chromosome}{BitwiseChromosome} chromosome)
+\item 
+final BitCoding \hyperlink{classjenes_1_1chromosome_1_1_bitwise_chromosome_905b92cd6dc14db9d2b9276f1a6686e9}{getType} ()
+\item 
+final int \hyperlink{classjenes_1_1chromosome_1_1_bitwise_chromosome_e59ae8f495ec9d5aa15712cee7c0b313}{getSize} ()
+\item 
+final int \hyperlink{classjenes_1_1chromosome_1_1_bitwise_chromosome_f817cb2110fc6b8d415e46377ddd4911}{getIntValueAt} (final int index)
+\item 
+final void \hyperlink{classjenes_1_1chromosome_1_1_bitwise_chromosome_3cbcf428333a0dc4209ce2c820054542}{setIntValueAt} (final int index, final int value)
+\item 
+final int \hyperlink{classjenes_1_1chromosome_1_1_bitwise_chromosome_36e6b8c849d563a359245763116667d5}{getIntSize} ()
+\item 
+final Object \hyperlink{classjenes_1_1chromosome_1_1_bitwise_chromosome_3061d34e1f0c0faa915d4da7ea2f615c}{getValueAt} (final int index)
+\item 
+final void \hyperlink{classjenes_1_1chromosome_1_1_bitwise_chromosome_aa42be8f0c26735e8a8d603d9b743b6a}{setValue} (final int index, final Object value)
+\item 
+final int \hyperlink{classjenes_1_1chromosome_1_1_bitwise_chromosome_05ce80f3729d007c5d550eef5969ac86}{getBitValueAt} (final int index)
+\item 
+final void \hyperlink{classjenes_1_1chromosome_1_1_bitwise_chromosome_2e746b511933914d4be452573ac5ab7c}{setBitValueAt} (final int index, final int bit)
+\item 
+final void \hyperlink{classjenes_1_1chromosome_1_1_bitwise_chromosome_2d711baa2a74ccb064d33ef73edbd464}{cross} (final \hyperlink{classjenes_1_1chromosome_1_1_bitwise_chromosome}{BitwiseChromosome} chromosome, final int from, final int to)
+\item 
+final void \hyperlink{classjenes_1_1chromosome_1_1_bitwise_chromosome_933b1991999fa3b586c1739744751725}{cross} (final \hyperlink{classjenes_1_1chromosome_1_1_bitwise_chromosome}{BitwiseChromosome} chromosome, final int from)
+\item 
+final boolean \hyperlink{classjenes_1_1chromosome_1_1_bitwise_chromosome_41c9858f7ef05194011d1e227fea3584}{equals} (final \hyperlink{classjenes_1_1chromosome_1_1_bitwise_chromosome}{BitwiseChromosome} chromosome)
+\item 
+final int \hyperlink{classjenes_1_1chromosome_1_1_bitwise_chromosome_0da8899c89f8b1f222526acf1d2e8519}{length} ()
+\item 
+final int \hyperlink{classjenes_1_1chromosome_1_1_bitwise_chromosome_5878e8d0ace81cfb617f75109c02855d}{getIntLength} ()
+\item 
+final void \hyperlink{classjenes_1_1chromosome_1_1_bitwise_chromosome_1a79d4c9c671d2f735d57d64c59dfdb8}{randomize} (final int pos)
+\item 
+final void \hyperlink{classjenes_1_1chromosome_1_1_bitwise_chromosome_8028fde93528b7b51313f6c311b2b640}{randomize} ()
+\item 
+final void \hyperlink{classjenes_1_1chromosome_1_1_bitwise_chromosome_b02c791be30c931cae793289185e459f}{leftShift} (final int from, final int to)
+\item 
+final void \hyperlink{classjenes_1_1chromosome_1_1_bitwise_chromosome_fb689c4b268f7954214a9d0e13c6141e}{rightShift} (final int from, final int to)
+\item 
+final void \hyperlink{classjenes_1_1chromosome_1_1_bitwise_chromosome_a4fbad5a25ae14e9524a6ff0ec2536ca}{setAs} (final \hyperlink{classjenes_1_1chromosome_1_1_bitwise_chromosome}{BitwiseChromosome} chromosome)
+\item 
+final void \hyperlink{classjenes_1_1chromosome_1_1_bitwise_chromosome_e5be5fc21ff47526230a8a13ca945c08}{setDefaultValueAt} (final int pos)
+\item 
+final void \hyperlink{classjenes_1_1chromosome_1_1_bitwise_chromosome_fac4935f0e1d92b6b1aaf9de024e8cbb}{swap} (final int pos1, final int pos2)
+\item 
+final \hyperlink{classjenes_1_1chromosome_1_1_bitwise_chromosome}{BitwiseChromosome} \hyperlink{classjenes_1_1chromosome_1_1_bitwise_chromosome_2140b588068c430eaea7e9a7a5fe6b00}{clone} ()
+\item 
+\hypertarget{classjenes_1_1chromosome_1_1_bitwise_chromosome_33de872210289a305bc869c61a02eddb}{
+void \textbf{difference} (\hyperlink{classjenes_1_1chromosome_1_1_bitwise_chromosome}{BitwiseChromosome} chromosome, double\mbox{[}$\,$\mbox{]} diff)}
+\label{classjenes_1_1chromosome_1_1_bitwise_chromosome_33de872210289a305bc869c61a02eddb}
+
+\item 
+\hypertarget{classjenes_1_1chromosome_1_1_bitwise_chromosome_a191192f94ce72a631237674d81ae393}{
+Object\mbox{[}$\,$\mbox{]} \textbf{toArray} ()}
+\label{classjenes_1_1chromosome_1_1_bitwise_chromosome_a191192f94ce72a631237674d81ae393}
+
+\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class \textbf{BitCoding$<$ T $>$}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+This class provides chromosomes made of bits. Its genome contains objects coded according to a specified \hyperlink{}{BitCoding}. Typically objects coded by this chromosome are numeric values. The default integer representation is used when no BitCoding is specified. 
+
+A \hyperlink{classjenes_1_1chromosome_1_1_bitwise_chromosome}{BitwiseChromosome} has size and length attributes. The size is the number of coded value contained by its genoma; the length is the number of bits. The length depends on which coding is used for translating objects into bits. The relation between size and length is shown below: 
+
+$<$blockquote$>$\small\begin{alltt}
+  aBitwiseChromosome.length() = aBitwiseChromosome.getSize() *  aCoding.SIZE.BITS
+ \end{alltt}
+\normalsize 
+$<$/blockquote$>$ where aCoding.SIZE.BITS is the number of bits required for coding one object. 
+
+This Chromosome performs genetic operations at bit level, processing an array of integer, thus ensuring a high throughput and minimal memory occupation. Using a 16 bit representation, a chromosome holding 4 objects (size) will be represented by 32 bits (length), thus by 2 integers (as each of integer is represented by 32 bit)
+
+\begin{Desc}
+\item[Version:]2.0 \end{Desc}
+\begin{Desc}
+\item[Since:]1.0 \end{Desc}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classjenes_1_1chromosome_1_1_bitwise_chromosome_dcebd2053ddb9906f17a29837e6ff04c}{
+\index{jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}!BitSize@{BitSize}}
+\index{BitSize@{BitSize}!jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}}
+\subsubsection[BitSize]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf jenes::chromosome::BitwiseChromosome::BitSize}}}
+\label{classjenes_1_1chromosome_1_1_bitwise_chromosome_dcebd2053ddb9906f17a29837e6ff04c}
+
+
+Definition of the number bit length and mask to use in the coding operations.
+
+\begin{Desc}
+\item[Author:]Luigi Troiano 
+
+Pierpaolo Lombardi 
+
+Giuseppe Pascale 
+
+Thierry Bodhuin\end{Desc}
+\begin{Desc}
+\item[Version:]1.2\end{Desc}
+\begin{Desc}
+\item[Since:]1.0 \end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classjenes_1_1chromosome_1_1_bitwise_chromosome_87547c87419943bded51820cbc1ae830}{
+\index{jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}!BitwiseChromosome@{BitwiseChromosome}}
+\index{BitwiseChromosome@{BitwiseChromosome}!jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}}
+\subsubsection[BitwiseChromosome]{\setlength{\rightskip}{0pt plus 5cm}jenes.chromosome.BitwiseChromosome.BitwiseChromosome (final int {\em size})}}
+\label{classjenes_1_1chromosome_1_1_bitwise_chromosome_87547c87419943bded51820cbc1ae830}
+
+
+Creates a new \hyperlink{classjenes_1_1chromosome_1_1_bitwise_chromosome}{BitwiseChromosome} with the specified number of objects. The chromosome is made of a bit string encoding objects.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em size}]the number of objects the chromosone represents \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1chromosome_1_1_bitwise_chromosome_9109a8205e447db9032f29494f0d9b3d}{
+\index{jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}!BitwiseChromosome@{BitwiseChromosome}}
+\index{BitwiseChromosome@{BitwiseChromosome}!jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}}
+\subsubsection[BitwiseChromosome]{\setlength{\rightskip}{0pt plus 5cm}jenes.chromosome.BitwiseChromosome.BitwiseChromosome (final int {\em size}, \/  final BitCoding {\em coding})}}
+\label{classjenes_1_1chromosome_1_1_bitwise_chromosome_9109a8205e447db9032f29494f0d9b3d}
+
+
+Creates a new \hyperlink{classjenes_1_1chromosome_1_1_bitwise_chromosome}{BitwiseChromosome} with the specified number of objects and coding.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em size}]the number of chromosome coded objects \item[{\em coding}]the coding to use \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1chromosome_1_1_bitwise_chromosome_90798d86b6c1871c441b562e0b1d50ca}{
+\index{jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}!BitwiseChromosome@{BitwiseChromosome}}
+\index{BitwiseChromosome@{BitwiseChromosome}!jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}}
+\subsubsection[BitwiseChromosome]{\setlength{\rightskip}{0pt plus 5cm}jenes.chromosome.BitwiseChromosome.BitwiseChromosome (final {\bf BitwiseChromosome} {\em chromosome})}}
+\label{classjenes_1_1chromosome_1_1_bitwise_chromosome_90798d86b6c1871c441b562e0b1d50ca}
+
+
+Creates a new \hyperlink{classjenes_1_1chromosome_1_1_bitwise_chromosome}{BitwiseChromosome} using the specified one as prototype
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em chromosome}]the chromosome to copy \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classjenes_1_1chromosome_1_1_bitwise_chromosome_905b92cd6dc14db9d2b9276f1a6686e9}{
+\index{jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}!getType@{getType}}
+\index{getType@{getType}!jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}}
+\subsubsection[getType]{\setlength{\rightskip}{0pt plus 5cm}final BitCoding jenes.chromosome.BitwiseChromosome.getType ()}}
+\label{classjenes_1_1chromosome_1_1_bitwise_chromosome_905b92cd6dc14db9d2b9276f1a6686e9}
+
+
+Returns the \hyperlink{}{BitCoding} used by this chromosome
+
+\begin{Desc}
+\item[Returns:]the bit coding used \end{Desc}
+\hypertarget{classjenes_1_1chromosome_1_1_bitwise_chromosome_e59ae8f495ec9d5aa15712cee7c0b313}{
+\index{jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}!getSize@{getSize}}
+\index{getSize@{getSize}!jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}}
+\subsubsection[getSize]{\setlength{\rightskip}{0pt plus 5cm}final int jenes.chromosome.BitwiseChromosome.getSize ()}}
+\label{classjenes_1_1chromosome_1_1_bitwise_chromosome_e59ae8f495ec9d5aa15712cee7c0b313}
+
+
+Returns the number of coded objects contained by this chromosome.
+
+\begin{Desc}
+\item[Returns:]the number of coded objects \end{Desc}
+\hypertarget{classjenes_1_1chromosome_1_1_bitwise_chromosome_f817cb2110fc6b8d415e46377ddd4911}{
+\index{jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}!getIntValueAt@{getIntValueAt}}
+\index{getIntValueAt@{getIntValueAt}!jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}}
+\subsubsection[getIntValueAt]{\setlength{\rightskip}{0pt plus 5cm}final int jenes.chromosome.BitwiseChromosome.getIntValueAt (final int {\em index})}}
+\label{classjenes_1_1chromosome_1_1_bitwise_chromosome_f817cb2110fc6b8d415e46377ddd4911}
+
+
+Returns the int value at the specified position
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em index}]the index of the value to return \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]the int value at the specified position \end{Desc}
+\hypertarget{classjenes_1_1chromosome_1_1_bitwise_chromosome_3cbcf428333a0dc4209ce2c820054542}{
+\index{jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}!setIntValueAt@{setIntValueAt}}
+\index{setIntValueAt@{setIntValueAt}!jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}}
+\subsubsection[setIntValueAt]{\setlength{\rightskip}{0pt plus 5cm}final void jenes.chromosome.BitwiseChromosome.setIntValueAt (final int {\em index}, \/  final int {\em value})}}
+\label{classjenes_1_1chromosome_1_1_bitwise_chromosome_3cbcf428333a0dc4209ce2c820054542}
+
+
+Sets the int value at the specified position
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em index}]the index of the element to be modify \item[{\em value}]the value to set \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1chromosome_1_1_bitwise_chromosome_36e6b8c849d563a359245763116667d5}{
+\index{jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}!getIntSize@{getIntSize}}
+\index{getIntSize@{getIntSize}!jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}}
+\subsubsection[getIntSize]{\setlength{\rightskip}{0pt plus 5cm}final int jenes.chromosome.BitwiseChromosome.getIntSize ()}}
+\label{classjenes_1_1chromosome_1_1_bitwise_chromosome_36e6b8c849d563a359245763116667d5}
+
+
+Returns the number of integer used by the chromosome for coding the objects
+
+\begin{Desc}
+\item[Returns:]the number of integers \end{Desc}
+\hypertarget{classjenes_1_1chromosome_1_1_bitwise_chromosome_3061d34e1f0c0faa915d4da7ea2f615c}{
+\index{jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}!getValueAt@{getValueAt}}
+\index{getValueAt@{getValueAt}!jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}}
+\subsubsection[getValueAt]{\setlength{\rightskip}{0pt plus 5cm}final Object jenes.chromosome.BitwiseChromosome.getValueAt (final int {\em index})}}
+\label{classjenes_1_1chromosome_1_1_bitwise_chromosome_3061d34e1f0c0faa915d4da7ea2f615c}
+
+
+Returns the object value at the specified position in the chromosome. The value is decoded and returned.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em index}]the position \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]the object \end{Desc}
+\hypertarget{classjenes_1_1chromosome_1_1_bitwise_chromosome_aa42be8f0c26735e8a8d603d9b743b6a}{
+\index{jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}!setValue@{setValue}}
+\index{setValue@{setValue}!jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}}
+\subsubsection[setValue]{\setlength{\rightskip}{0pt plus 5cm}final void jenes.chromosome.BitwiseChromosome.setValue (final int {\em index}, \/  final Object {\em value})}}
+\label{classjenes_1_1chromosome_1_1_bitwise_chromosome_aa42be8f0c26735e8a8d603d9b743b6a}
+
+
+Sets the specified object value at the given position. The object value is encoded and then placed in the chromosome.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em index}]the position \item[{\em value}]the object value to be placed \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1chromosome_1_1_bitwise_chromosome_05ce80f3729d007c5d550eef5969ac86}{
+\index{jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}!getBitValueAt@{getBitValueAt}}
+\index{getBitValueAt@{getBitValueAt}!jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}}
+\subsubsection[getBitValueAt]{\setlength{\rightskip}{0pt plus 5cm}final int jenes.chromosome.BitwiseChromosome.getBitValueAt (final int {\em index})}}
+\label{classjenes_1_1chromosome_1_1_bitwise_chromosome_05ce80f3729d007c5d550eef5969ac86}
+
+
+Returns the bit value at the specified position. This position takes into account the usage of integers made by the coding specification. For instance, if the coding requires 5 bits for each value, index 31 does not point to the last bit of the first integer, but to the second bit of the second integer, as described below
+
+\mbox{[}01101 01110 00011 11011 10101 10010 --\mbox{]} \mbox{[}01100 11010 ...
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em index}]the position \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]the bit value \end{Desc}
+\hypertarget{classjenes_1_1chromosome_1_1_bitwise_chromosome_2e746b511933914d4be452573ac5ab7c}{
+\index{jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}!setBitValueAt@{setBitValueAt}}
+\index{setBitValueAt@{setBitValueAt}!jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}}
+\subsubsection[setBitValueAt]{\setlength{\rightskip}{0pt plus 5cm}final void jenes.chromosome.BitwiseChromosome.setBitValueAt (final int {\em index}, \/  final int {\em bit})}}
+\label{classjenes_1_1chromosome_1_1_bitwise_chromosome_2e746b511933914d4be452573ac5ab7c}
+
+
+Sets the bit at a given position. Position is related to the bits actually used and not to those occupied by the chromosome data structure.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em index}]the position \item[{\em bit}]the bit value \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1chromosome_1_1_bitwise_chromosome_2d711baa2a74ccb064d33ef73edbd464}{
+\index{jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}!cross@{cross}}
+\index{cross@{cross}!jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}}
+\subsubsection[cross]{\setlength{\rightskip}{0pt plus 5cm}final void jenes.chromosome.BitwiseChromosome.cross (final {\bf BitwiseChromosome} {\em chromosome}, \/  final int {\em from}, \/  final int {\em to})}}
+\label{classjenes_1_1chromosome_1_1_bitwise_chromosome_2d711baa2a74ccb064d33ef73edbd464}
+
+
+Exchanges the chromosome bits in the range \mbox{[}from,to\mbox{]}. The range is referred to positions of bits effectively used by the chromosome and not to thoae occupied by the underlying data structure.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em chromosome}]the chromosome to cross with \item[{\em from}]the initial cross site \item[{\em to}]the final cross site \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1chromosome_1_1_bitwise_chromosome_933b1991999fa3b586c1739744751725}{
+\index{jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}!cross@{cross}}
+\index{cross@{cross}!jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}}
+\subsubsection[cross]{\setlength{\rightskip}{0pt plus 5cm}final void jenes.chromosome.BitwiseChromosome.cross (final {\bf BitwiseChromosome} {\em chromosome}, \/  final int {\em from})}}
+\label{classjenes_1_1chromosome_1_1_bitwise_chromosome_933b1991999fa3b586c1739744751725}
+
+
+Exchanges the chromosome bits from the specified cross site to the final position
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em chromosome}]the chromosome to cross with \item[{\em from}]the initial cross site \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1chromosome_1_1_bitwise_chromosome_41c9858f7ef05194011d1e227fea3584}{
+\index{jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}!equals@{equals}}
+\index{equals@{equals}!jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}}
+\subsubsection[equals]{\setlength{\rightskip}{0pt plus 5cm}final boolean jenes.chromosome.BitwiseChromosome.equals (final {\bf BitwiseChromosome} {\em chromosome})}}
+\label{classjenes_1_1chromosome_1_1_bitwise_chromosome_41c9858f7ef05194011d1e227fea3584}
+
+
+Compares the chromosome with another.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em chromosome}]the chromosome to compare to. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]true, if the two chromosome are equal. \end{Desc}
+\hypertarget{classjenes_1_1chromosome_1_1_bitwise_chromosome_0da8899c89f8b1f222526acf1d2e8519}{
+\index{jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}!length@{length}}
+\index{length@{length}!jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}}
+\subsubsection[length]{\setlength{\rightskip}{0pt plus 5cm}final int jenes.chromosome.BitwiseChromosome.length ()}}
+\label{classjenes_1_1chromosome_1_1_bitwise_chromosome_0da8899c89f8b1f222526acf1d2e8519}
+
+
+Returns the chromosome length expressed in bits. This value can be different from the effective chromosome length (the latter can contain bits used to make the former multiple of \hyperlink{}{Integer\#SIZE})
+
+\begin{Desc}
+\item[Returns:]the chromosome length \end{Desc}
+\hypertarget{classjenes_1_1chromosome_1_1_bitwise_chromosome_5878e8d0ace81cfb617f75109c02855d}{
+\index{jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}!getIntLength@{getIntLength}}
+\index{getIntLength@{getIntLength}!jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}}
+\subsubsection[getIntLength]{\setlength{\rightskip}{0pt plus 5cm}final int jenes.chromosome.BitwiseChromosome.getIntLength ()}}
+\label{classjenes_1_1chromosome_1_1_bitwise_chromosome_5878e8d0ace81cfb617f75109c02855d}
+
+
+Returns the chromosome length expressed in integers
+
+\begin{Desc}
+\item[Returns:]the number of integers \end{Desc}
+\hypertarget{classjenes_1_1chromosome_1_1_bitwise_chromosome_1a79d4c9c671d2f735d57d64c59dfdb8}{
+\index{jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}!randomize@{randomize}}
+\index{randomize@{randomize}!jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}}
+\subsubsection[randomize]{\setlength{\rightskip}{0pt plus 5cm}final void jenes.chromosome.BitwiseChromosome.randomize (final int {\em pos})}}
+\label{classjenes_1_1chromosome_1_1_bitwise_chromosome_1a79d4c9c671d2f735d57d64c59dfdb8}
+
+
+Randomizes the bit at the given position
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em pos}]the position of bit to alter \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1chromosome_1_1_bitwise_chromosome_8028fde93528b7b51313f6c311b2b640}{
+\index{jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}!randomize@{randomize}}
+\index{randomize@{randomize}!jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}}
+\subsubsection[randomize]{\setlength{\rightskip}{0pt plus 5cm}final void jenes.chromosome.BitwiseChromosome.randomize ()}}
+\label{classjenes_1_1chromosome_1_1_bitwise_chromosome_8028fde93528b7b51313f6c311b2b640}
+
+
+Randomizes each chromosome bit \hypertarget{classjenes_1_1chromosome_1_1_bitwise_chromosome_b02c791be30c931cae793289185e459f}{
+\index{jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}!leftShift@{leftShift}}
+\index{leftShift@{leftShift}!jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}}
+\subsubsection[leftShift]{\setlength{\rightskip}{0pt plus 5cm}final void jenes.chromosome.BitwiseChromosome.leftShift (final int {\em from}, \/  final int {\em to})}}
+\label{classjenes_1_1chromosome_1_1_bitwise_chromosome_b02c791be30c931cae793289185e459f}
+
+
+Executes the left shift of bits within the specified range. The shift is circular, so the most right-side bit becomes the first bit on left.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em from}]the lower range limit \item[{\em to}]the upper range limit \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1chromosome_1_1_bitwise_chromosome_fb689c4b268f7954214a9d0e13c6141e}{
+\index{jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}!rightShift@{rightShift}}
+\index{rightShift@{rightShift}!jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}}
+\subsubsection[rightShift]{\setlength{\rightskip}{0pt plus 5cm}final void jenes.chromosome.BitwiseChromosome.rightShift (final int {\em from}, \/  final int {\em to})}}
+\label{classjenes_1_1chromosome_1_1_bitwise_chromosome_fb689c4b268f7954214a9d0e13c6141e}
+
+
+Executes the right shift of bits within the specified range. The shift is circular, so the most left-side bit becomes the last bit on right.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em from}]the lower range limit \item[{\em to}]the upper range limit \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1chromosome_1_1_bitwise_chromosome_a4fbad5a25ae14e9524a6ff0ec2536ca}{
+\index{jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}!setAs@{setAs}}
+\index{setAs@{setAs}!jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}}
+\subsubsection[setAs]{\setlength{\rightskip}{0pt plus 5cm}final void jenes.chromosome.BitwiseChromosome.setAs (final {\bf BitwiseChromosome} {\em chromosome})}}
+\label{classjenes_1_1chromosome_1_1_bitwise_chromosome_a4fbad5a25ae14e9524a6ff0ec2536ca}
+
+
+Sets this chromosome as a copy of another.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em chromosome}]the chromosome to copy \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1chromosome_1_1_bitwise_chromosome_e5be5fc21ff47526230a8a13ca945c08}{
+\index{jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}!setDefaultValueAt@{setDefaultValueAt}}
+\index{setDefaultValueAt@{setDefaultValueAt}!jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}}
+\subsubsection[setDefaultValueAt]{\setlength{\rightskip}{0pt plus 5cm}final void jenes.chromosome.BitwiseChromosome.setDefaultValueAt (final int {\em pos})}}
+\label{classjenes_1_1chromosome_1_1_bitwise_chromosome_e5be5fc21ff47526230a8a13ca945c08}
+
+
+Sets the default bit value at the a given position
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em pos}]bit position \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1chromosome_1_1_bitwise_chromosome_fac4935f0e1d92b6b1aaf9de024e8cbb}{
+\index{jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}!swap@{swap}}
+\index{swap@{swap}!jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}}
+\subsubsection[swap]{\setlength{\rightskip}{0pt plus 5cm}final void jenes.chromosome.BitwiseChromosome.swap (final int {\em pos1}, \/  final int {\em pos2})}}
+\label{classjenes_1_1chromosome_1_1_bitwise_chromosome_fac4935f0e1d92b6b1aaf9de024e8cbb}
+
+
+Swaps two bits at given positions
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em pos1}]first bit position \item[{\em pos2}]second bit position \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1chromosome_1_1_bitwise_chromosome_2140b588068c430eaea7e9a7a5fe6b00}{
+\index{jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}!clone@{clone}}
+\index{clone@{clone}!jenes::chromosome::BitwiseChromosome@{jenes::chromosome::BitwiseChromosome}}
+\subsubsection[clone]{\setlength{\rightskip}{0pt plus 5cm}final {\bf BitwiseChromosome} jenes.chromosome.BitwiseChromosome.clone ()}}
+\label{classjenes_1_1chromosome_1_1_bitwise_chromosome_2140b588068c430eaea7e9a7a5fe6b00}
+
+
+Makes a chromosome copy
+
+\begin{Desc}
+\item[Returns:]the chromsome clone \end{Desc}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/chromosome/BitwiseChromosome.java\end{CompactItemize}

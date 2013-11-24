@@ -1,0 +1,384 @@
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4}{
+\section{jenes.stage.operator.common.MultiNicheCrowder$<$ T extends Chromosome $>$ Class Reference}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4}\index{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}}
+}
+Inherits jenes::stage::operator::Crowder$<$ T $>$.
+
+\subsection*{Public Types}
+\begin{CompactItemize}
+\item 
+enum \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_1190dbbe875b99f6679f7b5deb68483b}{SelectionMethod} \{ \par
+\textbf{ROULETTE}, 
+\textbf{TOURNAMENT}, 
+\textbf{ROULETTE}, 
+\textbf{TOURNAMENT}, 
+\par
+\textbf{ROULETTE}, 
+\textbf{TOURNAMENT}, 
+\textbf{NONE}, 
+\textbf{ROULETTE}, 
+\par
+\textbf{TOURNAMENT}, 
+\textbf{ROULETTE}, 
+\textbf{TOURNAMENT}
+ \}
+\item 
+enum \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_273881bd444aeae8ef77816000eac94c}{CrossoverMethod} \{ \par
+\textbf{SINGLEPOINT}, 
+\textbf{TWOPOINTS}, 
+\textbf{SINGLEPOINT}, 
+\textbf{TWOPOINTS}, 
+\par
+\textbf{SINGLEPOINT}, 
+\textbf{TWOPOINTS}, 
+\textbf{SINGLEPOINT}, 
+\textbf{TWOPOINTS}
+ \}
+\item 
+enum \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_1ea23e3abc5ae7417a422840824bab65}{MutationMethod} \{ \par
+\textbf{NONE}, 
+\textbf{SIMPLE}, 
+\textbf{NONE}, 
+\textbf{SIMPLE}, 
+\par
+\textbf{NONE}, 
+\textbf{SIMPLE}
+ \}
+\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_0e3210ea1f2d3f1687f5c1f9a0f326dd}{MultiNicheCrowder} ()
+\item 
+\hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_45d8181936a9298ecc7edcfee8647590}{MultiNicheCrowder} (final \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_1190dbbe875b99f6679f7b5deb68483b}{SelectionMethod} selection)
+\item 
+\hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_5f539242ac756ac79df20945afc5e425}{MultiNicheCrowder} (final \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_1190dbbe875b99f6679f7b5deb68483b}{SelectionMethod} selection, final \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_273881bd444aeae8ef77816000eac94c}{CrossoverMethod} crossmethod)
+\item 
+\hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_d6b691057f10397e80669b101c7f437a}{MultiNicheCrowder} (final \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_1190dbbe875b99f6679f7b5deb68483b}{SelectionMethod} selection, final \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_273881bd444aeae8ef77816000eac94c}{CrossoverMethod} crossmethod, final double \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_d584be099b23576ec3379a6867d31ef4}{crossover}, final double mutation)
+\item 
+\hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_7384c823b16fe8e5f8bfdc7db0c87ce5}{MultiNicheCrowder} (final \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_1190dbbe875b99f6679f7b5deb68483b}{SelectionMethod} selectionmethod, final \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_273881bd444aeae8ef77816000eac94c}{CrossoverMethod} crossmethod, final double \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_d584be099b23576ec3379a6867d31ef4}{crossover}, final double mutation, final int sf, final int cf, final int rf)
+\item 
+final int \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_74363393b7e200fcff467ff5920e10d6}{getCrowdingFactor} ()
+\item 
+void \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_d00602ac8b97b385a8a72fd612e2ac22}{setCrowdingFactor} (int \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_d7320907a72bd19c028f922383667560}{crowdingFactor})
+\item 
+final int \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_97c2ba03c48234566aea9fcf49b677ee}{getReplacementFactor} ()
+\item 
+void \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_3cf07082299cbe94d975a9af638a2098}{setReplacementFactor} (int \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_9a068eae86d3af67f89cfa4b244810fb}{replacementFactor})
+\item 
+final int \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_42e85f954b23bdadf63b7aa13365cd40}{getSelectionFactor} ()
+\item 
+void \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_0f2ec39933d9656c981f8b7113bbf668}{setSelectionFactor} (int \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_b561927a8af185e69bd5fcf85e904d7a}{selectionFactor})
+\end{CompactItemize}
+\subsection*{Static Public Attributes}
+\begin{CompactItemize}
+\item 
+static final \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_1190dbbe875b99f6679f7b5deb68483b}{SelectionMethod} \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_ddd3f5fe352248ed9d5639e0d138f59d}{DEFAULT\_\-SELECTION\_\-METHOD} = SelectionMethod.TOURNAMENT
+\item 
+static final \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_273881bd444aeae8ef77816000eac94c}{CrossoverMethod} \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_ed986ca7d89144f78e73a11a5fb2f032}{DEFAULT\_\-CROSSOVER\_\-METHOD} = CrossoverMethod.SINGLEPOINT
+\item 
+static final double \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_6e6d3f4e8201a341f77ac92954dbdad4}{DEFAULT\_\-CROSSOVER\_\-PROBABILITY} = 0.8
+\item 
+static final double \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_a3cfe11747630124e10809b0027d6f3a}{DEFAULT\_\-MUTATION\_\-PROBABILITY} = 0.02
+\item 
+static final int \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_937e501fc953576f30be99a0eec9ccf4}{DEFAULT\_\-SELECTION\_\-FACTOR} = 5
+\item 
+static final int \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_e7c682fcbb8e1de5270d79ca482bd93d}{DEFAULT\_\-CROWDING\_\-FACTOR} = 5
+\item 
+static final int \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_c38d4afc42b5f54473834e76815c7510}{DEFAULT\_\-REPLACEMENT\_\-FACTOR} = 5
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_e3e96b6cd96f375209e9308bb7f9ca85}{
+void \textbf{preselect} (Population$<$ T $>$ in, Population$<$ T $>$ out)}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_e3e96b6cd96f375209e9308bb7f9ca85}
+
+\item 
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_619884821dabf179aed435269366114e}{
+void \textbf{replace} (Population$<$ T $>$ initial, Population$<$ T $>$ preselected, Population$<$ T $>$ evolved, Population$<$ T $>$ out)}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_619884821dabf179aed435269366114e}
+
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+int \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_b561927a8af185e69bd5fcf85e904d7a}{selectionFactor}
+\item 
+int \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_d7320907a72bd19c028f922383667560}{crowdingFactor}
+\item 
+int \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_9a068eae86d3af67f89cfa4b244810fb}{replacementFactor}
+\item 
+Crossover$<$ T $>$ \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_d584be099b23576ec3379a6867d31ef4}{crossover}
+\item 
+Selector$<$ T $>$ \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_ec9f82fc79b7a63f5e664dfbcc7e9563}{selector}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Implementation of multi-niche crowding.
+
+\begin{Desc}
+\item[Version:]2.0 \end{Desc}
+\begin{Desc}
+\item[Since:]2.0 \end{Desc}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_1190dbbe875b99f6679f7b5deb68483b}{
+\index{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}!SelectionMethod@{SelectionMethod}}
+\index{SelectionMethod@{SelectionMethod}!jenes::stage::operator::common::MultiNicheCrowder< T extends Chromosome >@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[SelectionMethod]{\setlength{\rightskip}{0pt plus 5cm}enum jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$::{\bf SelectionMethod}}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_1190dbbe875b99f6679f7b5deb68483b}
+
+
+Provides the available selection methods \hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_273881bd444aeae8ef77816000eac94c}{
+\index{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}!CrossoverMethod@{CrossoverMethod}}
+\index{CrossoverMethod@{CrossoverMethod}!jenes::stage::operator::common::MultiNicheCrowder< T extends Chromosome >@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[CrossoverMethod]{\setlength{\rightskip}{0pt plus 5cm}enum jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$::{\bf CrossoverMethod}}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_273881bd444aeae8ef77816000eac94c}
+
+
+Provides the available crossover methods \hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_1ea23e3abc5ae7417a422840824bab65}{
+\index{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}!MutationMethod@{MutationMethod}}
+\index{MutationMethod@{MutationMethod}!jenes::stage::operator::common::MultiNicheCrowder< T extends Chromosome >@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[MutationMethod]{\setlength{\rightskip}{0pt plus 5cm}enum jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$::{\bf MutationMethod}}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_1ea23e3abc5ae7417a422840824bab65}
+
+
+Provides standard mutation methods 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_0e3210ea1f2d3f1687f5c1f9a0f326dd}{
+\index{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}!MultiNicheCrowder@{MultiNicheCrowder}}
+\index{MultiNicheCrowder@{MultiNicheCrowder}!jenes::stage::operator::common::MultiNicheCrowder< T extends Chromosome >@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[MultiNicheCrowder]{\setlength{\rightskip}{0pt plus 5cm}jenes.stage.operator.common.MultiNicheCrowder$<$ T extends Chromosome $>$.MultiNicheCrowder ()}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_0e3210ea1f2d3f1687f5c1f9a0f326dd}
+
+
+Creates MultiNicheCrowder using default options. \hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_45d8181936a9298ecc7edcfee8647590}{
+\index{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}!MultiNicheCrowder@{MultiNicheCrowder}}
+\index{MultiNicheCrowder@{MultiNicheCrowder}!jenes::stage::operator::common::MultiNicheCrowder< T extends Chromosome >@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[MultiNicheCrowder]{\setlength{\rightskip}{0pt plus 5cm}jenes.stage.operator.common.MultiNicheCrowder$<$ T extends Chromosome $>$.MultiNicheCrowder (final {\bf SelectionMethod} {\em selection})}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_45d8181936a9298ecc7edcfee8647590}
+
+
+Creates a MultiNicheCrowder instance
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em crossmethod}]crossover method \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_5f539242ac756ac79df20945afc5e425}{
+\index{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}!MultiNicheCrowder@{MultiNicheCrowder}}
+\index{MultiNicheCrowder@{MultiNicheCrowder}!jenes::stage::operator::common::MultiNicheCrowder< T extends Chromosome >@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[MultiNicheCrowder]{\setlength{\rightskip}{0pt plus 5cm}jenes.stage.operator.common.MultiNicheCrowder$<$ T extends Chromosome $>$.MultiNicheCrowder (final {\bf SelectionMethod} {\em selection}, \/  final {\bf CrossoverMethod} {\em crossmethod})}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_5f539242ac756ac79df20945afc5e425}
+
+
+Creates a MultiNicheCrowder instance
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em crossmethod}]crossover method \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_d6b691057f10397e80669b101c7f437a}{
+\index{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}!MultiNicheCrowder@{MultiNicheCrowder}}
+\index{MultiNicheCrowder@{MultiNicheCrowder}!jenes::stage::operator::common::MultiNicheCrowder< T extends Chromosome >@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[MultiNicheCrowder]{\setlength{\rightskip}{0pt plus 5cm}jenes.stage.operator.common.MultiNicheCrowder$<$ T extends Chromosome $>$.MultiNicheCrowder (final {\bf SelectionMethod} {\em selection}, \/  final {\bf CrossoverMethod} {\em crossmethod}, \/  final double {\em crossover}, \/  final double {\em mutation})}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_d6b691057f10397e80669b101c7f437a}
+
+
+Creates a MultiNicheCrowder instance
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em crossmethod}]crossover method \item[{\em crossover}]crossover probability \item[{\em mutation}]mutation probability \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_7384c823b16fe8e5f8bfdc7db0c87ce5}{
+\index{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}!MultiNicheCrowder@{MultiNicheCrowder}}
+\index{MultiNicheCrowder@{MultiNicheCrowder}!jenes::stage::operator::common::MultiNicheCrowder< T extends Chromosome >@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[MultiNicheCrowder]{\setlength{\rightskip}{0pt plus 5cm}jenes.stage.operator.common.MultiNicheCrowder$<$ T extends Chromosome $>$.MultiNicheCrowder (final {\bf SelectionMethod} {\em selectionmethod}, \/  final {\bf CrossoverMethod} {\em crossmethod}, \/  final double {\em crossover}, \/  final double {\em mutation}, \/  final int {\em sf}, \/  final int {\em cf}, \/  final int {\em rf})}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_7384c823b16fe8e5f8bfdc7db0c87ce5}
+
+
+Creates a MultiNicheCrowder instance
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em crossmethod}]crossover method \item[{\em crossover}]crossover probability \item[{\em mutation}]mutation probability \item[{\em sf}]selection factor \item[{\em cf}]crowding factor \item[{\em rf}]replacement factor \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_74363393b7e200fcff467ff5920e10d6}{
+\index{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}!getCrowdingFactor@{getCrowdingFactor}}
+\index{getCrowdingFactor@{getCrowdingFactor}!jenes::stage::operator::common::MultiNicheCrowder< T extends Chromosome >@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[getCrowdingFactor]{\setlength{\rightskip}{0pt plus 5cm}final int jenes.stage.operator.common.MultiNicheCrowder$<$ T extends Chromosome $>$.getCrowdingFactor ()}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_74363393b7e200fcff467ff5920e10d6}
+
+
+Returns the crowding factor
+
+\begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_d00602ac8b97b385a8a72fd612e2ac22}{
+\index{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}!setCrowdingFactor@{setCrowdingFactor}}
+\index{setCrowdingFactor@{setCrowdingFactor}!jenes::stage::operator::common::MultiNicheCrowder< T extends Chromosome >@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[setCrowdingFactor]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.operator.common.MultiNicheCrowder$<$ T extends Chromosome $>$.setCrowdingFactor (int {\em crowdingFactor})}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_d00602ac8b97b385a8a72fd612e2ac22}
+
+
+Sets the crowding factor
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em crowdingFactor}]the factor \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_97c2ba03c48234566aea9fcf49b677ee}{
+\index{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}!getReplacementFactor@{getReplacementFactor}}
+\index{getReplacementFactor@{getReplacementFactor}!jenes::stage::operator::common::MultiNicheCrowder< T extends Chromosome >@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[getReplacementFactor]{\setlength{\rightskip}{0pt plus 5cm}final int jenes.stage.operator.common.MultiNicheCrowder$<$ T extends Chromosome $>$.getReplacementFactor ()}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_97c2ba03c48234566aea9fcf49b677ee}
+
+
+Returns the replacement factor
+
+\begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_3cf07082299cbe94d975a9af638a2098}{
+\index{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}!setReplacementFactor@{setReplacementFactor}}
+\index{setReplacementFactor@{setReplacementFactor}!jenes::stage::operator::common::MultiNicheCrowder< T extends Chromosome >@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[setReplacementFactor]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.operator.common.MultiNicheCrowder$<$ T extends Chromosome $>$.setReplacementFactor (int {\em replacementFactor})}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_3cf07082299cbe94d975a9af638a2098}
+
+
+Sets the replacement factor
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em replacementFactor}]the factor \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_42e85f954b23bdadf63b7aa13365cd40}{
+\index{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}!getSelectionFactor@{getSelectionFactor}}
+\index{getSelectionFactor@{getSelectionFactor}!jenes::stage::operator::common::MultiNicheCrowder< T extends Chromosome >@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[getSelectionFactor]{\setlength{\rightskip}{0pt plus 5cm}final int jenes.stage.operator.common.MultiNicheCrowder$<$ T extends Chromosome $>$.getSelectionFactor ()}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_42e85f954b23bdadf63b7aa13365cd40}
+
+
+Return the selection factor
+
+\begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_0f2ec39933d9656c981f8b7113bbf668}{
+\index{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}!setSelectionFactor@{setSelectionFactor}}
+\index{setSelectionFactor@{setSelectionFactor}!jenes::stage::operator::common::MultiNicheCrowder< T extends Chromosome >@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[setSelectionFactor]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.operator.common.MultiNicheCrowder$<$ T extends Chromosome $>$.setSelectionFactor (int {\em selectionFactor})}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_0f2ec39933d9656c981f8b7113bbf668}
+
+
+Sets the replacement factor
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em selectionFactor}]the factor \end{description}
+\end{Desc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_ddd3f5fe352248ed9d5639e0d138f59d}{
+\index{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}!DEFAULT\_\-SELECTION\_\-METHOD@{DEFAULT\_\-SELECTION\_\-METHOD}}
+\index{DEFAULT\_\-SELECTION\_\-METHOD@{DEFAULT\_\-SELECTION\_\-METHOD}!jenes::stage::operator::common::MultiNicheCrowder< T extends Chromosome >@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[DEFAULT\_\-SELECTION\_\-METHOD]{\setlength{\rightskip}{0pt plus 5cm}final {\bf SelectionMethod} jenes.stage.operator.common.MultiNicheCrowder$<$ T extends Chromosome $>$.{\bf DEFAULT\_\-SELECTION\_\-METHOD} = SelectionMethod.TOURNAMENT\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_ddd3f5fe352248ed9d5639e0d138f59d}
+
+
+The default selection method \hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_ed986ca7d89144f78e73a11a5fb2f032}{
+\index{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}!DEFAULT\_\-CROSSOVER\_\-METHOD@{DEFAULT\_\-CROSSOVER\_\-METHOD}}
+\index{DEFAULT\_\-CROSSOVER\_\-METHOD@{DEFAULT\_\-CROSSOVER\_\-METHOD}!jenes::stage::operator::common::MultiNicheCrowder< T extends Chromosome >@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[DEFAULT\_\-CROSSOVER\_\-METHOD]{\setlength{\rightskip}{0pt plus 5cm}final {\bf CrossoverMethod} jenes.stage.operator.common.MultiNicheCrowder$<$ T extends Chromosome $>$.{\bf DEFAULT\_\-CROSSOVER\_\-METHOD} = CrossoverMethod.SINGLEPOINT\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_ed986ca7d89144f78e73a11a5fb2f032}
+
+
+The default crossover method \hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_6e6d3f4e8201a341f77ac92954dbdad4}{
+\index{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}!DEFAULT\_\-CROSSOVER\_\-PROBABILITY@{DEFAULT\_\-CROSSOVER\_\-PROBABILITY}}
+\index{DEFAULT\_\-CROSSOVER\_\-PROBABILITY@{DEFAULT\_\-CROSSOVER\_\-PROBABILITY}!jenes::stage::operator::common::MultiNicheCrowder< T extends Chromosome >@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[DEFAULT\_\-CROSSOVER\_\-PROBABILITY]{\setlength{\rightskip}{0pt plus 5cm}final double jenes.stage.operator.common.MultiNicheCrowder$<$ T extends Chromosome $>$.{\bf DEFAULT\_\-CROSSOVER\_\-PROBABILITY} = 0.8\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_6e6d3f4e8201a341f77ac92954dbdad4}
+
+
+The default crossover probability \hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_a3cfe11747630124e10809b0027d6f3a}{
+\index{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}!DEFAULT\_\-MUTATION\_\-PROBABILITY@{DEFAULT\_\-MUTATION\_\-PROBABILITY}}
+\index{DEFAULT\_\-MUTATION\_\-PROBABILITY@{DEFAULT\_\-MUTATION\_\-PROBABILITY}!jenes::stage::operator::common::MultiNicheCrowder< T extends Chromosome >@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[DEFAULT\_\-MUTATION\_\-PROBABILITY]{\setlength{\rightskip}{0pt plus 5cm}final double jenes.stage.operator.common.MultiNicheCrowder$<$ T extends Chromosome $>$.{\bf DEFAULT\_\-MUTATION\_\-PROBABILITY} = 0.02\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_a3cfe11747630124e10809b0027d6f3a}
+
+
+The default mutation probability \hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_937e501fc953576f30be99a0eec9ccf4}{
+\index{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}!DEFAULT\_\-SELECTION\_\-FACTOR@{DEFAULT\_\-SELECTION\_\-FACTOR}}
+\index{DEFAULT\_\-SELECTION\_\-FACTOR@{DEFAULT\_\-SELECTION\_\-FACTOR}!jenes::stage::operator::common::MultiNicheCrowder< T extends Chromosome >@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[DEFAULT\_\-SELECTION\_\-FACTOR]{\setlength{\rightskip}{0pt plus 5cm}final int jenes.stage.operator.common.MultiNicheCrowder$<$ T extends Chromosome $>$.{\bf DEFAULT\_\-SELECTION\_\-FACTOR} = 5\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_937e501fc953576f30be99a0eec9ccf4}
+
+
+The default selection factor \hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_e7c682fcbb8e1de5270d79ca482bd93d}{
+\index{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}!DEFAULT\_\-CROWDING\_\-FACTOR@{DEFAULT\_\-CROWDING\_\-FACTOR}}
+\index{DEFAULT\_\-CROWDING\_\-FACTOR@{DEFAULT\_\-CROWDING\_\-FACTOR}!jenes::stage::operator::common::MultiNicheCrowder< T extends Chromosome >@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[DEFAULT\_\-CROWDING\_\-FACTOR]{\setlength{\rightskip}{0pt plus 5cm}final int jenes.stage.operator.common.MultiNicheCrowder$<$ T extends Chromosome $>$.{\bf DEFAULT\_\-CROWDING\_\-FACTOR} = 5\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_e7c682fcbb8e1de5270d79ca482bd93d}
+
+
+The default crowding factor \hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_c38d4afc42b5f54473834e76815c7510}{
+\index{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}!DEFAULT\_\-REPLACEMENT\_\-FACTOR@{DEFAULT\_\-REPLACEMENT\_\-FACTOR}}
+\index{DEFAULT\_\-REPLACEMENT\_\-FACTOR@{DEFAULT\_\-REPLACEMENT\_\-FACTOR}!jenes::stage::operator::common::MultiNicheCrowder< T extends Chromosome >@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[DEFAULT\_\-REPLACEMENT\_\-FACTOR]{\setlength{\rightskip}{0pt plus 5cm}final int jenes.stage.operator.common.MultiNicheCrowder$<$ T extends Chromosome $>$.{\bf DEFAULT\_\-REPLACEMENT\_\-FACTOR} = 5\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_c38d4afc42b5f54473834e76815c7510}
+
+
+The default replacement factor \hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_b561927a8af185e69bd5fcf85e904d7a}{
+\index{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}!selectionFactor@{selectionFactor}}
+\index{selectionFactor@{selectionFactor}!jenes::stage::operator::common::MultiNicheCrowder< T extends Chromosome >@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[selectionFactor]{\setlength{\rightskip}{0pt plus 5cm}int jenes.stage.operator.common.MultiNicheCrowder$<$ T extends Chromosome $>$.{\bf selectionFactor}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_b561927a8af185e69bd5fcf85e904d7a}
+
+
+Selection factor \hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_d7320907a72bd19c028f922383667560}{
+\index{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}!crowdingFactor@{crowdingFactor}}
+\index{crowdingFactor@{crowdingFactor}!jenes::stage::operator::common::MultiNicheCrowder< T extends Chromosome >@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[crowdingFactor]{\setlength{\rightskip}{0pt plus 5cm}int jenes.stage.operator.common.MultiNicheCrowder$<$ T extends Chromosome $>$.{\bf crowdingFactor}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_d7320907a72bd19c028f922383667560}
+
+
+Crowding factor \hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_9a068eae86d3af67f89cfa4b244810fb}{
+\index{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}!replacementFactor@{replacementFactor}}
+\index{replacementFactor@{replacementFactor}!jenes::stage::operator::common::MultiNicheCrowder< T extends Chromosome >@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[replacementFactor]{\setlength{\rightskip}{0pt plus 5cm}int jenes.stage.operator.common.MultiNicheCrowder$<$ T extends Chromosome $>$.{\bf replacementFactor}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_9a068eae86d3af67f89cfa4b244810fb}
+
+
+Replacement factor \hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_d584be099b23576ec3379a6867d31ef4}{
+\index{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}!crossover@{crossover}}
+\index{crossover@{crossover}!jenes::stage::operator::common::MultiNicheCrowder< T extends Chromosome >@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[crossover]{\setlength{\rightskip}{0pt plus 5cm}Crossover$<$T$>$ jenes.stage.operator.common.MultiNicheCrowder$<$ T extends Chromosome $>$.{\bf crossover}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_d584be099b23576ec3379a6867d31ef4}
+
+
+Crossover operator \hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_ec9f82fc79b7a63f5e664dfbcc7e9563}{
+\index{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}!selector@{selector}}
+\index{selector@{selector}!jenes::stage::operator::common::MultiNicheCrowder< T extends Chromosome >@{jenes::stage::operator::common::MultiNicheCrowder$<$ T extends Chromosome $>$}}
+\subsubsection[selector]{\setlength{\rightskip}{0pt plus 5cm}Selector$<$T$>$ jenes.stage.operator.common.MultiNicheCrowder$<$ T extends Chromosome $>$.{\bf selector}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_multi_niche_crowder_3_01_t_01extends_01_chromosome_01_4_ec9f82fc79b7a63f5e664dfbcc7e9563}
+
+
+Selector operator 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/stage/operator/common/MultiNicheCrowder.java\end{CompactItemize}

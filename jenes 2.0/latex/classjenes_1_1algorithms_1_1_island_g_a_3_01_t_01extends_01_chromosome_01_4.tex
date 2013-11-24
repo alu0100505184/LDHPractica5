@@ -1,0 +1,473 @@
+\hypertarget{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4}{
+\section{jenes.algorithms.IslandGA$<$ T extends Chromosome $>$ Class Reference}
+\label{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4}\index{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}}
+}
+Inherits jenes::GeneticAlgorithm$<$ T $>$.
+
+\subsection*{Public Types}
+\begin{CompactItemize}
+\item 
+enum \hyperlink{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_eb0e7c4ddd30e9472cfd2a280544ff51}{ReplacementStrategy} \{ \hyperlink{_island_g_a_8java_da95b83b7d620e80c70fbed3b8159de1a2b65445a3a16f164c5e811064d75726}{RANDOM}, 
+\hyperlink{_island_g_a_8java_da95b83b7d620e80c70fbed3b8159de1ed58eb79392224559f176f4794c570e1}{WORST}, 
+\textbf{WORST}, 
+\textbf{RANDOM}
+ \}
+\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_e36c7bc43e9b6f50a74cd3c2be85d17b}{IslandGA} (final Fitness fitness)
+\item 
+\hyperlink{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_7e50ffddeef3cd18e479696e1d7258e4}{IslandGA} (final Fitness fitness, final Population$<$ T $>$ population)
+\item 
+\hyperlink{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_baca651c904eb2d4a89380444c3dfd52}{IslandGA} (final Fitness fitness, final Population$<$ T $>$ population, final int genlimit)
+\item 
+\hyperlink{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_462cff7f1ffe7db7a13ab925a8f85c50}{IslandGA} (final Fitness fitness, final Population$<$ T $>$ population, final int genlimit, final int niches)
+\item 
+\hyperlink{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_183f962ceb12d8cd2885b0ef4a6dd988}{IslandGA} (final Fitness fitness, final Population$<$ T $>$ population, final int genlimit, final int niches, final int migration)
+\item 
+\hyperlink{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_36fa940b12f68377764049c7898fd8bd}{IslandGA} (final Fitness fitness, final Population$<$ T $>$ population, final int genlimit, final int niches, final int migration, final Graph geography)
+\item 
+\hyperlink{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_1b122013a5bad475ec45c67737029e68}{IslandGA} (final Fitness fitness, final Population$<$ T $>$ population, final int genlimit, final int niches, final int migration, final Graph geography, final \hyperlink{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_eb0e7c4ddd30e9472cfd2a280544ff51}{ReplacementStrategy} rp)
+\item 
+\hyperlink{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_1347ad1ffe4f878c6f92d4a12484f174}{IslandGA} (final Fitness fitness, final Population$<$ T $>$ population, final int genlimit, final int niches, final GeneticAlgorithm$<$ T $>$ algo)
+\item 
+\hyperlink{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_8cf783104bfb991a4a0db319cf2403c4}{IslandGA} (final Fitness fitness, final Population$<$ T $>$ population, final int genlimit, final int niches, final GeneticAlgorithm$<$ T $>$ algo, final int migration)
+\item 
+\hyperlink{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_aa6ac59257e351c4b2d50870ec48afee}{IslandGA} (final Fitness fitness, final Population$<$ T $>$ population, final int genlimit, final int niches, final GeneticAlgorithm$<$ T $>$ algo, final int migration, final Graph geography)
+\item 
+\hyperlink{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_84cea4b1aab39f58e8c98f66592cdc17}{IslandGA} (final Fitness fitness, final Population$<$ T $>$ population, final int genlimit, final int niches, final GeneticAlgorithm$<$ T $>$ algo, final int migration, final Graph geography, final \hyperlink{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_eb0e7c4ddd30e9472cfd2a280544ff51}{ReplacementStrategy} rp)
+\item 
+void \hyperlink{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_8789904f010dfb4d86c236f16738f3cc}{setElitism} (final int elitism)
+\item 
+void \hyperlink{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_eb79089c053c729f16d8c1c5c1aa2601}{setIsland} (int i, GeneticAlgorithm$<$ T $>$ algo)
+\item 
+void \hyperlink{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_46c43be9c86897a05eb25db32c0935c1}{setAllIslands} (GeneticAlgorithm$<$ T $>$ algo)
+\item 
+GeneticAlgorithm$<$ T $>$\mbox{[}$\,$\mbox{]} \hyperlink{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_adf9a8c907983a8ff03a6358b8270d82}{getAllIslands} ()
+\item 
+final Graph \hyperlink{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_36fb81c40aa049fc4af4c5a8ebdbc9e6}{getGeography} ()
+\item 
+void \hyperlink{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_c40da22bb9de811c6a2712a67184dc06}{setGeography} (Graph geography)
+\item 
+final int \hyperlink{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_74419cc71fe52538d241f7362b63709a}{getMigration} ()
+\item 
+void \hyperlink{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_309c1fe9c74c728b2ecab37e91f09322}{setMigration} (int migration)
+\item 
+final int \hyperlink{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_5642fdd072cd93a61d7ef3f1b5a806ad}{getNiches} ()
+\item 
+void \hyperlink{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_5ad013b697d423948678c584adde46f7}{setNiches} (int niches)
+\item 
+final \hyperlink{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_eb0e7c4ddd30e9472cfd2a280544ff51}{ReplacementStrategy} \hyperlink{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_ba40738c3ed2724093a13ec8019d2e11}{getReplacement} ()
+\item 
+void \hyperlink{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_980d98b95084ac99094dac0d7d231366}{setReplacement} (\hyperlink{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_eb0e7c4ddd30e9472cfd2a280544ff51}{ReplacementStrategy} replacement)
+\item 
+\hypertarget{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_edb02e8ab567910d449869a8bd778225}{
+void \textbf{setBiggerIsBetter} (boolean flag)}
+\label{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_edb02e8ab567910d449869a8bd778225}
+
+\end{CompactItemize}
+\subsection*{Static Public Attributes}
+\begin{CompactItemize}
+\item 
+static final int \hyperlink{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_37c9c99c1181aa1f194ad610bdb4d25f}{DEFAULT\_\-NICHES} = 5
+\item 
+static final int \hyperlink{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_114bd755cf3def2fffb318ab4f40569a}{DEFAULT\_\-MIGRATION} = 4
+\item 
+static final Graph \hyperlink{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_e27b28d3f2b4f90898a4cc90a9bd1bd9}{DEFAULT\_\-GEOGRAPHY} = Graph.buildRing(\hyperlink{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_37c9c99c1181aa1f194ad610bdb4d25f}{DEFAULT\_\-NICHES}, true)
+\item 
+static final \hyperlink{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_eb0e7c4ddd30e9472cfd2a280544ff51}{ReplacementStrategy} \hyperlink{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_1fc6944fd99215488896c76893d5f3d0}{DEFAULT\_\-REPLACEMENT} = ReplacementStrategy.WORST
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+void \hyperlink{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_fdd01d6051280db25af39a8382a48239}{populateNiches} ()
+\item 
+void \hyperlink{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_73312f19002cfeb0daf1f66e4eeccbd9}{migrate} (Population$<$ T $>$\mbox{[}$\,$\mbox{]} branches)
+\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class \textbf{Graph}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+IslandGA implements a niche based algorithm
+
+\begin{Desc}
+\item[Version:]2.0 \end{Desc}
+\begin{Desc}
+\item[Since:]2.0 \end{Desc}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_eb0e7c4ddd30e9472cfd2a280544ff51}{
+\index{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}!ReplacementStrategy@{ReplacementStrategy}}
+\index{ReplacementStrategy@{ReplacementStrategy}!jenes::algorithms::IslandGA< T extends Chromosome >@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}}
+\subsubsection[ReplacementStrategy]{\setlength{\rightskip}{0pt plus 5cm}enum jenes::algorithms::IslandGA$<$ T extends Chromosome $>$::{\bf ReplacementStrategy}}}
+\label{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_eb0e7c4ddd30e9472cfd2a280544ff51}
+
+
+The elitism strategy enumeration 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_e36c7bc43e9b6f50a74cd3c2be85d17b}{
+\index{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}!IslandGA@{IslandGA}}
+\index{IslandGA@{IslandGA}!jenes::algorithms::IslandGA< T extends Chromosome >@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}}
+\subsubsection[IslandGA]{\setlength{\rightskip}{0pt plus 5cm}jenes.algorithms.IslandGA$<$ T extends Chromosome $>$.IslandGA (final Fitness {\em fitness})}}
+\label{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_e36c7bc43e9b6f50a74cd3c2be85d17b}
+
+
+Creates a IslandGA instance
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fitness}]\end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_7e50ffddeef3cd18e479696e1d7258e4}{
+\index{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}!IslandGA@{IslandGA}}
+\index{IslandGA@{IslandGA}!jenes::algorithms::IslandGA< T extends Chromosome >@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}}
+\subsubsection[IslandGA]{\setlength{\rightskip}{0pt plus 5cm}jenes.algorithms.IslandGA$<$ T extends Chromosome $>$.IslandGA (final Fitness {\em fitness}, \/  final Population$<$ T $>$ {\em population})}}
+\label{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_7e50ffddeef3cd18e479696e1d7258e4}
+
+
+Creates a IslandGA instance
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fitness}]the fitness object \item[{\em population}]initial population \item[{\em genlimit}]the generation limit \item[{\em niches}]the number of niches \item[{\em migration}]the migration rate \item[{\em geography}]topology connecting islands \item[{\em rp}]replacement strategy \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_baca651c904eb2d4a89380444c3dfd52}{
+\index{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}!IslandGA@{IslandGA}}
+\index{IslandGA@{IslandGA}!jenes::algorithms::IslandGA< T extends Chromosome >@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}}
+\subsubsection[IslandGA]{\setlength{\rightskip}{0pt plus 5cm}jenes.algorithms.IslandGA$<$ T extends Chromosome $>$.IslandGA (final Fitness {\em fitness}, \/  final Population$<$ T $>$ {\em population}, \/  final int {\em genlimit})}}
+\label{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_baca651c904eb2d4a89380444c3dfd52}
+
+
+Creates a IslandGA instance
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fitness}]the fitness object \item[{\em population}]initial population \item[{\em genlimit}]the generation limit \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_462cff7f1ffe7db7a13ab925a8f85c50}{
+\index{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}!IslandGA@{IslandGA}}
+\index{IslandGA@{IslandGA}!jenes::algorithms::IslandGA< T extends Chromosome >@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}}
+\subsubsection[IslandGA]{\setlength{\rightskip}{0pt plus 5cm}jenes.algorithms.IslandGA$<$ T extends Chromosome $>$.IslandGA (final Fitness {\em fitness}, \/  final Population$<$ T $>$ {\em population}, \/  final int {\em genlimit}, \/  final int {\em niches})}}
+\label{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_462cff7f1ffe7db7a13ab925a8f85c50}
+
+
+Creates a IslandGA instance
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fitness}]the fitness object \item[{\em population}]initial population \item[{\em genlimit}]the generation limit \item[{\em niches}]the number of niches \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_183f962ceb12d8cd2885b0ef4a6dd988}{
+\index{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}!IslandGA@{IslandGA}}
+\index{IslandGA@{IslandGA}!jenes::algorithms::IslandGA< T extends Chromosome >@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}}
+\subsubsection[IslandGA]{\setlength{\rightskip}{0pt plus 5cm}jenes.algorithms.IslandGA$<$ T extends Chromosome $>$.IslandGA (final Fitness {\em fitness}, \/  final Population$<$ T $>$ {\em population}, \/  final int {\em genlimit}, \/  final int {\em niches}, \/  final int {\em migration})}}
+\label{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_183f962ceb12d8cd2885b0ef4a6dd988}
+
+
+Creates a IslandGA instance
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fitness}]the fitness object \item[{\em population}]initial population \item[{\em genlimit}]the generation limit \item[{\em niches}]the number of niches \item[{\em migration}]the migration rate \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_36fa940b12f68377764049c7898fd8bd}{
+\index{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}!IslandGA@{IslandGA}}
+\index{IslandGA@{IslandGA}!jenes::algorithms::IslandGA< T extends Chromosome >@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}}
+\subsubsection[IslandGA]{\setlength{\rightskip}{0pt plus 5cm}jenes.algorithms.IslandGA$<$ T extends Chromosome $>$.IslandGA (final Fitness {\em fitness}, \/  final Population$<$ T $>$ {\em population}, \/  final int {\em genlimit}, \/  final int {\em niches}, \/  final int {\em migration}, \/  final Graph {\em geography})}}
+\label{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_36fa940b12f68377764049c7898fd8bd}
+
+
+Creates a IslandGA instance
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fitness}]the fitness object \item[{\em population}]initial population \item[{\em genlimit}]the generation limit \item[{\em niches}]the number of niches \item[{\em migration}]the migration rate \item[{\em geography}]topology connecting islands \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_1b122013a5bad475ec45c67737029e68}{
+\index{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}!IslandGA@{IslandGA}}
+\index{IslandGA@{IslandGA}!jenes::algorithms::IslandGA< T extends Chromosome >@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}}
+\subsubsection[IslandGA]{\setlength{\rightskip}{0pt plus 5cm}jenes.algorithms.IslandGA$<$ T extends Chromosome $>$.IslandGA (final Fitness {\em fitness}, \/  final Population$<$ T $>$ {\em population}, \/  final int {\em genlimit}, \/  final int {\em niches}, \/  final int {\em migration}, \/  final Graph {\em geography}, \/  final {\bf ReplacementStrategy} {\em rp})}}
+\label{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_1b122013a5bad475ec45c67737029e68}
+
+
+Creates a IslandGA instance
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fitness}]the fitness object \item[{\em population}]initial population \item[{\em genlimit}]the generation limit \item[{\em niches}]the number of niches \item[{\em migration}]the migration rate \item[{\em geography}]topology connecting islands \item[{\em rp}]replacement strategy \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_1347ad1ffe4f878c6f92d4a12484f174}{
+\index{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}!IslandGA@{IslandGA}}
+\index{IslandGA@{IslandGA}!jenes::algorithms::IslandGA< T extends Chromosome >@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}}
+\subsubsection[IslandGA]{\setlength{\rightskip}{0pt plus 5cm}jenes.algorithms.IslandGA$<$ T extends Chromosome $>$.IslandGA (final Fitness {\em fitness}, \/  final Population$<$ T $>$ {\em population}, \/  final int {\em genlimit}, \/  final int {\em niches}, \/  final GeneticAlgorithm$<$ T $>$ {\em algo})}}
+\label{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_1347ad1ffe4f878c6f92d4a12484f174}
+
+
+Creates a IslandGA instance with an empty fitness
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fitness}]the fitness object \item[{\em population}]initial population \item[{\em genlimit}]the generation limit \item[{\em niches}]the number of niches \item[{\em algo}]the algorithm to be used for all niches \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_8cf783104bfb991a4a0db319cf2403c4}{
+\index{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}!IslandGA@{IslandGA}}
+\index{IslandGA@{IslandGA}!jenes::algorithms::IslandGA< T extends Chromosome >@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}}
+\subsubsection[IslandGA]{\setlength{\rightskip}{0pt plus 5cm}jenes.algorithms.IslandGA$<$ T extends Chromosome $>$.IslandGA (final Fitness {\em fitness}, \/  final Population$<$ T $>$ {\em population}, \/  final int {\em genlimit}, \/  final int {\em niches}, \/  final GeneticAlgorithm$<$ T $>$ {\em algo}, \/  final int {\em migration})}}
+\label{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_8cf783104bfb991a4a0db319cf2403c4}
+
+
+Creates a IslandGA instance with an empty fitness
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fitness}]the fitness object \item[{\em population}]initial population \item[{\em genlimit}]the generation limit \item[{\em niches}]the number of niches \item[{\em algo}]the algorithm to be used for all niches \item[{\em migration}]the migration rate \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_aa6ac59257e351c4b2d50870ec48afee}{
+\index{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}!IslandGA@{IslandGA}}
+\index{IslandGA@{IslandGA}!jenes::algorithms::IslandGA< T extends Chromosome >@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}}
+\subsubsection[IslandGA]{\setlength{\rightskip}{0pt plus 5cm}jenes.algorithms.IslandGA$<$ T extends Chromosome $>$.IslandGA (final Fitness {\em fitness}, \/  final Population$<$ T $>$ {\em population}, \/  final int {\em genlimit}, \/  final int {\em niches}, \/  final GeneticAlgorithm$<$ T $>$ {\em algo}, \/  final int {\em migration}, \/  final Graph {\em geography})}}
+\label{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_aa6ac59257e351c4b2d50870ec48afee}
+
+
+Creates a IslandGA instance
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fitness}]the fitness object \item[{\em population}]initial population \item[{\em genlimit}]the generation limit \item[{\em niches}]the number of niches \item[{\em algo}]the algorithm to be used for all niches \item[{\em migration}]the migration rate \item[{\em geography}]topology connecting islands \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_84cea4b1aab39f58e8c98f66592cdc17}{
+\index{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}!IslandGA@{IslandGA}}
+\index{IslandGA@{IslandGA}!jenes::algorithms::IslandGA< T extends Chromosome >@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}}
+\subsubsection[IslandGA]{\setlength{\rightskip}{0pt plus 5cm}jenes.algorithms.IslandGA$<$ T extends Chromosome $>$.IslandGA (final Fitness {\em fitness}, \/  final Population$<$ T $>$ {\em population}, \/  final int {\em genlimit}, \/  final int {\em niches}, \/  final GeneticAlgorithm$<$ T $>$ {\em algo}, \/  final int {\em migration}, \/  final Graph {\em geography}, \/  final {\bf ReplacementStrategy} {\em rp})}}
+\label{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_84cea4b1aab39f58e8c98f66592cdc17}
+
+
+Creates a IslandGA instance
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fitness}]the fitness object \item[{\em population}]initial population \item[{\em genlimit}]the generation limit \item[{\em niches}]the number of niches \item[{\em algo}]the algorithm to be used for all niches \item[{\em migration}]the migration rate \item[{\em geography}]topology connecting islands \item[{\em rp}]replacement strategy \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_8789904f010dfb4d86c236f16738f3cc}{
+\index{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}!setElitism@{setElitism}}
+\index{setElitism@{setElitism}!jenes::algorithms::IslandGA< T extends Chromosome >@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}}
+\subsubsection[setElitism]{\setlength{\rightskip}{0pt plus 5cm}void jenes.algorithms.IslandGA$<$ T extends Chromosome $>$.setElitism (final int {\em elitism})}}
+\label{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_8789904f010dfb4d86c236f16738f3cc}
+
+
+Sets the elitism for all the islands \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em elitism}]\end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_eb79089c053c729f16d8c1c5c1aa2601}{
+\index{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}!setIsland@{setIsland}}
+\index{setIsland@{setIsland}!jenes::algorithms::IslandGA< T extends Chromosome >@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}}
+\subsubsection[setIsland]{\setlength{\rightskip}{0pt plus 5cm}void jenes.algorithms.IslandGA$<$ T extends Chromosome $>$.setIsland (int {\em i}, \/  GeneticAlgorithm$<$ T $>$ {\em algo})}}
+\label{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_eb79089c053c729f16d8c1c5c1aa2601}
+
+
+Sets the algorithm for a specific island
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em i}]island index \item[{\em algo}]algorithm \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_46c43be9c86897a05eb25db32c0935c1}{
+\index{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}!setAllIslands@{setAllIslands}}
+\index{setAllIslands@{setAllIslands}!jenes::algorithms::IslandGA< T extends Chromosome >@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}}
+\subsubsection[setAllIslands]{\setlength{\rightskip}{0pt plus 5cm}void jenes.algorithms.IslandGA$<$ T extends Chromosome $>$.setAllIslands (GeneticAlgorithm$<$ T $>$ {\em algo})}}
+\label{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_46c43be9c86897a05eb25db32c0935c1}
+
+
+Sets the algorithm for all islands
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em algo}]algorithm \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_adf9a8c907983a8ff03a6358b8270d82}{
+\index{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}!getAllIslands@{getAllIslands}}
+\index{getAllIslands@{getAllIslands}!jenes::algorithms::IslandGA< T extends Chromosome >@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}}
+\subsubsection[getAllIslands]{\setlength{\rightskip}{0pt plus 5cm}GeneticAlgorithm$<$T$>$ \mbox{[}$\,$\mbox{]} jenes.algorithms.IslandGA$<$ T extends Chromosome $>$.getAllIslands ()}}
+\label{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_adf9a8c907983a8ff03a6358b8270d82}
+
+
+Gets the list of algorithms used for the different islands
+
+\begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_fdd01d6051280db25af39a8382a48239}{
+\index{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}!populateNiches@{populateNiches}}
+\index{populateNiches@{populateNiches}!jenes::algorithms::IslandGA< T extends Chromosome >@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}}
+\subsubsection[populateNiches]{\setlength{\rightskip}{0pt plus 5cm}void jenes.algorithms.IslandGA$<$ T extends Chromosome $>$.populateNiches ()\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_fdd01d6051280db25af39a8382a48239}
+
+
+Distributes individuals among islands by setting their speciem \hypertarget{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_73312f19002cfeb0daf1f66e4eeccbd9}{
+\index{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}!migrate@{migrate}}
+\index{migrate@{migrate}!jenes::algorithms::IslandGA< T extends Chromosome >@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}}
+\subsubsection[migrate]{\setlength{\rightskip}{0pt plus 5cm}void jenes.algorithms.IslandGA$<$ T extends Chromosome $>$.migrate (Population$<$ T $>$\mbox{[}$\,$\mbox{]} {\em branches})\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_73312f19002cfeb0daf1f66e4eeccbd9}
+
+
+Performs migration of individuals between islands
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em branches}]\end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_36fb81c40aa049fc4af4c5a8ebdbc9e6}{
+\index{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}!getGeography@{getGeography}}
+\index{getGeography@{getGeography}!jenes::algorithms::IslandGA< T extends Chromosome >@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}}
+\subsubsection[getGeography]{\setlength{\rightskip}{0pt plus 5cm}final Graph jenes.algorithms.IslandGA$<$ T extends Chromosome $>$.getGeography ()}}
+\label{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_36fb81c40aa049fc4af4c5a8ebdbc9e6}
+
+
+Return the topology connecting islands
+
+\begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_c40da22bb9de811c6a2712a67184dc06}{
+\index{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}!setGeography@{setGeography}}
+\index{setGeography@{setGeography}!jenes::algorithms::IslandGA< T extends Chromosome >@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}}
+\subsubsection[setGeography]{\setlength{\rightskip}{0pt plus 5cm}void jenes.algorithms.IslandGA$<$ T extends Chromosome $>$.setGeography (Graph {\em geography})}}
+\label{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_c40da22bb9de811c6a2712a67184dc06}
+
+
+Sets the topology
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em geography}]\end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_74419cc71fe52538d241f7362b63709a}{
+\index{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}!getMigration@{getMigration}}
+\index{getMigration@{getMigration}!jenes::algorithms::IslandGA< T extends Chromosome >@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}}
+\subsubsection[getMigration]{\setlength{\rightskip}{0pt plus 5cm}final int jenes.algorithms.IslandGA$<$ T extends Chromosome $>$.getMigration ()}}
+\label{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_74419cc71fe52538d241f7362b63709a}
+
+
+Returns the migration rate \begin{Desc}
+\item[Returns:]rate \end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_309c1fe9c74c728b2ecab37e91f09322}{
+\index{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}!setMigration@{setMigration}}
+\index{setMigration@{setMigration}!jenes::algorithms::IslandGA< T extends Chromosome >@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}}
+\subsubsection[setMigration]{\setlength{\rightskip}{0pt plus 5cm}void jenes.algorithms.IslandGA$<$ T extends Chromosome $>$.setMigration (int {\em migration})}}
+\label{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_309c1fe9c74c728b2ecab37e91f09322}
+
+
+Sets the migration rate
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em migration}]\end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_5642fdd072cd93a61d7ef3f1b5a806ad}{
+\index{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}!getNiches@{getNiches}}
+\index{getNiches@{getNiches}!jenes::algorithms::IslandGA< T extends Chromosome >@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}}
+\subsubsection[getNiches]{\setlength{\rightskip}{0pt plus 5cm}final int jenes.algorithms.IslandGA$<$ T extends Chromosome $>$.getNiches ()}}
+\label{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_5642fdd072cd93a61d7ef3f1b5a806ad}
+
+
+Returns the number of niches
+
+\begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_5ad013b697d423948678c584adde46f7}{
+\index{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}!setNiches@{setNiches}}
+\index{setNiches@{setNiches}!jenes::algorithms::IslandGA< T extends Chromosome >@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}}
+\subsubsection[setNiches]{\setlength{\rightskip}{0pt plus 5cm}void jenes.algorithms.IslandGA$<$ T extends Chromosome $>$.setNiches (int {\em niches})}}
+\label{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_5ad013b697d423948678c584adde46f7}
+
+
+Sets the number of niches
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em niches}]\end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_ba40738c3ed2724093a13ec8019d2e11}{
+\index{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}!getReplacement@{getReplacement}}
+\index{getReplacement@{getReplacement}!jenes::algorithms::IslandGA< T extends Chromosome >@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}}
+\subsubsection[getReplacement]{\setlength{\rightskip}{0pt plus 5cm}final {\bf ReplacementStrategy} jenes.algorithms.IslandGA$<$ T extends Chromosome $>$.getReplacement ()}}
+\label{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_ba40738c3ed2724093a13ec8019d2e11}
+
+
+Returns the replacement strategy \begin{Desc}
+\item[Returns:]\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_980d98b95084ac99094dac0d7d231366}{
+\index{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}!setReplacement@{setReplacement}}
+\index{setReplacement@{setReplacement}!jenes::algorithms::IslandGA< T extends Chromosome >@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}}
+\subsubsection[setReplacement]{\setlength{\rightskip}{0pt plus 5cm}void jenes.algorithms.IslandGA$<$ T extends Chromosome $>$.setReplacement ({\bf ReplacementStrategy} {\em replacement})}}
+\label{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_980d98b95084ac99094dac0d7d231366}
+
+
+Sets the replacement stategy \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em replacement}]\end{description}
+\end{Desc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_37c9c99c1181aa1f194ad610bdb4d25f}{
+\index{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}!DEFAULT\_\-NICHES@{DEFAULT\_\-NICHES}}
+\index{DEFAULT\_\-NICHES@{DEFAULT\_\-NICHES}!jenes::algorithms::IslandGA< T extends Chromosome >@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}}
+\subsubsection[DEFAULT\_\-NICHES]{\setlength{\rightskip}{0pt plus 5cm}final int jenes.algorithms.IslandGA$<$ T extends Chromosome $>$.{\bf DEFAULT\_\-NICHES} = 5\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_37c9c99c1181aa1f194ad610bdb4d25f}
+
+
+The default number of niches \hypertarget{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_114bd755cf3def2fffb318ab4f40569a}{
+\index{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}!DEFAULT\_\-MIGRATION@{DEFAULT\_\-MIGRATION}}
+\index{DEFAULT\_\-MIGRATION@{DEFAULT\_\-MIGRATION}!jenes::algorithms::IslandGA< T extends Chromosome >@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}}
+\subsubsection[DEFAULT\_\-MIGRATION]{\setlength{\rightskip}{0pt plus 5cm}final int jenes.algorithms.IslandGA$<$ T extends Chromosome $>$.{\bf DEFAULT\_\-MIGRATION} = 4\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_114bd755cf3def2fffb318ab4f40569a}
+
+
+The default migration rate between islands \hypertarget{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_e27b28d3f2b4f90898a4cc90a9bd1bd9}{
+\index{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}!DEFAULT\_\-GEOGRAPHY@{DEFAULT\_\-GEOGRAPHY}}
+\index{DEFAULT\_\-GEOGRAPHY@{DEFAULT\_\-GEOGRAPHY}!jenes::algorithms::IslandGA< T extends Chromosome >@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}}
+\subsubsection[DEFAULT\_\-GEOGRAPHY]{\setlength{\rightskip}{0pt plus 5cm}final Graph jenes.algorithms.IslandGA$<$ T extends Chromosome $>$.{\bf DEFAULT\_\-GEOGRAPHY} = Graph.buildRing({\bf DEFAULT\_\-NICHES}, true)\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_e27b28d3f2b4f90898a4cc90a9bd1bd9}
+
+
+The default topology connecting islands \hypertarget{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_1fc6944fd99215488896c76893d5f3d0}{
+\index{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}!DEFAULT\_\-REPLACEMENT@{DEFAULT\_\-REPLACEMENT}}
+\index{DEFAULT\_\-REPLACEMENT@{DEFAULT\_\-REPLACEMENT}!jenes::algorithms::IslandGA< T extends Chromosome >@{jenes::algorithms::IslandGA$<$ T extends Chromosome $>$}}
+\subsubsection[DEFAULT\_\-REPLACEMENT]{\setlength{\rightskip}{0pt plus 5cm}final {\bf ReplacementStrategy} jenes.algorithms.IslandGA$<$ T extends Chromosome $>$.{\bf DEFAULT\_\-REPLACEMENT} = ReplacementStrategy.WORST\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classjenes_1_1algorithms_1_1_island_g_a_3_01_t_01extends_01_chromosome_01_4_1fc6944fd99215488896c76893d5f3d0}
+
+
+The default replacement strategy 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/algorithms/IslandGA.java\end{CompactItemize}

@@ -1,0 +1,497 @@
+\hypertarget{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4}{
+\section{jenes.algorithms.SimpleGA$<$ T extends Chromosome $>$ Class Reference}
+\label{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4}\index{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}}
+}
+Inherits jenes::GeneticAlgorithm$<$ T $>$.
+
+\subsection*{Public Types}
+\begin{CompactItemize}
+\item 
+enum \hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_6310e8ba52593a9b9ab7809caa9ba296}{SelectionMethod} \{ \par
+\textbf{ROULETTE}, 
+\textbf{TOURNAMENT}, 
+\textbf{ROULETTE}, 
+\textbf{TOURNAMENT}, 
+\par
+\textbf{ROULETTE}, 
+\textbf{TOURNAMENT}, 
+\textbf{NONE}, 
+\textbf{ROULETTE}, 
+\par
+\textbf{TOURNAMENT}, 
+\textbf{ROULETTE}, 
+\textbf{TOURNAMENT}
+ \}
+\item 
+enum \hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_d015c6a036c7234fe34a1a78fc3c55bf}{CrossoverMethod} \{ \par
+\textbf{SINGLEPOINT}, 
+\textbf{TWOPOINTS}, 
+\textbf{SINGLEPOINT}, 
+\textbf{TWOPOINTS}, 
+\par
+\textbf{SINGLEPOINT}, 
+\textbf{TWOPOINTS}, 
+\textbf{SINGLEPOINT}, 
+\textbf{TWOPOINTS}
+ \}
+\end{CompactItemize}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_706a621e21564095963264fdfd2eba32}{SimpleGA} ()
+\item 
+\hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_44ee069daad5aaed809b2d83303052e0}{SimpleGA} (final Fitness$<$ T $>$ fitness, final Population$<$ T $>$ population)
+\item 
+\hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_cbdaae378fd9263001e6393cb132bda4}{SimpleGA} (final Fitness$<$ T $>$ fitness, final Population$<$ T $>$ population, final int generations)
+\item 
+\hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_9382ccbfaed16b3dbf4feeb23afa71e8}{SimpleGA} (final Fitness$<$ T $>$ fitness, final Population$<$ T $>$ population, final int generations, final double crossover, final double mutation)
+\item 
+\hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_e4d2d54f7d376688e0ab0eabfa85a7e2}{SimpleGA} (final Fitness$<$ T $>$ fitness, final Population$<$ T $>$ population, final int generations, final double crossover, final double mutation, final int elitism)
+\item 
+\hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_eb160f73fc3a8937c7d8da9140f57e38}{SimpleGA} (final Fitness$<$ T $>$ fitness, final Population$<$ T $>$ population, final int generations, final double crossover, final double mutation, final int elitism, final \hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_6310e8ba52593a9b9ab7809caa9ba296}{SelectionMethod} selmethod, final \hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_d015c6a036c7234fe34a1a78fc3c55bf}{CrossoverMethod} crossmethod)
+\item 
+\hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_da2d647b3a202f4e6bb7d1b1c894791b}{SimpleGA} (final Fitness$<$ T $>$ fitness, final Population$<$ T $>$ population, final int generations, final double crossover, final double mutation, final int elitism, final \hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_6310e8ba52593a9b9ab7809caa9ba296}{SelectionMethod} selmethod, final \hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_d015c6a036c7234fe34a1a78fc3c55bf}{CrossoverMethod} crossmethod, ElitismStrategy es)
+\item 
+\hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_3f8162d093934286fd3963580f380d9a}{SimpleGA} (final Population$<$ T $>$ population)
+\item 
+\hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_c26dcb81ef937ded77152a908ac55699}{SimpleGA} (final Population$<$ T $>$ population, final int generations)
+\item 
+\hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_d6c74ec603e7fbc1610f41ad9ee63981}{SimpleGA} (final Population$<$ T $>$ population, final int generations, final double crossover, final double mutation)
+\item 
+\hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_659f0192b24b5d8af22f73f190b67867}{SimpleGA} (final Population$<$ T $>$ population, final int generations, final double crossover, final double mutation, final int elitism)
+\item 
+\hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_c23644006d7eb399fd4d26e77da8826d}{SimpleGA} (final Population$<$ T $>$ population, final int generations, final double crossover, final double mutation, final int elitism, final \hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_6310e8ba52593a9b9ab7809caa9ba296}{SelectionMethod} selmethod, final \hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_d015c6a036c7234fe34a1a78fc3c55bf}{CrossoverMethod} crossmethod)
+\item 
+\hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_068fcb44d18c3204fbb9b13daebd4f6d}{SimpleGA} (final Population$<$ T $>$ population, final int generations, final double crossover, final double mutation, final int elitism, final \hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_6310e8ba52593a9b9ab7809caa9ba296}{SelectionMethod} selmethod, final \hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_d015c6a036c7234fe34a1a78fc3c55bf}{CrossoverMethod} crossmethod, ElitismStrategy es)
+\item 
+final Selector$<$ T $>$ \hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_c1b67ab65d05c07bd67aa8b072c965d7}{getSelector} ()
+\item 
+final double \hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_6c450c770d9060faf01820a48491561a}{getMaxIllegalRate} ()
+\item 
+void \hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_4051bc6ee99fe2450c9dbad64c7ab594}{setMaxIllegalRate} (final double rate)
+\item 
+final Crossover$<$ T $>$ \hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_3411f8691495bdd8e3818f8ee6fcc181}{getCrossover} ()
+\item 
+final double \hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_85ed250d10211b0faf798bef2663ec9f}{getCrossoverProbability} ()
+\item 
+void \hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_639f43de8d71ae3e28077c4510eae64e}{setCrossoverProbability} (final double p)
+\item 
+final Mutator$<$ T $>$ \hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_f1b77602d4f2440c2abde1f8a9d336e7}{getMutator} ()
+\item 
+final double \hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_0f8be347c9405a5b82d7a10678fc9a3a}{getMutationProbability} ()
+\item 
+void \hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_2ce1369d995dc328caa6b542e24e55f6}{setMutationProbability} (final double p)
+\end{CompactItemize}
+\subsection*{Static Public Attributes}
+\begin{CompactItemize}
+\item 
+static final int \hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_c4060f400a4a9d81185713c244699d40}{DEFAULT\_\-GENERATION\_\-LIMIT} = 100
+\item 
+static final double \hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_6bb4783aa44abaae39375ae762412fa3}{DEFAULT\_\-CROSSOVER\_\-PROBABILITY} = 0.8
+\item 
+static final double \hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_6b93f23c518016295e31b02aa7ef1f8c}{DEFAULT\_\-MUTATION\_\-PROBABILITY} = 0.02
+\item 
+static final int \hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_3b820957538efb558e8240e996d503cd}{DEFAULT\_\-ELITISM} = 1
+\item 
+static final \hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_6310e8ba52593a9b9ab7809caa9ba296}{SelectionMethod} \hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_93d44174d00fdf0a8ebedfa3badcde66}{DEFAULT\_\-SELECTION\_\-METHOD} = SelectionMethod.TOURNAMENT
+\item 
+static final \hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_d015c6a036c7234fe34a1a78fc3c55bf}{CrossoverMethod} \hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_568bc71d97e1221ff4c7a4cc2b9a938d}{DEFAULT\_\-CROSSOVER\_\-METHOD} = CrossoverMethod.SINGLEPOINT
+\item 
+static final ElitismStrategy \hyperlink{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_b95f26a5f33145a73eed2832becb962f}{DEFAULT\_\-ELITISM\_\-STRATEGY} = ElitismStrategy.RANDOM
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+A facade providing a simple interface to GeneticAlgorithm. 
+
+{\tt SimpleGA} implements a three stages genetic algorithm made of \begin{itemize}
+\item Selector: \hyperlink{}{TournamentSelector} (default) or \hyperlink{}{RouletteWheelSelector} \item Crossover: \hyperlink{}{OnePointCrossover} (default) or \hyperlink{}{TwoPointsCrossover} \item Mutator: \hyperlink{}{SimpleMutator} \end{itemize}
+The class provides a set of constructors by which to instantiate a {\tt SimpleGA} algorithm. 
+
+Constructors allows to decide which selection method (i.e. Tournament or Roulette Wheel) or crossover method (i.e. One Point or Two Points) to adopt. Also crossover and mutation probability can be specified at constraction time. 
+
+{\tt SimpleGA} is a {\tt GeneticAlgorithm} subclass. Thus, it is possible to use all inheritated methods and properties. For example, 
+
+$<$blockquote$>$\small\begin{alltt}
+  sga.setElitism(10);
+  sga.setMutationRate(0.2);
+  sga.setBiggerIsBetter(false);
+  sga.evolve();
+ \end{alltt}
+\normalsize 
+$<$/blockquote$>$ 
+
+Among the available method, there are those able to alter the algorithm's body. Although this is possible, we discourage from using them as this would result in lesser comphrensible code. Instead we suggest to directly subclass {\tt GeneticAlgorithm}. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em $<$T$>$}]extends Chromosome\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Version:]2.0 \end{Desc}
+\begin{Desc}
+\item[Since:]1.0 \end{Desc}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_6310e8ba52593a9b9ab7809caa9ba296}{
+\index{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}!SelectionMethod@{SelectionMethod}}
+\index{SelectionMethod@{SelectionMethod}!jenes::algorithms::SimpleGA< T extends Chromosome >@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}}
+\subsubsection[SelectionMethod]{\setlength{\rightskip}{0pt plus 5cm}enum jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$::{\bf SelectionMethod}}}
+\label{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_6310e8ba52593a9b9ab7809caa9ba296}
+
+
+Provides the available selection methods \hypertarget{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_d015c6a036c7234fe34a1a78fc3c55bf}{
+\index{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}!CrossoverMethod@{CrossoverMethod}}
+\index{CrossoverMethod@{CrossoverMethod}!jenes::algorithms::SimpleGA< T extends Chromosome >@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}}
+\subsubsection[CrossoverMethod]{\setlength{\rightskip}{0pt plus 5cm}enum jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$::{\bf CrossoverMethod}}}
+\label{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_d015c6a036c7234fe34a1a78fc3c55bf}
+
+
+Provides the available crossover methods 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_706a621e21564095963264fdfd2eba32}{
+\index{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}!SimpleGA@{SimpleGA}}
+\index{SimpleGA@{SimpleGA}!jenes::algorithms::SimpleGA< T extends Chromosome >@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}}
+\subsubsection[SimpleGA]{\setlength{\rightskip}{0pt plus 5cm}jenes.algorithms.SimpleGA$<$ T extends Chromosome $>$.SimpleGA ()}}
+\label{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_706a621e21564095963264fdfd2eba32}
+
+
+Builds a new SimpleGa with no initial population, the default generation limit, crossover and mutation probability, elitism, selection and crossover methods, and elitism strategy. \hypertarget{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_44ee069daad5aaed809b2d83303052e0}{
+\index{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}!SimpleGA@{SimpleGA}}
+\index{SimpleGA@{SimpleGA}!jenes::algorithms::SimpleGA< T extends Chromosome >@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}}
+\subsubsection[SimpleGA]{\setlength{\rightskip}{0pt plus 5cm}jenes.algorithms.SimpleGA$<$ T extends Chromosome $>$.SimpleGA (final Fitness$<$ T $>$ {\em fitness}, \/  final Population$<$ T $>$ {\em population})}}
+\label{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_44ee069daad5aaed809b2d83303052e0}
+
+
+Builds a new SimpleGa with the default generation limit, crossover and mutation probability, elitism, selection and crossover methods, and elitism strategy.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fitness}]the fitness to use \item[{\em population}]the initial population \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_cbdaae378fd9263001e6393cb132bda4}{
+\index{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}!SimpleGA@{SimpleGA}}
+\index{SimpleGA@{SimpleGA}!jenes::algorithms::SimpleGA< T extends Chromosome >@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}}
+\subsubsection[SimpleGA]{\setlength{\rightskip}{0pt plus 5cm}jenes.algorithms.SimpleGA$<$ T extends Chromosome $>$.SimpleGA (final Fitness$<$ T $>$ {\em fitness}, \/  final Population$<$ T $>$ {\em population}, \/  final int {\em generations})}}
+\label{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_cbdaae378fd9263001e6393cb132bda4}
+
+
+Builds a new SimpleGa with the default crossover and mutation probability, elitism, selection and crossover methods, and elitism strategy.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fitness}]the fitness to use \item[{\em population}]the initial population \item[{\em generations}]the generation limit \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_9382ccbfaed16b3dbf4feeb23afa71e8}{
+\index{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}!SimpleGA@{SimpleGA}}
+\index{SimpleGA@{SimpleGA}!jenes::algorithms::SimpleGA< T extends Chromosome >@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}}
+\subsubsection[SimpleGA]{\setlength{\rightskip}{0pt plus 5cm}jenes.algorithms.SimpleGA$<$ T extends Chromosome $>$.SimpleGA (final Fitness$<$ T $>$ {\em fitness}, \/  final Population$<$ T $>$ {\em population}, \/  final int {\em generations}, \/  final double {\em crossover}, \/  final double {\em mutation})}}
+\label{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_9382ccbfaed16b3dbf4feeb23afa71e8}
+
+
+Builds a new SimpleGa with the default elitism, selection and crossover methods, and elitism strategy.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fitness}]the fitness to use \item[{\em population}]the initial population \item[{\em generations}]the generation limit \item[{\em crossover}]the crossover probability \item[{\em mutation}]the mutation probability \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_e4d2d54f7d376688e0ab0eabfa85a7e2}{
+\index{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}!SimpleGA@{SimpleGA}}
+\index{SimpleGA@{SimpleGA}!jenes::algorithms::SimpleGA< T extends Chromosome >@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}}
+\subsubsection[SimpleGA]{\setlength{\rightskip}{0pt plus 5cm}jenes.algorithms.SimpleGA$<$ T extends Chromosome $>$.SimpleGA (final Fitness$<$ T $>$ {\em fitness}, \/  final Population$<$ T $>$ {\em population}, \/  final int {\em generations}, \/  final double {\em crossover}, \/  final double {\em mutation}, \/  final int {\em elitism})}}
+\label{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_e4d2d54f7d376688e0ab0eabfa85a7e2}
+
+
+Builds a new SimpleGa with the default selection and crossover methods, and elitism strategy.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fitness}]the fitness to use \item[{\em population}]the initial population \item[{\em generations}]the generation limit \item[{\em crossover}]the crossover probability \item[{\em mutation}]the mutation probability \item[{\em elitism}]the elisitm factor \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_eb160f73fc3a8937c7d8da9140f57e38}{
+\index{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}!SimpleGA@{SimpleGA}}
+\index{SimpleGA@{SimpleGA}!jenes::algorithms::SimpleGA< T extends Chromosome >@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}}
+\subsubsection[SimpleGA]{\setlength{\rightskip}{0pt plus 5cm}jenes.algorithms.SimpleGA$<$ T extends Chromosome $>$.SimpleGA (final Fitness$<$ T $>$ {\em fitness}, \/  final Population$<$ T $>$ {\em population}, \/  final int {\em generations}, \/  final double {\em crossover}, \/  final double {\em mutation}, \/  final int {\em elitism}, \/  final {\bf SelectionMethod} {\em selmethod}, \/  final {\bf CrossoverMethod} {\em crossmethod})}}
+\label{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_eb160f73fc3a8937c7d8da9140f57e38}
+
+
+Builds a new SimpleGa with the default elitism strategy.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fitness}]the fitness to use \item[{\em population}]the initial population \item[{\em generations}]the generation limit \item[{\em crossover}]the crossover probability \item[{\em mutation}]the mutation probability \item[{\em elitism}]the elisitm factor \item[{\em selmethod}]the selector method to use \item[{\em crossmethod}]the crossover method to use \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_da2d647b3a202f4e6bb7d1b1c894791b}{
+\index{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}!SimpleGA@{SimpleGA}}
+\index{SimpleGA@{SimpleGA}!jenes::algorithms::SimpleGA< T extends Chromosome >@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}}
+\subsubsection[SimpleGA]{\setlength{\rightskip}{0pt plus 5cm}jenes.algorithms.SimpleGA$<$ T extends Chromosome $>$.SimpleGA (final Fitness$<$ T $>$ {\em fitness}, \/  final Population$<$ T $>$ {\em population}, \/  final int {\em generations}, \/  final double {\em crossover}, \/  final double {\em mutation}, \/  final int {\em elitism}, \/  final {\bf SelectionMethod} {\em selmethod}, \/  final {\bf CrossoverMethod} {\em crossmethod}, \/  ElitismStrategy {\em es})}}
+\label{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_da2d647b3a202f4e6bb7d1b1c894791b}
+
+
+Builds a new SimpleGa.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em fitness}]the fitness to use \item[{\em population}]the initial population \item[{\em generations}]the generation limit \item[{\em crossover}]the crossover probability \item[{\em mutation}]the mutation probability \item[{\em elitism}]the elisitm factor \item[{\em selmethod}]the selector method to use \item[{\em crossmethod}]the crossover method to use \item[{\em es}]the elitism strategy to use \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_3f8162d093934286fd3963580f380d9a}{
+\index{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}!SimpleGA@{SimpleGA}}
+\index{SimpleGA@{SimpleGA}!jenes::algorithms::SimpleGA< T extends Chromosome >@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}}
+\subsubsection[SimpleGA]{\setlength{\rightskip}{0pt plus 5cm}jenes.algorithms.SimpleGA$<$ T extends Chromosome $>$.SimpleGA (final Population$<$ T $>$ {\em population})}}
+\label{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_3f8162d093934286fd3963580f380d9a}
+
+
+Builds a new SimpleGa with the default generation limit, crossover and mutation probability, elitism, selection and crossover methods, and elitism strategy. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em population}]the initial population \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_c26dcb81ef937ded77152a908ac55699}{
+\index{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}!SimpleGA@{SimpleGA}}
+\index{SimpleGA@{SimpleGA}!jenes::algorithms::SimpleGA< T extends Chromosome >@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}}
+\subsubsection[SimpleGA]{\setlength{\rightskip}{0pt plus 5cm}jenes.algorithms.SimpleGA$<$ T extends Chromosome $>$.SimpleGA (final Population$<$ T $>$ {\em population}, \/  final int {\em generations})}}
+\label{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_c26dcb81ef937ded77152a908ac55699}
+
+
+Builds a new SimpleGa with the default crossover and mutation probability, elitism, selection and crossover methods, and elitism strategy. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em population}]the initial population \item[{\em generations}]the generation limit \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_d6c74ec603e7fbc1610f41ad9ee63981}{
+\index{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}!SimpleGA@{SimpleGA}}
+\index{SimpleGA@{SimpleGA}!jenes::algorithms::SimpleGA< T extends Chromosome >@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}}
+\subsubsection[SimpleGA]{\setlength{\rightskip}{0pt plus 5cm}jenes.algorithms.SimpleGA$<$ T extends Chromosome $>$.SimpleGA (final Population$<$ T $>$ {\em population}, \/  final int {\em generations}, \/  final double {\em crossover}, \/  final double {\em mutation})}}
+\label{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_d6c74ec603e7fbc1610f41ad9ee63981}
+
+
+Builds a new SimpleGa with the default elitism, selection and crossover methods, and elitism strategy. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em population}]the initial population \item[{\em generations}]the generation limit \item[{\em crossover}]the crossover probability \item[{\em mutation}]the mutation probability \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_659f0192b24b5d8af22f73f190b67867}{
+\index{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}!SimpleGA@{SimpleGA}}
+\index{SimpleGA@{SimpleGA}!jenes::algorithms::SimpleGA< T extends Chromosome >@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}}
+\subsubsection[SimpleGA]{\setlength{\rightskip}{0pt plus 5cm}jenes.algorithms.SimpleGA$<$ T extends Chromosome $>$.SimpleGA (final Population$<$ T $>$ {\em population}, \/  final int {\em generations}, \/  final double {\em crossover}, \/  final double {\em mutation}, \/  final int {\em elitism})}}
+\label{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_659f0192b24b5d8af22f73f190b67867}
+
+
+Builds a new SimpleGa with the default selection and crossover methods, and elitism strategy. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em population}]the initial population \item[{\em generations}]the generation limit \item[{\em crossover}]the crossover probability \item[{\em mutation}]the mutation probability \item[{\em elitism}]the elisitm factor \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_c23644006d7eb399fd4d26e77da8826d}{
+\index{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}!SimpleGA@{SimpleGA}}
+\index{SimpleGA@{SimpleGA}!jenes::algorithms::SimpleGA< T extends Chromosome >@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}}
+\subsubsection[SimpleGA]{\setlength{\rightskip}{0pt plus 5cm}jenes.algorithms.SimpleGA$<$ T extends Chromosome $>$.SimpleGA (final Population$<$ T $>$ {\em population}, \/  final int {\em generations}, \/  final double {\em crossover}, \/  final double {\em mutation}, \/  final int {\em elitism}, \/  final {\bf SelectionMethod} {\em selmethod}, \/  final {\bf CrossoverMethod} {\em crossmethod})}}
+\label{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_c23644006d7eb399fd4d26e77da8826d}
+
+
+Builds a new SimpleGa with the default elitism strategy. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em population}]the initial population \item[{\em generations}]the generation limit \item[{\em crossover}]the crossover probability \item[{\em mutation}]the mutation probability \item[{\em elitism}]the elisitm factor \item[{\em selmethod}]the selector method to use \item[{\em crossmethod}]the crossover method to use \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_068fcb44d18c3204fbb9b13daebd4f6d}{
+\index{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}!SimpleGA@{SimpleGA}}
+\index{SimpleGA@{SimpleGA}!jenes::algorithms::SimpleGA< T extends Chromosome >@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}}
+\subsubsection[SimpleGA]{\setlength{\rightskip}{0pt plus 5cm}jenes.algorithms.SimpleGA$<$ T extends Chromosome $>$.SimpleGA (final Population$<$ T $>$ {\em population}, \/  final int {\em generations}, \/  final double {\em crossover}, \/  final double {\em mutation}, \/  final int {\em elitism}, \/  final {\bf SelectionMethod} {\em selmethod}, \/  final {\bf CrossoverMethod} {\em crossmethod}, \/  ElitismStrategy {\em es})}}
+\label{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_068fcb44d18c3204fbb9b13daebd4f6d}
+
+
+Builds a new SimpleGa. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em population}]the initial population \item[{\em generations}]the generation limit \item[{\em crossover}]the crossover probability \item[{\em mutation}]the mutation probability \item[{\em elitism}]the elisitm factor \item[{\em selmethod}]the selector method to use \item[{\em crossmethod}]the crossover method to use \item[{\em es}]the elitism strategy to use \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_c1b67ab65d05c07bd67aa8b072c965d7}{
+\index{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}!getSelector@{getSelector}}
+\index{getSelector@{getSelector}!jenes::algorithms::SimpleGA< T extends Chromosome >@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}}
+\subsubsection[getSelector]{\setlength{\rightskip}{0pt plus 5cm}final Selector$<$T$>$ jenes.algorithms.SimpleGA$<$ T extends Chromosome $>$.getSelector ()}}
+\label{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_c1b67ab65d05c07bd67aa8b072c965d7}
+
+
+Returns the selector used by this genetic algorithm
+
+\begin{Desc}
+\item[Returns:]the selection operator \end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_6c450c770d9060faf01820a48491561a}{
+\index{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}!getMaxIllegalRate@{getMaxIllegalRate}}
+\index{getMaxIllegalRate@{getMaxIllegalRate}!jenes::algorithms::SimpleGA< T extends Chromosome >@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}}
+\subsubsection[getMaxIllegalRate]{\setlength{\rightskip}{0pt plus 5cm}final double jenes.algorithms.SimpleGA$<$ T extends Chromosome $>$.getMaxIllegalRate ()}}
+\label{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_6c450c770d9060faf01820a48491561a}
+
+
+Returns the maximum rate of illegal individuals.
+
+\begin{Desc}
+\item[Returns:]the maximum rate of illegal individuals \end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_4051bc6ee99fe2450c9dbad64c7ab594}{
+\index{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}!setMaxIllegalRate@{setMaxIllegalRate}}
+\index{setMaxIllegalRate@{setMaxIllegalRate}!jenes::algorithms::SimpleGA< T extends Chromosome >@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}}
+\subsubsection[setMaxIllegalRate]{\setlength{\rightskip}{0pt plus 5cm}void jenes.algorithms.SimpleGA$<$ T extends Chromosome $>$.setMaxIllegalRate (final double {\em rate})}}
+\label{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_4051bc6ee99fe2450c9dbad64c7ab594}
+
+
+Sets the max rate of illegal individuals. This prevents that population will be dominated by invalid individuals. This is the case of constrained problems where valid solutions are sparse within the search space.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em rate}]the new maximum rate of illegal individuals \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_3411f8691495bdd8e3818f8ee6fcc181}{
+\index{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}!getCrossover@{getCrossover}}
+\index{getCrossover@{getCrossover}!jenes::algorithms::SimpleGA< T extends Chromosome >@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}}
+\subsubsection[getCrossover]{\setlength{\rightskip}{0pt plus 5cm}final Crossover$<$T$>$ jenes.algorithms.SimpleGA$<$ T extends Chromosome $>$.getCrossover ()}}
+\label{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_3411f8691495bdd8e3818f8ee6fcc181}
+
+
+Returns the crossover used by this genetic algorithm.
+
+\begin{Desc}
+\item[Returns:]the crossover operator \end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_85ed250d10211b0faf798bef2663ec9f}{
+\index{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}!getCrossoverProbability@{getCrossoverProbability}}
+\index{getCrossoverProbability@{getCrossoverProbability}!jenes::algorithms::SimpleGA< T extends Chromosome >@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}}
+\subsubsection[getCrossoverProbability]{\setlength{\rightskip}{0pt plus 5cm}final double jenes.algorithms.SimpleGA$<$ T extends Chromosome $>$.getCrossoverProbability ()}}
+\label{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_85ed250d10211b0faf798bef2663ec9f}
+
+
+Returns the crossover probability.
+
+\begin{Desc}
+\item[Returns:]the crossover probability \end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_639f43de8d71ae3e28077c4510eae64e}{
+\index{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}!setCrossoverProbability@{setCrossoverProbability}}
+\index{setCrossoverProbability@{setCrossoverProbability}!jenes::algorithms::SimpleGA< T extends Chromosome >@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}}
+\subsubsection[setCrossoverProbability]{\setlength{\rightskip}{0pt plus 5cm}void jenes.algorithms.SimpleGA$<$ T extends Chromosome $>$.setCrossoverProbability (final double {\em p})}}
+\label{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_639f43de8d71ae3e28077c4510eae64e}
+
+
+Sets the crossover probability.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em p}]the new crossover probability \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_f1b77602d4f2440c2abde1f8a9d336e7}{
+\index{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}!getMutator@{getMutator}}
+\index{getMutator@{getMutator}!jenes::algorithms::SimpleGA< T extends Chromosome >@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}}
+\subsubsection[getMutator]{\setlength{\rightskip}{0pt plus 5cm}final Mutator$<$T$>$ jenes.algorithms.SimpleGA$<$ T extends Chromosome $>$.getMutator ()}}
+\label{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_f1b77602d4f2440c2abde1f8a9d336e7}
+
+
+Returns the mutator used by this genetic algorithm.
+
+\begin{Desc}
+\item[Returns:]the mutation operator \end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_0f8be347c9405a5b82d7a10678fc9a3a}{
+\index{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}!getMutationProbability@{getMutationProbability}}
+\index{getMutationProbability@{getMutationProbability}!jenes::algorithms::SimpleGA< T extends Chromosome >@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}}
+\subsubsection[getMutationProbability]{\setlength{\rightskip}{0pt plus 5cm}final double jenes.algorithms.SimpleGA$<$ T extends Chromosome $>$.getMutationProbability ()}}
+\label{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_0f8be347c9405a5b82d7a10678fc9a3a}
+
+
+Returns the mutation probability.
+
+\begin{Desc}
+\item[Returns:]the mutation probability \end{Desc}
+\hypertarget{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_2ce1369d995dc328caa6b542e24e55f6}{
+\index{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}!setMutationProbability@{setMutationProbability}}
+\index{setMutationProbability@{setMutationProbability}!jenes::algorithms::SimpleGA< T extends Chromosome >@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}}
+\subsubsection[setMutationProbability]{\setlength{\rightskip}{0pt plus 5cm}void jenes.algorithms.SimpleGA$<$ T extends Chromosome $>$.setMutationProbability (final double {\em p})}}
+\label{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_2ce1369d995dc328caa6b542e24e55f6}
+
+
+Sets the mutation probability.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em p}]the new mutation probability \end{description}
+\end{Desc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_c4060f400a4a9d81185713c244699d40}{
+\index{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}!DEFAULT\_\-GENERATION\_\-LIMIT@{DEFAULT\_\-GENERATION\_\-LIMIT}}
+\index{DEFAULT\_\-GENERATION\_\-LIMIT@{DEFAULT\_\-GENERATION\_\-LIMIT}!jenes::algorithms::SimpleGA< T extends Chromosome >@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}}
+\subsubsection[DEFAULT\_\-GENERATION\_\-LIMIT]{\setlength{\rightskip}{0pt plus 5cm}final int jenes.algorithms.SimpleGA$<$ T extends Chromosome $>$.{\bf DEFAULT\_\-GENERATION\_\-LIMIT} = 100\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_c4060f400a4a9d81185713c244699d40}
+
+
+The default generation limit \hypertarget{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_6bb4783aa44abaae39375ae762412fa3}{
+\index{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}!DEFAULT\_\-CROSSOVER\_\-PROBABILITY@{DEFAULT\_\-CROSSOVER\_\-PROBABILITY}}
+\index{DEFAULT\_\-CROSSOVER\_\-PROBABILITY@{DEFAULT\_\-CROSSOVER\_\-PROBABILITY}!jenes::algorithms::SimpleGA< T extends Chromosome >@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}}
+\subsubsection[DEFAULT\_\-CROSSOVER\_\-PROBABILITY]{\setlength{\rightskip}{0pt plus 5cm}final double jenes.algorithms.SimpleGA$<$ T extends Chromosome $>$.{\bf DEFAULT\_\-CROSSOVER\_\-PROBABILITY} = 0.8\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_6bb4783aa44abaae39375ae762412fa3}
+
+
+The default crossover probability \hypertarget{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_6b93f23c518016295e31b02aa7ef1f8c}{
+\index{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}!DEFAULT\_\-MUTATION\_\-PROBABILITY@{DEFAULT\_\-MUTATION\_\-PROBABILITY}}
+\index{DEFAULT\_\-MUTATION\_\-PROBABILITY@{DEFAULT\_\-MUTATION\_\-PROBABILITY}!jenes::algorithms::SimpleGA< T extends Chromosome >@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}}
+\subsubsection[DEFAULT\_\-MUTATION\_\-PROBABILITY]{\setlength{\rightskip}{0pt plus 5cm}final double jenes.algorithms.SimpleGA$<$ T extends Chromosome $>$.{\bf DEFAULT\_\-MUTATION\_\-PROBABILITY} = 0.02\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_6b93f23c518016295e31b02aa7ef1f8c}
+
+
+The default mutation probability \hypertarget{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_3b820957538efb558e8240e996d503cd}{
+\index{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}!DEFAULT\_\-ELITISM@{DEFAULT\_\-ELITISM}}
+\index{DEFAULT\_\-ELITISM@{DEFAULT\_\-ELITISM}!jenes::algorithms::SimpleGA< T extends Chromosome >@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}}
+\subsubsection[DEFAULT\_\-ELITISM]{\setlength{\rightskip}{0pt plus 5cm}final int jenes.algorithms.SimpleGA$<$ T extends Chromosome $>$.{\bf DEFAULT\_\-ELITISM} = 1\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_3b820957538efb558e8240e996d503cd}
+
+
+The default elitism factor \hypertarget{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_93d44174d00fdf0a8ebedfa3badcde66}{
+\index{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}!DEFAULT\_\-SELECTION\_\-METHOD@{DEFAULT\_\-SELECTION\_\-METHOD}}
+\index{DEFAULT\_\-SELECTION\_\-METHOD@{DEFAULT\_\-SELECTION\_\-METHOD}!jenes::algorithms::SimpleGA< T extends Chromosome >@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}}
+\subsubsection[DEFAULT\_\-SELECTION\_\-METHOD]{\setlength{\rightskip}{0pt plus 5cm}final {\bf SelectionMethod} jenes.algorithms.SimpleGA$<$ T extends Chromosome $>$.{\bf DEFAULT\_\-SELECTION\_\-METHOD} = SelectionMethod.TOURNAMENT\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_93d44174d00fdf0a8ebedfa3badcde66}
+
+
+The default selection method \hypertarget{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_568bc71d97e1221ff4c7a4cc2b9a938d}{
+\index{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}!DEFAULT\_\-CROSSOVER\_\-METHOD@{DEFAULT\_\-CROSSOVER\_\-METHOD}}
+\index{DEFAULT\_\-CROSSOVER\_\-METHOD@{DEFAULT\_\-CROSSOVER\_\-METHOD}!jenes::algorithms::SimpleGA< T extends Chromosome >@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}}
+\subsubsection[DEFAULT\_\-CROSSOVER\_\-METHOD]{\setlength{\rightskip}{0pt plus 5cm}final {\bf CrossoverMethod} jenes.algorithms.SimpleGA$<$ T extends Chromosome $>$.{\bf DEFAULT\_\-CROSSOVER\_\-METHOD} = CrossoverMethod.SINGLEPOINT\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_568bc71d97e1221ff4c7a4cc2b9a938d}
+
+
+The default crossover method \hypertarget{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_b95f26a5f33145a73eed2832becb962f}{
+\index{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}!DEFAULT\_\-ELITISM\_\-STRATEGY@{DEFAULT\_\-ELITISM\_\-STRATEGY}}
+\index{DEFAULT\_\-ELITISM\_\-STRATEGY@{DEFAULT\_\-ELITISM\_\-STRATEGY}!jenes::algorithms::SimpleGA< T extends Chromosome >@{jenes::algorithms::SimpleGA$<$ T extends Chromosome $>$}}
+\subsubsection[DEFAULT\_\-ELITISM\_\-STRATEGY]{\setlength{\rightskip}{0pt plus 5cm}final ElitismStrategy jenes.algorithms.SimpleGA$<$ T extends Chromosome $>$.{\bf DEFAULT\_\-ELITISM\_\-STRATEGY} = ElitismStrategy.RANDOM\hspace{0.3cm}{\tt  \mbox{[}static\mbox{]}}}}
+\label{classjenes_1_1algorithms_1_1_simple_g_a_3_01_t_01extends_01_chromosome_01_4_b95f26a5f33145a73eed2832becb962f}
+
+
+The default elitism strategy 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/algorithms/SimpleGA.java\end{CompactItemize}

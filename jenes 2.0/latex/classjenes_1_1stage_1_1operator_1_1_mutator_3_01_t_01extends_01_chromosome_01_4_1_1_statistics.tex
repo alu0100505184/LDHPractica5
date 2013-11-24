@@ -1,0 +1,73 @@
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_mutator_3_01_t_01extends_01_chromosome_01_4_1_1_statistics}{
+\section{jenes.stage.operator.Mutator$<$ T extends Chromosome $>$.Statistics Class Reference}
+\label{classjenes_1_1stage_1_1operator_1_1_mutator_3_01_t_01extends_01_chromosome_01_4_1_1_statistics}\index{jenes::stage::operator::Mutator$<$ T extends Chromosome $>$::Statistics@{jenes::stage::operator::Mutator$<$ T extends Chromosome $>$::Statistics}}
+}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+long \hyperlink{classjenes_1_1stage_1_1operator_1_1_mutator_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_fc74de8d8cf1b0d1cdaf9ec3a170c80e}{getMutations} ()
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_mutator_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_f114cf6ccf66e1bd5d5d7337b4e15e28}{
+void \textbf{fill} (Operator$<$ T $>$.Statistics stats)}
+\label{classjenes_1_1stage_1_1operator_1_1_mutator_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_f114cf6ccf66e1bd5d5d7337b4e15e28}
+
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+long \hyperlink{classjenes_1_1stage_1_1operator_1_1_mutator_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_4328be89d9643f783f5c08164a0aa916}{mutations}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+A statistics object holding the number of mutation performed and the time spent to execute them. The statistics is available by two methods: \hyperlink{}{Mutator\#getStatistics()} to have a new statistics setted according to the mutator state or \hyperlink{}{Mutator\#updateStatistics(jenes.stage.operator.Operator.Statistics)} to modify an existing statistics according to the mutator state. 
+
+Esamples of use are showed below. 
+
+$<$blockquote$>$\small\begin{alltt}
+ Mutator.Statistics stat = a\_mutator.getStatistics();
+ \end{alltt}
+\normalsize 
+$<$/blockquote$>$ 
+
+returns a new statistics object setted according to the specified mutator state. 
+
+$<$blockquote$>$\small\begin{alltt}
+ Mutator.Statistics stat = new Mutator.Statistics();
+ a\_mutator.updateStatistics(stat);
+ \end{alltt}
+\normalsize 
+$<$/blockquote$>$ 
+
+modifies the existing statistics according to the specified mutator state. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_mutator_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_fc74de8d8cf1b0d1cdaf9ec3a170c80e}{
+\index{jenes::stage::operator::Mutator$<$ T extends Chromosome $>$::Statistics@{jenes::stage::operator::Mutator$<$ T extends Chromosome $>$::Statistics}!getMutations@{getMutations}}
+\index{getMutations@{getMutations}!jenes::stage::operator::Mutator< T extends Chromosome >::Statistics@{jenes::stage::operator::Mutator$<$ T extends Chromosome $>$::Statistics}}
+\subsubsection[getMutations]{\setlength{\rightskip}{0pt plus 5cm}long jenes.stage.operator.Mutator$<$ T extends Chromosome $>$.Statistics.getMutations ()}}
+\label{classjenes_1_1stage_1_1operator_1_1_mutator_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_fc74de8d8cf1b0d1cdaf9ec3a170c80e}
+
+
+Returns the number of mutations performed
+
+\begin{Desc}
+\item[Returns:]the number of mutations performed \end{Desc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_mutator_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_4328be89d9643f783f5c08164a0aa916}{
+\index{jenes::stage::operator::Mutator$<$ T extends Chromosome $>$::Statistics@{jenes::stage::operator::Mutator$<$ T extends Chromosome $>$::Statistics}!mutations@{mutations}}
+\index{mutations@{mutations}!jenes::stage::operator::Mutator< T extends Chromosome >::Statistics@{jenes::stage::operator::Mutator$<$ T extends Chromosome $>$::Statistics}}
+\subsubsection[mutations]{\setlength{\rightskip}{0pt plus 5cm}long jenes.stage.operator.Mutator$<$ T extends Chromosome $>$.Statistics.mutations\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1_mutator_3_01_t_01extends_01_chromosome_01_4_1_1_statistics_4328be89d9643f783f5c08164a0aa916}
+
+
+Number of mutations performed. 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/stage/operator/Mutator.java\end{CompactItemize}

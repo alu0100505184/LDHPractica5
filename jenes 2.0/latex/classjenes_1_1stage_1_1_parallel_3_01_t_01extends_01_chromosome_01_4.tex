@@ -1,0 +1,192 @@
+\hypertarget{classjenes_1_1stage_1_1_parallel_3_01_t_01extends_01_chromosome_01_4}{
+\section{jenes.stage.Parallel$<$ T extends Chromosome $>$ Class Reference}
+\label{classjenes_1_1stage_1_1_parallel_3_01_t_01extends_01_chromosome_01_4}\index{jenes::stage::Parallel$<$ T extends Chromosome $>$@{jenes::stage::Parallel$<$ T extends Chromosome $>$}}
+}
+Inherits jenes::stage::AbstractStage$<$ T $>$.
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classjenes_1_1stage_1_1_parallel_3_01_t_01extends_01_chromosome_01_4_933c7a845f624f290f27c9921e6e8ca9}{Parallel} (Dispenser$<$ T $>$ dispenser)
+\item 
+void \hyperlink{classjenes_1_1stage_1_1_parallel_3_01_t_01extends_01_chromosome_01_4_fe3cf6bd36f7e0f7246cbf609d9cbdf2}{add} (AbstractStage$<$ T $>$ stage)
+\item 
+void \hyperlink{classjenes_1_1stage_1_1_parallel_3_01_t_01extends_01_chromosome_01_4_db15ae336a8829eb0a8f984eb7aac3ca}{remove} (AbstractStage$<$ T $>$ stage)
+\item 
+void \hyperlink{classjenes_1_1stage_1_1_parallel_3_01_t_01extends_01_chromosome_01_4_cf777ee17edc34cb81d2d0fc145cffc4}{remove} (int index)
+\item 
+void \hyperlink{classjenes_1_1stage_1_1_parallel_3_01_t_01extends_01_chromosome_01_4_115d20da27789c0a053ed7e161838477}{setBranch} (int index, AbstractStage$<$ T $>$ stage)
+\item 
+void \hyperlink{classjenes_1_1stage_1_1_parallel_3_01_t_01extends_01_chromosome_01_4_cc2efb924520eb73061928e39580202c}{removeAllBranches} ()
+\item 
+\hypertarget{classjenes_1_1stage_1_1_parallel_3_01_t_01extends_01_chromosome_01_4_75d99b7406d735b297e6192b2ac130e9}{
+void \textbf{init} (GeneticAlgorithm$<$ T $>$ ga)  throws StageException }
+\label{classjenes_1_1stage_1_1_parallel_3_01_t_01extends_01_chromosome_01_4_75d99b7406d735b297e6192b2ac130e9}
+
+\item 
+\hypertarget{classjenes_1_1stage_1_1_parallel_3_01_t_01extends_01_chromosome_01_4_67831e08edd3b98bf0d81778cf067aeb}{
+void \textbf{dispose} ()}
+\label{classjenes_1_1stage_1_1_parallel_3_01_t_01extends_01_chromosome_01_4_67831e08edd3b98bf0d81778cf067aeb}
+
+\item 
+\hypertarget{classjenes_1_1stage_1_1_parallel_3_01_t_01extends_01_chromosome_01_4_504ed9a0dddbfd46a9bebd4a38dba964}{
+final void \textbf{process} (Population$<$ T $>$ in, Population$<$ T $>$ out)  throws StageException }
+\label{classjenes_1_1stage_1_1_parallel_3_01_t_01extends_01_chromosome_01_4_504ed9a0dddbfd46a9bebd4a38dba964}
+
+\item 
+\hypertarget{classjenes_1_1stage_1_1_parallel_3_01_t_01extends_01_chromosome_01_4_e8ea18096e341f41bf44c56ba1628a99}{
+void \textbf{setBiggerIsBetter} (boolean flag, boolean recursively)}
+\label{classjenes_1_1stage_1_1_parallel_3_01_t_01extends_01_chromosome_01_4_e8ea18096e341f41bf44c56ba1628a99}
+
+\item 
+\hypertarget{classjenes_1_1stage_1_1_parallel_3_01_t_01extends_01_chromosome_01_4_e50a3b3fae5a0b2c3465a0bae243263b}{
+void \textbf{setFitness} (Fitness fit, boolean recursively)}
+\label{classjenes_1_1stage_1_1_parallel_3_01_t_01extends_01_chromosome_01_4_e50a3b3fae5a0b2c3465a0bae243263b}
+
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+void \hyperlink{classjenes_1_1stage_1_1_parallel_3_01_t_01extends_01_chromosome_01_4_afb82610de353045546319738543fab9}{distribute} (Population$<$ T $>$ in, Population$<$ T $>$\mbox{[}$\,$\mbox{]} branches)
+\item 
+void \hyperlink{classjenes_1_1stage_1_1_parallel_3_01_t_01extends_01_chromosome_01_4_9cd26799d837f1e1f5ddfcabd0d18aaa}{mergePopulation} (Population$<$ T $>$\mbox{[}$\,$\mbox{]} branches, Population$<$ T $>$ out)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+A parallel is formed by differents branches; each branch receives a subpopolation according to the population dispenser used (see \hyperlink{}{Dispenser\#distribute(Population, Population\mbox{[}$\,$\mbox{]})}).\par
+ 
+
+Each branch is a stage and can be added with the \hyperlink{}{add(AbstractStage)} method. The output population is obtained merging the output of each branch. The dispenser is responsable of this merging. 
+
+Note: generally a dispenser can add the same input individual in different branches. So don't modify the stages input individuals. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em $<$T$>$}]The class chromosomes flowing across the stage.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Version:]2.0 \end{Desc}
+\begin{Desc}
+\item[Since:]1.0\end{Desc}
+\begin{Desc}
+\item[See also:]jenes.stage.Dispenser 
+
+jenes.stage.ExclusiveDispenser \end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classjenes_1_1stage_1_1_parallel_3_01_t_01extends_01_chromosome_01_4_933c7a845f624f290f27c9921e6e8ca9}{
+\index{jenes::stage::Parallel$<$ T extends Chromosome $>$@{jenes::stage::Parallel$<$ T extends Chromosome $>$}!Parallel@{Parallel}}
+\index{Parallel@{Parallel}!jenes::stage::Parallel< T extends Chromosome >@{jenes::stage::Parallel$<$ T extends Chromosome $>$}}
+\subsubsection[Parallel]{\setlength{\rightskip}{0pt plus 5cm}jenes.stage.Parallel$<$ T extends Chromosome $>$.Parallel (Dispenser$<$ T $>$ {\em dispenser})}}
+\label{classjenes_1_1stage_1_1_parallel_3_01_t_01extends_01_chromosome_01_4_933c7a845f624f290f27c9921e6e8ca9}
+
+
+Constructs a new parallel stage with the specified dispenser. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em dispenser}]the dispenser to use in the distribute and merge operations \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classjenes_1_1stage_1_1_parallel_3_01_t_01extends_01_chromosome_01_4_fe3cf6bd36f7e0f7246cbf609d9cbdf2}{
+\index{jenes::stage::Parallel$<$ T extends Chromosome $>$@{jenes::stage::Parallel$<$ T extends Chromosome $>$}!add@{add}}
+\index{add@{add}!jenes::stage::Parallel< T extends Chromosome >@{jenes::stage::Parallel$<$ T extends Chromosome $>$}}
+\subsubsection[add]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.Parallel$<$ T extends Chromosome $>$.add (AbstractStage$<$ T $>$ {\em stage})}}
+\label{classjenes_1_1stage_1_1_parallel_3_01_t_01extends_01_chromosome_01_4_fe3cf6bd36f7e0f7246cbf609d9cbdf2}
+
+
+Adds a new branch to this parallel stage. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em stage}]the stage to be added as branch \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1_parallel_3_01_t_01extends_01_chromosome_01_4_db15ae336a8829eb0a8f984eb7aac3ca}{
+\index{jenes::stage::Parallel$<$ T extends Chromosome $>$@{jenes::stage::Parallel$<$ T extends Chromosome $>$}!remove@{remove}}
+\index{remove@{remove}!jenes::stage::Parallel< T extends Chromosome >@{jenes::stage::Parallel$<$ T extends Chromosome $>$}}
+\subsubsection[remove]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.Parallel$<$ T extends Chromosome $>$.remove (AbstractStage$<$ T $>$ {\em stage})}}
+\label{classjenes_1_1stage_1_1_parallel_3_01_t_01extends_01_chromosome_01_4_db15ae336a8829eb0a8f984eb7aac3ca}
+
+
+Removes a stage from the parallel andall the stages it contains. The specified stage is a branch stage container, so after it the branch will be empty. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em stage}]the stage to remove \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1_parallel_3_01_t_01extends_01_chromosome_01_4_cf777ee17edc34cb81d2d0fc145cffc4}{
+\index{jenes::stage::Parallel$<$ T extends Chromosome $>$@{jenes::stage::Parallel$<$ T extends Chromosome $>$}!remove@{remove}}
+\index{remove@{remove}!jenes::stage::Parallel< T extends Chromosome >@{jenes::stage::Parallel$<$ T extends Chromosome $>$}}
+\subsubsection[remove]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.Parallel$<$ T extends Chromosome $>$.remove (int {\em index})}}
+\label{classjenes_1_1stage_1_1_parallel_3_01_t_01extends_01_chromosome_01_4_cf777ee17edc34cb81d2d0fc145cffc4}
+
+
+Removes a specified branch from the parallel 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em index}]the branch index to remove \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1_parallel_3_01_t_01extends_01_chromosome_01_4_115d20da27789c0a053ed7e161838477}{
+\index{jenes::stage::Parallel$<$ T extends Chromosome $>$@{jenes::stage::Parallel$<$ T extends Chromosome $>$}!setBranch@{setBranch}}
+\index{setBranch@{setBranch}!jenes::stage::Parallel< T extends Chromosome >@{jenes::stage::Parallel$<$ T extends Chromosome $>$}}
+\subsubsection[setBranch]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.Parallel$<$ T extends Chromosome $>$.setBranch (int {\em index}, \/  AbstractStage$<$ T $>$ {\em stage})}}
+\label{classjenes_1_1stage_1_1_parallel_3_01_t_01extends_01_chromosome_01_4_115d20da27789c0a053ed7e161838477}
+
+
+Sets the specified stage at the specified branch number replacing the stage already present 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em index}]the branch number where to set the new stage \item[{\em stage}]the stage to add \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1_parallel_3_01_t_01extends_01_chromosome_01_4_cc2efb924520eb73061928e39580202c}{
+\index{jenes::stage::Parallel$<$ T extends Chromosome $>$@{jenes::stage::Parallel$<$ T extends Chromosome $>$}!removeAllBranches@{removeAllBranches}}
+\index{removeAllBranches@{removeAllBranches}!jenes::stage::Parallel< T extends Chromosome >@{jenes::stage::Parallel$<$ T extends Chromosome $>$}}
+\subsubsection[removeAllBranches]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.Parallel$<$ T extends Chromosome $>$.removeAllBranches ()}}
+\label{classjenes_1_1stage_1_1_parallel_3_01_t_01extends_01_chromosome_01_4_cc2efb924520eb73061928e39580202c}
+
+
+Removes all the branch stages from this parallel \hypertarget{classjenes_1_1stage_1_1_parallel_3_01_t_01extends_01_chromosome_01_4_afb82610de353045546319738543fab9}{
+\index{jenes::stage::Parallel$<$ T extends Chromosome $>$@{jenes::stage::Parallel$<$ T extends Chromosome $>$}!distribute@{distribute}}
+\index{distribute@{distribute}!jenes::stage::Parallel< T extends Chromosome >@{jenes::stage::Parallel$<$ T extends Chromosome $>$}}
+\subsubsection[distribute]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.Parallel$<$ T extends Chromosome $>$.distribute (Population$<$ T $>$ {\em in}, \/  Population$<$ T $>$\mbox{[}$\,$\mbox{]} {\em branches})\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classjenes_1_1stage_1_1_parallel_3_01_t_01extends_01_chromosome_01_4_afb82610de353045546319738543fab9}
+
+
+Distributes the specified population between those ones in the specified array. If some populations within inStagePop are not empty they will contain the initial individuals too at the end of distribute operation. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em in}]he population to distribute \item[{\em branches}]the array of sub populations to fill \end{description}
+\end{Desc}
+\hypertarget{classjenes_1_1stage_1_1_parallel_3_01_t_01extends_01_chromosome_01_4_9cd26799d837f1e1f5ddfcabd0d18aaa}{
+\index{jenes::stage::Parallel$<$ T extends Chromosome $>$@{jenes::stage::Parallel$<$ T extends Chromosome $>$}!mergePopulation@{mergePopulation}}
+\index{mergePopulation@{mergePopulation}!jenes::stage::Parallel< T extends Chromosome >@{jenes::stage::Parallel$<$ T extends Chromosome $>$}}
+\subsubsection[mergePopulation]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.Parallel$<$ T extends Chromosome $>$.mergePopulation (Population$<$ T $>$\mbox{[}$\,$\mbox{]} {\em branches}, \/  Population$<$ T $>$ {\em out})\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classjenes_1_1stage_1_1_parallel_3_01_t_01extends_01_chromosome_01_4_9cd26799d837f1e1f5ddfcabd0d18aaa}
+
+
+Merges the populations within the specified array in the specified one. If population is not empty it will contain the initial individuals too at the end of merge operation. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em branches}]the populations to be merged \item[{\em out}]the final population \end{description}
+\end{Desc}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/stage/Parallel.java\end{CompactItemize}

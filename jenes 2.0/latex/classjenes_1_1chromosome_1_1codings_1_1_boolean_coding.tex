@@ -1,0 +1,84 @@
+\hypertarget{classjenes_1_1chromosome_1_1codings_1_1_boolean_coding}{
+\section{jenes.chromosome.codings.BooleanCoding Class Reference}
+\label{classjenes_1_1chromosome_1_1codings_1_1_boolean_coding}\index{jenes::chromosome::codings::BooleanCoding@{jenes::chromosome::codings::BooleanCoding}}
+}
+Inherits jenes::chromosome::BitwiseChromosome::BitCoding$<$ Boolean $>$.
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classjenes_1_1chromosome_1_1codings_1_1_boolean_coding_3a8318406c4a080fa5b39899de1831df}{BooleanCoding} ()
+\item 
+Boolean \hyperlink{classjenes_1_1chromosome_1_1codings_1_1_boolean_coding_38188e39066ecd06e4c839bced2038d3}{decode} (int bits)
+\item 
+int \hyperlink{classjenes_1_1chromosome_1_1codings_1_1_boolean_coding_ce4181a4ef8bf37d9ad762d15422527b}{encode} (Boolean obj)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a boolean coding with 1 bit representation. The value false is associated to 0, and true to 1.
+
+\begin{Desc}
+\item[Version:]1.2 \end{Desc}
+\begin{Desc}
+\item[Since:]1.2\end{Desc}
+\begin{Desc}
+\item[See also:]\hyperlink{classjenes_1_1chromosome_1_1codings_1_1_byte_coding}{ByteCoding} 
+
+\hyperlink{classjenes_1_1chromosome_1_1codings_1_1_int_coding}{IntCoding} 
+
+\hyperlink{classjenes_1_1chromosome_1_1codings_1_1_short_coding}{ShortCoding} 
+
+\hyperlink{classjenes_1_1chromosome_1_1codings_1_1_word_coding}{WordCoding} 
+
+BitSize \end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classjenes_1_1chromosome_1_1codings_1_1_boolean_coding_3a8318406c4a080fa5b39899de1831df}{
+\index{jenes::chromosome::codings::BooleanCoding@{jenes::chromosome::codings::BooleanCoding}!BooleanCoding@{BooleanCoding}}
+\index{BooleanCoding@{BooleanCoding}!jenes::chromosome::codings::BooleanCoding@{jenes::chromosome::codings::BooleanCoding}}
+\subsubsection[BooleanCoding]{\setlength{\rightskip}{0pt plus 5cm}jenes.chromosome.codings.BooleanCoding.BooleanCoding ()}}
+\label{classjenes_1_1chromosome_1_1codings_1_1_boolean_coding_3a8318406c4a080fa5b39899de1831df}
+
+
+Default constructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classjenes_1_1chromosome_1_1codings_1_1_boolean_coding_38188e39066ecd06e4c839bced2038d3}{
+\index{jenes::chromosome::codings::BooleanCoding@{jenes::chromosome::codings::BooleanCoding}!decode@{decode}}
+\index{decode@{decode}!jenes::chromosome::codings::BooleanCoding@{jenes::chromosome::codings::BooleanCoding}}
+\subsubsection[decode]{\setlength{\rightskip}{0pt plus 5cm}Boolean jenes.chromosome.codings.BooleanCoding.decode (int {\em bits})}}
+\label{classjenes_1_1chromosome_1_1codings_1_1_boolean_coding_38188e39066ecd06e4c839bced2038d3}
+
+
+Returns the value of coded bits. If the argument is 1 it returns true, if 0 then false.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em bits}]coding the object \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]the value \end{Desc}
+\hypertarget{classjenes_1_1chromosome_1_1codings_1_1_boolean_coding_ce4181a4ef8bf37d9ad762d15422527b}{
+\index{jenes::chromosome::codings::BooleanCoding@{jenes::chromosome::codings::BooleanCoding}!encode@{encode}}
+\index{encode@{encode}!jenes::chromosome::codings::BooleanCoding@{jenes::chromosome::codings::BooleanCoding}}
+\subsubsection[encode]{\setlength{\rightskip}{0pt plus 5cm}int jenes.chromosome.codings.BooleanCoding.encode (Boolean {\em obj})}}
+\label{classjenes_1_1chromosome_1_1codings_1_1_boolean_coding_ce4181a4ef8bf37d9ad762d15422527b}
+
+
+Returns the bits coding the value. It returns 0 if the argument is false, 1 if true.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em obj}]the boolean value to be coded \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]the coding bits \end{Desc}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/chromosome/codings/BooleanCoding.java\end{CompactItemize}

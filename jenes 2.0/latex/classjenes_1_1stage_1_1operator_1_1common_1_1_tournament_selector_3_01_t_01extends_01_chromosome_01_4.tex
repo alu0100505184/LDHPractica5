@@ -1,0 +1,77 @@
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_tournament_selector_3_01_t_01extends_01_chromosome_01_4}{
+\section{jenes.stage.operator.common.TournamentSelector$<$ T extends Chromosome $>$ Class Reference}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_tournament_selector_3_01_t_01extends_01_chromosome_01_4}\index{jenes::stage::operator::common::TournamentSelector$<$ T extends Chromosome $>$@{jenes::stage::operator::common::TournamentSelector$<$ T extends Chromosome $>$}}
+}
+Inherits jenes::stage::operator::Selector$<$ T $>$.
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_tournament_selector_3_01_t_01extends_01_chromosome_01_4_69674739689660dc1926b06a43f2aa6d}{TournamentSelector} (int attempts)
+\item 
+int \hyperlink{classjenes_1_1stage_1_1operator_1_1common_1_1_tournament_selector_3_01_t_01extends_01_chromosome_01_4_93a5d890bc7a8f383bda9791baf0460c}{getAttempts} ()
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_tournament_selector_3_01_t_01extends_01_chromosome_01_4_f18e34c3ad12626eb5d8540e05e9877e}{
+Individual$<$ T $>$ \textbf{select} (List$<$ Individual$<$ T $>$$>$ list)}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_tournament_selector_3_01_t_01extends_01_chromosome_01_4_f18e34c3ad12626eb5d8540e05e9877e}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+A classic tournament selection operator. A number of attempts is specified at the instantiation time; it represents the number of iterations the selection procedure is repeated. Individuals are randomly choosen and the one with the best fitness will be selected. 
+
+The \hyperlink{}{preSelect(Population)} method is useless, so there is an overriding implementation in this selection algorithm. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em $<$T$>$}]The class of chromosomes to work with.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Version:]2.0 \end{Desc}
+\begin{Desc}
+\item[Since:]1.0\end{Desc}
+\begin{Desc}
+\item[See also:]Individual 
+
+Population \end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_tournament_selector_3_01_t_01extends_01_chromosome_01_4_69674739689660dc1926b06a43f2aa6d}{
+\index{jenes::stage::operator::common::TournamentSelector$<$ T extends Chromosome $>$@{jenes::stage::operator::common::TournamentSelector$<$ T extends Chromosome $>$}!TournamentSelector@{TournamentSelector}}
+\index{TournamentSelector@{TournamentSelector}!jenes::stage::operator::common::TournamentSelector< T extends Chromosome >@{jenes::stage::operator::common::TournamentSelector$<$ T extends Chromosome $>$}}
+\subsubsection[TournamentSelector]{\setlength{\rightskip}{0pt plus 5cm}jenes.stage.operator.common.TournamentSelector$<$ T extends Chromosome $>$.TournamentSelector (int {\em attempts})}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_tournament_selector_3_01_t_01extends_01_chromosome_01_4_69674739689660dc1926b06a43f2aa6d}
+
+
+Constructs a new tournament selection object 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em attempts}]the number of tournament attempts \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1common_1_1_tournament_selector_3_01_t_01extends_01_chromosome_01_4_93a5d890bc7a8f383bda9791baf0460c}{
+\index{jenes::stage::operator::common::TournamentSelector$<$ T extends Chromosome $>$@{jenes::stage::operator::common::TournamentSelector$<$ T extends Chromosome $>$}!getAttempts@{getAttempts}}
+\index{getAttempts@{getAttempts}!jenes::stage::operator::common::TournamentSelector< T extends Chromosome >@{jenes::stage::operator::common::TournamentSelector$<$ T extends Chromosome $>$}}
+\subsubsection[getAttempts]{\setlength{\rightskip}{0pt plus 5cm}int jenes.stage.operator.common.TournamentSelector$<$ T extends Chromosome $>$.getAttempts ()}}
+\label{classjenes_1_1stage_1_1operator_1_1common_1_1_tournament_selector_3_01_t_01extends_01_chromosome_01_4_93a5d890bc7a8f383bda9791baf0460c}
+
+
+Returns the number of attempts of this tournament selection 
+
+\begin{Desc}
+\item[Returns:]the number of attempts \end{Desc}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/stage/operator/common/TournamentSelector.java\end{CompactItemize}

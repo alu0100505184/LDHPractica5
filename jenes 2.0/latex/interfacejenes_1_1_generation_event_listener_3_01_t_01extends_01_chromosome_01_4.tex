@@ -1,0 +1,53 @@
+\hypertarget{interfacejenes_1_1_generation_event_listener_3_01_t_01extends_01_chromosome_01_4}{
+\section{jenes.GenerationEventListener$<$ T extends Chromosome $>$ Interface Reference}
+\label{interfacejenes_1_1_generation_event_listener_3_01_t_01extends_01_chromosome_01_4}\index{jenes::GenerationEventListener$<$ T extends Chromosome $>$@{jenes::GenerationEventListener$<$ T extends Chromosome $>$}}
+}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+void \hyperlink{interfacejenes_1_1_generation_event_listener_3_01_t_01extends_01_chromosome_01_4_ae224991bea21e4eca0f81ce0fb464e9}{onGeneration} (GeneticAlgorithm$<$ T $>$ ga, long time)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+A listener of the genetic algorithm generation event. Such a listener is notified after a generation step is executed. 
+
+A {\tt GenerationEventListener} is registered to the algorithm by the method \hyperlink{}{GeneticAlgorithm\#addGenerationEventListener(GenerationEventListener)}. The listener is removed by invoking the method \hyperlink{}{GeneticAlgorithm\#removeGenerationEventListener(GenerationEventListener)}.  
+
+A {\tt GenerationEventListener} can be registered to multiple different algorithms, thus being notified by all of them. 
+
+Another way to get notified of algorithms events is to override method \hyperlink{}{GeneticAlgorithm\#onGeneration(long)} when subclassing the {\tt GeneticAlgorithm} class. 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em $<$T$>$}]extends Chromosome\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Version:]1.2 \end{Desc}
+\begin{Desc}
+\item[Since:]1.0\end{Desc}
+\begin{Desc}
+\item[See also:]GeneticAlgorithm \end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interfacejenes_1_1_generation_event_listener_3_01_t_01extends_01_chromosome_01_4_ae224991bea21e4eca0f81ce0fb464e9}{
+\index{jenes::GenerationEventListener$<$ T extends Chromosome $>$@{jenes::GenerationEventListener$<$ T extends Chromosome $>$}!onGeneration@{onGeneration}}
+\index{onGeneration@{onGeneration}!jenes::GenerationEventListener< T extends Chromosome >@{jenes::GenerationEventListener$<$ T extends Chromosome $>$}}
+\subsubsection[onGeneration]{\setlength{\rightskip}{0pt plus 5cm}void jenes.GenerationEventListener$<$ T extends Chromosome $>$.onGeneration (GeneticAlgorithm$<$ T $>$ {\em ga}, \/  long {\em time})}}
+\label{interfacejenes_1_1_generation_event_listener_3_01_t_01extends_01_chromosome_01_4_ae224991bea21e4eca0f81ce0fb464e9}
+
+
+Invoked when at the end of one generation step
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em ga}]the genetic algorithm generating the event \item[{\em time}]the event time expressed in milliseconds \end{description}
+\end{Desc}
+
+
+The documentation for this interface was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/GenerationEventListener.java\end{CompactItemize}

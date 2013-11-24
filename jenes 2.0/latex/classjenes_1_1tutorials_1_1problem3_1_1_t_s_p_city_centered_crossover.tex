@@ -1,0 +1,80 @@
+\hypertarget{classjenes_1_1tutorials_1_1problem3_1_1_t_s_p_city_centered_crossover}{
+\section{jenes.tutorials.problem3.TSPCityCenteredCrossover Class Reference}
+\label{classjenes_1_1tutorials_1_1problem3_1_1_t_s_p_city_centered_crossover}\index{jenes::tutorials::problem3::TSPCityCenteredCrossover@{jenes::tutorials::problem3::TSPCityCenteredCrossover}}
+}
+Inherits jenes::stage::operator::Crossover$<$ jenes::chromosome::IntegerChromosome $>$.
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hypertarget{classjenes_1_1tutorials_1_1problem3_1_1_t_s_p_city_centered_crossover_1609c37822bff6e6af8cb82082d8cd9d}{
+\textbf{TSPCityCenteredCrossover} (double pCross)}
+\label{classjenes_1_1tutorials_1_1problem3_1_1_t_s_p_city_centered_crossover_1609c37822bff6e6af8cb82082d8cd9d}
+
+\item 
+int \hyperlink{classjenes_1_1tutorials_1_1problem3_1_1_t_s_p_city_centered_crossover_3a5e0f99396f1fb6dc89981969d58c13}{spread} ()
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+void \hyperlink{classjenes_1_1tutorials_1_1problem3_1_1_t_s_p_city_centered_crossover_eb7cb2d42aeeea2cb008f98d63b64805}{cross} (Individual$<$ \hyperlink{classjenes_1_1chromosome_1_1_integer_chromosome}{IntegerChromosome} $>$ offsprings\mbox{[}$\,$\mbox{]})
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Tutorial showing how to implement problem specific operators. The problem faced in this example is the well known Tavel Salesman Problem (TSP)
+
+This class implements a specific crossover aimed at preserving permutations.
+
+Algorithm description: \small\begin{alltt}
+      parent1  5 2 1 4 6 3     parent2   1 3 2 4 6 5
+      child1   \_ \_ \_ \_ \_ \_     child2    \_ \_ \_ \_ \_ \_
+\end{alltt}
+\normalsize 
+ Step 1: a city is choosed randomly. We copy all the cities until the selected one from each parent to each child (parent1 in child1 and parent2 in child2) \small\begin{alltt}
+      parent1  5 2 1 4 6 3     parent2   1 3 2 4 6 5
+      child1   5 2 \_ \_ \_ \_     child2    1 3 2 \_ \_ \_
+ \end{alltt}
+\normalsize 
+ Step 2: we fill child1 getting missing elements from parent2; these ones will have the same parent2 order \small\begin{alltt}
+      parent1  5 2 1 4 6 3     parent2  1 3 2 4 6 5
+      child1   5 2 1 3 4 6     child2   1 3 2 5 4 6
+\end{alltt}
+\normalsize 
+
+
+We repeat these steps for child2
+
+\begin{Desc}
+\item[Version:]2.0 \end{Desc}
+\begin{Desc}
+\item[Since:]1.0 \end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classjenes_1_1tutorials_1_1problem3_1_1_t_s_p_city_centered_crossover_3a5e0f99396f1fb6dc89981969d58c13}{
+\index{jenes::tutorials::problem3::TSPCityCenteredCrossover@{jenes::tutorials::problem3::TSPCityCenteredCrossover}!spread@{spread}}
+\index{spread@{spread}!jenes::tutorials::problem3::TSPCityCenteredCrossover@{jenes::tutorials::problem3::TSPCityCenteredCrossover}}
+\subsubsection[spread]{\setlength{\rightskip}{0pt plus 5cm}int jenes.tutorials.problem3.TSPCityCenteredCrossover.spread ()}}
+\label{classjenes_1_1tutorials_1_1problem3_1_1_t_s_p_city_centered_crossover_3a5e0f99396f1fb6dc89981969d58c13}
+
+
+Returns the number of chromosomes (i.e. 2) this operator entails. \hypertarget{classjenes_1_1tutorials_1_1problem3_1_1_t_s_p_city_centered_crossover_eb7cb2d42aeeea2cb008f98d63b64805}{
+\index{jenes::tutorials::problem3::TSPCityCenteredCrossover@{jenes::tutorials::problem3::TSPCityCenteredCrossover}!cross@{cross}}
+\index{cross@{cross}!jenes::tutorials::problem3::TSPCityCenteredCrossover@{jenes::tutorials::problem3::TSPCityCenteredCrossover}}
+\subsubsection[cross]{\setlength{\rightskip}{0pt plus 5cm}void jenes.tutorials.problem3.TSPCityCenteredCrossover.cross (Individual$<$ {\bf IntegerChromosome} $>$ {\em offsprings}\mbox{[}$\,$\mbox{]})\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classjenes_1_1tutorials_1_1problem3_1_1_t_s_p_city_centered_crossover_eb7cb2d42aeeea2cb008f98d63b64805}
+
+
+This method implements the crossover operation.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em offsprings}]the chromosomes to be crossed. \end{description}
+\end{Desc}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/tutorials/problem3/TSPCityCenteredCrossover.java\end{CompactItemize}

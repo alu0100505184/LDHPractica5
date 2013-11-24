@@ -1,0 +1,87 @@
+\hypertarget{interfacejenes_1_1_algorithm_event_listener_3_01_t_01extends_01_chromosome_01_4}{
+\section{jenes.AlgorithmEventListener$<$ T extends Chromosome $>$ Interface Reference}
+\label{interfacejenes_1_1_algorithm_event_listener_3_01_t_01extends_01_chromosome_01_4}\index{jenes::AlgorithmEventListener$<$ T extends Chromosome $>$@{jenes::AlgorithmEventListener$<$ T extends Chromosome $>$}}
+}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+void \hyperlink{interfacejenes_1_1_algorithm_event_listener_3_01_t_01extends_01_chromosome_01_4_f0d6e9961e685f4d44270a4feedeb70f}{onAlgorithmStart} (GeneticAlgorithm$<$ T $>$ ga, long time)
+\item 
+void \hyperlink{interfacejenes_1_1_algorithm_event_listener_3_01_t_01extends_01_chromosome_01_4_b494ea60f6000ebcd02a94c7eda70dcf}{onAlgorithmStop} (GeneticAlgorithm$<$ T $>$ ga, long time)
+\item 
+void \hyperlink{interfacejenes_1_1_algorithm_event_listener_3_01_t_01extends_01_chromosome_01_4_f5f6bb7f487c9ecd01331427a370889e}{onAlgorithmInit} (GeneticAlgorithm$<$ T $>$ ga, long time)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+{\tt AlgorithmEventListener} provides the interface for capturing events at algorithm level. This iterface should be implemented by all classes interested in being notified by algorithm events, that are: \begin{itemize}
+\item Start, when the algorithm evolution starts. The first step consists in initiliazing data structures, in particular populations. \item Init, when the initilization task is accomplished. \item Stop, when the evolution terminates. \end{itemize}
+
+
+An {\tt AlgorithmEventListener} is registered to the algorithm by the method \hyperlink{}{GeneticAlgorithm\#addAlgorithmEventListener(AlgorithmEventListener)}. The listener is removed by invoking the method \hyperlink{}{GeneticAlgorithm\#removeAlgorithmEventListener(AlgorithmEventListener)}.  
+
+An {\tt AlgorithmEventListener{\tt  can be registered to multiple different algorithms, thus being notified by all of them. }}
+
+{\tt {\tt  Another way to get notified of algorithms events is to override methods \hyperlink{}{GeneticAlgorithm\#onStart(long)}, \hyperlink{}{GeneticAlgorithm\#onInit(long)} and \hyperlink{}{GeneticAlgorithm\#onStop(long)} when subclassing the {\tt GeneticAlgorithm} class. }}
+
+{\tt {\tt  \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em $<$T$>$}]extends Chromosome\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Version:]1.2 \end{Desc}
+\begin{Desc}
+\item[Since:]1.0\end{Desc}
+\begin{Desc}
+\item[See also:]GeneticAlgorithm \end{Desc}
+}}
+
+\subsection{Member Function Documentation}
+\hypertarget{interfacejenes_1_1_algorithm_event_listener_3_01_t_01extends_01_chromosome_01_4_f0d6e9961e685f4d44270a4feedeb70f}{
+\index{jenes::AlgorithmEventListener$<$ T extends Chromosome $>$@{jenes::AlgorithmEventListener$<$ T extends Chromosome $>$}!onAlgorithmStart@{onAlgorithmStart}}
+\index{onAlgorithmStart@{onAlgorithmStart}!jenes::AlgorithmEventListener< T extends Chromosome >@{jenes::AlgorithmEventListener$<$ T extends Chromosome $>$}}
+\subsubsection[onAlgorithmStart]{\setlength{\rightskip}{0pt plus 5cm}void jenes.AlgorithmEventListener$<$ T extends Chromosome $>$.onAlgorithmStart (GeneticAlgorithm$<$ T $>$ {\em ga}, \/  long {\em time})}}
+\label{interfacejenes_1_1_algorithm_event_listener_3_01_t_01extends_01_chromosome_01_4_f0d6e9961e685f4d44270a4feedeb70f}
+
+
+Invoked when the genetic algorithm starts
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em ga}]the genetic algorithm that generated this event. \item[{\em time}]the event time expressed in milliseconds \end{description}
+\end{Desc}
+\hypertarget{interfacejenes_1_1_algorithm_event_listener_3_01_t_01extends_01_chromosome_01_4_b494ea60f6000ebcd02a94c7eda70dcf}{
+\index{jenes::AlgorithmEventListener$<$ T extends Chromosome $>$@{jenes::AlgorithmEventListener$<$ T extends Chromosome $>$}!onAlgorithmStop@{onAlgorithmStop}}
+\index{onAlgorithmStop@{onAlgorithmStop}!jenes::AlgorithmEventListener< T extends Chromosome >@{jenes::AlgorithmEventListener$<$ T extends Chromosome $>$}}
+\subsubsection[onAlgorithmStop]{\setlength{\rightskip}{0pt plus 5cm}void jenes.AlgorithmEventListener$<$ T extends Chromosome $>$.onAlgorithmStop (GeneticAlgorithm$<$ T $>$ {\em ga}, \/  long {\em time})}}
+\label{interfacejenes_1_1_algorithm_event_listener_3_01_t_01extends_01_chromosome_01_4_b494ea60f6000ebcd02a94c7eda70dcf}
+
+
+Invoked when the genetic algorithm ends
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em ga}]the genetic algorithm that generated this event. \item[{\em time}]the event time expressed in milliseconds \end{description}
+\end{Desc}
+\hypertarget{interfacejenes_1_1_algorithm_event_listener_3_01_t_01extends_01_chromosome_01_4_f5f6bb7f487c9ecd01331427a370889e}{
+\index{jenes::AlgorithmEventListener$<$ T extends Chromosome $>$@{jenes::AlgorithmEventListener$<$ T extends Chromosome $>$}!onAlgorithmInit@{onAlgorithmInit}}
+\index{onAlgorithmInit@{onAlgorithmInit}!jenes::AlgorithmEventListener< T extends Chromosome >@{jenes::AlgorithmEventListener$<$ T extends Chromosome $>$}}
+\subsubsection[onAlgorithmInit]{\setlength{\rightskip}{0pt plus 5cm}void jenes.AlgorithmEventListener$<$ T extends Chromosome $>$.onAlgorithmInit (GeneticAlgorithm$<$ T $>$ {\em ga}, \/  long {\em time})}}
+\label{interfacejenes_1_1_algorithm_event_listener_3_01_t_01extends_01_chromosome_01_4_f5f6bb7f487c9ecd01331427a370889e}
+
+
+Invoked when the genetic algorithm is initialized
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em ga}]the genetic algorithm that generated this event. \item[{\em time}]the event time expressed in milliseconds \end{description}
+\end{Desc}
+
+
+The documentation for this interface was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/AlgorithmEventListener.java\end{CompactItemize}

@@ -1,0 +1,110 @@
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_operator_3_01_t_01extends_01_chromosome_01_4}{
+\section{jenes.stage.operator.Operator$<$ T extends Chromosome $>$ Class Reference}
+\label{classjenes_1_1stage_1_1operator_1_1_operator_3_01_t_01extends_01_chromosome_01_4}\index{jenes::stage::operator::Operator$<$ T extends Chromosome $>$@{jenes::stage::operator::Operator$<$ T extends Chromosome $>$}}
+}
+Inherits jenes::stage::AbstractStage$<$ T $>$.
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+Statistics \hyperlink{classjenes_1_1stage_1_1operator_1_1_operator_3_01_t_01extends_01_chromosome_01_4_bf64e7c4d53509dd770fa09ca9cf377d}{getStatistics} ()
+\item 
+void \hyperlink{classjenes_1_1stage_1_1operator_1_1_operator_3_01_t_01extends_01_chromosome_01_4_11ffd92acef6de663583899707cbbab9}{updateStatistics} (Statistics stats)
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classjenes_1_1stage_1_1operator_1_1_operator_3_01_t_01extends_01_chromosome_01_4_23b4b18468c2fa30bd89fa9e962f6eb8}{Operator} ()
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+Statistics \hyperlink{classjenes_1_1stage_1_1operator_1_1_operator_3_01_t_01extends_01_chromosome_01_4_45afa214a1e9109845c8f67165942675}{statistics}
+\item 
+\hyperlink{classjenes_1_1utils_1_1_random}{Random} \hyperlink{classjenes_1_1stage_1_1operator_1_1_operator_3_01_t_01extends_01_chromosome_01_4_f8cbd8837ce95101e238bdcc3dce5573}{random}
+\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class \hyperlink{classjenes_1_1stage_1_1operator_1_1_operator_3_01_t_01extends_01_chromosome_01_4_1_1_statistics}{Statistics}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+A genetic operator used in the evolution process. It is made part of the genetic algorithm structure at the genetic algorithm set up. An operator represents the ultimate stage executing some trasformation on the input \hyperlink{}{Population} in order to obtain the output one. 
+
+To implement an operator it is necessary to subclass this abstract class.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em $<$T$>$}]The class of chromosomes to work with.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Version:]1.2 \end{Desc}
+\begin{Desc}
+\item[Since:]1.0\end{Desc}
+\begin{Desc}
+\item[See also:]Individual 
+
+Population \end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_operator_3_01_t_01extends_01_chromosome_01_4_23b4b18468c2fa30bd89fa9e962f6eb8}{
+\index{jenes::stage::operator::Operator$<$ T extends Chromosome $>$@{jenes::stage::operator::Operator$<$ T extends Chromosome $>$}!Operator@{Operator}}
+\index{Operator@{Operator}!jenes::stage::operator::Operator< T extends Chromosome >@{jenes::stage::operator::Operator$<$ T extends Chromosome $>$}}
+\subsubsection[Operator]{\setlength{\rightskip}{0pt plus 5cm}jenes.stage.operator.Operator$<$ T extends Chromosome $>$.Operator ()\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1_operator_3_01_t_01extends_01_chromosome_01_4_23b4b18468c2fa30bd89fa9e962f6eb8}
+
+
+Constructs a new operator 
+
+\subsection{Member Function Documentation}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_operator_3_01_t_01extends_01_chromosome_01_4_bf64e7c4d53509dd770fa09ca9cf377d}{
+\index{jenes::stage::operator::Operator$<$ T extends Chromosome $>$@{jenes::stage::operator::Operator$<$ T extends Chromosome $>$}!getStatistics@{getStatistics}}
+\index{getStatistics@{getStatistics}!jenes::stage::operator::Operator< T extends Chromosome >@{jenes::stage::operator::Operator$<$ T extends Chromosome $>$}}
+\subsubsection[getStatistics]{\setlength{\rightskip}{0pt plus 5cm}Statistics jenes.stage.operator.Operator$<$ T extends Chromosome $>$.getStatistics ()}}
+\label{classjenes_1_1stage_1_1operator_1_1_operator_3_01_t_01extends_01_chromosome_01_4_bf64e7c4d53509dd770fa09ca9cf377d}
+
+
+Returns the operator statistics
+
+\begin{Desc}
+\item[Returns:]statistics \end{Desc}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_operator_3_01_t_01extends_01_chromosome_01_4_11ffd92acef6de663583899707cbbab9}{
+\index{jenes::stage::operator::Operator$<$ T extends Chromosome $>$@{jenes::stage::operator::Operator$<$ T extends Chromosome $>$}!updateStatistics@{updateStatistics}}
+\index{updateStatistics@{updateStatistics}!jenes::stage::operator::Operator< T extends Chromosome >@{jenes::stage::operator::Operator$<$ T extends Chromosome $>$}}
+\subsubsection[updateStatistics]{\setlength{\rightskip}{0pt plus 5cm}void jenes.stage.operator.Operator$<$ T extends Chromosome $>$.updateStatistics (Statistics {\em stats})}}
+\label{classjenes_1_1stage_1_1operator_1_1_operator_3_01_t_01extends_01_chromosome_01_4_11ffd92acef6de663583899707cbbab9}
+
+
+Updates the specified statistics at the statistics operator state 
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em stats}]\end{description}
+\end{Desc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classjenes_1_1stage_1_1operator_1_1_operator_3_01_t_01extends_01_chromosome_01_4_45afa214a1e9109845c8f67165942675}{
+\index{jenes::stage::operator::Operator$<$ T extends Chromosome $>$@{jenes::stage::operator::Operator$<$ T extends Chromosome $>$}!statistics@{statistics}}
+\index{statistics@{statistics}!jenes::stage::operator::Operator< T extends Chromosome >@{jenes::stage::operator::Operator$<$ T extends Chromosome $>$}}
+\subsubsection[statistics]{\setlength{\rightskip}{0pt plus 5cm}Statistics jenes.stage.operator.Operator$<$ T extends Chromosome $>$.{\bf statistics}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1_operator_3_01_t_01extends_01_chromosome_01_4_45afa214a1e9109845c8f67165942675}
+
+
+the operator statistics \hypertarget{classjenes_1_1stage_1_1operator_1_1_operator_3_01_t_01extends_01_chromosome_01_4_f8cbd8837ce95101e238bdcc3dce5573}{
+\index{jenes::stage::operator::Operator$<$ T extends Chromosome $>$@{jenes::stage::operator::Operator$<$ T extends Chromosome $>$}!random@{random}}
+\index{random@{random}!jenes::stage::operator::Operator< T extends Chromosome >@{jenes::stage::operator::Operator$<$ T extends Chromosome $>$}}
+\subsubsection[random]{\setlength{\rightskip}{0pt plus 5cm}{\bf Random} jenes.stage.operator.Operator$<$ T extends Chromosome $>$.{\bf random}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classjenes_1_1stage_1_1operator_1_1_operator_3_01_t_01extends_01_chromosome_01_4_f8cbd8837ce95101e238bdcc3dce5573}
+
+
+the random used by the operator 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+src/jenes/stage/operator/Operator.java\end{CompactItemize}
